@@ -236,38 +236,33 @@
       <h2>Our Academic Staff</h2>
       <div class="staff-cards" id="academicStaff"></div>
     </div>
-  </section>    
+  </section>
 
   
   <section id="courses">
     <div class="tag-text">
       <h2>Our Programs</h2>
     </div>
-
+  
     <div class="boxes">
-      <div class="box certificate">
-        <img src="./Images/Icons/certificate.png" alt="">
-        PhD
-      </div>
-      <div class="box bachelors">
-        <img src="./Images/Icons/certificate.png" alt="">
-        Post Graduate
-      </div>
-      <div class="box undergraduate">
-        <img src="./Images/Icons/certificate (1).png" alt="">
-        Under Graduate
-      </div>
-      <div class="box postgraduate">
-        <img src="./Images/Icons/certificate (3).png" alt="">
-        Professional Programs
-      </div>
+      <div class="box">Professional Programs</div>
+      <div class="box">Other Courses</div>
+      <!-- Add more boxes for different course categories -->
     </div>
+  
     <table class="courses-table">
       <thead>
-        <!--table heading dynamically appear here due to the js code-->
+        <tr> <!-- Add the missing <th> element here -->
+          <th>Course Name</th>
+          <th>MNQF Level</th>
+          <th>Course Duration</th>
+          <th>Medium of Instruction</th>
+          <th>Course Fee</th>
+          <th>Kulliyyah/Center</th>
+        </tr>
       </thead>
       <tbody>
-        <!-- Course details will be dynamically populated here due to the js code-->
+        <!-- Course details will be dynamically populated here due to the js code -->
       </tbody>
     </table>
   </section>
@@ -341,7 +336,8 @@
     
     
     
-  <script src="cce_script.js"></script>
+  <script src="cce_data.js"></script>
+  <script src="cce_strctr.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 </html>
