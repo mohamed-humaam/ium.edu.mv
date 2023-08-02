@@ -26,8 +26,8 @@ function createStaffCards(staffData, containerId) {
   }
   
   // Call the function to populate the staff cards
-  createStaffCards(CCE_Admin, "adminStaff");
-  createStaffCards(CCE_Academic, "academicStaff");
+  createStaffCards(CCE_Admin, "cceAdmin");
+  createStaffCards(CCE_Academic, "cceAcademic");
   
   
 

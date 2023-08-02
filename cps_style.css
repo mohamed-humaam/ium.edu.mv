@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #9DC6D8;
+    background-color: #00954d;
     padding-left: 340px;
     padding-right: 340px;
     height: 5vh
@@ -377,9 +377,34 @@
 }
 
 
+/*Overview */
+#intro {
+    background-color: #f8f8f8;
+    height: 25vh;
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro h2 {
+    color: #000000;
+    font-size: 2.7rem;
+    font-weight: 300;
+}
+
+#intro p {
+    font-size: 1.15rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
 /* Aim */
 .overview {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     position: relative;
     height: 55vh;
     padding-top: 50px;
@@ -464,6 +489,7 @@
 
 /* Team */
 .team {
+    background-color: #f8f8f8;
     width: 100%;
     padding: 20px;
 }
@@ -489,9 +515,12 @@
 }
 
 .team .staff-card {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 220px;
-    margin-right: 20px;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
@@ -524,100 +553,6 @@
 
 
 
-/* Courses */
-#courses {
-    background-color: #f8f8f8;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#courses .tag-text h2{
-    text-decoration: none;
-    color: #000000;
-    font-size: 2.2rem;
-    font-weight: lighter;
-    margin-bottom: 10px;
-}
-
-#courses .boxes {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 40px;
-    margin-bottom: 50px;
-}
-  
-#courses .box {
-    width: 300px;
-    height: 200px;
-    background: linear-gradient(90deg, rgba(121, 186, 211,1) 0%, rgba(157, 198, 216,0.7) 100%);
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.6em;
-    font-family: bolder;
-    color: #000000;
-}
-
-#courses .box {
-    display: flex;
-    flex-direction: column;
-}
-
-#courses .box img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
-}
-  
-#courses table {
-    width: 100%;
-    border-collapse: collapse;
-}
-  
-#courses th, td {
-    padding: 8px;
-    border-bottom: 1px solid #ccc;
-    transition: 0.3s ease;
-}
-
-#courses td {
-    font-weight: normal;
-}
-  
-#courses th {
-    background-color: #f2f2f2;
-    text-align: left;
-    font-weight: bold;
-}
-
-/* Apply the color to the course names in the table */
-#courses td:first-child {
-    color: #9DC6D8;
-}
-  
-#courses tbody {
-    display: none;
-}
-
-#courses thead {
-    display: none; /* Hide the table headings by default */
-  }
-
-#courses.show-table thead {
-    display: table-header-group; /* Display table headings when the table is visible */
-}
-
-#courses tbody tr:hover td {
-    color: #9DC6D8;
-    text-shadow: 1px 1px #f8f8f8;
-    cursor: pointer;
-}
 
 
 /* Footer */
@@ -625,7 +560,7 @@
     width: 100%;
     font-family: "Open Sans",sans-serif;
     height: 30vh;
-    background-color: #9DC6D8;
+    background-color: #00954d;
     overflow: hidden;
 }
 

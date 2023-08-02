@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #9DC6D8;
+    background-color: #00954d;
     padding-left: 340px;
     padding-right: 340px;
     height: 5vh
@@ -264,7 +264,7 @@
 
 #dean .dean-profile .dean-photo img {
     width: 100%;
-    height: 600px;
+    height: 550px;
 }
 
 #dean .dean-profile .dean-contact {
@@ -300,7 +300,7 @@
 }
 
 #dean .dean-profile .contact {
-    background: linear-gradient(90deg, rgba(121, 186, 211,1) 0%, rgba(157, 198, 216,0.9) 100%);
+    background: linear-gradient(45deg, rgba(255, 124, 4,1) 0%, rgba(255, 124, 124,0.9) 100%);
     width: 100%;
     height: 60%;
     display: flex;
@@ -360,7 +360,7 @@
     width: 1280px;
     height: 100%;
     margin-left: 150px;
-    margin-top: 50px;
+    margin-top: 140px;
 }
 
 #dean .dean-message h2 {
@@ -377,9 +377,34 @@
 }
 
 
+/*Overview */
+#intro {
+    background-color: #f8f8f8;
+    height: 53vh;
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro h2 {
+    color: #000000;
+    font-size: 2.7rem;
+    font-weight: 300;
+    margin-left: 45%;
+}
+
+#intro p {
+    font-size: 1.15rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
 /* Aim */
 .overview {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     position: relative;
     height: 55vh;
     padding-top: 50px;
@@ -464,6 +489,7 @@
 
 /* Team */
 .team {
+    background-color: #f8f8f8;
     width: 100%;
     padding: 20px;
 }
@@ -489,9 +515,12 @@
 }
 
 .team .staff-card {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
     width: 220px;
-    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
@@ -515,18 +544,18 @@
 
 /* Add hover effects */
 .team .staff-card:hover {
-    box-shadow: 0 4px 16px rgba(157, 198, 216, 0.4); /* Apply the glow effect */
+    box-shadow: 0 4px 16px rgba(255,124,4, 0.4); /* Apply the glow effect */
 }
 
 .team .staff-card:hover .staff-name {
-    color: #9dc6d8; /* Change font color on hover */
+    color: #FF7C7C; /* Change font color on hover */
 }
 
 
 
 /* Courses */
 #courses {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -538,21 +567,22 @@
     text-decoration: none;
     color: #000000;
     font-size: 2.2rem;
-    font-weight: lighter;
+    font-weight: 300;
     margin-bottom: 10px;
 }
 
 #courses .boxes {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 50px;
+    width: 100%;
 }
   
 #courses .box {
-    width: 300px;
-    height: 200px;
-    background: linear-gradient(90deg, rgba(121, 186, 211,1) 0%, rgba(157, 198, 216,0.7) 100%);
+    width: 90%;
+    height: 130px;
+    background: linear-gradient(45deg, rgba(255, 124, 4,1) 0%, rgba(255, 124, 124,0.9) 100%);
     border: 1px solid #ccc;
     border-radius: 5px;
     display: flex;
@@ -560,7 +590,6 @@
     justify-content: center;
     cursor: pointer;
     font-size: 1.6em;
-    font-family: bolder;
     color: #000000;
 }
 
@@ -588,6 +617,7 @@
 
 #courses td {
     font-weight: normal;
+    font-size: 1.1em;
 }
   
 #courses th {
@@ -598,7 +628,7 @@
 
 /* Apply the color to the course names in the table */
 #courses td:first-child {
-    color: #9DC6D8;
+    color: #ff7c04;
 }
   
 #courses tbody {
@@ -614,7 +644,7 @@
 }
 
 #courses tbody tr:hover td {
-    color: #9DC6D8;
+    color: #ff7c04;
     text-shadow: 1px 1px #f8f8f8;
     cursor: pointer;
 }
@@ -625,7 +655,7 @@
     width: 100%;
     font-family: "Open Sans",sans-serif;
     height: 30vh;
-    background-color: #9DC6D8;
+    background-color: #00954d;
     overflow: hidden;
 }
 
