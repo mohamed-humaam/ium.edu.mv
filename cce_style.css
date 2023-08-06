@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #00954d;
+    background-color: #9DC6D8;
     padding-left: 340px;
     padding-right: 340px;
     height: 5vh
@@ -300,7 +300,11 @@
 }
 
 #dean .dean-profile .contact {
+<<<<<<< HEAD
     background: linear-gradient(45deg, rgba(255, 124, 4,1) 0%, rgba(255, 124, 124,0.9) 100%);
+=======
+    background: linear-gradient(90deg, rgba(255, 124, 4,1) 0%, rgba(255, 124, 124,0.9) 100%);
+>>>>>>> df31237313b44d67784fa74ba7ef0fcfcc7c5606
     width: 100%;
     height: 60%;
     display: flex;
@@ -572,6 +576,9 @@
 }
 
 #courses .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
