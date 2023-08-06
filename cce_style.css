@@ -589,7 +589,15 @@
 #courses .box {
     width: 90%;
     height: 130px;
+<<<<<<< HEAD
     background: linear-gradient(45deg, rgba(255, 124, 4,1) 0%, rgba(255, 124, 124,0.9) 100%);
+=======
+<<<<<<< HEAD
+    background: linear-gradient(45deg, rgba(255, 124, 4,1) 0%, rgba(255, 124, 124,0.9) 100%);
+=======
+    background-color: #ff7c04;
+>>>>>>> df31237313b44d67784fa74ba7ef0fcfcc7c5606
+>>>>>>> 2bf103c08961888e44c807284fae0e9a674ee952
     border: 1px solid #ccc;
     border-radius: 5px;
     display: flex;
