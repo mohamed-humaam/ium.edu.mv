@@ -381,7 +381,7 @@
 .overview {
     background-color: #f8f8f8;
     position: relative;
-    height: 55vh;
+    height: 60vh;
     padding-top: 50px;
     padding-bottom: 50px;
     background-size: cover;
@@ -403,7 +403,7 @@
 .overview .content .mission,
 .overview .content .objectives {
     background-color: #ffffff;
-    width: 400px;
+    width: 550px;
     height: 250px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -448,8 +448,16 @@
 }
 
 .overview .content .objectives {
-    width: 500px;
-    height: 400px;
+    height: 550px;
+}
+
+.overview .content .objectives p {
+    text-align: left;
+}
+
+.overview .content .objectives p.bold {
+    text-align: left;
+    font-size: 1.2em;
 }
 
 .overview .content .objectives ol {
@@ -462,10 +470,47 @@
 }
 
 
+/* Career */
+.career {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.career-title {
+    text-align: center;
+    color: #000000;
+    font-size: 2.2rem;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.career-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.career-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.career-list li i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #007bff;
+}
+
+
 /* Team */
 .team {
     width: 100%;
     padding: 20px;
+    background-color: #f8f8f8;
 }
 
 .team .row {
