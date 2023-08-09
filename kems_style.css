@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #9DC6D8;
+    background-color: #00954d;
     padding-left: 340px;
     padding-right: 340px;
     height: 5vh
@@ -625,7 +625,7 @@
     width: 100%;
     font-family: "Open Sans",sans-serif;
     height: 30vh;
-    background-color: #9DC6D8;
+    background-color: #00954d;
     overflow: hidden;
 }
 
