@@ -1,59 +1,32 @@
 // Sample staff data
-const administrativeStaff = [
+const KIRK_Admin = [
   {
+  
     name: "Safwa Nashid",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin.png",
+
   },
   {
+  
     name: "Fathimath Nadha",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin1.png",
+
   },
   // Add more administrative staff here as needed
 ];
 
-const academicStaff = [
+const KIRK_Academic = [
   {
+  
     name: "Aishath Sinaau",
     occupation: "Lecturer",
     photo: "./Images/Faculties/kems/lecturer.png",
-  },
 
+  },
   // Add more academic staff here as needed
 ];
-
-// Function to create staff cards
-function createStaffCards(staffData, containerId) {
-  const staffContainer = document.getElementById(containerId);
-
-  staffData.forEach((staff) => {
-    const card = document.createElement("div");
-    card.classList.add("staff-card");
-
-    const image = document.createElement("img");
-    image.src = staff.photo;
-    image.alt = staff.name;
-    card.appendChild(image);
-
-    const name = document.createElement("div");
-    name.classList.add("staff-name");
-    name.textContent = staff.name;
-    card.appendChild(name);
-
-    const occupation = document.createElement("div");
-    occupation.classList.add("staff-occupation");
-    occupation.textContent = staff.occupation;
-    card.appendChild(occupation);
-
-    staffContainer.appendChild(card);
-  });
-}
-
-// Call the function to populate the staff cards
-createStaffCards(administrativeStaff, "adminStaff");
-createStaffCards(academicStaff, "academicStaff");
-
 
 
 
@@ -64,25 +37,116 @@ createStaffCards(academicStaff, "academicStaff");
 
 
 
-
-
-const boxes = document.querySelectorAll('.box');
-const tableBody = document.querySelector('tbody');
-
 // Sample course data (replace with your actual data)
-const courseData = [
-  { name: 'Executive Master In Islamic Finance (Emif by INCEIF)', mnqfLevel: 'Level 9', duration: '1.5 Years', medium: 'English', fee: '93،522 ރ', center: 'Kulliyyah of Economics & Management Studies', label: 'Post Graduate' },
-  { name: 'Bachelors in Local Governance and Administration', mnqfLevel: 'Level 7', duration: '3 Year', medium: 'English', fee: 'FREE', center: 'Kulliyyah of Economics & Management Studies', label: 'Under Graduate' },
-  { name: 'Bachelor of Islamic Banking and Finance', mnqfLevel: 'Level 7', duration: '3 Year', medium: 'English', fee: 'FREE', center: 'Kulliyyah of Economics & Management Studies', label: 'Under Graduate' },
-  { name: 'Bachelor of Human Resource Management', mnqfLevel: 'Level 7', duration: '3 Year', medium: 'English', fee: 'FREE', center: 'Kulliyyah of Economics & Management Studies', label: 'Under Graduate' },
-  { name: 'Bachelor of Accounting and Finance', mnqfLevel: 'Level 7', duration: '3 Year', medium: 'English', fee: 'FREE', center: 'Kulliyyah of Economics & Management Studies', label: 'Under Graduate' },
-  { name: 'Associate Degree in Local Governance and Administration', mnqfLevel: 'Level 6', duration: '1 Year', medium: 'English', fee: '20,220 ރ', center: 'Kulliyyah of Economics & Management Studies', label: 'Under Graduate' },
-  { name: 'Associate Degree in Human Resources Management', mnqfLevel: 'Level 6', duration: '2 Year', medium: 'English', fee: '24,355 ރ', center: 'Kulliyyah of Economics & Management Studies', label: 'Under Graduate' },
-  { name: 'Advance Diploma in Public Financial Management', mnqfLevel: 'Level 6', duration: '2 Year', medium: 'English', fee: '25,575 ރ', center: 'Kulliyyah of Economics & Management Studies', label: 'Under Graduate' },
-  { name: 'Diploma in Local Governance and Administration', mnqfLevel: 'Level 5', duration: '1 Year', medium: 'English', fee: '10,460 ރ', center: 'Kulliyyah of Economics & Management Studies', label: 'Under Graduate' },
-  { name: 'Diploma in Human Resources Management', mnqfLevel: 'Level 5', duration: '1 Year', medium: 'English', fee: '13,535 ރ', center: 'Kulliyyah of Economics & Management Studies', label: 'Under Graduate' },
-  { name: 'Diploma in Accounting and Finance', mnqfLevel: 'Level 5', duration: '1 Year', medium: 'English', fee: '13,340 ރ', center: 'Kulliyyah of Economics & Management Studies', label: 'Under Graduate' },
-  { name: 'Diploma in Islamic Banking and Finance', mnqfLevel: 'Level 5', duration: '1 Year', medium: 'English', fee: '15,940 ރ', center: 'Kulliyyah of Economics & Management Studies', label: 'Under Graduate' },
+const KIRK_Courses = [
+  {
+    name: 'Executive Master In Islamic Finance (Emif by INCEIF)',
+    mnqfLevel: 'Level 9',
+    duration: '1.5 Years',
+    medium: 'English',
+    fee: '93،522 ރ',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Post Graduate'
+  },
+  {
+    name: 'Bachelors in Local Governance and Administration',
+    mnqfLevel: 'Level 7',
+    duration: '3 Year',
+    medium: 'English',
+    fee: 'FREE',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Under Graduate'
+  },
+  {
+    name: 'Bachelor of Islamic Banking and Finance',
+    mnqfLevel: 'Level 7',
+    duration: '3 Year',
+    medium: 'English',
+    fee: 'FREE',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Under Graduate'
+  },
+  {
+    name: 'Bachelor of Human Resource Management',
+    mnqfLevel: 'Level 7',
+    duration: '3 Year',
+    medium: 'English',
+    fee: 'FREE',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Under Graduate'
+  },
+  {
+    name: 'Bachelor of Accounting and Finance',
+    mnqfLevel: 'Level 7',
+    duration: '3 Year',
+    medium: 'English',
+    fee: 'FREE',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Under Graduate'
+  },
+  {
+    name: 'Associate Degree in Local Governance and Administration',
+    mnqfLevel: 'Level 6',
+    duration: '1 Year',
+    medium: 'English',
+    fee: '20,220 ރ',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Under Graduate'
+  },
+  {
+    name: 'Associate Degree in Human Resources Management',
+    mnqfLevel: 'Level 6',
+    duration: '2 Year',
+    medium: 'English',
+    fee: '24,355 ރ',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Under Graduate'
+  },
+  {
+    name: 'Advance Diploma in Public Financial Management',
+    mnqfLevel: 'Level 6',
+    duration: '2 Year',
+    medium: 'English',
+    fee: '25,575 ރ',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Under Graduate'
+  },
+  {
+    name: 'Diploma in Local Governance and Administration',
+    mnqfLevel: 'Level 5',
+    duration: '1 Year',
+    medium: 'English',
+    fee: '10,460 ރ',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Under Graduate'
+  },
+  {
+    name: 'Diploma in Human Resources Management',
+    mnqfLevel: 'Level 5',
+    duration: '1 Year',
+    medium: 'English',
+    fee: '13,535 ރ',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Under Graduate'
+  },
+  {
+    name: 'Diploma in Accounting and Finance',
+    mnqfLevel: 'Level 5',
+    duration: '1 Year',
+    medium: 'English',
+    fee: '13,340 ރ',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Under Graduate'
+  },
+  {
+    name: 'Diploma in Islamic Banking and Finance',
+    mnqfLevel: 'Level 5',
+    duration: '1 Year',
+    medium: 'English',
+    fee: '15,940 ރ',
+    center: 'Kulliyyah of Economics & Management Studies',
+    label: 'Under Graduate'
+  },
   // Add more courses as needed
 ];
 
