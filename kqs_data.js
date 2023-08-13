@@ -35,7 +35,9 @@ const KQS_Courses = [
     medium: 'Dhivehi',
     fee: '300 ރ',
     center: 'Kulliyyah of Quran and Sunnah',
-    label: 'Certificate Courses'
+    label: 'Certificate Courses',
+    available_campuses: 'null',
+    entry_requirements: 'Completion of Basic Education, Ability to communicate in the language of instruction.\nOR\nAble to recite the Holy Quran by the Book.',
   },
   {
     name: 'Certificate 2 in Quran Memorization',
