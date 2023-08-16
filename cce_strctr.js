@@ -155,3 +155,23 @@ document.querySelector('.courses-table tbody').innerHTML = generateTableRows(CCE
     window.location.href = 'mailto:info@ium.edu.mv';
   });
   
+
+
+
+
+
+
+
+
+
+
+//...........................................................................
+
+
+
+
+
+
+
+
+
