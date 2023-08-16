@@ -220,6 +220,10 @@
     cursor: pointer;
 }
 
+.faculty-card.expanded {
+    background-color: #f0f0f0;
+}
+
 .staff-container {
     display: none;
     padding: 10px;
@@ -235,6 +239,11 @@
 .faculty-card.cce { background-color: #f5b7b1; }
 .faculty-card.cps { background-color: #a9dfbf; }
 .faculty-card.kal { background-color: #a3e4d7; }
+.faculty-card.ked { background-color: #f5b7b1; }
+.faculty-card.kems { background-color: #a9dfbf; }
+.faculty-card.kirk { background-color: #a3e4d7; }
+.faculty-card.kqs { background-color: #f5b7b1; }
+.faculty-card.ksl { background-color: #a9dfbf; }
 /* Define colors for other faculties here */
 
 
