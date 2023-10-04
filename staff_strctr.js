@@ -1,4 +1,47 @@
-// Your existing code...
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("toggleButton");
+    const staffInfo = document.getElementById("staffInfo");
+    
+    let isStaffVisible = false;
+    
+    toggleButton.addEventListener("click", function () {
+        if (isStaffVisible) {
+            // If staff information is visible, hide it and clear the content
+            staffInfo.innerHTML = "";
+            //staffInfo.style.display = "none";
+        } else {
+            // If staff information is hidden, show it
+            showKEDStaff();
+            //staffInfo.style.display = "block";
+        }
+        
+        // Toggle the flag
+        isStaffVisible = !isStaffVisible;
+    });
+    
+    function showKEDStaff() {
+        // Clear the existing content
+        staffInfo.innerHTML = "";
+        
+        // Create a list to display staff information
+        const list = document.createElement("ul");
+        
+        // Iterate through KED_Admin and add staff information to the list
+        KED_Admin.forEach(function (staff) {
+            const listItem = document.createElement("li");
+            listItem.innerHTML = `
+                <h2>${staff.name}</h2>
+                <p>Occupation: ${staff.occupation}</p>
+                <img src="${staff.photo}" alt="${staff.name}" />
+            `;
+            list.appendChild(listItem);
+        });
+        
+        // Append the list to the staffInfo div
+        staffInfo.appendChild(list);
+    }
+});
+
 
 // Sample staff data for different faculties
 // Import data from your *_data.js files

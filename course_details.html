@@ -153,13 +153,6 @@
     </section>
 
 
-    <section id="banner">
-      <div class="title">
-        <h2>Kulliyah of Economics & Management Studies</h2>
-      </div>
-    </section>
-
-
 
     <section id="course-details">
         <!-- Course details will be dynamically populated here -->
@@ -234,7 +227,15 @@
     
     
     
-    <script src="kems_script.js"></script>
+    <script src="cce_data.js"></script>
+    <script src="cps_data.js"></script>
+    <script src="kal_data.js"></script>
+    <script src="ked_data.js"></script>
+    <script src="kems_data.js"></script>
+    <script src="kirk_data.js"></script>
+    <script src="kqs_data.js"></script>
+    <script src="ksl_data.js"></script>
+    
 
 
     <!-- Add your JavaScript file link here -->
@@ -244,6 +245,9 @@
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get(name);
         }
+
+        const courseData=[...KQS_Courses, ...CCE_Courses, ...KAL_Courses, ...KED_Courses, ...KSL_Courses, ...KEMS_Courses, ...KIRK_Courses]
+
 
         // Function to find the course details by name
         function findCourseByName(courseName) {
