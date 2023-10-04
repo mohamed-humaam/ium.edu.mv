@@ -31,7 +31,33 @@ const KED_Courses = [
     medium: 'Dhivehi',
     fee: '12,335 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Diploma'
+    label: 'Diploma',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Diploma in Teaching Islamic Studies',
@@ -40,7 +66,33 @@ const KED_Courses = [
     medium: 'Dhivehi',
     fee: '12,95 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Diploma'
+    label: 'Diploma',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Diploma in Teaching Arabic Language',
@@ -49,7 +101,33 @@ const KED_Courses = [
     medium: 'Arabic',
     fee: '16,080 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Diploma'
+    label: 'Diploma',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Diploma in Early Childhood Education',
@@ -58,7 +136,33 @@ const KED_Courses = [
     medium: 'English',
     fee: '11,490 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Diploma'
+    label: 'Diploma',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Associate Degree in Education (Primary)',
@@ -67,7 +171,33 @@ const KED_Courses = [
     medium: 'English',
     fee: '18,465 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Associate Degree in Teaching Arabic Language',
@@ -76,7 +206,33 @@ const KED_Courses = [
     medium: 'Arabic',
     fee: '25,800 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Associate Degree in Teaching Islamic Studies',
@@ -85,7 +241,33 @@ const KED_Courses = [
     medium: 'Dhivehi',
     fee: '22,705 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Associate Degree in Teaching Quran',
@@ -94,7 +276,33 @@ const KED_Courses = [
     medium: 'Dhivehi',
     fee: '20,845 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Bachelor of Early Childhood Education',
@@ -103,7 +311,33 @@ const KED_Courses = [
     medium: 'English',
     fee: '25,274 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Bachelor of Education (Primary)',
@@ -112,7 +346,33 @@ const KED_Courses = [
     medium: 'English',
     fee: '26,820 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Bachelor of Teaching Arabic Language',
@@ -121,7 +381,33 @@ const KED_Courses = [
     medium: 'Arabic',
     fee: '31,980 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Bachelor of Teaching Islamic Studies',
@@ -130,7 +416,33 @@ const KED_Courses = [
     medium: 'Dhivehi',
     fee: '31,980 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Bachelor of Teaching Quran',
@@ -139,7 +451,33 @@ const KED_Courses = [
     medium: 'Dhivehi',
     fee: '26,050 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Postgraduate Diploma in Teaching',
@@ -148,7 +486,33 @@ const KED_Courses = [
     medium: 'Dhivehi',
     fee: '17,275 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Postgraduate Certificate in TESOL (Teaching English to Speakers of Other Languages)',
@@ -157,7 +521,33 @@ const KED_Courses = [
     medium: 'Dhivehi',
     fee: '16,720 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Masters'
+    label: 'Masters',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Master of Education in Leadership and Administration',
@@ -166,7 +556,33 @@ const KED_Courses = [
     medium: 'English',
     fee: '32,445 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Masters'
+    label: 'Masters',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Master of Teaching and Learning',
@@ -175,7 +591,33 @@ const KED_Courses = [
     medium: 'Dhivehi OR English',
     fee: '38,280 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Masters'
+    label: 'Masters',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Master of Arts in TESOL (Teaching English to Speakers of Other Languages)',
@@ -184,7 +626,33 @@ const KED_Courses = [
     medium: 'English',
     fee: '38,602 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Masters'
+    label: 'Masters',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Master of Teaching and Learning - Islamic Education',
@@ -193,7 +661,33 @@ const KED_Courses = [
     medium: 'Dhivehi',
     fee: '31,035 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Masters'
+    label: 'Masters',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Master of Teaching and Learning - Quran',
@@ -202,7 +696,33 @@ const KED_Courses = [
     medium: 'Dhivehi',
     fee: '31,035 ރ',
     center: 'Kulliyyah of Education',
-    label: 'Masters'
+    label: 'Masters',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   // Add more courses as needed
 ];

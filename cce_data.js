@@ -39,7 +39,9 @@ const CCE_Courses = [
     fee: '900 ރ',
     center: 'Center for Continuing Education',
     label: 'Certificate Programs',
-/*  entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -62,7 +64,7 @@ const CCE_Courses = [
           { code: 'FIN0604', name: 'Public Procurement'},
                  ],
       },
-                ],     */
+                ],     
   },
   {
     name: 'Certificate 1 in Basic English',
@@ -71,7 +73,33 @@ const CCE_Courses = [
     medium: 'English',
     fee: '900 ރ',
     center: 'Center for Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Certificate 1 in English for General Purpose',
@@ -80,7 +108,33 @@ const CCE_Courses = [
     medium: 'English',
     fee: '900 ރ',
     center: 'Center for Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Certificate 1 in Qira’ath al-Quran',
@@ -89,7 +143,33 @@ const CCE_Courses = [
     medium: 'Dhivehi',
     fee: '300 ރ',
     center: 'Centre For Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Certificate 2 in English for General Purpose',
@@ -98,7 +178,33 @@ const CCE_Courses = [
     medium: 'English',
     fee: '2,000 ރ',
     center: 'Center for Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Certificate 2 in Qira’ath al-Quran',
@@ -107,7 +213,33 @@ const CCE_Courses = [
     medium: 'Dhievehi',
     fee: '1,660 ރ',
     center: 'Centre For Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Certificate 3 in English for General Purpose',
@@ -116,7 +248,33 @@ const CCE_Courses = [
     medium: 'English',
     fee: '2,300 ރ',
     center: 'Center for Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Certificate 3 for Imaams',
@@ -125,7 +283,33 @@ const CCE_Courses = [
     medium: 'Dhivehi',
     fee: '1,980 ރ',
     center: 'Centre For Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Certificate 3 in Qira’ath al-Quran',
@@ -134,7 +318,33 @@ const CCE_Courses = [
     medium: 'Dhivehi',
     fee: '2,020 ރ',
     center: 'Centre For Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Advanced Certificate in English for Travel and Tourism',
@@ -143,7 +353,33 @@ const CCE_Courses = [
     medium: 'English',
     fee: '10,240 ރ',
     center: 'Centre For Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Advanced Certificate in Business Management',
@@ -152,7 +388,33 @@ const CCE_Courses = [
     medium: 'English',
     fee: '10,620 ރ',
     center: 'Centre For Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Advanced Certificate for Imaamship',
@@ -161,7 +423,33 @@ const CCE_Courses = [
     medium: 'Dhivehi',
     fee: '9,620 ރ',
     center: 'Centre For Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Advanced Certificate in Quranic Studies',
@@ -170,7 +458,33 @@ const CCE_Courses = [
     medium: 'Dhivehi',
     fee: '9,690 ރ',
     center: 'Centre For Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Advanced Certificate in Teaching',
@@ -179,7 +493,33 @@ const CCE_Courses = [
     medium: 'English',
     fee: '9,495 ރ',
     center: 'Centre For Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Advanced Certificate in Shari’ah & Law',
@@ -188,7 +528,33 @@ const CCE_Courses = [
     medium: 'Dhivehi',
     fee: '10,665 ރ',
     center: 'Centre For Continuing Education',
-    label: 'Certificate Programs'
+    label: 'Certificate Programs',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   // Add more courses as needed
 ];

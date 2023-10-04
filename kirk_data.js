@@ -39,7 +39,33 @@ const KIRK_Courses = [
     medium: 'Dhivehi',
     fee: '9,365 ރ',
     center: 'Kulliyyah of Islamic Revealed Knowledge and Human Sciences',
-    label: 'Diploma'
+    label: 'Diploma',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Associate Degree of Imaamship',
@@ -48,7 +74,33 @@ const KIRK_Courses = [
     medium: 'Dhivehi',
     fee: '16,475',
     center: 'Kulliyyah of Islamic Revealed Knowledge and Human Sciences',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Bachelor of Imaamship',
@@ -57,7 +109,33 @@ const KIRK_Courses = [
     medium: 'Dhivehi',
     fee: 'FREE',
     center: 'Kulliyyah of Islamic Revealed Knowledge and Human Sciences',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Bachelor of Islamic Studies',
@@ -66,7 +144,33 @@ const KIRK_Courses = [
     medium: 'Dhivehi',
     fee: 'FREE',
     center: 'Kulliyyah of Islamic Revealed Knowledge and Human Sciences',
-    label: 'Degree'
+    label: 'Degree',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Master of Arts in Journalism and Media Communications',
@@ -75,7 +179,33 @@ const KIRK_Courses = [
     medium: 'English',
     fee: '30,950 ރ',
     center: 'Kulliyyah of Islamic Revealed Knowledge and Human Sciences',
-    label: 'Masters'
+    label: 'Masters',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Master of Aqidah and Islamic Thoughts',
@@ -84,7 +214,33 @@ const KIRK_Courses = [
     medium: 'Dhivehi and English (Mixed)',
     fee: '35,370 ރ',
     center: 'Kulliyyah of Islamic Revealed Knowledge and Human Sciences',
-    label: 'Masters'
+    label: 'Masters',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Master of Islamic Revealed knowledge and Leadership',
@@ -93,7 +249,33 @@ const KIRK_Courses = [
     medium: 'Dhivehi and English (Mixed)',
     fee: '35,370 ރ',
     center: 'Kulliyyah of Islamic Revealed Knowledge and Human Sciences',
-    label: 'Under Graduate'
+    label: 'Under Graduate',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   {
     name: 'Doctor of Philosophy in Fiqh and Usul-al-Fiqh',
@@ -102,7 +284,33 @@ const KIRK_Courses = [
     medium: 'Arabic',
     fee: '97,205 ރ',
     center: 'Kulliyyah of Islamic Revealed Knowledge and Human Sciences',
-    label: 'PhD'
+    label: 'PhD',
+    session: 'Morning & Evening',
+    campus: 'Male Campus',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    semesters: [
+      {
+        semester: 'Semester 1',
+        modules: [
+          { code: 'QUR0002', name: 'Quran Level 2'},
+          { code: 'COR0703', name: 'Islamic View of Knowledge and Civilization'},
+          { code: 'RES0707', name: 'Business Research Methods'},
+          { code: 'STA0502', name: 'Business Statistics'},
+          { code: 'HSS0704', name: 'Historical Practices of Islamic Administration'},
+          { code: 'MGT0602', name: 'Leadership and Strategic Planning'},
+                 ],
+      },
+      {
+        semester: 'Semester 2',
+        modules: [
+          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'COR0704', name: 'Maldivian History and Civilization'},
+          { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
+          { code: 'HSS0709', name: 'Rural and Urban Development'},
+          { code: 'FIN0604', name: 'Public Procurement'},
+                 ],
+      },
+                ]
   },
   // Add more courses as needed
 ];

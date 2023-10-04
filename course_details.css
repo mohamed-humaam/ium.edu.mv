@@ -215,6 +215,49 @@
 
 
 
+/* Style for the course details container */
+#course-details {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the course name */
+  h2 {
+    color: #333;
+  }
+  
+  /* Style for the course details items */
+  p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  /* Style for the strong text within paragraphs */
+  p strong {
+    font-weight: bold;
+  }
+  
+  /* Style for the error message */
+  .error-message {
+    color: #ff0000;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Hover effect for interactive elements */
+  a:hover {
+    text-decoration: underline;
+    color: #0077cc;
+    cursor: pointer;
+  }
+  
+
+
 
 
 
