@@ -248,7 +248,7 @@
 
     <!-- Add your JavaScript file link here -->
     <script>
-                // Function to get URL parameter value by name
+    // Function to get URL parameter value by name
     function getUrlParam(name) {
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get(name);
@@ -284,9 +284,9 @@
                 <p><strong>Medium of Instruction:</strong> ${selectedCourse.medium}</p>
                 <p><strong>Course Fee:</strong> ${selectedCourse.fee}</p>
                 <p><strong>Kulliyyah/Center:</strong> ${selectedCourse.center}</p>
-                <p><strong>Entry Requirements:</strong> ${selectedCourse.entry_requirements}</p>
                 <p><strong>Sessions:</strong> ${selectedCourse.session}</p>
                 <p><strong>Available Campus:</strong> ${selectedCourse}</p>
+                <p><strong>Entry Requirements:</strong> ${selectedCourse.entry_requirements}</p>
                 <h3>Semesters</h3>
                 <ul>
                     ${selectedCourse.semesters.map((semester) => `
