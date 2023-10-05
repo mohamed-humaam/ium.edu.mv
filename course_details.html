@@ -153,11 +153,19 @@
     </section>
 
 
+    <section id="course-name">
+      <!-- Course name will be dynamically populated here -->
+    </section>
+
 
     <section id="course-details">
         <!-- Course details will be dynamically populated here -->
     </section>
 
+
+    <section id="course-additional-info">
+      <!-- Course details will be dynamically populated here -->
+    </section>
 
 
     <section id="footer">
@@ -240,63 +248,69 @@
 
     <!-- Add your JavaScript file link here -->
     <script>
-        // Function to get URL parameter value by name
-        function getUrlParam(name) {
+                // Function to get URL parameter value by name
+    function getUrlParam(name) {
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get(name);
-        }
+    }
 
-        const courseData=[...KQS_Courses, ...CCE_Courses, ...KAL_Courses, ...KED_Courses, ...KSL_Courses, ...KEMS_Courses, ...KIRK_Courses]
+    const courseData = [...KQS_Courses, ...CCE_Courses, ...KAL_Courses, ...KED_Courses, ...KSL_Courses, ...KEMS_Courses, ...KIRK_Courses];
 
-
-        // Function to find the course details by name
-        function findCourseByName(courseName) {
+    // Function to find the course details by name
+    function findCourseByName(courseName) {
         return courseData.find((course) => course.name === courseName);
-        }
+    }
 
-        // Function to populate course details on the page
-        function populateCourseDetails() {
+    // Function to populate course details on the page
+    function populateCourseDetails() {
         const courseDetailsSection = document.getElementById('course-details');
+        const courseNameSection = document.getElementById('course-name'); // Add this line
         const courseName = getUrlParam('courseName');
         const selectedCourse = findCourseByName(courseName);
+
+        // Populate course name
+        if (selectedCourse) {
+            courseNameSection.innerHTML = `<h2>${selectedCourse.name}</h2>`;
+        } else {
+            // Course not found, display an error message for the name
+            courseNameSection.innerHTML = '<h2>Course Name not found.</h2>';
+        }
 
         // Create HTML to display course details
         if (selectedCourse) {
             const courseDetailsHTML = `
-            <h2>${selectedCourse.name}</h2>
-            <p><strong>MNQF Level:</strong> ${selectedCourse.mnqfLevel}</p>
-            <p><strong>Duration:</strong> ${selectedCourse.duration}</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-            <p><strong>Medium of Instruction:</strong> ${selectedCourse.medium}</p>
-            <p><strong>Course Fee:</strong> ${selectedCourse.fee}</p>
-            <p><strong>Kulliyyah/Center:</strong> ${selectedCourse.center}</p>
-            <p><strong>Entry Requirements:</strong> ${selectedCourse.entry_requirements}</p>
-            <p><strong>Sessions:</strong> ${selectedCourse.session}</p>
-            <p><strong>Available Campus:</strong> ${selectedCourse}</p>
+                <p><strong>MNQF Level:</strong> ${selectedCourse.mnqfLevel}</p>
+                <p><strong>Duration:</strong> ${selectedCourse.duration}</p>
+                <p><strong>Medium of Instruction:</strong> ${selectedCourse.medium}</p>
+                <p><strong>Course Fee:</strong> ${selectedCourse.fee}</p>
+                <p><strong>Kulliyyah/Center:</strong> ${selectedCourse.center}</p>
+                <p><strong>Entry Requirements:</strong> ${selectedCourse.entry_requirements}</p>
+                <p><strong>Sessions:</strong> ${selectedCourse.session}</p>
+                <p><strong>Available Campus:</strong> ${selectedCourse}</p>
                 <h3>Semesters</h3>
                 <ul>
-                  ${selectedCourse.semesters.map((semester) => `
-                    <li>
-                      <strong>${semester.semester}</strong>
-                      <ul>
-                        ${semester.modules.map((module) => `
-                          <li>${module.code}: ${module.name}</li>
-                        `).join('')}
-                      </ul>
-                    </li>
-                  `).join('')}
+                    ${selectedCourse.semesters.map((semester) => `
+                        <li>
+                            <strong>${semester.semester}</strong>
+                            <ul>
+                                ${semester.modules.map((module) => `
+                                    <li>${module.code}: ${module.name}</li>
+                                `).join('')}
+                            </ul>
+                        </li>
+                    `).join('')}
                 </ul>
             `;
             courseDetailsSection.innerHTML = courseDetailsHTML;
         } else {
-            // Course not found, display an error message
+            // Course not found, display an error message for details
             const errorMessage = '<p>Course details not found.</p>';
             courseDetailsSection.innerHTML = errorMessage;
         }
-      }
+    }
 
-
-        // Call the function to populate course details on page load
-        window.addEventListener('load', populateCourseDetails);
+    // Call the function to populate course details on page load
+    window.addEventListener('load', populateCourseDetails);
     </script>
 
 </body>

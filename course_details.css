@@ -215,46 +215,92 @@
 
 
 
-/* Style for the course details container */
+
+  
+  
+/* Style the course details section */
+#course-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00954d;
+  height: 15vh;
+}
+  
+#course-name h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+  
+/* Style the course details section */
 #course-details {
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the course details title */
+#course-details h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Style course details content */
+#course-details p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+#course-details strong {
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Style the semesters and modules */
+#course-details h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #333333;
+}
+
+#course-details ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #666666;
+}
+
+#course-details li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #666666;
+}
+
+/* Add media queries for responsive design if needed */
+@media (max-width: 600px) {
+  #course-details {
+    padding: 10px;
   }
   
-  /* Style for the course name */
-  h2 {
-    color: #333;
-  }
-  
-  /* Style for the course details items */
-  p {
-    margin: 10px 0;
-    font-size: 16px;
-  }
-  
-  /* Style for the strong text within paragraphs */
-  p strong {
-    font-weight: bold;
-  }
-  
-  /* Style for the error message */
-  .error-message {
-    color: #ff0000;
+  #course-details h2 {
     font-size: 18px;
-    text-align: center;
-    margin-top: 20px;
   }
   
-  /* Hover effect for interactive elements */
-  a:hover {
-    text-decoration: underline;
-    color: #0077cc;
-    cursor: pointer;
+  #course-details p {
+    font-size: 14px;
   }
+}
+
+  
   
 
 
