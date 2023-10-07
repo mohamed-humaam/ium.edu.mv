@@ -47,6 +47,12 @@ years.forEach((year) => {
                     <p>${student.batch}</p>
                 </div>
             `;
+
+            // Prevent the click event on student cards from propagating to the year card
+            studentCard.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+
             studentGrid.appendChild(studentCard);
         });
 
