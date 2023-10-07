@@ -109,6 +109,7 @@
             <li><a href="phd-courses.html">Post Graduate</a></li>
             <li><a href="undergrad-courses.html">Under Graduate</a></li>
             <li><a href="certificate-courses.html">Certificate & Diploma</a></li>
+            <li><a href="how-to-apply.html">How to Apply</a></li>
             <li><a href="scholarship-offers.html">Scholarship Opportunities<i class="fa-solid fa-chevron-right"></i></a>
               <ul class="sidebar-menu">
                 <li><a href="#">Undergraduate</a></li>
@@ -163,10 +164,22 @@
             <div class="filter-for-course">
               <h2>Filter by Level</h2>
                 <label>
-                  <input type="checkbox" class="filter-checkbox" value="Associate Degree" checked/> Associate
+                    <input type="checkbox" class="filter-checkbox" value="Level 6" checked/> Advance Diploma
                 </label>
                 <label>
-                  <input type="checkbox" class="filter-checkbox" value="Degree" checked/> Bachelors
+                    <input type="checkbox" class="filter-checkbox" value="Level 5" checked/> Diploma Certificate
+                </label>
+                <label>
+                    <input type="checkbox" class="filter-checkbox" value="Level 4" checked/> Advanced Certificate
+                </label>
+                <label>
+                    <input type="checkbox" class="filter-checkbox" value="Level 3" checked/> Certificate Level 3
+                </label>
+                <label>
+                    <input type="checkbox" class="filter-checkbox" value="Level 2" checked/> Certificate Level 2
+                </label>
+                <label>
+                    <input type="checkbox" class="filter-checkbox" value="Level 1" checked/> Certificate Level 1
                 </label>
             </div>
             <!-- Filter Radios -->
@@ -296,13 +309,13 @@
 
         // Function to update the course list based on selected filters
         function updateCourseList() {
-          const selectedLabels = Array.from(document.querySelectorAll('.filter-checkbox:checked')).map(checkbox => checkbox.value);
+          const selectedmnqfLevel = Array.from(document.querySelectorAll('.filter-checkbox:checked')).map(checkbox => checkbox.value);
           const selectedCenter = document.querySelector('input[name="center"]:checked').value;
 
-          // Filter courses based on selected labels and center
+          // Filter courses based on selected Levels and center
           const filteredCourses = allCourses.filter(course => {
             return (
-              (selectedLabels.includes(course.label)) &&
+              (selectedmnqfLevel.includes(course.mnqfLevel)) &&
               (selectedCenter === 'All' || course.center === selectedCenter)
             );
           });

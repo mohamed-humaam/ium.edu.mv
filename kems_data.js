@@ -288,7 +288,7 @@ const KEMS_Courses = [
     medium: 'English',
     fee: '25,575 ރ',
     center: 'Kulliyyah of Economics & Management Studies',
-    label: 'Degree',
+    label: 'Advance Diploma',
     session: 'Morning & Evening',
     campus: 'Male Campus',
     entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
