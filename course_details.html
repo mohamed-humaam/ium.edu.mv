@@ -158,14 +158,16 @@
     </section>
 
 
-    <section id="course-details">
-        <!-- Course details will be dynamically populated here -->
+    <section id="course-summary">
+        <h3>Course Summary</h3>
+        <div id="summary"></div>
     </section>
 
-
+    
     <section id="course-additional-info">
-      <!-- Course details will be dynamically populated here -->
+        <!-- Expandable cards will be dynamically populated here -->
     </section>
+
 
 
     <section id="footer">
@@ -261,10 +263,36 @@
         return courseData.find((course) => course.name === courseName);
     }
 
+    // Function to create an expandable card
+    function createExpandableCard(title, content) {
+        const card = document.createElement('div');
+        card.classList.add('info-card', 'expandable-card');
+
+        const cardHeader = document.createElement('div');
+        cardHeader.classList.add('card-header');
+        cardHeader.innerHTML = `<h3>${title}</h3>`;
+        card.appendChild(cardHeader);
+
+        const cardContent = document.createElement('div');
+        cardContent.classList.add('card-content');
+        cardContent.innerHTML = content;
+        card.appendChild(cardContent);
+
+        // Hide card content initially
+        cardContent.style.display = 'none';
+
+        cardHeader.addEventListener('click', () => {
+            cardContent.style.display = cardContent.style.display === 'none' ? 'block' : 'none';
+        });
+
+        return card;
+    }
+
     // Function to populate course details on the page
     function populateCourseDetails() {
-        const courseDetailsSection = document.getElementById('course-details');
-        const courseNameSection = document.getElementById('course-name'); // Add this line
+        const courseNameSection = document.getElementById('course-name');
+        const courseSummarySection = document.getElementById('summary');
+        const courseAdditionalInfoSection = document.getElementById('course-additional-info');
         const courseName = getUrlParam('courseName');
         const selectedCourse = findCourseByName(courseName);
 
@@ -276,36 +304,48 @@
             courseNameSection.innerHTML = '<h2>Course Name not found.</h2>';
         }
 
-        // Create HTML to display course details
+        // Populate course summary
         if (selectedCourse) {
-            const courseDetailsHTML = `
-                <p><strong>MNQF Level:</strong> ${selectedCourse.mnqfLevel}</p>
-                <p><strong>Duration:</strong> ${selectedCourse.duration}</p>
-                <p><strong>Medium of Instruction:</strong> ${selectedCourse.medium}</p>
-                <p><strong>Course Fee:</strong> ${selectedCourse.fee}</p>
-                <p><strong>Kulliyyah/Center:</strong> ${selectedCourse.center}</p>
-                <p><strong>Sessions:</strong> ${selectedCourse.session}</p>
-                <p><strong>Available Campus:</strong> ${selectedCourse}</p>
-                <p><strong>Entry Requirements:</strong> ${selectedCourse.entry_requirements}</p>
-                <h3>Semesters</h3>
-                <ul>
-                    ${selectedCourse.semesters.map((semester) => `
-                        <li>
-                            <strong>${semester.semester}</strong>
-                            <ul>
-                                ${semester.modules.map((module) => `
-                                    <li>${module.code}: ${module.name}</li>
-                                `).join('')}
-                            </ul>
-                        </li>
-                    `).join('')}
-                </ul>
-            `;
-            courseDetailsSection.innerHTML = courseDetailsHTML;
+            courseSummarySection.innerHTML = `
+                <p><strong>MNQF Level:</strong> <br> ${selectedCourse.mnqfLevel}</p>
+                <p><strong>Duration:</strong> <br> ${selectedCourse.duration}</p>
+                <p><strong>Medium of Instruction:</strong> <br> ${selectedCourse.medium}</p>
+                <p><strong>Course Fee:</strong> <br> ${selectedCourse.fee}</p>
+                <p><strong>Kulliyyah/Center:</strong> <br> ${selectedCourse.center}</p>
+                <p><strong>Sessions:</strong> <br> ${selectedCourse.session}</p>
+                <p><strong>Available Campus:</strong> <br> ${selectedCourse.campus}</p>`;
         } else {
-            // Course not found, display an error message for details
-            const errorMessage = '<p>Course details not found.</p>';
-            courseDetailsSection.innerHTML = errorMessage;
+            // Course not found, display an error message for summary
+            courseSummarySection.innerHTML = '<h2>Course Summary not found.</h2>';
+        }
+
+        // Create an expandable "Summary" card
+        if (selectedCourse && selectedCourse.summary) {
+            const summaryCard = createExpandableCard('Summary', selectedCourse.summary);
+            courseAdditionalInfoSection.appendChild(summaryCard);
+        }
+
+        // Create an expandable "Entry Requirements" card
+        if (selectedCourse && selectedCourse.entry_requirements) {
+            const entryRequirementsCard = createExpandableCard('Entry Requirements', `<p>${selectedCourse.entry_requirements}</p>`);
+            courseAdditionalInfoSection.appendChild(entryRequirementsCard);
+        }
+
+
+        // Create an expandable "Semesters" card
+        if (selectedCourse && selectedCourse.semesters) {
+            let semestersContent = '<ul>';
+            selectedCourse.semesters.forEach((semester) => {
+                semestersContent += `<li><strong>${semester.semester}:</strong>`;
+                semester.modules.forEach((module) => {
+                    semestersContent += `<br>${module.code}: ${module.name}`;
+                });
+                semestersContent += '</li>';
+            });
+            semestersContent += '</ul>';
+
+            const semestersCard = createExpandableCard('Course Structure', semestersContent);
+            courseAdditionalInfoSection.appendChild(semestersCard);
         }
     }
 

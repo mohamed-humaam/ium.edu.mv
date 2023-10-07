@@ -223,75 +223,171 @@
   
 #course-name h2 {
   font-size: 2.7rem;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   color: #ffffff;
 }
   
-/* Style the course details section */
-#course-details {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+/* CSS for the summary section */
+#course-summary {
+    flex: 1;
+    margin: 60px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #fff;
 }
 
-/* Style the course details title */
-#course-details h2 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #333333;
-}
 
-/* Style course details content */
-#course-details p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  color: #666666;
-}
-
-#course-details strong {
-  font-weight: 600;
-  color: #333333;
-}
-
-/* Style the semesters and modules */
-#course-details h3 {
-  font-size: 20px;
+#course-summary h3{
+  font-size: 2.4rem;
   font-weight: 500;
-  margin-top: 20px;
-  color: #333333;
+  text-align: center;
+  color: #000000;
 }
 
-#course-details ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  margin-top: 10px;
-  color: #666666;
+
+#summary {
+  font-size: 1.2rem;
+  padding: 20px 60px 20px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-#course-details li {
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: #666666;
+#summary p {
+  margin: 8px 0;
+  flex: 1;
+  color: #666;
+  width: calc(33.33% - 10px);
+  max-width: 200px;
+  flex-basis: auto;
 }
 
-/* Add media queries for responsive design if needed */
-@media (max-width: 600px) {
-  #course-details {
-    padding: 10px;
-  }
-  
-  #course-details h2 {
-    font-size: 18px;
-  }
-  
-  #course-details p {
-    font-size: 14px;
-  }
+/* CSS for the course additional info section */
+#course-additional-info {
+    padding: 20px 60px 20px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card.entry-requirements .card-content p {
+    font-size: 2.2rem !important;
+    color: #666;
+    line-height: 1.4;
+}
+
+.info-card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.info-card h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center !important;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.info-card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.info-card ul li {
+    margin: 4px 0;
+    font-size: 1.4rem;
+    color: #666;
+}
+
+/* Style the content inside the "Course Structure" card */
+.info-card.expandable-card .card-content {
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+.info-card.expandable-card .card-content h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.info-card.expandable-card .card-content ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.info-card.expandable-card .card-content ul li {
+    margin: 25px 0; /* Adjusted margin for more space between semesters */
+    font-size: 1.4rem;
+    color: #666;
+    border-left: 3px solid #00954d;
+    padding-left: 10px;
+}
+
+.info-card.expandable-card .card-content ul li:first-child {
+    margin-top: 0;
+}
+
+.info-card.expandable-card .card-content ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* CSS for the expandable cards */
+
+.info-card.expandable-card h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Center align the entire card header */
+.info-card.expandable-card .card-header {
+    display: flex;
+    justify-content: center;
+}
+
+.expandable-card .card-header {
+    cursor: pointer;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expandable-card .card-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
 }
 
 

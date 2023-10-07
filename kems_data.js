@@ -46,7 +46,7 @@ const KEMS_Courses = [
     label: 'Masters',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -81,7 +81,7 @@ const KEMS_Courses = [
     label: 'Degree',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -116,7 +116,7 @@ const KEMS_Courses = [
     label: 'Degree',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -151,7 +151,7 @@ const KEMS_Courses = [
     label: 'Degree',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -186,7 +186,7 @@ const KEMS_Courses = [
     label: 'Degree',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -221,7 +221,7 @@ const KEMS_Courses = [
     label: 'Degree',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -256,7 +256,7 @@ const KEMS_Courses = [
     label: 'Degree',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -291,7 +291,7 @@ const KEMS_Courses = [
     label: 'Degree',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -326,7 +326,7 @@ const KEMS_Courses = [
     label: 'Diploma',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -361,7 +361,7 @@ const KEMS_Courses = [
     label: 'Diploma',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -396,7 +396,7 @@ const KEMS_Courses = [
     label: 'Diploma',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
@@ -431,7 +431,7 @@ const KEMS_Courses = [
     label: 'Diploma',
     session: 'Morning & Evening',
     campus: 'Male Campus',
-    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.\nOR\n20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
+    entry_requirements: '2 passes with E grade or above in GCE A level or C grade or above in HSC / OR / MNQF level 4 qualification in a related field.<br>OR<br>20 years old, completion of secondary school, 2 years of relevant work experience, and successful completion of an MQA approved University Preparation Programme.',
     semesters: [
       {
         semester: 'Semester 1',
