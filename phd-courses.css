@@ -212,8 +212,149 @@
   
   
 
+/* Banner */
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00954d;
+    height: 15vh;
+}
+
+#banner .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+#banner .title h2 {
+    color: #ffffff;
+    font-size: 2.7rem;
+    font-weight: 500;
+}
 
 
+
+
+#course-list {
+    display: flex;
+    padding: 30px 60px 30px 60px;
+}
+
+#course-list .filters {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+/* Style for the filter container */
+.filters {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the filter container */
+.filter-for-course {
+  margin-bottom: 30px;
+}
+
+.filter-for-course h2 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* Style for the labels */
+.filter-for-course label {
+  display: inline-block; /* Display labels in a row */
+  margin-right: 20px; /* Add spacing between labels */
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Style for the checkboxes */
+.filter-for-course input[type="checkbox"] {
+  accent-color: #00954d;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+
+/* Style for checked checkbox labels */
+.filter-for-course input[type="checkbox"]:checked + label {
+  color: #00954d; /* Change the text color for checked checkbox labels */
+}
+
+/* Style for the labels */
+.filter-for-center h2 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.filter-for-center label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Style for the radio buttons */
+.filter-for-center input[type="radio"] {
+  accent-color: #00954d;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+
+
+/* Style for checked radio labels */
+.filter-for-center input[type="radio"]:checked + label {
+  color: #00954d; /* Change the text color for checked radio labels */
+}   
+
+/* Arrange labels in a column */
+.filter-for-center label {
+  display: flex;
+  justify-content: left;
+}
+
+#course-list-container {
+    padding: 20px 70px 20px 70px;
+}
+
+/* Style for the course links */
+.course-link {
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  margin-bottom: 5px;
+}
+
+/* Hover effect for course links */
+.course-link:hover {
+  color: #00954d; /* Change text color on hover */
+}
+
+/* Style for line breaks between courses */
+#course-list-container br {
+  content: ' ';
+  display: block;
+  margin: 10px 0;
+  border-top: 1px solid #ccc;
+  width: 50%;
+}
 
 
 

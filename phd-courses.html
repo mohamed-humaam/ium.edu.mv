@@ -107,10 +107,10 @@
         <li><a href="#">Our Programmes</a>
           <ul class="dropdown-menu">
             <li><a href="phd-courses.html">Post Graduate</a></li>
-            <li><a href="#">Under Graduate</a></li>
-            <li><a href="#">Certificate & Diploma</a></li>
-            <li><a href="#">How to Apply</a></li>
-            <li><a href="#">Scholarship Opportunities<i class="fa-solid fa-chevron-right"></i></a>
+            <li><a href="undergrad-courses.html">Under Graduate</a></li>
+            <li><a href="certificate-courses.html">Certificate & Diploma</a></li>
+            <li><a href="how-to-apply.html">How to Apply</a></li>
+            <li><a href="scholarship-offers.html">Scholarship Opportunities<i class="fa-solid fa-chevron-right"></i></a>
               <ul class="sidebar-menu">
                 <li><a href="#">Undergraduate</a></li>
                 <li><a href="#">Postgraduate</a></li>
@@ -150,43 +150,58 @@
       </ul>
     </section>
 
+    <section id="banner">
+      <div class="title">
+        <h2>Post Graduate Courses</h2>
+      </div>
+    </section>
 
-    <!-- Filter Checkboxes -->
-<label>
-    <input type="checkbox" class="filter-checkbox" value="Masters" checked/> Masters
-  </label>
-  <label>
-    <input type="checkbox" class="filter-checkbox" value="PhD" checked/> PhD
-  </label>
-  
-  <!-- Filter Radios -->
-  <label>
-    <input type="radio" name="center" value="All" checked /> All
-  </label>
-  <label>
-    <input type="radio" name="center" value="Centre For Continuing Education" /> Center for Continuing Education
-  </label>
-  <label>
-    <input type="radio" name="center" value="Kulliyyah of Arabic Language" /> Kulliyyah of Arabic Language
-  </label>
-  <label>
-    <input type="radio" name="center" value="Kulliyyah of Education" /> Kulliyyah of Education
-  </label>
-  <label>
-    <input type="radio" name="center" value="Kulliyyah of Economics & Management Studies" /> Kulliyyah of Economics & Management Studies
-  </label>
-  <label>
-    <input type="radio" name="center" value="Kulliyyah of Islamic Revealed Knowledge and Human Sciences" /> Kulliyyah of Islamic Revealed Knowledge and Human Sciences
-  </label>
-  <label>
-    <input type="radio" name="center" value="KSL Kulliyyah of Quran and Sunnah" /> KSL Kulliyyah of Quran and Sunnah
-  </label>
-  <label>
-    <input type="radio" name="center" value="Kulliyyah of Shari’ah and Law" /> Kulliyyah of Shari’ah and Law
-  </label>
-  
-  <!-- Course List Container -->
-  <div id="course-list-container"></div>
+
+    <section id="course-list">
+        <div class="filters">
+            <!-- Filter Checkboxes -->
+            <div class="filter-for-course">
+              <h2>Filter by Level</h2>
+                <label>
+                  <input type="checkbox" class="filter-checkbox" value="Masters" checked/> Masters
+                </label>
+                <label>
+                  <input type="checkbox" class="filter-checkbox" value="PhD" checked/> PhD
+                </label>
+            </div>
+            <!-- Filter Radios -->
+            <div class="filter-for-center">
+              <h2>Filter by Faculty</h2>
+              <label>
+                <input type="radio" name="center" value="All" checked /> All
+              </label>
+              <label>
+                <input type="radio" name="center" value="Centre For Continuing Education" /> Center for Continuing Education
+              </label>
+              <label>
+                <input type="radio" name="center" value="Kulliyyah of Arabic Language" /> Kulliyyah of Arabic Language
+              </label>
+              <label>
+                <input type="radio" name="center" value="Kulliyyah of Education" /> Kulliyyah of Education
+              </label>
+              <label>
+                <input type="radio" name="center" value="Kulliyyah of Economics & Management Studies" /> Kulliyyah of Economics & Management Studies
+              </label>
+              <label>
+                <input type="radio" name="center" value="Kulliyyah of Islamic Revealed Knowledge and Human Sciences" /> Kulliyyah of Islamic Revealed Knowledge and Human Sciences
+              </label>
+              <label>
+                <input type="radio" name="center" value="KSL Kulliyyah of Quran and Sunnah" /> KSL Kulliyyah of Quran and Sunnah
+              </label>
+              <label>
+                <input type="radio" name="center" value="Kulliyyah of Shari’ah and Law" /> Kulliyyah of Shari’ah and Law
+              </label>
+            </div>
+        </div>
+        <!-- Course List Container -->
+        <div id="course-list-container"></div>
+    </section>
+
 
 
     <section id="footer">
@@ -252,25 +267,24 @@
             </div>
     
         </div>
-      </section>
+    </section>
       
       
       
-      <script src="cce_data.js"></script>
-      <script src="cps_data.js"></script>
-      <script src="kal_data.js"></script>
-      <script src="ked_data.js"></script>
-      <script src="kems_data.js"></script>
-      <script src="kirk_data.js"></script>
-      <script src="kqs_data.js"></script>
-      <script src="ksl_data.js"></script>
+    <script src="cce_data.js"></script>
+    <script src="cps_data.js"></script>
+    <script src="kal_data.js"></script>
+    <script src="ked_data.js"></script>
+    <script src="kems_data.js"></script>
+    <script src="kirk_data.js"></script>
+    <script src="kqs_data.js"></script>
+    <script src="ksl_data.js"></script>
 
 
 
-      <script>
+    <script>
         // Combine all course arrays into one
         const allCourses = [
-          ...CCE_Courses,
           ...CCE_Courses,
           ...KAL_Courses,
           ...KED_Courses,
@@ -325,6 +339,6 @@
 
         // Initial update of the course list
         updateCourseList();
-    </script>
+  </script>
 </body>
 </html>
