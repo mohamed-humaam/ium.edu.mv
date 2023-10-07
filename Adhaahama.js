@@ -3,14 +3,14 @@ const yearContainer = document.getElementById('yearContainer');
 
 const pdfData = {
     2023: [
-        { name: 'Adhaahama',  imageUrl: './Images/Research/adhaahama.PNG', pdfUrl: 'https://ium-media.s3.ap-southeast-1.amazonaws.com/adhaahama-3-final-1628504664qwgd6.pdf'},
+        { name: 'Adhaahama',  imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: './Images/Research/adhaahama/adhaahama-2019.pdf'},
     
     ],
     2022: [
-        { name: 'Adhaahama',  imageUrl: './Images/Research/adhaahama.PNG', pdfUrl: 'https://ium-media.s3.ap-southeast-1.amazonaws.com/adhaahama-3-final-1628504664qwgd6.pdf' },
+        { name: 'Adhaahama',  imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: 'https://ium-media.s3.ap-southeast-1.amazonaws.com/adhaahama-3-final-1628504664qwgd6.pdf' },
     ],
     2021: [
-        { name: 'Adhaahama', imageUrl: './Images/Research/adhaahama.PNG', pdfUrl: 'https://ium-media.s3.ap-southeast-1.amazonaws.com/adhaahama-3-final-1628504664qwgd6.pdf' },
+        { name: 'Adhaahama', imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: 'https://ium-media.s3.ap-southeast-1.amazonaws.com/adhaahama-3-final-1628504664qwgd6.pdf' },
     ],
 };
 

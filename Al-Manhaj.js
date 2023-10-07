@@ -3,16 +3,16 @@ const yearContainer = document.getElementById('yearContainer');
 
 const pdfData = {
     2023: [
-        { name: 'Al-Manhaj', batch: '2023', imageUrl: './Images/Research/almanhj.PNG', pdfUrl: 'iumpdf\al-manhaj-2022.pdf' },
+        { name: 'Al-Manhaj', batch: '2023', imageUrl: './Images/Research/al-manhaj/icon.png', pdfUrl: './Images/Research/al-manhaj/al-manhaj-2022.pdf' },
     ],
     2022: [
-        { name: 'Al-Manhaj', batch: '2022', imageUrl: './Images/Research/almanhj.PNG', pdfUrl: 'iumpdf\al-manhaj-2022.pdf' },
+        { name: 'Al-Manhaj', batch: '2022', imageUrl: './Images/Research/al-manhaj/icon.png', pdfUrl: './Images/Research/al-manhaj/al-manhaj-2022.pdf' },
     ],
     2021: [
-        { name: 'Al-Manhaj', batch: '2021', imageUrl: './Images/Research/almanhj.PNG', pdfUrl: './pdf/2021_adhaahama.pdf' },
+        { name: 'Al-Manhaj', batch: '2021', imageUrl: './Images/Research/al-manhaj/icon.png', pdfUrl: './Images/Research/al-manhaj/al-manhaj-2022.pdf' },
     ],
     2020: [
-        { name: 'Al-Manhaj', batch: '2020', imageUrl: './Images/Research/almanhj.PNG', pdfUrl: './pdf/2021_adhaahama.pdf' },
+        { name: 'Al-Manhaj', batch: '2020', imageUrl: './Images/Research/al-manhaj/icon.png', pdfUrl: './Images/Research/al-manhaj/al-manhaj-2022.pdf' },
     
     ],
 };

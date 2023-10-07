@@ -238,7 +238,7 @@
 
 
 .year-card-container {
-    width: 87%; /* Increase the width for more space */
+    width: 80%; /* Increase the width for more space */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -246,7 +246,7 @@
 }
 
 .year-card {
-    width: 100%;
+    width: 90%;
     margin: 20px 0; /* Increase margin for more space */
     background-color: #f0f0f0;
     padding: 20px; /* Increase padding for more space */
