@@ -102,7 +102,7 @@ function handleCourseClick(courseName) {
   // Encode the course name to handle special characters in the URL
   const encodedCourseName = encodeURIComponent(courseName);
   const courseDetailsURL = `course_details.html?courseName=${encodedCourseName}`;
-  window.open(courseDetailsURL, '_blank');
+  window.open(courseDetailsURL, '_self');
 }
 
 // Function to generate table rows for course data

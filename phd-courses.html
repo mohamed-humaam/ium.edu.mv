@@ -153,10 +153,10 @@
 
     <!-- Filter Checkboxes -->
 <label>
-    <input type="checkbox" class="filter-checkbox" value="Masters" /> Masters
+    <input type="checkbox" class="filter-checkbox" value="Masters" checked/> Masters
   </label>
   <label>
-    <input type="checkbox" class="filter-checkbox" value="PhD" /> PhD
+    <input type="checkbox" class="filter-checkbox" value="PhD" checked/> PhD
   </label>
   
   <!-- Filter Radios -->
@@ -268,60 +268,63 @@
 
 
       <script>
-    // Combine all course arrays into one
-const allCourses = [
-  ...CCE_Courses,
-  ...CCE_Courses,
-  ...KAL_Courses,
-  ...KED_Courses,
-  ...KEMS_Courses,
-  ...KIRK_Courses,
-  ...KSL_Courses,
-  ...KQS_Courses,
-];
+        // Combine all course arrays into one
+        const allCourses = [
+          ...CCE_Courses,
+          ...CCE_Courses,
+          ...KAL_Courses,
+          ...KED_Courses,
+          ...KEMS_Courses,
+          ...KIRK_Courses,
+          ...KSL_Courses,
+          ...KQS_Courses,
+        ];
 
-// Function to update the course list based on selected filters
-function updateCourseList() {
-  const selectedLabels = Array.from(document.querySelectorAll('.filter-checkbox:checked')).map(checkbox => checkbox.value);
-  const selectedCenter = document.querySelector('input[name="center"]:checked').value;
+        // Function to update the course list based on selected filters
+        function updateCourseList() {
+          const selectedLabels = Array.from(document.querySelectorAll('.filter-checkbox:checked')).map(checkbox => checkbox.value);
+          const selectedCenter = document.querySelector('input[name="center"]:checked').value;
 
-  // Filter courses based on selected labels and center
-  const filteredCourses = allCourses.filter(course => {
-    return (
-      (selectedLabels.includes(course.label)) &&
-      (selectedCenter === 'All' || course.center === selectedCenter)
-    );
-  });
+          // Filter courses based on selected labels and center
+          const filteredCourses = allCourses.filter(course => {
+            return (
+              (selectedLabels.includes(course.label)) &&
+              (selectedCenter === 'All' || course.center === selectedCenter)
+            );
+          });
 
-  // Display the filtered course names
-  const courseListContainer = document.getElementById('course-list-container');
-  courseListContainer.innerHTML = '';
+          // Display the filtered course names with links
+          const courseListContainer = document.getElementById('course-list-container');
+          courseListContainer.innerHTML = '';
 
-  if (filteredCourses.length === 0) {
-    courseListContainer.textContent = 'No courses match the selected criteria.';
-  } else {
-    const courseNames = filteredCourses.map(course => course.name);
-    courseNames.forEach(courseName => {
-      const courseNameElement = document.createElement('p');
-      courseNameElement.textContent = courseName;
-      courseListContainer.appendChild(courseNameElement);
-    });
-  }
-}
+          if (filteredCourses.length === 0) {
+            courseListContainer.textContent = 'No courses match the selected criteria.';
+          } else {
+            filteredCourses.forEach(course => {
+              const courseLink = document.createElement('a');
+              courseLink.textContent = course.name;
+              courseLink.href = `course_details.html?courseName=${encodeURIComponent(course.name)}`; // Use courseName as the parameter name
+              courseLink.classList.add('course-link');
 
-// Add event listeners to filter elements
-const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
-filterCheckboxes.forEach(checkbox => {
-  checkbox.addEventListener('change', updateCourseList);
-});
+              courseListContainer.appendChild(courseLink);
+              courseListContainer.appendChild(document.createElement('br')); // Add a line break for each course
+            });
+          }
+        }
 
-const filterRadios = document.querySelectorAll('input[name="center"]');
-filterRadios.forEach(radio => {
-  radio.addEventListener('change', updateCourseList);
-});
+        // Add event listeners to filter elements
+        const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
+        filterCheckboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', updateCourseList);
+        });
 
-// Initial update of the course list
-updateCourseList();
+        const filterRadios = document.querySelectorAll('input[name="center"]');
+        filterRadios.forEach(radio => {
+          radio.addEventListener('change', updateCourseList);
+        });
+
+        // Initial update of the course list
+        updateCourseList();
     </script>
 </body>
 </html>
