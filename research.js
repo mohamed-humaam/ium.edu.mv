@@ -1,66 +1,71 @@
-const years = [2023, 2022, 2021];
-const yearContainer = document.getElementById('yearContainer');
+const authors = [
+    { name: 'Author 1', birthYear: 1980 },
+    { name: 'Author 2', birthYear: 1990 },
+    { name: 'Author 3', birthYear: 1975 },
+];
 
-const studentData = {
-    2023: [
-        { name: 'Student 1', batch: 'Batch 2023', imageUrl: './Images/Faculties/kems/dean.jpg' },
-        { name: 'Student 2', batch: 'Batch 2023', imageUrl: 'student2.jpg' },
+const authorContainer = document.getElementById('authorContainer');
+
+const bookData = {
+    'Author 1': [
+        { title: 'Book 1', genre: 'Fiction', imageUrl: 'book1.jpg' },
+        { title: 'Book 2', genre: 'Mystery', imageUrl: 'book2.jpg' },
     ],
-    2022: [
-        { name: 'Student 3', batch: 'Batch 2022', imageUrl: 'student3.jpg' },
-        { name: 'Student 4', batch: 'Batch 2022', imageUrl: 'student4.jpg' },
+    'Author 2': [
+        { title: 'Book 3', genre: 'Science Fiction', imageUrl: 'book3.jpg' },
+        { title: 'Book 4', genre: 'Fantasy', imageUrl: 'book4.jpg' },
     ],
-    2021: [
-        { name: 'Student 5', batch: 'Batch 2021', imageUrl: 'student5.jpg' },
-        { name: 'Student 6', batch: 'Batch 2021', imageUrl: 'student6.jpg' },
+    'Author 3': [
+        { title: 'Book 5', genre: 'Thriller', imageUrl: 'book5.jpg' },
+        { title: 'Book 6', genre: 'Romance', imageUrl: 'book6.jpg' },
     ],
 };
 
-years.forEach((year) => {
-    const yearCard = document.createElement('div');
-    yearCard.classList.add('year-card');
+authors.forEach((author) => {
+    const authorCard = document.createElement('div');
+    authorCard.classList.add('author-card');
 
-    const yearTitle = document.createElement('h2');
-    yearTitle.innerText = year;
+    const authorTitle = document.createElement('h2');
+    authorTitle.innerText = author.name;
 
-    yearCard.appendChild(yearTitle);
+    authorCard.appendChild(authorTitle);
 
-    const studentsContainer = document.createElement('div');
-    studentsContainer.classList.add('student-card-container');
+    const booksContainer = document.createElement('div');
+    booksContainer.classList.add('book-card-container');
 
-    yearCard.appendChild(studentsContainer);
+    authorCard.appendChild(booksContainer);
 
-    yearCard.addEventListener('click', () => {
-        const students = studentData[year];
-        studentsContainer.innerHTML = '';
+    authorCard.addEventListener('click', () => {
+        const books = bookData[author.name];
+        booksContainer.innerHTML = '';
 
-        const studentGrid = document.createElement('div');
-        studentGrid.classList.add('student-card-grid');
+        const bookGrid = document.createElement('div');
+        bookGrid.classList.add('book-card-grid');
 
-        students.forEach((student) => {
-            const studentCard = document.createElement('div');
-            studentCard.classList.add('student-card');
-            studentCard.innerHTML = `
-                <img src="${student.imageUrl}" alt="${student.name}">
+        books.forEach((book) => {
+            const bookCard = document.createElement('div');
+            bookCard.classList.add('book-card');
+            bookCard.innerHTML = `
+                <img src="${book.imageUrl}" alt="${book.title}">
                 <div>
-                    <h3>${student.name}</h3>
-                    <p>${student.batch}</p>
+                    <h3>${book.title}</h3>
+                    <p>${book.genre}</p>
                 </div>
             `;
 
-            // Prevent the click event on student cards from propagating to the year card
-            studentCard.addEventListener('click', (e) => {
+            // Prevent the click event on book cards from propagating to the author card
+            bookCard.addEventListener('click', (e) => {
                 e.stopPropagation();
             });
 
-            studentGrid.appendChild(studentCard);
+            bookGrid.appendChild(bookCard);
         });
 
-        studentsContainer.appendChild(studentGrid);
+        booksContainer.appendChild(bookGrid);
 
         // Toggle the "expanded" class to show or hide additional information
-        yearCard.classList.toggle('expanded');
+        authorCard.classList.toggle('expanded');
     });
 
-    yearContainer.appendChild(yearCard);
+    authorContainer.appendChild(authorCard);
 });

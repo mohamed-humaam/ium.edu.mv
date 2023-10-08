@@ -237,7 +237,7 @@
 
 
 
-.year-card-container {
+.author-card-container {
     width: 87%; /* Increase the width for more space */
     margin: 0 auto;
     display: flex;
@@ -245,7 +245,7 @@
     align-items: center;
 }
 
-.year-card {
+.author-card {
     width: 100%;
     margin: 20px 0; /* Increase margin for more space */
     background-color: #f0f0f0;
@@ -257,21 +257,21 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.year-card:hover {
+.author-card:hover {
     transform: scale(1.05);
 }
 
-/* Initially hide the year card content */
-.year-card h2 {
+/* Initially hide the author card content */
+.author-card h2 {
     display: block;
 }
 
-/* Display the year card content when it's expanded */
-.year-card.expanded h2 {
+/* Display the author card content when it's expanded */
+.author-card.expanded h2 {
     display: block;
 }
 
-.student-card-container {
+.book-card-container {
     display: none;
     width: 100%;
     text-align: center;
@@ -279,18 +279,18 @@
     margin-bottom: 20px; /* Increase margin-bottom for more space */
 }
 
-.year-card.expanded .student-card-container {
+.author-card.expanded .book-card-container {
     display: block;
 }
 
-.student-card-grid {
+.book-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px; /* Increase gap for more space */
     justify-content: center;
 }
 
-.student-card {
+.book-card {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -300,27 +300,27 @@
     margin-bottom: 20px; /* Increase margin-bottom for more space */
 }
 
-.student-card:hover {
+.book-card:hover {
     transform: scale(1.05);
 }
 
-.student-card img {
+.book-card img {
     width: 100%; /* Maintain proper aspect ratio */
     height: auto; /* Maintain proper aspect ratio */
     border-radius: 20px;
     object-fit: cover; /* Maintain aspect ratio and cover the entire space */
 }
 
-.student-card h3 {
+.book-card h3 {
     font-size: 1.5em;
     margin: 10px 0;
 }
 
-.student-card p {
-    
+.book-card p {
     font-size: 1.2em;
     margin: 0;
 }
+
 
 
 
