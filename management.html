@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all"/>
 
-    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="management.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -144,135 +144,20 @@
       </ul>
     </section>
 
-    
-    <section class="banner">
-        <img src="./Images/Banners/banner1.png" alt="Image 1" class="active">
-        <img src="./Images/Banners/banner2.png" alt="Image 2">
-        <img src="./Images/Banners/banner3.png" alt="Image 3">
-        <img src="./Images/Banners/banner4.png" alt="Image 3">
-    </section>
-    
-    
-    <section class="feature-container">
-      <div class="feature">
-        <a href="#">Courses <i class="fa-solid fa-circle-right"></i></a>
-        <p>Find the right course and see why studying with us is different.</p>
-      </div>
-    
-      <div class="feature">
-        <a href="#">Research <i class="fa-solid fa-circle-right"></i></a>
-        <p>Find out how we’re making a difference.</p>
-      </div>
-    
-      <div class="feature">
-        <a href="#">Partnership <i class="fa-solid fa-circle-right"></i></a>
-        <p>Innovate with our people, technology and outstanding facilities.</p>
-      </div>
-    
-      <div class="feature">
-        <a href="#">Events <i class="fa-solid fa-circle-right"></i></a>
-        <p>Connect with our community, in person and online.</p>
-      </div>
-    </section>
 
-
-    <section class="study">
-      <div class="tag-text"><a href="#">Study</a></div>
-        <section class="study-section">
-          
-          <div class="programme-finder">
-                <div class="programme-index">
-                  <h2>Course and Programme Finder</h2>
-                  <ul>
-                    <li><a href="#">Certificate Courses (2024 entry)</a></li>
-                    <li><a href="#">Undergraduate Courses (2024 entry)</a></li>
-                    <li><a href="#">Master's courses</a></li>
-                    <li><a href="#">Postgraduate Research Areas</a></li>
-                  </ul> 
-                </div>
-
-                <div class="programme-search">
-                  <form>
-                    <select>
-                      <option value="" selected disabled>Certificate courses (2024 entry)</option>
-                      <option value="">Undergraduate courses (2024 entry)</option>
-                      <option value="">Master's courses</option>
-                      <option value="">Postgraduate research areas</option>
-                    </select>
-                    <input type="text" placeholder="Enter Keywords">
-                    <input type="submit" value="Search">
-                  </form>
-              </div>
-          </div>
-
-        </section>
-    </section>
-
-
-    <section class="news-container">
-      <div class="tag-text"><a href="#">News</a></div>
-      <div class="news-carousel-container">
-        <div id="news-carousel" class="news-carousel"></div>
-        <div class="carousel-nav">
-          <button id="prev-btn" class="carousel-button prev-btn">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button id="next-btn" class="carousel-button next-btn">
-            <i class="fas fa-chevron-right"></i>
-          </button>
+    <section id="banner">
+        <div class="title">
+          <h2>IUM Management</h2>
         </div>
-      </div>
     </section>
 
+    
+    
+    <div class="committee-members">
+        <!-- Individual member cards will go here -->
+    </div>
 
-    <section class="course-verification">
-      <h2 class="section-title">Verify our Certificates</h2>
-      <p class="newsletter-description">Enter your certificate number below to check the validity of your certificate.</p>
-      <form class="newsletter-form" action="#" method="post">
-        <input type="email" name="email" placeholder="Enter your certificate number" required>
-        <button type="submit">Verify</button>
-      </form>
-    </section>    
-
-
-    <section class="upcoming-events">
-      <h2 class="section-title">Upcoming Events</h2>
-      <div class="event-container">
-        <div class="event">
-          <div class="event-date">
-            <span class="date">15</span>
-            <span class="month">July</span>
-          </div>
-          <div class="event-details">
-            <h3 class="event-title">Conference on Technology Innovations</h3>
-            <p class="event-description">Join us for a conference showcasing the latest technology innovations. Don't miss this opportunity to learn from industry experts.</p>
-            <a href="#" class="event-link">Learn More</a>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-date">
-            <span class="date">20</span>
-            <span class="month">August</span>
-          </div>
-          <div class="event-details">
-            <h3 class="event-title">Career Fair</h3>
-            <p class="event-description">Discover job opportunities and network with leading companies at our annual Career Fair. Prepare your resume and dress professionally.</p>
-            <a href="#" class="event-link">Learn More</a>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-date">
-            <span class="date">5</span>
-            <span class="month">September</span>
-          </div>
-          <div class="event-details">
-            <h3 class="event-title">Open House</h3>
-            <p class="event-description">Visit our campus during the Open House event and get a glimpse of our facilities. Meet faculty members and current students.</p>
-            <a href="#" class="event-link">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
 
     <section id="footer">
@@ -339,30 +224,9 @@
   
       </div>
     </section>
-    
-    
-    
 
 
-    <script>
-        var bannerImages = document.querySelectorAll('.banner img');
-        var currentImageIndex = 0;
-    
-        function rotateImages() {
-          // Hide the current image
-          bannerImages[currentImageIndex].classList.remove('active');
-          
-          // Update the index to the next image
-          currentImageIndex = (currentImageIndex + 1) % bannerImages.length;
-          
-          // Show the next image
-          bannerImages[currentImageIndex].classList.add('active');
-        }
-    
-        // Start rotating the images every 5 seconds
-        setInterval(rotateImages, 5000);
-    </script>
 
-    <script src="index_script.js"></script>
+    <script src="management.js"></script>
 </body>
 </html>
