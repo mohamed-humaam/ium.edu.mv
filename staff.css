@@ -243,6 +243,107 @@
 
 
 
+/* Faculty Card Styles */
+.faculty-card {
+    border: 1px solid #ddd;
+    margin: 20px 170px;
+    padding: 20px 70px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.faculty-card.expanded {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+}
+
+.faculty-card:hover {
+    background-color: #e0e0e0;
+}
+
+/* Staff List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Arrange cards horizontally */
+    justify-content: space-between; /* Add space between staff cards */
+}
+
+/* Staff Card Styles */
+.staff-card {
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column; /* Stack card content vertically */
+    background-color: #f0f0f0;
+    max-width: 200px; /* Limit the maximum width of each card */
+}
+
+.staff-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px; /* Add space between photo and text */
+}
+
+.staff-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.staff-occupation {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Toggle Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Title Styles */
+#facultyCards h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Hide Staff Lists by Default */
+ul ul {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 #footer {
     width: 100%;
