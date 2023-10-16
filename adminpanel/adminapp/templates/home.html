@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+    {% if user.is_authenticated %}
+        <h1>Links</h1>
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                <th scope="col">Resource</th>
+                <th scope="col">Count</th>
+                <th scope="col">View</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sections</td>
+                    <td>{{ counts.sections }}</td>
+                    <td><a href="{% url 'sections' %}">Go</a></td>
+                </tr>
+                <tr>
+                    <td>Deans List</td>
+                    <td>{{ counts.deans }}</td>
+                    <td><a href="{% url 'deans_list' %}">Go</a></td>
+                </tr>
+                <tr>
+                    <td>Staff</td>
+                    <td>{{ counts.staff }}</td>
+                    <td><a href="{% url 'staff_list' %}">Go</a></td>
+                    </tr>
+                <tr>
+                    <td>Programs</td>
+                    <td>{{ counts.programs }}</td>
+                    <td><a href="{% url 'program_list' %}">Go</a></td>
+                </tr>
+            </tbody>
+        </table>
+    {% else %}
+        <h1>Login</h1>
+        <br/>
+        <form method="POST" action="{% url 'home' %}">
+            {% csrf_token %}
+            <form>
+                <div class="mb-3">
+                <label for="inputEmail1" class="form-label">User Name</label>
+                <input type="text" class="form-control" name="user_email" id="inputEmail1" aria-describedby="emailHelp" placeholder="Username" required>
+                </div>
+                <div class="mb-3">
+                <label for="inputPassword1" class="form-label">User Password</label>
+                <input type="password" class="form-control" name="password" id="inputPassword1" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </form>
+    {% endif %}
+</div>
+
+{% endblock %}
