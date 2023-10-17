@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+        <h1>Deans</h1>
+
+        {% if deans_list %}
+            
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Created at</th>
+                    <th scope="col">Change/View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for dean in deans_list %}
+                    <tr>
+                    <td>{{ dean.id }}</td>
+                    <td>{{ dean.name }}</td>
+                    <td>{{ dean.created_at }}</td>
+                    <td><a href="{% url 'view_dean' dean.id %}">Edit</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+        {% endif %}
+        <a href="{% url 'add_dean' %}" class="btn btn-primary">Add Dean</a>
+
+</div>
+
+{% endblock %}
