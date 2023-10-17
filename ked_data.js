@@ -4,12 +4,16 @@ const KED_Admin = [
     name: "Mariyam Nashwa",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
 
   },
   {
     name: "Nizna Ibrahim",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin1.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
 
   },
   // Add more administrative staff here as needed

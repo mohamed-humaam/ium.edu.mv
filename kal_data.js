@@ -4,12 +4,16 @@ const KAL_Admin = [
     name: "Badhoora Yahya",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
 
   },
   {
     name: "Khadeeja Abdul Rahman",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin1.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
 
   },
   // Add more administrative staff here as needed

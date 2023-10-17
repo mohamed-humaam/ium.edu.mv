@@ -5,6 +5,8 @@ const KEMS_Admin = [
     name: "Safwa Nashid",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
 
   },
   {
@@ -12,6 +14,8 @@ const KEMS_Admin = [
     name: "Fathimath Nadha",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin1.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
 
   },
   // Add more administrative staff here as needed
@@ -23,6 +27,8 @@ const KEMS_Academic = [
     name: "Aishath Sinaau",
     occupation: "Lecturer",
     photo: "./Images/Faculties/kems/lecturer.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
 
   },
   // Add more academic staff here as needed

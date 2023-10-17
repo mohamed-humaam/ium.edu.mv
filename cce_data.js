@@ -4,12 +4,16 @@ const CCE_Admin = [
     name: "Aminath Raaziya",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
 
   },
   {
     name: "Ali Ahnaf",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin1.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
 
   },
   // Add more administrative staff here as needed
@@ -21,6 +25,8 @@ const CCE_Academic = [
     name: "Aishath Sinaau",
     occupation: "Lecturer",
     photo: "./Images/Faculties/kems/lecturer.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
 
   },
   // Add more academic staff here as needed

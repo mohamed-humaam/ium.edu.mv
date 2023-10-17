@@ -1,13 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
     const facultyData = [
-        { name: "KED", admin: KED_Admin, academic: KED_Academic },
-        { name: "KEMS", admin: KEMS_Admin, academic: KEMS_Academic },
-        { name: "KIRK", admin: KIRK_Admin, academic: KIRK_Academic },
-        { name: "KSL", admin: KSL_Admin, academic: KSL_Academic },
-        { name: "KQS", admin: KQS_Admin, academic: KQS_Academic },
-        { name: "KAL", admin: KAL_Admin, academic: KAL_Academic },
-        { name: "CCE", admin: CCE_Admin, academic: CCE_Academic },
-        { name: "CPS", admin: CPS_Admin, academic: CPS_Academic },
+        { name: "Executives", admin: KED_Admin, academic: KED_Academic },
+        { name: "Chancellors Bureau", admin: KED_Admin, academic: KED_Academic },
+        { name: "Reception", admin: KED_Admin, academic: KED_Academic },
+        { name: "Student Affairs", admin: KED_Admin, academic: KED_Academic },
+        { name: "Information Technology", admin: KED_Admin, academic: KED_Academic },
+        { name: "Human Recourses", admin: KED_Admin, academic: KED_Academic },
+        { name: "Finance", admin: KED_Admin, academic: KED_Academic },
+        { name: "Procurement", admin: KED_Admin, academic: KED_Academic },
+        { name: "Library", admin: KED_Admin, academic: KED_Academic },
+        { name: "Facilities & Administration", admin: KED_Admin, academic: KED_Academic },
+        { name: "Curriculumn Development", admin: KED_Admin, academic: KED_Academic },
+        { name: "Local & International Relations", admin: KED_Admin, academic: KED_Academic },
+        { name: "Kulliyyah of Education", admin: KED_Admin, academic: KED_Academic },
+        { name: "Kulliyyah of Economics & Management Studies", admin: KEMS_Admin, academic: KEMS_Academic },
+        { name: "Kulliyyah of Islamic Revealed Knowledge & Human Sciences", admin: KIRK_Admin, academic: KIRK_Academic },
+        { name: "Kulliyyah of Shar’iah & Law", admin: KSL_Admin, academic: KSL_Academic },
+        { name: "Kulliyyah of Qur’anic Studies", admin: KQS_Admin, academic: KQS_Academic },
+        { name: "Kulliyyah of Arabic Language", admin: KAL_Admin, academic: KAL_Academic },
+        { name: "Center for Continuing Education", admin: CCE_Admin, academic: CCE_Academic },
+        { name: "Center for Postgraduate Studies", admin: CPS_Admin, academic: CPS_Academic },
+        { name: "Center for Research & Publications", admin: CRP_Admin, academic: CRP_Academic },
         // Add more faculties here
     ];
 
@@ -34,15 +47,26 @@ document.addEventListener("DOMContentLoaded", function () {
     function createStaffList(staffArray, title) {
         const list = document.createElement("div");
         list.className = "staff-list";
+    
+        // Create a container for the title
+        const titleContainer = document.createElement("div");
+        titleContainer.className = "title-container";
         const titleElement = document.createElement("h4");
         titleElement.textContent = title;
-        list.appendChild(titleElement);
-
+        titleContainer.appendChild(titleElement);
+    
+        // Create a container for the staff cards
+        const staffContainer = document.createElement("div");
+        staffContainer.className = "staff-container";
+    
         staffArray.forEach(function (staff) {
             const staffCard = createStaffCard(staff);
-            list.appendChild(staffCard);
+            staffContainer.appendChild(staffCard);
         });
-
+    
+        list.appendChild(titleContainer);
+        list.appendChild(staffContainer);
+    
         return list;
     }
 
@@ -70,10 +94,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function toggleFacultyStaff(facultyCard, adminList, academicList) {
-        adminList.style.display = adminList.style.display === "none" ? "block" : "none";
-        academicList.style.display = academicList.style.display === "none" ? "block" : "none";
+        adminList.style.display = adminList.style.display === "none" ? "" : "none";
+        academicList.style.display = academicList.style.display === "none" ? "" : "none";
         facultyCard.classList.toggle("expanded");
     }
+    
 
     function initializeFacultyCards() {
         facultyData.forEach(faculty => {

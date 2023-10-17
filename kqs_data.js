@@ -4,11 +4,15 @@ const KQS_Admin = [
     name: "Hana Jaufar",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
   },
   {
     name: "Yazdhan Ahmed",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin1.png",
+    contact: "+960330122",
+    email: "example@ium.edu.mv"
   },
   // Add more administrative staff here as needed
 ];

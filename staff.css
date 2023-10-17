@@ -245,22 +245,29 @@
 
 /* Faculty Card Styles */
 .faculty-card {
-    border: 1px solid #ddd;
+    border: 1px solid #e1edf0;
+    text-align: center;
     margin: 20px 170px;
     padding: 20px 70px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    background-color: #f9f9f9;
+    background-color: #e1edf0;
+    color: #03b9b0;
     border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .faculty-card.expanded {
-    background-color: #f0f0f0;
+    background-color: #e1edf0;
     transform: scale(1.02);
 }
 
-.faculty-card:hover {
-    background-color: #e0e0e0;
+
+.title-container {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
 }
 
 /* Staff List Styles */
@@ -269,37 +276,55 @@ ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap; /* Arrange cards horizontally */
     justify-content: space-between; /* Add space between staff cards */
 }
 
 /* Staff Card Styles */
-.staff-card {
-    border: 1px solid #ddd;
-    margin: 5px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column; /* Stack card content vertically */
-    background-color: #f0f0f0;
-    max-width: 200px; /* Limit the maximum width of each card */
+.staff-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
-.staff-photo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px; /* Add space between photo and text */
+.staff-card {
+    width: auto;
+    background-color: #f2f2f2;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 25px;
+    border: 2px solid #03b9b0;
+    color: #03b9b0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.staff-card img {
+    border: 1.5px solid #03b9b0;
+    height: 7em;
+    width: 7em;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
 }
 
 .staff-name {
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 600 !important;
 }
 
 .staff-occupation {
-    font-size: 0.9rem;
-    color: #777;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 500 !important;
+    color: #03b9b0 !important;
+}
+
+.staff-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 /* Toggle Button Styles */
