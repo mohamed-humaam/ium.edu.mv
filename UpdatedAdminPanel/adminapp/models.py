@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MinLengthValidator
 
 # Create your models here.
 class Section(models.Model):
@@ -25,7 +26,7 @@ class Dean(models.Model):
     telephone = models.CharField(max_length=20)
     email = models.CharField(max_length=100)
     website = models.CharField(max_length=100)
-    message = models.CharField(max_length=3000)
+    message = models.CharField('Message Length', max_length=300, validators=[MinLengthValidator(10)])
     image_link = models.CharField(max_length=200)
     created_at = models.DateTimeField(auto_now_add=True)
 

@@ -81,7 +81,7 @@ DATABASES = {
         'USER': 'avnadmin',
         'PASSWORD': 'AVNS_t-lGdIBwxmskqUAWuUC',
         'HOST': 'iumedumvadminpanel-iumedumv.aivencloud.com',
-        'PORT': '17915'
+        'PORT': '17915',
     }
 }
 
