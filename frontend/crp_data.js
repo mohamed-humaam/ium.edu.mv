@@ -41,6 +41,16 @@ const CRP_Academic = [
           { year: "2020 - Present", title: "Development of a Solid-State Bio-Conversion System for the Bulk Production of Myco-Coagulant (My-Coag) for Water Treatment" },
       ]
     },
+    awards: [
+      { date: "27 Apr, 2017", award: "Highest Number of Publication in Citation Indexed Journal Award 2017 - IIUM", organization: "University" },
+      { date: "12 Apr, 2011", award: "Outstanding Researcher Award 2011, University Level - IIUM", organization: "University" },
+      { date: "12 Apr, 2011", award: "Quality Research Award, University Level - IIUM", organization: "University" }
+    ],
+    publications: [
+        { year: 2023, title: "Acid–base pretreatment and enzymatic hydrolysis of palm oil mill effluent in a single reactor system for production of fermentable sugars. International Journal of Polymer Science, 2023 () pp. 1-15" },
+        { year: 2023, title: "Biodegradation of fats, oil and grease using microorganisms isolated from palm oil mill effluent. IIUM Engineering Journal, 24 (2) pp. 1-10" },
+        { year: 2023, title: "Effect of the lignocellulolytic substrates and fermentation process parameters on myco-coagulant production for water treatment. IIUM Engineering Journal, 24 (1) pp. 13-26" }
+    ],
   },
   {
     name: "Dr. Mariyam Shareefa",
@@ -71,6 +81,16 @@ const CRP_Academic = [
           { year: "2020 - Present", title: "Development of a Solid-State Bio-Conversion System for the Bulk Production of Myco-Coagulant (My-Coag) for Water Treatment" },
       ]
     },
+    awards: [
+      { date: "27 Apr, 2017", award: "Highest Number of Publication in Citation Indexed Journal Award 2017 - IIUM", organization: "University" },
+      { date: "12 Apr, 2011", award: "Outstanding Researcher Award 2011, University Level - IIUM", organization: "University" },
+      { date: "12 Apr, 2011", award: "Quality Research Award, University Level - IIUM", organization: "University" }
+    ],
+    publications: [
+        { year: 2023, title: "Acid–base pretreatment and enzymatic hydrolysis of palm oil mill effluent in a single reactor system for production of fermentable sugars. International Journal of Polymer Science, 2023 () pp. 1-15" },
+        { year: 2023, title: "Biodegradation of fats, oil and grease using microorganisms isolated from palm oil mill effluent. IIUM Engineering Journal, 24 (2) pp. 1-10" },
+        { year: 2023, title: "Effect of the lignocellulolytic substrates and fermentation process parameters on myco-coagulant production for water treatment. IIUM Engineering Journal, 24 (1) pp. 13-26" }
+    ],
   },
   // Add more academic staff here as needed
 ];
