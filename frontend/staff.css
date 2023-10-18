@@ -310,13 +310,19 @@ ul {
 }
 
 .staff-name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600 !important;
 }
 
 .staff-occupation {
     margin-top: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 500 !important;
+    color: #03b9b0 !important;
+}
+
+.contact-container {
+    font-size: 1.1rem;
     font-weight: 500 !important;
     color: #03b9b0 !important;
 }
