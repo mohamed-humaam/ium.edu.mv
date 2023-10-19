@@ -242,46 +242,115 @@
 
 
 
-/* Staff Name Styles */
-#staffName {
-    font-size: 24px;
-    margin: 20px 0;
-}
-
-/* Container Styles */
+/* Style the section containing staff information */
 #staffInfo {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  padding: 20px 70px 20px 70px;
 }
 
-/* Photo Styles */
-#photo img {
-    max-width: 100%;
-    border-radius: 5px;
+/* Style the staff name */
+#staffName {
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
 }
 
-/* Headings Styles */
-#staffInfo h3 {
-    color: #007bff;
-    font-size: 20px;
-    margin: 20px 0;
+/* Style the personal information section */
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
-#staffInfo h4 {
-    font-size: 18px;
-    margin: 10px 0;
+.personal-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00954d;
 }
 
-/* Paragraph Styles */
-#staffInfo p {
-    font-size: 16px;
-    margin: 10px 0;
+.personal-info h3 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
 }
 
+.personal-info p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.personal-info p:first-child {
+  font-weight: bold;
+}
+
+/* Style for the contact and email links */
+.personal-info a {
+  text-decoration: none;
+  color: #00954d;
+  font-weight: bold;
+}
+
+.personal-info a:hover {
+  text-decoration: underline;
+}
+
+/* Style the profile sections */
+.section-container {
+  margin-top: 20px;
+}
+
+.section-container h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.section-content {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Style the awards list */
+.section-list {
+  list-style: none;
+  padding: 0;
+}
+
+.section-list li {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Style the publication list */
+.section-list li:before {
+  content: '•';
+  margin-right: 5px;
+  color: #333;
+}
+
+/* Make links stand out with a different color */
+a {
+  color: #00954d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 
 

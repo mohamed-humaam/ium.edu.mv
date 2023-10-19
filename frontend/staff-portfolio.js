@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             personalInfo.innerHTML = `
                 <img src="${staff.photo}" alt="${staffName}">
-                <h3>${staffName}</h3>
                 <p>${staff.occupation}</p>
                 <p>Contact: ${staff.contact}</p>
                 <p>Email: ${staff.email}
