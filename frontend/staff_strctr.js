@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Center for Continuing Education", admin: CCE_Admin, academic: CCE_Academic },
         { name: "Center for Postgraduate Studies", admin: CPS_Admin, academic: CPS_Academic },
         { name: "Center for Research & Publications", admin: CRP_Admin, academic: CRP_Academic },
-        // Add more faculties here
+        // Add more departments here
     ];
 
     const facultyCardsContainer = document.getElementById("facultyCards");
