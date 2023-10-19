@@ -242,7 +242,45 @@
 
 
 
+/* Staff Name Styles */
+#staffName {
+    font-size: 24px;
+    margin: 20px 0;
+}
 
+/* Container Styles */
+#staffInfo {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Photo Styles */
+#photo img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Headings Styles */
+#staffInfo h3 {
+    color: #007bff;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#staffInfo h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Paragraph Styles */
+#staffInfo p {
+    font-size: 16px;
+    margin: 10px 0;
+}
 
 
 
