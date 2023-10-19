@@ -23,7 +23,6 @@ const KEMS_Admin = [
 
 const KEMS_Academic = [
   {
-  
     name: "Aishath Sinaau",
     occupation: "Lecturer",
     photo: "./Images/Faculties/kems/lecturer.png",
