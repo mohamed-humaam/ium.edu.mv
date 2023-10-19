@@ -33,14 +33,23 @@ document.addEventListener("DOMContentLoaded", function () {
         const staff = findStaffByName(staffName);
     
         if (staff) {
-            // Populate staff information in the respective containers
-            document.getElementById("photo").innerHTML = `<img src="${staff.photo}" alt="${staffName}">`;
-            document.getElementById("occupation").textContent = staff.occupation;
-            document.getElementById("contact").textContent = staff.contact;
-            document.getElementById("email").textContent = staff.email;
+            // Personal Info
+            const personalInfo = document.createElement("div");
+            personalInfo.className = "personal-info";
 
-            // Clear any existing content in staffInfo
-            staffInfo.innerHTML = '';
+            personalInfo.innerHTML = `
+                <img src="${staff.photo}" alt="${staffName}">
+                <h3>${staffName}</h3>
+                <p>${staff.occupation}</p>
+                <p>Contact: ${staff.contact}</p>
+                <p>Email: ${staff.email}
+            `;
+
+            staffInfo.appendChild(personalInfo);
+
+            // Profile Info
+            const profileInfo = document.createElement("div");
+            profileInfo.className = "profile";
 
             // Expert Profile
             const expertProfileContainer = document.createElement("div");
@@ -55,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
             expertProfileContent.textContent = staff.profile;
             expertProfileContainer.appendChild(expertProfileContent);
 
-            staffInfo.appendChild(expertProfileContainer);
+            profileInfo.appendChild(expertProfileContainer);
 
             // Areas of Specialization
             const specializationContainer = document.createElement("div");
@@ -70,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
             specializationContent.textContent = staff.specialization.join('\n');
             specializationContainer.appendChild(specializationContent);
 
-            staffInfo.appendChild(specializationContainer);
+            profileInfo.appendChild(specializationContainer);
 
             // Awards and Recognition
             const awardsContainer = document.createElement("div");
@@ -89,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             awardsContainer.appendChild(awardsContent);
 
-            staffInfo.appendChild(awardsContainer);
+            profileInfo.appendChild(awardsContainer);
 
             // Research (completed and ongoing)
             const researchContainer = document.createElement("div");
@@ -123,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             researchContainer.appendChild(researchContent);
 
-            staffInfo.appendChild(researchContainer);
+            profileInfo.appendChild(researchContainer);
 
             // Publications
             const publicationsContainer = document.createElement("div");
@@ -142,7 +151,9 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             publicationsContainer.appendChild(publicationsContent);
 
-            staffInfo.appendChild(publicationsContainer);
+            profileInfo.appendChild(publicationsContainer);
+
+            staffInfo.appendChild(profileInfo);
         }
     }
 });
