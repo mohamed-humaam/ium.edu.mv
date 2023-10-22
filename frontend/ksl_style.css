@@ -285,8 +285,9 @@
 
 #dean .dean-profile .name h2 {
     color: #2d3e50;
-    font-size: 1.3em;
+    font-size: 1.25em;
     font-weight: 600;
+    text-align: center;
 }
 
 #dean .dean-profile .name h3 {

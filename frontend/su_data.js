@@ -1,11 +1,17 @@
 // Sample student representatives data
 const studentRepresentatives = [
-  { name: 'John Doe', position: 'President', photo: './Images/Faculties/kems/dean.jpg' },
-  { name: 'Jane Smith', position: 'Vice President', photo: './Images/Faculties/kems/dean.jpg' },
-  { name: 'Aisha Rahman', position: 'Treasurer', photo: './Images/Faculties/kems/dean.jpg' },
-  { name: 'Ahmed Ali', position: 'Secretary', photo: './Images/Faculties/kems/dean.jpg' },
-  { name: 'Sara Khan', position: 'Event Coordinator', photo: './Images/Faculties/kems/dean.jpg' },
-  { name: 'Omar Ahmed', position: 'Public Relations', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Hussain Arubaan Fawwaz', position: 'President', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Hawwa Shifla', position: 'Vice President', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Aminath Rafa Ahmed', position: 'Academic Secretary', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Nazima Naseem', position: 'Academic Secretary Vice', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Sahaama Naseer', position: 'Sports Secretary', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Samha Ibrahim', position: 'Sport Secretary Vice', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Aminath Mala Mauroof', position: 'Organising Secretary', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Maeesha Abdul Muhsin', position: 'Organising Secretary Vice', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Aminath Madheeha Khaleel', position: 'Admin Secretary', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Ali Rifau', position: 'Admin Secretary Vice', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Fathimath Shareefa', position: 'Media Coordinator', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Aminath Nashia', position: 'Treasurer', photo: './Images/Faculties/kems/dean.jpg' },
 ];
 
 
