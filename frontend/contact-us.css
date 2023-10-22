@@ -234,6 +234,54 @@
 }
 
 
+.contact-card-container {
+    padding: 20px 40px 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: auto;
+}
+
+.card {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    color: #146c57;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.card i {
+    margin-right: 10px;
+}
+
+.card a {
+    color: #146c57;
+    text-decoration: none;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
 .contactUs {
     position: relative;
     width: 100%;
@@ -308,7 +356,7 @@
 }
 
 .inputBox span {
-    color: #18b7ff;
+    color: #146c57;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 500;
@@ -332,7 +380,7 @@
 }
 
 .inputBox input[type="submit"] {
-    background: #ff578b;
+    background: #146c57;
     color: #fff;
     border: none;
     font-size: 1.1em;
