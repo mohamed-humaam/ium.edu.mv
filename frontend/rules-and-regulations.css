@@ -251,13 +251,13 @@
 }
 
 .filter-for-category, .filter-for-type {
-    margin-bottom: 20px; /* Add some spacing between filter sections */
+    margin-bottom: 20px;
 }
 
 /* Style the labels vertically */
 .filter-for-category label, .filter-for-type label {
     display: block;
-    margin-bottom: 5px; /* Add spacing between labels */
+    margin-bottom: 5px;
 }
 
 .filter-for-category h2, .filter-for-type h2 {
@@ -285,7 +285,7 @@ table {
 table th, table td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #e0e0e0; /* Add a border line below each row */
+    border-bottom: 1px solid #e0e0e0;
 }
 
 table th {
