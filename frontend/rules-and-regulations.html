@@ -164,95 +164,110 @@
     </section>
 
 
-    <section id="document-list">
-        <div class="filters">
-            <!-- Filter Checkboxes -->
-            <div class="filter-for-category">
+    <section id="documents">
+      <div class="filter-section">
+          <!-- Filter by Category -->
+          <div class="filter-for-category">
               <h2>Filter by Category</h2>
-                <label>
+              <label>
                   <input type="checkbox" class="filter-checkbox" value="academic" checked/> Academic
-                </label>
-                <label>
+              </label>
+              <label>
                   <input type="checkbox" class="filter-checkbox" value="administrative" checked/> Administrative
-                </label>
-            </div>
-            <!-- Filter Radios -->
-            <div class="filter-for-type">
+              </label>
+          </div>
+  
+          <!-- Filter by Document Type -->
+          <div class="filter-for-type">
               <h2>Filter by Document Type</h2>
               <label>
-                <input type="radio" name="center" value="all" checked /> All
+                <input type="radio" name="doctype" value="all" checked /> All
               </label>
               <label>
-                <input type="radio" name="center" value="acts" /> Acts
+                <input type="radio" name="doctype" value="acts" /> Acts
               </label>
               <label>
-                <input type="radio" name="center" value="regulations" /> Regulations
+                <input type="radio" name="doctype" value="regulations" /> Regulations
               </label>
               <label>
-                <input type="radio" name="center" value="policies" /> Policies
+                <input type="radio" name="doctype" value="policies" /> Policies
               </label>
               <label>
-                <input type="radio" name="center" value="rules" /> Rules
+                <input type="radio" name="doctype" value="rules" /> Rules
               </label>
               <label>
-                <input type="radio" name="center" value="procedures" /> Procedures
+                <input type="radio" name="doctype" value="procedures" /> Procedures
               </label>
               <label>
-                <input type="radio" name="center" value="codes of conduct" /> Codes of Conduct
+                <input type="radio" name="doctype" value="codes of conduct" /> Codes of Conduct
               </label>
               <label>
-                <input type="radio" name="center" value="standards" /> Standards
+                <input type="radio" name="doctype" value="standards" /> Standards
               </label>
               <label>
-                <input type="radio" name="center" value="guidelines" /> Guidelines
+                <input type="radio" name="doctype" value="guidelines" /> Guidelines
               </label>
               <label>
-                <input type="radio" name="center" value="task lists" /> Task Lists
+                <input type="radio" name="doctype" value="task lists" /> Task Lists
               </label>
               <label>
-                <input type="radio" name="center" value="check lists" /> Check Lists
+                <input type="radio" name="doctype" value="check lists" /> Check Lists
               </label>
               <label>
-                <input type="radio" name="center" value="forms" /> Forms
+                <input type="radio" name="doctype" value="forms" /> Forms
               </label>
               <label>
-                <input type="radio" name="center" value="sops" /> SOPs
+                <input type="radio" name="doctype" value="sops" /> SOPs
               </label>
               <label>
-                <input type="radio" name="center" value="tors" /> TORs
+                <input type="radio" name="doctype" value="tors" /> TORs
               </label>
               <label>
-                <input type="radio" name="center" value="manuals" /> Manuals
+                <input type="radio" name="doctype" value="manuals" /> Manuals
               </label>
               <label>
-                <input type="radio" name="center" value="mandates" /> Mandates
+                <input type="radio" name="doctype" value="mandates" /> Mandates
               </label>
               <label>
-                <input type="radio" name="center" value="plans(strategic and action)" /> Plans (Strategic & Action)
+                <input type="radio" name="doctype" value="plans(strategic and action)" /> Plans (Strategic & Action)
               </label>
               <label>
-                <input type="radio" name="center" value="templates" /> Templates
+                <input type="radio" name="doctype" value="templates" /> Templates
               </label>
               <label>
-                <input type="radio" name="center" value="jds" /> JDs
+                <input type="radio" name="doctype" value="jds" /> JDs
               </label>
               <label>
-                <input type="radio" name="center" value="website info" /> Website Info
+                <input type="radio" name="doctype" value="website info" /> Website Info
               </label>
               <label>
-                <input type="radio" name="center" value="organagrams" /> Organagrams
+                <input type="radio" name="doctype" value="organagrams" /> Organagrams
               </label>
               <label>
-                <input type="radio" name="center" value="mous" /> MOUs
+                <input type="radio" name="doctype" value="mous" /> MOUs
               </label>
               <label>
-                <input type="radio" name="center" value="mandates" /> Mandates
+                <input type="radio" name="doctype" value="mandates" /> Mandates
               </label>
-            </div>
-        </div>
-        <!-- Course List Container -->
-        <div id="rules-and-regulations-list-container"></div>
+              <!-- Add more document types as needed -->
+          </div>
+      </div>
+  
+      <div class="document-list">
+          <table>
+              <thead>
+                  <tr>
+                      <!--generates items in the table-->
+                  </tr>
+              </thead>
+              <tbody id="table-body">
+                  <!-- JavaScript will populate this section -->
+              </tbody>
+          </table>
+      </div>
     </section>
+  
+  
 
 
 

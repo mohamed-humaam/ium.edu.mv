@@ -236,134 +236,84 @@
 
 
 
-/* General styles for the document list section */
-#document-list {
+/* Style the documents section */
+#documents {
     display: flex;
-    padding: 30px 60px 30px 60px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 90px 20px 90px;
 }
 
-/* Styles for the filter container */
-.filters {
-    background-color: #f8f8f8;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Style the filter section */
+.filter-section {
+    width: 15%;
+    margin-right: 20px;
 }
 
-/* Styles for the filter container header */
-.filter-for-category h2,
-.filter-for-type h2 {
-    margin-bottom: 10px;
-    font-size: 1.6rem;
-    font-weight: 400;
+.filter-for-category, .filter-for-type {
+    margin-bottom: 20px; /* Add some spacing between filter sections */
 }
 
-/* Styles for the labels in Filter by Category */
-.filter-for-category label {
+/* Style the labels vertically */
+.filter-for-category label, .filter-for-type label {
     display: block;
+    margin-bottom: 5px; /* Add spacing between labels */
+}
+
+.filter-for-category h2, .filter-for-type h2 {
+    font-size: 1.2em;
+    font-weight: 600;
     margin-bottom: 10px;
+}
+
+.filter-checkbox, input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Style the document list */
+.document-list {
+    flex: 1;
+}
+
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0; /* Add a border line below each row */
+}
+
+table th {
+    color: #2ba067;
+    font-weight: bold;
+}
+
+table th:first-child, table td:first-child {
+    width: 90%;
+}
+
+table th:nth-child(2), table td:nth-child(2),
+table th:nth-child(3), table td:nth-child(3) {
+    width: 5%;
+}
+
+/* Style the icons */
+i.fa-solid.fa-download, i.fa-regular.fa-eye {
+    font-size: 16px;
+    color: #2ba067;
     cursor: pointer;
-    font-size: 1.1rem;
-    color: #333;
-    transition: color 0.3s ease;
+    margin: 0 10px;
 }
 
-/* Styles for the checkboxes in Filter by Category */
-.filter-for-category input[type="checkbox"] {
-    accent-color: #00954d;
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-    margin-right: 10px;
-}
-
-/* Styles for checked checkbox labels in Filter by Category */
-.filter-for-category input[type="checkbox"]:checked + label {
+/* Hover effect for icons */
+i.fa-solid.fa-download:hover, i.fa-regular.fa-eye:hover {
     color: #00954d;
 }
-
-/* Styles for the labels in Filter by Document Type */
-.filter-for-type label {
-    display: block;
-    margin-bottom: 10px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-/* Styles for the radio buttons in Filter by Document Type */
-.filter-for-type input[type="radio"] {
-    accent-color: #00954d;
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-    margin-right: 10px;
-}
-
-/* Styles for checked radio labels in Filter by Document Type */
-.filter-for-type input[type="radio"]:checked + label {
-    color: #00954d;
-}
-
-/* Arrange labels in a column for Filter by Document Type */
-.filter-for-type label {
-    display: flex;
-    justify-content: left;
-}
-
-/* Styles for the document list container */
-#rules-and-regulations-list-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns in a row */
-    gap: 20px; /* Gap between columns */
-    padding: 20px 70px 20px 70px;
-}
-
-/* Reduce the space between each row */
-#rules-and-regulations-list-container .document-item {
-    margin-bottom: 10px;
-    height: 15rem;
-    width: 15rem;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    transition: background-color 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center content horizontally */
-}
-
-/* Styles for the PDF logo */
-#rules-and-regulations-list-container .document-item img {
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
-}
-
-/* Styles for the document titles (you can customize these styles) */
-#rules-and-regulations-list-container .document-item h3 {
-    margin: 10px 0; /* Add margin to separate title from logo */
-    font-size: 18px;
-}
-
-/* Hover effect for document items */
-#rules-and-regulations-list-container .document-item:hover {
-    background-color: #f0f0f0;
-    cursor: pointer;
-}
-
-/* Styles for line breaks between documents */
-#rules-and-regulations-list-container br {
-    content: ' ';
-    display: block;
-    margin: 10px 0;
-    border-top: 1px solid #ccc;
-    width: 50%;
-}
-
 
 
 
