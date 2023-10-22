@@ -1,16 +1,28 @@
 // script.js
 const committeeMembers = [
     {
-        name: "John Doe",
-        universityPosition: "Professor of Mathematics",
-        committeePosition: "Chairperson",
-        photo: "./Images/Faculties/kems/dean.jpg", // Add the image file path
+        name: "Dr. Ibrahim Zakariyya Moosa",
+        universityPosition: "Vice Chancellor",
+        committeePosition: "Chair",
+        photo: "./Images/tmt/VC-Dr.png", // Add the image file path
     },
     {
-        name: "Jane Smith",
-        universityPosition: "Assistant Professor of History",
-        committeePosition: "Vice Chair",
-        photo: "./Images/Faculties/kems/dean.jpg", // Add the image file path
+        name: "Mohamed Mahid Shareef",
+        universityPosition: "Deputy Vice-Chancellor ( Administration and Finance )",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20Uz%20Mahid.jpg", // Add the image file path
+    },
+     {
+        name: "Dr. Saudullah Ali",
+        universityPosition: "Deputy Vice-Chancellor ( Academic Affairs)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Saud.jpg", // Add the image file path
+    },
+        {
+        name: "Dr. Dheeba Moosa",
+        universityPosition: "Deputy Vice-Chancellor (Research and Innovation)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
     },
     // Add more committee members here
 ];
