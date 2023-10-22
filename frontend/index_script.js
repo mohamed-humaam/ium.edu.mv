@@ -105,6 +105,115 @@ const newsData = [
 
 
 
+
+
+
+
+
+// Certificate objects with their certificate numbers
+const certificates = [
+  { certificateNumber: "12345", studentName: "John Doe", studentID: "0001", courseName: "Computer Science" },
+  { certificateNumber: "54321", studentName: "Jane Smith", studentID: "0002", courseName: "Data Science" },
+  { certificateNumber: "98765", studentName: "Alice Johnson", studentID: "0003", courseName: "Mechanical Engineering" },
+  { certificateNumber: "13579", studentName: "Bob Williams", studentID: "0004", courseName: "Business Administration" },
+  { certificateNumber: "24680", studentName: "Eva Davis", studentID: "0005", courseName: "Environmental Science" },
+  { certificateNumber: "11111", studentName: "Michael Brown", studentID: "0006", courseName: "Mathematics" }
+];
+
+// JavaScript code to handle popup and close behavior
+function verifyCertificate() {
+  const certificateNumber = document.getElementById('certificate-number').value;
+  const popup = document.getElementById('popup');
+  const certificateResult = document.querySelector('.certificate-result');
+  const details = document.querySelectorAll('.details');
+  const studentName = document.getElementById('student-name');
+  const studentID = document.getElementById('student-id');
+  const courseName = document.getElementById('course-name');
+
+  // Find the certificate object with the given certificateNumber
+  const certificate = certificates.find(cert => cert.certificateNumber === certificateNumber);
+
+  if (certificate) {
+      // Certificate is valid
+      studentName.textContent = certificate.studentName;
+      studentID.textContent = certificate.studentID;
+      courseName.textContent = certificate.courseName;
+
+      // Set the message for a valid certificate
+      certificateResult.textContent = 'Certificate is valid';
+      certificateResult.style.color = 'green';
+      popup.classList.add('valid');
+
+      // Show the additional details for a valid certificate
+      details.forEach(element => {
+          element.style.display = 'block';
+      });
+  } else {
+      // Certificate is invalid
+      // Set the message for an invalid certificate
+      certificateResult.textContent = 'Certificate is invalid';
+      certificateResult.style.color = 'red';
+      popup.classList.add('invalid');
+
+      studentName.textContent = '';
+      studentID.textContent = '';
+      courseName.textContent = '';
+
+      // Hide the additional details for an invalid certificate
+      details.forEach(element => {
+          element.style.display = 'none';
+      });
+  }
+
+  popup.style.display = 'block';
+}
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+      closePopup();
+  }
+});
+
+document.addEventListener('click', function (event) {
+  if (event.target === document.getElementById('popup')) {
+      closePopup();
+  }
+});
+
+function closePopup() {
+  const popup = document.getElementById('popup');
+  // Remove the "valid" and "invalid" classes
+  popup.classList.remove('valid', 'invalid');
+  popup.style.display = 'none';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // Scroll to the top of the page when the top button is clicked
   document.querySelector('.top-button').addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

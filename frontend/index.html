@@ -168,7 +168,7 @@
     <section class="feature-container">
       <div class="feature">
         <a href="https://library.ium.edu.mv/">Library <i class="fa-solid fa-circle-right"></i></a>
-        <p>Find the right course and see why studying with us is different.</p>
+        <p>Enrich with our library's vast resources and knowledge hub.</p>
       </div>
     
       <div class="feature">
@@ -177,8 +177,8 @@
       </div>
     
       <div class="feature">
-        <a href="#">Partnership <i class="fa-solid fa-circle-right"></i></a>
-        <p>Innovate with our people, technology and outstanding facilities.</p>
+        <a href="#">Scholarship <i class="fa-solid fa-circle-right"></i></a>
+        <p>Enrich with our library's vast resources and knowledge hub.</p>
       </div>
     
       <div class="feature">
@@ -240,11 +240,20 @@
     <section class="course-verification">
       <h2 class="section-title">Verify our Certificates</h2>
       <p class="newsletter-description">Enter your certificate number below to check the validity of your certificate.</p>
-      <form class="newsletter-form" action="#" method="post">
-        <input type="email" name="email" placeholder="Enter your certificate number" required>
-        <button type="submit">Verify</button>
+      <form class="newsletter-form" action="#" method="post" onsubmit="verifyCertificate(); return false;">
+          <input type="text" id="certificate-number" placeholder="Enter your certificate number" required>
+          <button type="submit">Verify</button>
       </form>
-    </section>    
+
+      <div class="popup" id="popup">
+          <div class="popup-content">
+              <h3>Certificate Verification Result</h3>
+              <p class="certificate-result"></p>
+              <p class="details valid" style="display: none">Belongs to <span id="student-name"></span>, ID: <span id="student-id"></span></p>
+              <p class="details valid" style="display: none">Student completed <span id="course-name"></span> from Islamic University of Maldives.</p>
+          </div>
+      </div>
+    </section>
 
 
     <section class="upcoming-events">
