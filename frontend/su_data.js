@@ -1,7 +1,7 @@
 // Sample student representatives data
 const studentRepresentatives = [
-  { name: 'Hussain Arubaan Fawwaz', position: 'President', photo: './Images/Faculties/kems/dean.jpg' },
   { name: 'Hawwa Shifla', position: 'Vice President', photo: './Images/Faculties/kems/dean.jpg' },
+  { name: 'Hussain Arubaan Fawwaz', position: 'President', photo: './Images/Faculties/kems/dean.jpg' },
   { name: 'Aminath Rafa Ahmed', position: 'Academic Secretary', photo: './Images/Faculties/kems/dean.jpg' },
   { name: 'Nazima Naseem', position: 'Academic Secretary Vice', photo: './Images/Faculties/kems/dean.jpg' },
   { name: 'Sahaama Naseer', position: 'Sports Secretary', photo: './Images/Faculties/kems/dean.jpg' },
