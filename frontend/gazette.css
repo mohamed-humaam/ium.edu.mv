@@ -237,15 +237,14 @@
 
 
 
+/* Style for the filter area on the left */
 .container {
     display: flex;
     margin: 20px auto;
-    padding: 20px;
+    padding: 20px 70px 20px 70px;
     background-color: #fff;
-    border-radius: 10px;
 }
 
-/* Style for the filter area on the left */
 .filter-column {
     flex: 1;
     padding: 20px;
@@ -253,7 +252,8 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 25%; /* Adjust the width as needed */
+    box-sizing: border-box;
+    width: 25%;
 }
 
 .filter-column h3 {
@@ -266,35 +266,85 @@
     margin-bottom: 10px;
 }
 
-/* Style for the Announcements table column on the right */
+/* Style for the Document table column on the right */
 .table-column {
-    flex: 3; /* Adjust the flex value to allocate remaining width */
+    flex: 6;
     padding: 20px;
+    margin-left: 50px;
 }
 
-/* Style for the Announcements table */
-#announcements-table {
+/* Style for the Document table */
+#procurement-table {
     width: 100%;
     border-collapse: collapse;
 }
 
-#announcements-table th,
-#announcements-table td {
-    padding: 10px;
+#procurement-table th,
+#procurement-table td {
     border: 1px solid #ccc;
     text-align: left;
+    padding: 10px;
 }
 
-#announcements-table th {
+#procurement-table th {
     background-color: #f0f0f0;
     font-weight: bold;
 }
 
-#announcements-table tbody tr:hover {
+#procurement-table th:nth-child(1), 
+#procurement-table td:nth-child(1) {
+    width: 40%; /* Adjust the percentage as needed */
+}
+
+#procurement-table th:nth-child(2), 
+#procurement-table td:nth-child(2),
+#procurement-table th:nth-child(3), 
+#procurement-table td:nth-child(3),
+#procurement-table th:nth-child(4), 
+#procurement-table td:nth-child(4) {
+    width: 15%; /* Adjust the percentage as needed */
+}
+
+#procurement-table th:nth-child(5), 
+#procurement-table td:nth-child(5),
+#procurement-table th:nth-child(6), 
+#procurement-table td:nth-child(6) {
+    width: 5%; /* Adjust the percentage as needed */
+}
+
+#procurement-table tbody tr:hover {
     background-color: #e0e0e0;
     cursor: pointer;
 }
 
+/* Fix background color in the icons and button area */
+i.far, i.fas {
+    background: none; /* Fix background color in icons */
+}
+
+button {
+    background: none; /* Fix background color in buttons */
+    border: none;
+    cursor: pointer;
+}
+
+.viewcell,
+.downloadcell {
+    justify-content: center;
+    align-items: center;
+}
+
+#procurement-table td{
+    border: none;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    margin-bottom: 5px;
+}
+
+.fa-eye, .fa-download{
+    color: green;
+    border:none;
+    cursor: pointer;
+}
 
 
 

@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all"/>
 
-    <link rel="stylesheet" href="announcements.css">
+    <link rel="stylesheet" href="gazette.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -140,7 +140,7 @@
 
       <li><a href="#">Publications</a>
         <ul class="dropdown-menu">
-          <li><a href="announcements.html">Gazette</a></li>
+          <li><a href="gazette.html">Gazette</a></li>
           <li><a href="procurement.html">Public Procurement</a></li>
           <li><a href="Al-Manhaj.html">Al-Manhaj</a></li>
           <li><a href="Adhaahama.html">Adhaahama</a></li>
@@ -158,71 +158,37 @@
 
     <section id="banner">
         <div class="title">
-          <h2>Announcements</h2>
+          <h2>IUM Gazette</h2>
         </div>
     </section>
 
     
-
     <section class="container">
         <div class="filter-column">
-                <h3>Filters</h3>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Employment"> Employment
-        </label>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Academic"> Academic
-        </label>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Administrative"> Administrative
-        </label>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Procurement"> Procurement
-        </label>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Healthcare"> Healthcare
-        </label>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Scholarship"> Scholarship
-        </label>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Technology"> Technology
-        </label>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Environmental"> Environmental
-        </label>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Community"> Community
-        </label>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Event"> Event
-        </label>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Research"> Research
-        </label>
-        <label>
-            <input type="checkbox" class="filter-checkbox" value="Marketing"> Marketing
-        </label>
-        <!-- Add checkboxes for other categories here -->
-    </div>
+            <h3>Filters</h3>
+            <label>
+                <input type="checkbox" class="filter-checkbox" value="Announcements"> Announcements
+            </label>
+            <label>
+                <input type="checkbox" class="filter-checkbox" value="Reports"> Reports
+            </label>
+            <label>
+                <input type="checkbox" class="filter-checkbox" value="Screening Sheets"> Screening Sheets
+            </label>
+            <label>
+                <input type="checkbox" class="filter-checkbox" value="Forms"> Forms
+            </label>
+        </div>
 
-    <div class="table-column">
-        <table id="announcements-table">
-            <thead>
-                <tr>
-                    <th>Announcement Name</th>
-                    <th>Announcement Number</th>
-                    <th>Announcement Category</th>
-                    <th>Announcement Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Announcement rows will be added here using JavaScript -->
-            </tbody>
-        </table>
-    </div>
+        <div class="table-column">
+            <table id="procurement-table">
+                
+                <tbody>
+                    <!-- Document rows will be added here using JavaScript -->
+                </tbody>
+            </table>
+        </div>
     </section>
-    
 
 
     <section id="footer">
@@ -292,6 +258,6 @@
 
 
 
-    <script src="announcements.js"></script>
+    <script src="gazette.js"></script>
 </body>
 </html>
