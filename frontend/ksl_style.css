@@ -215,24 +215,24 @@
 /* Banner */
 #banner {
     display: flex;
+    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
-    background-color: #7f1322;
+    text-align: center;
+    background-color: #00954d;
     height: 15vh;
-}
-
-#banner .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 100px;
 }
 
 #banner .title h2 {
     color: #ffffff;
     font-size: 2.7rem;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 
 /* Styling for the deans section */
