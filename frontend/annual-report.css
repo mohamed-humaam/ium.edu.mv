@@ -235,66 +235,39 @@
 
 
 .year-card-container {
-    width: 80%; /* Increase the width for more space */
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 70px 20px 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 20px;
 }
 
 .year-card {
-    width: 90%;
-    margin: 20px 0; /* Increase margin for more space */
-    background-color: #f0f0f0;
-    padding: 20px; /* Increase padding for more space */
-    cursor: pointer;
-    transition: transform 0.2s;
+    padding: 20px;
     text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    transition: transform 0.2s;
+    margin-bottom: 20px;
 }
 
 .year-card:hover {
     transform: scale(1.05);
 }
 
-/* Initially hide the year card content */
-.year-card h2 {
-    display: block;
-}
-
-/* Display the year card content when it's expanded */
-.year-card.expanded h2 {
-    display: block;
-}
-
-.pdf-card-container {
-    display: none;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px; /* Increase margin-top for more space */
-    margin-bottom: 20px; /* Increase margin-bottom for more space */
-}
-
-.year-card.expanded .student-card-container {
-    display: block;
-}
-
-.pdf-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px; /* Increase gap for more space */
-    justify-content: center;
-}
-
 .pdf-card {
-    background-color: #fff;
+    background-color: #f8f8f8;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    border-radius: 20px;
+    box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.51);
+    -moz-box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.51);
     transition: transform 0.2s;
-    margin-bottom: 20px; /* Increase margin-bottom for more space */
+    margin-bottom: 20px;
+    width: 260px;
 }
 
 .pdf-card:hover {
@@ -309,62 +282,27 @@
 }
 
 .pdf-card h3 {
-    font-family: 'Helvetica Neue', sans-serif; /* Apply your preferred font family */
     font-size: 1.5em;
-    margin: 10px 0;
+    font-weight: 600;
+    margin: 5px 0;
 }
 
 .pdf-card p {
-    font-family: 'Helvetica Neue', sans-serif; /* Apply your preferred font family */
     font-size: 1.2em;
     margin: 0;
 }
 
-.pdf-button {
-    background-color: #007bff; /* Blue background color */
-    color: #fff; /* White text color */
-    padding: 10px 10px; /* Padding around the text */
-    border: none; /* Remove the button border */
-    border-radius: 2px; /* Add some border radius for rounded corners */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-    font-size: 12px; /* Font size */
-    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
-    text-decoration: none; /* Remove underlines for links */
-}
-
-.pdf-button:hover {
-    background-color: #0056b3; /* Darker blue background color on hover */
-}
-
-/* Update the year-card-container to use a row layout */
-.year-card-container {
-    width: 100%; /* Set the width to 100% to center-align the cards */
-    display: flex;
-    flex-direction: row; /* Change to row */
-    justify-content: space-between; /* Adjust spacing between cards */
-}
-
 /* Adjust the individual year card width as needed */
 .year-card {
-    width: calc(25% - 20px); /* Adjust the width percentage as needed */
+    width: calc(30% - 20px); /* Adjust the width percentage as needed */
     max-width: 500px; /* Set a maximum width to control card size */
-    margin: 20px; /* Add margin for space between cards */
-    background-color: #f0f0f0;
+    margin: 20px 0;
     padding: 20px;
     cursor: pointer;
     transition: transform 0.2s;
     text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
 }
-
-
-
-/* Optionally, you can center-align the cards vertically */
-.year-card-container {
-    align-items: center;
-}
-
 
 .year-card:hover {
     transform: scale(1.05);
@@ -378,25 +316,6 @@
 /* Display the year card content when it's expanded */
 .year-card.expanded h2 {
     display: block;
-}
-
-.pdf-card-container {
-    display: none;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.year-card.expanded .pdf-card-container {
-    display: block;
-}
-
-.pdf-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    justify-content: center; /* Center-align the student cards horizontally */
 }
 
 
