@@ -1,63 +1,77 @@
-const years = [2023, 2022, 2021,2020];
+const years = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015];
 const yearContainer = document.getElementById('yearContainer');
 
 const pdfData = {
     2023: [
-        { name: 'Al-Manhaj', batch: '2023', imageUrl: './Images/Research/al-manhaj/icon.png', pdfUrl: './Images/Research/al-manhaj/al-manhaj-2022.pdf' },
+        { name: 'Adhaahama', imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: './Images/Research/adhaahama/adhaahama-2019.pdf' },
     ],
     2022: [
-        { name: 'Al-Manhaj', batch: '2022', imageUrl: './Images/Research/al-manhaj/icon.png', pdfUrl: './Images/Research/al-manhaj/al-manhaj-2022.pdf' },
+        { name: 'Adhaahama', imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: 'https://ium-media.s3.ap-southeast-1.amazonaws.com/adhaahama-3-final-1628504664qwgd6.pdf' },
     ],
     2021: [
-        { name: 'Al-Manhaj', batch: '2021', imageUrl: './Images/Research/al-manhaj/icon.png', pdfUrl: './Images/Research/al-manhaj/al-manhaj-2022.pdf' },
+        { name: 'Adhaahama', imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: 'https://ium-media.s3.ap-southeast-1.amazonaws.com/adhaahama-3-final-1628504664qwgd6.pdf' },
     ],
     2020: [
-        { name: 'Al-Manhaj', batch: '2020', imageUrl: './Images/Research/al-manhaj/icon.png', pdfUrl: './Images/Research/al-manhaj/al-manhaj-2022.pdf' },
-    
+        { name: 'Adhaahama', imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: './Images/Research/adhaahama/adhaahama-2019.pdf' },
+    ],
+    2019: [
+        { name: 'Adhaahama', imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: 'https://ium-media.s3.ap-southeast-1.amazonaws.com/adhaahama-3-final-1628504664qwgd6.pdf' },
+    ],
+    2018: [
+        { name: 'Adhaahama', imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: 'https://ium-media.s3.ap-southeast-1.amazonaws.com/adhaahama-3-final-1628504664qwgd6.pdf' },
+    ],
+    2017: [
+        { name: 'Adhaahama', imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: './Images/Research/adhaahama/adhaahama-2019.pdf' },
+    ],
+    2016: [
+        { name: 'Adhaahama', imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: 'https://ium-media.s3.ap-southeast-1.amazonaws.com/adhaahama-3-final-1628504664qwgd6.pdf' },
+    ],
+    2015: [
+        { name: 'Adhaahama', imageUrl: './Images/Research/adhaahama/icon.jpg', pdfUrl: 'https://ium-media.s3.ap-southeast-1.amazonaws.com/adhaahama-3-final-1628504664qwgd6.pdf' },
     ],
 };
 
+const maxItemsPerRow = 6; // Set the maximum number of items per row
 
 years.forEach((year) => {
     const yearCard = document.createElement('div');
     yearCard.classList.add('year-card');
 
-    const yearTitle = document.createElement('h2');
-    yearTitle.innerText = year;
+    if (pdfData[year] && pdfData[year].length > 0) {
+        pdfData[year].forEach((pdf) => {
+            const pdfsContainer = document.createElement('div');
+            pdfsContainer.classList.add('pdf-card');
 
-    yearCard.appendChild(yearTitle);
+            const pdfLogo = document.createElement('img');
+            pdfLogo.src = pdf.imageUrl;
+            pdfLogo.alt = pdf.name;
+            pdfLogo.classList.add('pdf-logo');
+            pdfsContainer.appendChild(pdfLogo);
 
-    const pdfsContainer = document.createElement('div');
-    pdfsContainer.classList.add('pdf-card-container');
+            const pdfInfo = document.createElement('div');
+            pdfInfo.classList.add('pdf-info');
 
-    yearCard.appendChild(pdfsContainer);
+            const pdfTitle = document.createElement('h3');
+            pdfTitle.innerText = pdf.name;
 
-    yearCard.addEventListener('click', () => {
-        const pdfs = pdfData[year];
-        pdfsContainer.innerHTML = '';
+            const pdfYear = document.createElement('p');
+            pdfYear.innerText = year;
 
-        const pdfGrid = document.createElement('div');
-        pdfGrid.classList.add('pdf-card-grid');
+            pdfInfo.appendChild(pdfTitle);
+            pdfInfo.appendChild(pdfYear);
+            pdfsContainer.appendChild(pdfInfo);
 
-        pdfs.forEach((pdf) => {
-            const pdfCard = document.createElement('div');
-            pdfCard.classList.add('pdf-card');
-            pdfCard.innerHTML = `
-                <img src="${pdf.imageUrl}" alt="${pdf.name}">
-                <div>
-                    <h3>${pdf.name}</h3>
-             
-                    <a href="${pdf.pdfUrl}" target="_blank" class="pdf-button">View PDF</a>
-                </div>
-            `;
-            pdfGrid.appendChild(pdfCard);
+            pdfsContainer.addEventListener('click', () => {
+                window.open(pdf.pdfUrl, '_blank');
+            });
+
+            yearCard.appendChild(pdfsContainer);
         });
-
-        pdfsContainer.appendChild(pdfGrid);
-
-        // Toggle the "expanded" class to show or hide additional information
-        yearCard.classList.toggle('expanded');
-    });
+    }
 
     yearContainer.appendChild(yearCard);
 });
+
+// Calculate the number of rows based on the number of items and the maximum items per row
+const numRows = Math.ceil(years.length / maxItemsPerRow);
+yearContainer.style.gridTemplateRows = `repeat(${numRows}, 1fr)`;
