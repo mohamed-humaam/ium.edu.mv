@@ -47,8 +47,8 @@ function createTableRow(data) {
     viewCell.appendChild(viewIcon);
 
     row.appendChild(titleCell);
-    row.appendChild(downloadCell);
     row.appendChild(viewCell);
+    row.appendChild(downloadCell);
     return row;
 }
 

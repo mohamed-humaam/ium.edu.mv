@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const procurementData = [
+  const documentData = [
     {
       name: "Announcement 1",
       number: "ANN-001",
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function populateTable() {
-    const tableBody = document.querySelector("#procurement-table tbody");
+    const tableBody = document.querySelector("#document-table tbody");
     tableBody.innerHTML = "";
 
     const checkboxes = document.querySelectorAll(".filter-checkbox");
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .filter(checkbox => checkbox.checked)
       .map(checkbox => checkbox.value);
 
-    procurementData.forEach(document => {
+    documentData.forEach(document => {
       if (
         selectedCategories.length === 0 ||
         selectedCategories.includes(document.category)
