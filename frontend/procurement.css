@@ -215,7 +215,6 @@
 /* Banner */
 #banner {
     display: flex;
-    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -236,8 +235,11 @@
 
 /* Style for the filter area on the left */
 .container {
+    background-image: url("./Images/Banners/Site\ Pattern\ PNG\ FINAL.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
     display: flex;
-    margin: 20px auto;
     padding: 20px 70px 20px 70px;
     background-color: #fff;
 }
@@ -313,7 +315,7 @@
 }
 
 #document-table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Set the background color to grey */
+    background-color: rgba(175, 175, 175, 0.466); /* Set the background color to grey */
   }
 
 #document-table th {

@@ -244,17 +244,7 @@
     grid-gap: 20px;
 }
 
-.year-card {
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-    transition: transform 0.2s;
-    margin-bottom: 20px;
-}
 
-.year-card:hover {
-    transform: scale(1.05);
-}
 
 .pdf-card {
     background-color: #f8f8f8;

@@ -215,7 +215,6 @@
 /* Banner */
 #banner {
     display: flex;
-    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -236,6 +235,13 @@
 
 /* Style the documents section */
 #documents {
+    background-image: url("./Images/Banners/Site\ Pattern\ PNG\ FINAL.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    display: flex;
+    padding: 20px 70px 20px 70px;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -340,7 +346,7 @@ table tr {
 }
 
 table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Set the background color to grey */
+    background-color: rgba(175, 175, 175, 0.466); /* Set the background color to grey */
   }
 
 table th:first-child, table td:first-child {
