@@ -188,6 +188,10 @@ document.addEventListener("DOMContentLoaded", function () {
             sectionTitle.textContent = title;
             section.appendChild(sectionTitle);
 
+            // Split the research content into "Completed Research" and "Ongoing Research"
+            const completedResearch = researchContent.slice(0, researchContent.indexOf("Ongoing Research"));
+            const ongoingResearch = researchContent.slice(researchContent.indexOf("Ongoing Research") + 1);
+
             // Create a subheading for "Completed Research"
             const completedResearchContent = document.createElement("h2");
             completedResearchContent.textContent = "Completed Research";
@@ -195,12 +199,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Create an unordered list for "Completed Research"
             const completedResearchList = document.createElement("ul");
-            const completedResearchItems = researchContent.slice(0, researchContent.indexOf("Ongoing Research"));
-            completedResearchItems.forEach((itemText) => {
+            for (let i = 0; i < completedResearch.length; i++) {
+                const itemText = completedResearch[i];
                 const item = document.createElement("li");
                 item.textContent = itemText;
                 completedResearchList.appendChild(item);
-            });
+            }
             section.appendChild(completedResearchList);
 
             // Create a subheading for "Ongoing Research"
@@ -210,36 +214,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Create an unordered list for "Ongoing Research"
             const ongoingResearchList = document.createElement("ul");
-            const ongoingResearchItems = researchContent.slice(researchContent.indexOf("Ongoing Research") + 1);
-            ongoingResearchItems.forEach((itemText) => {
+            for (let i = 0; i < ongoingResearch.length; i++) {
+                const itemText = ongoingResearch[i];
                 const item = document.createElement("li");
                 item.textContent = itemText;
                 ongoingResearchList.appendChild(item);
                 item.style.display = 'none'; // Initially hide ongoing research items
-            });
+            }
             section.appendChild(ongoingResearchList);
 
             // Create a button to toggle between "Read More" and "Read Less"
             const toggleButton = document.createElement("button");
             toggleButton.textContent = "Read More";
+
+            // Maintain the state of the expanded content
             let isExpanded = false;
 
-            // Add an event listener to toggle between full content and preview
             toggleButton.addEventListener("click", function () {
                 isExpanded = !isExpanded;
-
-                if (isExpanded) {
-                    // Show the full content
-                    toggleButton.textContent = "Read Less";
-                    ongoingResearchItems.forEach((item) => (item.style.display = 'block'));
-                } else {
-                    // Show the preview
-                    toggleButton.textContent = "Read More";
-                    ongoingResearchItems.forEach((item) => (item.style.display = 'none'));
+                toggleButton.textContent = isExpanded ? "Read Less" : "Read More";
+            
+                // Toggle the display of ongoing research list items
+                for (let i = 0; i < ongoingResearchList.children.length; i++) {
+                    const item = ongoingResearchList.children[i];
+                    item.style.display = isExpanded ? 'list-item' : 'none';
                 }
             });
 
-            // Add the "Read More" button to the section
             section.appendChild(toggleButton);
 
             // Return the completed section
