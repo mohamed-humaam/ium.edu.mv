@@ -204,6 +204,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 const item = document.createElement("li");
                 item.textContent = itemText;
                 completedResearchList.appendChild(item);
+                if (i > 0) {
+                    // Initially hide all but the first item
+                    item.style.display = 'none';
+                }
             }
             section.appendChild(completedResearchList);
 
@@ -233,7 +237,13 @@ document.addEventListener("DOMContentLoaded", function () {
             toggleButton.addEventListener("click", function () {
                 isExpanded = !isExpanded;
                 toggleButton.textContent = isExpanded ? "Read Less" : "Read More";
-            
+
+                // Toggle the display of completed research list items
+                for (let i = 1; i < completedResearchList.children.length; i++) {
+                    const item = completedResearchList.children[i];
+                    item.style.display = isExpanded ? 'list-item' : 'none';
+                }
+
                 // Toggle the display of ongoing research list items
                 for (let i = 0; i < ongoingResearchList.children.length; i++) {
                     const item = ongoingResearchList.children[i];
