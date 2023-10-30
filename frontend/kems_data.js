@@ -25,9 +25,10 @@ const KEMS_Academic = [
   {
     name: "Aishath Sinaau",
     occupation: "Lecturer",
-    photo: "./Images/Faculties/kems/lecturer.png",
+    photo: "./Images/person.png",
     contact: "+960330122",
     email: "example@ium.edu.mv",
+    faculty: "Kulliyyah of Economics and Management Studies",
     academic_qualifications: [
       "Ph.D. in Bioenvironmental Engineering",
       "M.S. in Chemical Engineering",

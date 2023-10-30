@@ -1,6 +1,4 @@
-// JavaScript to extract staff name from the URL
 document.addEventListener("DOMContentLoaded", function () {
-    const h2 = document.getElementById("staffName");
     const staffInfo = document.getElementById("staffInfo");
 
     // Get the query parameter from the URL
@@ -10,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to find the staff data by name
     function findStaffByName(name) {
-        return staffData.find(staff => staff.name === name);
+        return KEMS_Academic.find(staff => staff.name === name);
     }
 
     const staffData = [
@@ -25,134 +23,214 @@ document.addEventListener("DOMContentLoaded", function () {
         ...CPS_Academic
     ];
 
-    // Set the staff name in the <h2> tag
-    if (staffName) {
-        h2.textContent = staffName;
-        
-        // Find the staff data
-        const staff = findStaffByName(staffName);
-    
-        if (staff) {
-            // Personal Info
-            const personalInfo = document.createElement("div");
-            personalInfo.className = "personal-info";
+    // Find the staff data
+    const staff = findStaffByName(staffName);
 
-            personalInfo.innerHTML = `
-                <img src="${staff.photo}" alt="${staffName}">
-                <p>${staff.occupation}</p>
-                <p>Contact: ${staff.contact}</p>
-                <p>Email: ${staff.email}
-            `;
+    if (staff) {
+        // Personal Info
+        const personalInfo = document.createElement("div");
+        personalInfo.className = "personal-info";
 
-            staffInfo.appendChild(personalInfo);
+        // Create the first column (details-column)
+        const detailsColumn = document.createElement("div");
+        detailsColumn.className = "details-column"; // Changed the class name
+        personalInfo.appendChild(detailsColumn);
 
-            // Profile Info
-            const profileInfo = document.createElement("div");
-            profileInfo.className = "profile";
+        // Row 1: Person's Name (as an h2 tag)
+        const personName = document.createElement("h2");
+        personName.textContent = staff.name;
+        detailsColumn.appendChild(personName);
 
-            // Expert Profile
-            const expertProfileContainer = document.createElement("div");
-            expertProfileContainer.className = "section-container";
+        // Row 2: QR Code
+        const qrCode = document.createElement("img");
+        qrCode.src = "QRCodeURL"; // Replace with the actual QR code URL
+        qrCode.alt = "QR Code";
+        qrCode.className = "qr-code";
+        detailsColumn.appendChild(qrCode);
 
-            const expertProfileTitle = document.createElement("h3");
-            expertProfileTitle.textContent = "Expert Profile";
-            expertProfileContainer.appendChild(expertProfileTitle);
+        // Row 3: Position and Faculty Name (in a div)
+        const positionFacultyDiv = document.createElement("div");
+        positionFacultyDiv.className = "position-faculty";
+        detailsColumn.appendChild(positionFacultyDiv);
 
-            const expertProfileContent = document.createElement("p");
-            expertProfileContent.className = "section-content";
-            expertProfileContent.textContent = staff.profile;
-            expertProfileContainer.appendChild(expertProfileContent);
+        const position = document.createElement("p");
+        position.textContent = staff.occupation;
+        positionFacultyDiv.appendChild(position);
 
-            profileInfo.appendChild(expertProfileContainer);
+        // Row 4: Faculty Name (on the next line)
+        const facultyName = document.createElement("p");
+        facultyName.textContent = staff.faculty || "Unknown Faculty"; // Use the faculty from the data
+        positionFacultyDiv.appendChild(facultyName);
 
-            // Areas of Specialization
-            const specializationContainer = document.createElement("div");
-            specializationContainer.className = "section-container";
+        // Row 5: Academic Qualifications (with popup)
+        const academicQualifications = document.createElement("p");
+        academicQualifications.textContent = "Academic Qualifications";
+        academicQualifications.className = "academic-qualifications-link";
+        detailsColumn.appendChild(academicQualifications);
 
-            const specializationTitle = document.createElement("h3");
-            specializationTitle.textContent = "Areas of Specialization";
-            specializationContainer.appendChild(specializationTitle);
+        // Row 6: Contact Details
+        const contactDetails = document.createElement("div");
+        contactDetails.className = "contact-details";
+        detailsColumn.appendChild(contactDetails);
 
-            const specializationContent = document.createElement("p");
-            specializationContent.className = "section-content";
-            specializationContent.textContent = staff.specialization.join('\n');
-            specializationContainer.appendChild(specializationContent);
+        const contactNumber = document.createElement("p");
+        contactNumber.textContent = `Contact: ${staff.contact}`;
+        contactDetails.appendChild(contactNumber);
 
-            profileInfo.appendChild(specializationContainer);
+        const email = document.createElement("p");
+        email.textContent = `Email: ${staff.email}`;
+        contactDetails.appendChild(email);
 
-            // Awards and Recognition
-            const awardsContainer = document.createElement("div");
-            awardsContainer.className = "section-container";
+        // Create the second column (pfp-column) for the person's image
+        const pfpColumn = document.createElement("div");
+        pfpColumn.className = "pfp-column"; // Added the class name
+        personalInfo.appendChild(pfpColumn);
 
-            const awardsTitle = document.createElement("h3");
-            awardsTitle.textContent = "Awards and Recognition";
-            awardsContainer.appendChild(awardsTitle);
+        const personImage = document.createElement("img");
+        personImage.src = staff.photo;
+        personImage.alt = staff.name;
+        personImage.className = "person-image";
+        pfpColumn.appendChild(personImage);
 
-            const awardsContent = document.createElement("ul");
-            awardsContent.className = "section-list";
-            staff.awards.forEach(award => {
-                const awardItem = document.createElement("li");
-                awardItem.textContent = `${award.date}: ${award.award} (${award.organization})`;
-                awardsContent.appendChild(awardItem);
+        // Append the personalInfo to the staffInfo
+        staffInfo.appendChild(personalInfo);
+
+        // Profile Info
+        const profileInfo = document.createElement("div");
+        profileInfo.className = "profile";
+
+        // Expert Profile
+        const expertProfileContainer = document.createElement("div");
+        expertProfileContainer.className = "section-container";
+
+        const expertProfileTitle = document.createElement("h3");
+        expertProfileTitle.textContent = "Expert Profile";
+        expertProfileContainer.appendChild(expertProfileTitle);
+
+        const expertProfileContent = document.createElement("p");
+        expertProfileContent.className = "section-content";
+        expertProfileContent.textContent = staff.profile;
+        expertProfileContainer.appendChild(expertProfileContent);
+
+        profileInfo.appendChild(expertProfileContainer);
+
+        // Areas of Specialization
+        const specializationContainer = document.createElement("div");
+        specializationContainer.className = "section-container";
+
+        const specializationTitle = document.createElement("h3");
+        specializationTitle.textContent = "Areas of Specialization";
+        specializationContainer.appendChild(specializationTitle);
+
+        const specializationContent = document.createElement("p");
+        specializationContent.className = "section-content";
+        specializationContent.textContent = staff.specialization.join('\n');
+        specializationContainer.appendChild(specializationContent);
+
+        profileInfo.appendChild(specializationContainer);
+
+        // Awards and Recognition
+        const awardsContainer = document.createElement("div");
+        awardsContainer.className = "section-container";
+
+        const awardsTitle = document.createElement("h3");
+        awardsTitle.textContent = "Awards and Recognition";
+        awardsContainer.appendChild(awardsTitle);
+
+        const awardsContent = document.createElement("ul");
+        awardsContent.className = "section-list";
+        staff.awards.forEach(award => {
+            const awardItem = document.createElement("li");
+            awardItem.textContent = `${award.date}: ${award.award} (${award.organization})`;
+            awardsContent.appendChild(awardItem);
+        });
+        awardsContainer.appendChild(awardsContent);
+
+        profileInfo.appendChild(awardsContainer);
+
+        // Research (completed and ongoing)
+        const researchContainer = document.createElement("div");
+        researchContainer.className = "section-container";
+
+        const researchTitle = document.createElement("h3");
+        researchTitle.textContent = "Research";
+        researchContainer.appendChild(researchTitle);
+
+        const researchContent = document.createElement("ul");
+        researchContent.className = "section-list";
+        if (staff.research.completed.length > 0) {
+            const completedTitle = document.createElement("h4");
+            completedTitle.textContent = "Completed";
+            researchContent.appendChild(completedTitle);
+            staff.research.completed.forEach(item => {
+                const researchItem = document.createElement("li");
+                researchItem.textContent = `${item.year}: ${item.title}`;
+                researchContent.appendChild(researchItem);
             });
-            awardsContainer.appendChild(awardsContent);
-
-            profileInfo.appendChild(awardsContainer);
-
-            // Research (completed and ongoing)
-            const researchContainer = document.createElement("div");
-            researchContainer.className = "section-container";
-
-            const researchTitle = document.createElement("h3");
-            researchTitle.textContent = "Research";
-            researchContainer.appendChild(researchTitle);
-
-            const researchContent = document.createElement("ul");
-            researchContent.className = "section-list";
-            if (staff.research.completed.length > 0) {
-                const completedTitle = document.createElement("h4");
-                completedTitle.textContent = "Completed";
-                researchContent.appendChild(completedTitle);
-                staff.research.completed.forEach(item => {
-                    const researchItem = document.createElement("li");
-                    researchItem.textContent = `${item.year}: ${item.title}`;
-                    researchContent.appendChild(researchItem);
-                });
-            }
-            if (staff.research.ongoing.length > 0) {
-                const ongoingTitle = document.createElement("h4");
-                ongoingTitle.textContent = "Ongoing";
-                researchContent.appendChild(ongoingTitle);
-                staff.research.ongoing.forEach(item => {
-                    const researchItem = document.createElement("li");
-                    researchItem.textContent = `${item.year}: ${item.title}`;
-                    researchContent.appendChild(researchItem);
-                });
-            }
-            researchContainer.appendChild(researchContent);
-
-            profileInfo.appendChild(researchContainer);
-
-            // Publications
-            const publicationsContainer = document.createElement("div");
-            publicationsContainer.className = "section-container";
-
-            const publicationsTitle = document.createElement("h3");
-            publicationsTitle.textContent = "Publications";
-            publicationsContainer.appendChild(publicationsTitle);
-
-            const publicationsContent = document.createElement("ul");
-            publicationsContent.className = "section-list";
-            staff.publications.forEach(publication => {
-                const publicationItem = document.createElement("li");
-                publicationItem.textContent = `${publication.year}: ${publication.title}`;
-                publicationsContent.appendChild(publicationItem);
-            });
-            publicationsContainer.appendChild(publicationsContent);
-
-            profileInfo.appendChild(publicationsContainer);
-
-            staffInfo.appendChild(profileInfo);
         }
+        if (staff.research.ongoing.length > 0) {
+            const ongoingTitle = document.createElement("h4");
+            ongoingTitle.textContent = "Ongoing";
+            researchContent.appendChild(ongoingTitle);
+            staff.research.ongoing.forEach(item => {
+                const researchItem = document.createElement("li");
+                researchItem.textContent = `${item.year}: ${item.title}`;
+                researchContent.appendChild(researchItem);
+            });
+        }
+        researchContainer.appendChild(researchContent);
+
+        profileInfo.appendChild(researchContainer);
+
+        // Publications
+        const publicationsContainer = document.createElement("div");
+        publicationsContainer.className = "section-container";
+
+        const publicationsTitle = document.createElement("h3");
+        publicationsTitle.textContent = "Publications";
+        publicationsContainer.appendChild(publicationsTitle);
+
+        const publicationsContent = document.createElement("ul");
+        publicationsContent.className = "section-list";
+        staff.publications.forEach(publication => {
+            const publicationItem = document.createElement("li");
+            publicationItem.textContent = `${publication.year}: ${publication.title}`;
+            publicationsContent.appendChild(publicationItem);
+        });
+        publicationsContainer.appendChild(publicationsContent);
+
+        profileInfo.appendChild(publicationsContainer);
+
+        // Event listener to show the academic qualifications modal
+        const academicQualificationsLink = document.querySelector(".academic-qualifications-link");
+        const academicQualificationsModal = document.createElement("div");
+        academicQualificationsModal.className = "modal";
+        academicQualificationsModal.style.display = "none"; // Initially hide the modal
+
+        academicQualificationsLink.addEventListener("click", function () {
+            // Build the content of the academic qualifications modal
+            academicQualificationsModal.innerHTML = `<div class="modal-content">
+                <span class="close-modal-button">×</span>
+                <h3>Academic Qualifications</h3>
+                <ul>${staff.academic_qualifications.map(qualification => `<li>${qualification}</li>`).join('')}</ul>
+            </div>`;
+
+            staffInfo.appendChild(academicQualificationsModal);
+            academicQualificationsModal.style.display = "block";
+
+            const closeModalButton = academicQualificationsModal.querySelector(".close-modal-button");
+            closeModalButton.addEventListener("click", function () {
+                academicQualificationsModal.style.display = "none";
+                staffInfo.removeChild(academicQualificationsModal);
+            });
+
+            // Close the modal when clicking outside of it
+            window.addEventListener("click", function (event) {
+                if (event.target === academicQualificationsModal) {
+                    academicQualificationsModal.style.display = "none";
+                    staffInfo.removeChild(academicQualificationsModal);
+                }
+            });
+        });
     }
 });

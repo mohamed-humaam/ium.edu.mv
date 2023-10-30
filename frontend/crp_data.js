@@ -18,6 +18,7 @@ const CRP_Academic = [
     photo: "./Images/Faculties/kems/lecturer.png",
     contact: "+960330122",
     email: "example@ium.edu.mv",
+    faculty: "Center for Research and Publications",
     academic_qualifications: [
       "Ph.D. in Bioenvironmental Engineering",
       "M.S. in Chemical Engineering",
@@ -58,6 +59,7 @@ const CRP_Academic = [
     photo: "./Images/Faculties/kems/lecturer.png",
     contact: "+960330122",
     email: "example@ium.edu.mv",
+    faculty: "Center for Research and Publications",
     academic_qualifications: [
       "Ph.D. in Bioenvironmental Engineering",
       "M.S. in Chemical Engineering",

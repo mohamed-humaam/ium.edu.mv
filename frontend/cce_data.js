@@ -27,6 +27,7 @@ const CCE_Academic = [
     photo: " ",
     contact: " ",
     email: "",
+    faculty: "Center for Continuing Education",
     academic_qualifications: [
       " "
     ],
