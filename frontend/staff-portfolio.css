@@ -400,6 +400,7 @@
 .profile .research-and-publications,
 .profile .awards-and-recognition {
     text-align: center;
+    border: none;
 }
 
 .profile .expert-profile p,
