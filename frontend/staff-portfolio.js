@@ -31,36 +31,52 @@ document.addEventListener("DOMContentLoaded", function () {
         const personalInfo = document.createElement("div");
         personalInfo.className = "personal-info";
 
-        // Create the first column (details-column)
+        // Create the div for the details column
         const detailsColumn = document.createElement("div");
-        detailsColumn.className = "details-column"; // Changed the class name
+        detailsColumn.className = "details-column"; // Add a class for styling
         personalInfo.appendChild(detailsColumn);
 
-        // Row 1: Person's Name (as an h2 tag)
+        // Row 1: Title (e.g., Mr., Dr., etc.)
+        const titleDiv = document.createElement("div");
+        titleDiv.textContent = staff.title;
+        titleDiv.className = "title"; // Add a class for styling
+        detailsColumn.appendChild(titleDiv);
+
+        // Row 2: Person's Name (as an h2 tag)
         const personName = document.createElement("h2");
         personName.textContent = staff.name;
         detailsColumn.appendChild(personName);
-
-        // Row 2: QR Code
-        const qrCode = document.createElement("img");
-        qrCode.src = "./Images/dads.png"; // Replace with the actual QR code URL
-        qrCode.alt = "QR Code";
-        qrCode.className = "qr-code";
-        detailsColumn.appendChild(qrCode);
 
         // Row 3: Position and Faculty Name (in a div)
         const positionFacultyDiv = document.createElement("div");
         positionFacultyDiv.className = "position-faculty";
         detailsColumn.appendChild(positionFacultyDiv);
 
+        // Div for the QR Code
+        const qrCodeDiv = document.createElement("div");
+        qrCodeDiv.className = "qr-code-div";
+        positionFacultyDiv.appendChild(qrCodeDiv);
+
+        // Add the QR code here
+        const qrCode = document.createElement("img");
+        qrCode.src = "./Images/dads.png"; // Replace with the actual QR code URL
+        qrCode.alt = "QR Code";
+        qrCode.className = "qr-code";
+        qrCodeDiv.appendChild(qrCode);
+
+        // Div for Position and Faculty
+        const positionFacultyInfoDiv = document.createElement("div");
+        positionFacultyInfoDiv.className = "position-faculty-info";
+        positionFacultyDiv.appendChild(positionFacultyInfoDiv);
+
         const position = document.createElement("p");
         position.textContent = staff.occupation;
-        positionFacultyDiv.appendChild(position);
+        positionFacultyInfoDiv.appendChild(position);
 
         // Row 4: Faculty Name (on the next line)
         const facultyName = document.createElement("p");
         facultyName.textContent = staff.faculty || "Unknown Faculty"; // Use the faculty from the data
-        positionFacultyDiv.appendChild(facultyName);
+        positionFacultyInfoDiv.appendChild(facultyName);
 
         // Row 5: Academic Qualifications (with popup)
         const academicQualifications = document.createElement("p");
@@ -81,11 +97,12 @@ document.addEventListener("DOMContentLoaded", function () {
         email.textContent = `Email: ${staff.email}`;
         contactDetails.appendChild(email);
 
-        // Create the second column (pfp-column) for the person's image
+        // Create the div for the pfp-column (person's image)
         const pfpColumn = document.createElement("div");
-        pfpColumn.className = "pfp-column"; // Added the class name
+        pfpColumn.className = "pfp-column"; // Add a class for styling
         personalInfo.appendChild(pfpColumn);
 
+        // Add the person's image
         const personImage = document.createElement("img");
         personImage.src = staff.photo;
         personImage.alt = staff.name;

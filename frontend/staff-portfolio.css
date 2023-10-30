@@ -252,29 +252,41 @@
   background-position: center;
   display: flex;
   flex-direction: row;
-  padding: 30px;
   width: 100%;
 }
 
 .personal-info .details-column {
     background-color: transparent;
     height: 30rem;
-    width: 75%;
+    padding: 30px;
+    width: 70%;
+}
+
+.personal-info .details-column .title {
+    font-size: 7em;
+    line-height: 100px;
+    color: #00954d;
+    text-shadow: 5px 5px #000000;
 }
 
 .personal-info .details-column h2 {
     display: flex;
-    font-size: 17em;
+    text-transform: uppercase;
+    font-size: 10em;
     color: #00954d;
-    line-height: 220px;
+    line-height: 180px;
     text-align: right;
     text-shadow: 5px 5px #000000;
 }
 
-
+.personal-info .details-column .position-faculty {
+    background-color: red;
+    display: flex;
+}
 
 .personal-info .details-column img {
-    display: none;
+    width: 50px;
+    height: 50px;
 }
 
 
