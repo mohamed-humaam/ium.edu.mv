@@ -234,12 +234,6 @@
 
 
 
-
-
-
-
-
-
 /* Style the staff name */
 #staffName {
   display: none;
@@ -323,6 +317,12 @@
 .personal-info .details-column .academic-contact-cell p:nth-child(1),
 .personal-info .details-column .academic-contact-cell p:nth-child(2) {
     margin-right: 15rem;
+}
+
+.personal-info .academic-qualifications-link,
+.personal-info .contact-link,
+.personal-info .email-link {
+    cursor: pointer;
 }
 
 
@@ -433,6 +433,7 @@
     border-radius: 15px;
     font-size: 1.5em;
     font-weight: 800;
+    cursor: pointer;
 }
 
 
