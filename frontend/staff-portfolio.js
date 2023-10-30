@@ -247,8 +247,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return section;
         }
 
-
-
         // Prepare the content for the "Research and Publications" section
         const researchContent = staff.research.completed.map(item => `${item.year}: ${item.title}`);
         if (staff.research.ongoing.length > 0) {
