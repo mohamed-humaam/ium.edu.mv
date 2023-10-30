@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Row 4: Contact Details
         const contactDetails = document.createElement("p");
-        contactDetails.innerHTML = `<i class="fa-solid fa-phone"></i>${staff.contact}`;
+        contactDetails.innerHTML = `<i class="fa-solid fa-phone"></i> ${staff.contact}`;
         contactDetails.className = "contact-link";
         contactDetails.addEventListener("click", function () {
             // Redirect to a call link (replace with your phone number)
@@ -116,110 +116,52 @@ document.addEventListener("DOMContentLoaded", function () {
         staffInfo.appendChild(personalInfo);
 
         // Profile Info
-        const profileInfo = document.createElement("div");
-        profileInfo.className = "profile";
+        const profileSection = document.createElement("div");
+        profileSection.className = "profile";
 
-        // Expert Profile
-        const expertProfileContainer = document.createElement("div");
-        expertProfileContainer.className = "section-container";
+        // Create a function to generate a section within the profile
+        function createProfileSection(title, content, sectionClass) {
+            const section = document.createElement("div");
+            section.className = sectionClass;
 
-        const expertProfileTitle = document.createElement("h3");
-        expertProfileTitle.textContent = "Expert Profile";
-        expertProfileContainer.appendChild(expertProfileTitle);
+            const sectionTitle = document.createElement("h3");
+            sectionTitle.textContent = title;
+            section.appendChild(sectionTitle);
 
-        const expertProfileContent = document.createElement("p");
-        expertProfileContent.className = "section-content";
-        expertProfileContent.textContent = staff.profile;
-        expertProfileContainer.appendChild(expertProfileContent);
+            const sectionContent = document.createElement("p");
+            sectionContent.className = "section-content";
+            sectionContent.textContent = content;
+            section.appendChild(sectionContent);
 
-        profileInfo.appendChild(expertProfileContainer);
+            return section;
+        }
 
-        // Areas of Specialization
-        const specializationContainer = document.createElement("div");
-        specializationContainer.className = "section-container";
+        // Add Expert Profile
+        const expertProfileSection = createProfileSection("Expert Profile", staff.profile, "expert-profile");
+        profileSection.appendChild(expertProfileSection);
 
-        const specializationTitle = document.createElement("h3");
-        specializationTitle.textContent = "Areas of Specialization";
-        specializationContainer.appendChild(specializationTitle);
+        // Add Areas of Specialization
+        const specializationSection = createProfileSection("Areas of Specialization", staff.specialization.join('\n'), "area-of-specialization");
+        profileSection.appendChild(specializationSection);
 
-        const specializationContent = document.createElement("p");
-        specializationContent.className = "section-content";
-        specializationContent.textContent = staff.specialization.join('\n');
-        specializationContainer.appendChild(specializationContent);
+        // Add Awards and Recognition
+        const awardsSection = createProfileSection("Awards and Recognition", staff.awards.map(award => `${award.date}: ${award.award} (${award.organization})`).join('\n'), "awards-and-recognition");
+        profileSection.appendChild(awardsSection);
 
-        profileInfo.appendChild(specializationContainer);
-
-        // Awards and Recognition
-        const awardsContainer = document.createElement("div");
-        awardsContainer.className = "section-container";
-
-        const awardsTitle = document.createElement("h3");
-        awardsTitle.textContent = "Awards and Recognition";
-        awardsContainer.appendChild(awardsTitle);
-
-        const awardsContent = document.createElement("ul");
-        awardsContent.className = "section-list";
-        staff.awards.forEach(award => {
-            const awardItem = document.createElement("li");
-            awardItem.textContent = `${award.date}: ${award.award} (${award.organization})`;
-            awardsContent.appendChild(awardItem);
-        });
-        awardsContainer.appendChild(awardsContent);
-
-        profileInfo.appendChild(awardsContainer);
-
-        // Research (completed and ongoing)
-        const researchContainer = document.createElement("div");
-        researchContainer.className = "section-container";
-
-        const researchTitle = document.createElement("h3");
-        researchTitle.textContent = "Research";
-        researchContainer.appendChild(researchTitle);
-
-        const researchContent = document.createElement("ul");
-        researchContent.className = "section-list";
+        // Add Research (completed and ongoing)
+        const researchSection = createProfileSection("Research and Publications", "", "research-and-publications");
         if (staff.research.completed.length > 0) {
-            const completedTitle = document.createElement("h4");
-            completedTitle.textContent = "Completed";
-            researchContent.appendChild(completedTitle);
-            staff.research.completed.forEach(item => {
-                const researchItem = document.createElement("li");
-                researchItem.textContent = `${item.year}: ${item.title}`;
-                researchContent.appendChild(researchItem);
-            });
+            const completedResearchSection = createProfileSection("Completed Research", staff.research.completed.map(item => `${item.year}: ${item.title}`).join('\n'), "completed-research");
+            researchSection.appendChild(completedResearchSection);
         }
         if (staff.research.ongoing.length > 0) {
-            const ongoingTitle = document.createElement("h4");
-            ongoingTitle.textContent = "Ongoing";
-            researchContent.appendChild(ongoingTitle);
-            staff.research.ongoing.forEach(item => {
-                const researchItem = document.createElement("li");
-                researchItem.textContent = `${item.year}: ${item.title}`;
-                researchContent.appendChild(researchItem);
-            });
+            const ongoingResearchSection = createProfileSection("Ongoing Research", staff.research.ongoing.map(item => `${item.year}: ${item.title}`).join('\n'), "ongoing-research");
+            researchSection.appendChild(ongoingResearchSection);
         }
-        researchContainer.appendChild(researchContent);
+        profileSection.appendChild(researchSection);
 
-        profileInfo.appendChild(researchContainer);
-
-        // Publications
-        const publicationsContainer = document.createElement("div");
-        publicationsContainer.className = "section-container";
-
-        const publicationsTitle = document.createElement("h3");
-        publicationsTitle.textContent = "Publications";
-        publicationsContainer.appendChild(publicationsTitle);
-
-        const publicationsContent = document.createElement("ul");
-        publicationsContent.className = "section-list";
-        staff.publications.forEach(publication => {
-            const publicationItem = document.createElement("li");
-            publicationItem.textContent = `${publication.year}: ${publication.title}`;
-            publicationsContent.appendChild(publicationItem);
-        });
-        publicationsContainer.appendChild(publicationsContent);
-
-        profileInfo.appendChild(publicationsContainer);
+        // Append the profileSection to the staffInfo
+        staffInfo.appendChild(profileSection);
 
         // Event listener to show the academic qualifications modal
         const academicQualificationsLink = document.querySelector(".academic-qualifications-link");
