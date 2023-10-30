@@ -130,8 +130,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const sectionContent = document.createElement("p");
             sectionContent.className = "section-content";
-            sectionContent.textContent = content;
+
+            const contentPreview = content.substring(0, 200); // Display the first 200 characters
+            const contentFull = content.length > 200 ? content : "";
+
+            sectionContent.textContent = contentPreview;
+
+            const readMoreButton = document.createElement("button");
+            readMoreButton.textContent = "Read More";
+            let isExpanded = false;
+
+            readMoreButton.addEventListener("click", function () {
+                if (!isExpanded) {
+                    sectionContent.textContent = contentFull;
+                    readMoreButton.textContent = "Read Less";
+                } else {
+                    sectionContent.textContent = contentPreview;
+                    readMoreButton.textContent = "Read More";
+                }
+                isExpanded = !isExpanded;
+            });
+
             section.appendChild(sectionContent);
+            if (content.length > 200) {
+                section.appendChild(readMoreButton);
+            }
 
             return section;
         }

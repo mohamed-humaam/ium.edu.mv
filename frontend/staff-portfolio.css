@@ -376,52 +376,33 @@
 }
 
 
-/* Style the profile sections */
-.section-container {
-  margin-top: 20px;
+/* Styling for Expert Profile */
+.expert-profile {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.section-container h3 {
-  font-size: 20px;
-  color: #333;
+/* Styling for Area of Specialization */
+.area-of-specialization {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.section-content {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
+/* Styling for Research and Publications */
+.research-and-publications {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-/* Style the awards list */
-.section-list {
-  list-style: none;
-  padding: 0;
+/* Styling for Awards and Recognition */
+.awards-and-recognition {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
 }
-
-.section-list li {
-  font-size: 16px;
-  color: #555;
-  margin: 5px 0;
-}
-
-/* Style the publication list */
-.section-list li:before {
-  content: '•';
-  margin-right: 5px;
-  color: #333;
-}
-
-/* Make links stand out with a different color */
-a {
-  color: #00954d;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 
 
 
