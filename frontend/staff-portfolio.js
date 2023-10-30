@@ -31,78 +31,81 @@ document.addEventListener("DOMContentLoaded", function () {
         const personalInfo = document.createElement("div");
         personalInfo.className = "personal-info";
 
-        // Create the div for the details column
+        // Create the first column (details-column)
         const detailsColumn = document.createElement("div");
         detailsColumn.className = "details-column"; // Add a class for styling
         personalInfo.appendChild(detailsColumn);
 
-        // Row 1: Title (e.g., Mr., Dr., etc.)
+        // Row 1: Person's Title and Name
         const titleDiv = document.createElement("div");
         titleDiv.textContent = staff.title;
         titleDiv.className = "title"; // Add a class for styling
         detailsColumn.appendChild(titleDiv);
 
-        // Row 2: Person's Name (as an h2 tag)
         const personName = document.createElement("h2");
         personName.textContent = staff.name;
         detailsColumn.appendChild(personName);
 
-        // Row 3: Position and Faculty Name (in a div)
-        const positionFacultyDiv = document.createElement("div");
-        positionFacultyDiv.className = "position-faculty";
-        detailsColumn.appendChild(positionFacultyDiv);
+        // Row 2: Position and Faculty Info
+        const positionFacultyInfo = document.createElement("div");
+        positionFacultyInfo.className = "position-faculty-info"; // Add a class for styling
 
-        // Div for the QR Code
-        const qrCodeDiv = document.createElement("div");
-        qrCodeDiv.className = "qr-code-div";
-        positionFacultyDiv.appendChild(qrCodeDiv);
-
-        // Add the QR code here
+        // Add QR Code to the positionFacultyInfo
         const qrCode = document.createElement("img");
         qrCode.src = "./Images/dads.png"; // Replace with the actual QR code URL
         qrCode.alt = "QR Code";
         qrCode.className = "qr-code";
-        qrCodeDiv.appendChild(qrCode);
+        positionFacultyInfo.appendChild(qrCode);
 
-        // Div for Position and Faculty
-        const positionFacultyInfoDiv = document.createElement("div");
-        positionFacultyInfoDiv.className = "position-faculty-info";
-        positionFacultyDiv.appendChild(positionFacultyInfoDiv);
+        // Add Position in green and Faculty Name in white
+        const positionFacultyDiv = document.createElement("div");
+        positionFacultyDiv.className = "position-faculty";
+        positionFacultyDiv.innerHTML = `
+            <p class="position-green">${staff.occupation}</p>
+            <p class="faculty-white">${staff.faculty || "Unknown Faculty"}</p>
+        `;
+        positionFacultyInfo.appendChild(positionFacultyDiv);
 
-        const position = document.createElement("p");
-        position.textContent = staff.occupation;
-        positionFacultyInfoDiv.appendChild(position);
+        detailsColumn.appendChild(positionFacultyInfo);
 
-        // Row 4: Faculty Name (on the next line)
-        const facultyName = document.createElement("p");
-        facultyName.textContent = staff.faculty || "Unknown Faculty"; // Use the faculty from the data
-        positionFacultyInfoDiv.appendChild(facultyName);
+        // Create the div for academic qualifications, contact number, and email (academic-contact-cell)
+        const academicContactCell = document.createElement("div");
+        academicContactCell.className = "academic-contact-cell"; // Add a class for styling
 
-        // Row 5: Academic Qualifications (with popup)
+        // Row 3: Academic Qualifications (with popup)
         const academicQualifications = document.createElement("p");
-        academicQualifications.textContent = "Academic Qualifications";
+        academicQualifications.innerHTML = `<i class="fa-solid fa-user-graduate"></i> Academic Qualifications`;
         academicQualifications.className = "academic-qualifications-link";
-        detailsColumn.appendChild(academicQualifications);
+        academicContactCell.appendChild(academicQualifications);
 
-        // Row 6: Contact Details
-        const contactDetails = document.createElement("div");
-        contactDetails.className = "contact-details";
-        detailsColumn.appendChild(contactDetails);
+        // Row 4: Contact Details
+        const contactDetails = document.createElement("p");
+        contactDetails.innerHTML = `<i class="fa-solid fa-phone"></i>${staff.contact}`;
+        contactDetails.className = "contact-link";
+        contactDetails.addEventListener("click", function () {
+            // Redirect to a call link (replace with your phone number)
+            window.location.href = "tel:" + staff.contact;
+        });
+        academicContactCell.appendChild(contactDetails);
 
-        const contactNumber = document.createElement("p");
-        contactNumber.textContent = `Contact: ${staff.contact}`;
-        contactDetails.appendChild(contactNumber);
-
+        // Row 5: Email
         const email = document.createElement("p");
-        email.textContent = `Email: ${staff.email}`;
-        contactDetails.appendChild(email);
+        email.innerHTML = `<i class="fa-solid fa-envelope"></i> ${staff.email}`;
+        email.className = "email-link";
+        email.addEventListener("click", function () {
+            // Redirect to email link (replace with your email)
+            window.location.href = "mailto:" + staff.email;
+        });
+        academicContactCell.appendChild(email);
 
-        // Create the div for the pfp-column (person's image)
+        // Append the academicContactCell to detailsColumn
+        detailsColumn.appendChild(academicContactCell);
+
+        // Create the div for the person's image (pfp-column)
         const pfpColumn = document.createElement("div");
-        pfpColumn.className = "pfp-column"; // Add a class for styling
+        pfpColumn.className = "pfp-column"; // Added the class name
         personalInfo.appendChild(pfpColumn);
 
-        // Add the person's image
         const personImage = document.createElement("img");
         personImage.src = staff.photo;
         personImage.alt = staff.name;
