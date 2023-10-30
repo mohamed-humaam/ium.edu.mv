@@ -407,7 +407,20 @@
 .profile .research-and-publications p,
 .profile .awards-and-recognition p {
     text-align: justify;
+    font-size: 1.3em;
 }
+
+.profile .research-and-publications ul {
+    list-style: number;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+
+.profile .research-and-publications ul li {
+    margin-top: 15px;
+}
+
 
 .profile button {
     margin-top: 10px;
