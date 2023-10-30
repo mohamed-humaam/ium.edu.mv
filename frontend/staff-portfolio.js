@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Row 2: QR Code
         const qrCode = document.createElement("img");
-        qrCode.src = "QRCodeURL"; // Replace with the actual QR code URL
+        qrCode.src = "./Images/dads.png"; // Replace with the actual QR code URL
         qrCode.alt = "QR Code";
         qrCode.className = "qr-code";
         detailsColumn.appendChild(qrCode);

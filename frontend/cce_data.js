@@ -21,7 +21,7 @@ const CCE_Admin = [
 
 const CCE_Academic = [
   {
-  
+    title: "Dr.",
     name: " ",
     occupation: "Lecturer",
     photo: " ",
