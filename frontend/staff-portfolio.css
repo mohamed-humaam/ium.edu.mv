@@ -304,7 +304,7 @@
 
 .personal-info .details-column .academic-contact-cell {
     margin-top: 10px;
-    background-color: grey;
+    background-color: #606060;
     display: flex;
     border-radius: 7px;
     padding-left: 20px;
@@ -374,6 +374,53 @@
     color: #000;
     text-decoration: none;
 }
+
+.profile {
+    padding: 0px 70px 10px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 70px;
+}
+
+.profile .expert-profile h3,
+.profile .area-of-specialization h3,
+.profile .research-and-publications h3,
+.profile .awards-and-recognition h3 {
+    background-color: #00954d;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2.1em;
+    font-weight: 800;
+    color: #ffffff;
+} 
+
+
+.profile .expert-profile,
+.profile .area-of-specialization,
+.profile .research-and-publications,
+.profile .awards-and-recognition {
+    text-align: center;
+}
+
+.profile .expert-profile p,
+.profile .area-of-specialization p,
+.profile .research-and-publications p,
+.profile .awards-and-recognition p {
+    text-align: justify;
+}
+
+.profile button {
+    margin-top: 10px;
+    height: 40px;
+    width: 200px;
+    border: 1px solid #606060;
+    background-color: #606060;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
 
 
 /* Styling for Expert Profile */

@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return KEMS_Academic.find(staff => staff.name === name);
     }
 
+    // Merge all staff data arrays into one array
     const staffData = [
         ...KQS_Academic,
         ...CCE_Academic,
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ...CPS_Academic
     ];
 
-    // Find the staff data
+    // Find the staff data for the given name
     const staff = findStaffByName(staffName);
 
     if (staff) {
@@ -106,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pfpColumn.className = "pfp-column"; // Added the class name
         personalInfo.appendChild(pfpColumn);
 
+        // Add the person's image
         const personImage = document.createElement("img");
         personImage.src = staff.photo;
         personImage.alt = staff.name;
@@ -119,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const profileSection = document.createElement("div");
         profileSection.className = "profile";
 
-        // Create a function to generate a section within the profile
+        // Function to create a section within the profile
         function createProfileSection(title, content, sectionClass) {
             const section = document.createElement("div");
             section.className = sectionClass;
@@ -131,15 +133,18 @@ document.addEventListener("DOMContentLoaded", function () {
             const sectionContent = document.createElement("p");
             sectionContent.className = "section-content";
 
-            const contentPreview = content.substring(0, 200); // Display the first 200 characters
+            // Display the first 200 characters of the content
+            const contentPreview = content.substring(0, 200);
             const contentFull = content.length > 200 ? content : "";
 
             sectionContent.textContent = contentPreview;
 
+            // Create a "Read More" button
             const readMoreButton = document.createElement("button");
             readMoreButton.textContent = "Read More";
             let isExpanded = false;
 
+            // Add an event listener to toggle between full content and preview
             readMoreButton.addEventListener("click", function () {
                 if (!isExpanded) {
                     sectionContent.textContent = contentFull;
@@ -152,6 +157,8 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             section.appendChild(sectionContent);
+
+            // Only add the "Read More" button if the content exceeds 200 characters
             if (content.length > 200) {
                 section.appendChild(readMoreButton);
             }
@@ -159,28 +166,97 @@ document.addEventListener("DOMContentLoaded", function () {
             return section;
         }
 
-        // Add Expert Profile
+        // Add Expert Profile section
         const expertProfileSection = createProfileSection("Expert Profile", staff.profile, "expert-profile");
         profileSection.appendChild(expertProfileSection);
 
-        // Add Areas of Specialization
+        // Add Areas of Specialization section
         const specializationSection = createProfileSection("Areas of Specialization", staff.specialization.join('\n'), "area-of-specialization");
         profileSection.appendChild(specializationSection);
 
-        // Add Awards and Recognition
+        // Add Awards and Recognition section
         const awardsSection = createProfileSection("Awards and Recognition", staff.awards.map(award => `${award.date}: ${award.award} (${award.organization})`).join('\n'), "awards-and-recognition");
         profileSection.appendChild(awardsSection);
 
-        // Add Research (completed and ongoing)
-        const researchSection = createProfileSection("Research and Publications", "", "research-and-publications");
-        if (staff.research.completed.length > 0) {
-            const completedResearchSection = createProfileSection("Completed Research", staff.research.completed.map(item => `${item.year}: ${item.title}`).join('\n'), "completed-research");
-            researchSection.appendChild(completedResearchSection);
+        // Function to create the "Research and Publications" section
+        function createResearchSection(title, researchContent, sectionClass) {
+            const section = document.createElement("div");
+            section.className = sectionClass;
+
+            // Create a title for the section (e.g., "Research and Publications")
+            const sectionTitle = document.createElement("h3");
+            sectionTitle.textContent = title;
+            section.appendChild(sectionTitle);
+
+            // Create a subheading for "Completed Research"
+            const completedResearchContent = document.createElement("h2");
+            completedResearchContent.textContent = "Completed Research";
+            section.appendChild(completedResearchContent);
+
+            // Create an unordered list for "Completed Research"
+            const completedResearchList = document.createElement("ul");
+            const completedResearchItems = researchContent.slice(0, researchContent.indexOf("Ongoing Research"));
+            completedResearchItems.forEach((itemText) => {
+                const item = document.createElement("li");
+                item.textContent = itemText;
+                completedResearchList.appendChild(item);
+            });
+            section.appendChild(completedResearchList);
+
+            // Create a subheading for "Ongoing Research"
+            const ongoingResearchContent = document.createElement("h2");
+            ongoingResearchContent.textContent = "Ongoing Research";
+            section.appendChild(ongoingResearchContent);
+
+            // Create an unordered list for "Ongoing Research"
+            const ongoingResearchList = document.createElement("ul");
+            const ongoingResearchItems = researchContent.slice(researchContent.indexOf("Ongoing Research") + 1);
+            ongoingResearchItems.forEach((itemText) => {
+                const item = document.createElement("li");
+                item.textContent = itemText;
+                ongoingResearchList.appendChild(item);
+                item.style.display = 'none'; // Initially hide ongoing research items
+            });
+            section.appendChild(ongoingResearchList);
+
+            // Create a button to toggle between "Read More" and "Read Less"
+            const toggleButton = document.createElement("button");
+            toggleButton.textContent = "Read More";
+            let isExpanded = false;
+
+            // Add an event listener to toggle between full content and preview
+            toggleButton.addEventListener("click", function () {
+                isExpanded = !isExpanded;
+
+                if (isExpanded) {
+                    // Show the full content
+                    toggleButton.textContent = "Read Less";
+                    ongoingResearchItems.forEach((item) => (item.style.display = 'block'));
+                } else {
+                    // Show the preview
+                    toggleButton.textContent = "Read More";
+                    ongoingResearchItems.forEach((item) => (item.style.display = 'none'));
+                }
+            });
+
+            // Add the "Read More" button to the section
+            section.appendChild(toggleButton);
+
+            // Return the completed section
+            return section;
         }
+
+
+
+        // Prepare the content for the "Research and Publications" section
+        const researchContent = staff.research.completed.map(item => `${item.year}: ${item.title}`);
         if (staff.research.ongoing.length > 0) {
-            const ongoingResearchSection = createProfileSection("Ongoing Research", staff.research.ongoing.map(item => `${item.year}: ${item.title}`).join('\n'), "ongoing-research");
-            researchSection.appendChild(ongoingResearchSection);
+            researchContent.push("Ongoing Research");
+            researchContent.push(...staff.research.ongoing.map(item => `${item.year}: ${item.title}`));
         }
+
+        // Create the "Research and Publications" section
+        const researchSection = createResearchSection("Research and Publications", researchContent, "research-and-publications");
         profileSection.appendChild(researchSection);
 
         // Append the profileSection to the staffInfo
