@@ -23,6 +23,23 @@ const KEMS_Admin = [
 
 const KEMS_Academic = [
   {
+  
+    name: "Aminath Shaznie",
+    occupation: "Educational Consultant (Contract)",
+    photo: " ",
+    contact: "+960330122",
+    email: "aminath.shaznie@ium.edu.mv",
+  },
+  {
+  
+    name: "Mariyam Shihama",
+    occupation: "Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "mariyam.shihama@ium.edu.mv",
+  },
+  
+  {
     title: "Dr.",
     name: "Aishath Sinaau",
     occupation: "Lecturer",
