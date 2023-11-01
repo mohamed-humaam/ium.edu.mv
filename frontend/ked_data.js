@@ -21,6 +21,97 @@ const KED_Admin = [
 
 const KED_Academic = [
   // Add more academic staff here as needed
+   {
+    name: "Ahmed Nizar Sodhig",
+    occupation: "Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "ahmed.nizar@ium.edu.mv"
+
+  },
+
+    {
+    name: "Aroosha Maahir",
+    occupation: "Associate Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "aroosha.mahir@ium.edu.mv"
+
+  },
+
+    {
+    name: "Visama Hassan",
+    occupation: "Senior Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "visama.hassan@ium.edu.mv"
+
+  },
+
+     {
+    name: "Ibrahim Ali",
+    occupation: "Senior Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "ibrahim.ali@ium.edu.mv"
+
+  },
+
+   {
+    name: "Adam Fayaz",
+    occupation: "Associate Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "adam.fayaz@ium.edu.mv"
+
+  },
+
+     {
+    name: "Ibrahim Shifau",
+    occupation: " Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "ibrahim.shifau@ium.edu.mv"
+
+  },
+
+     {
+    name: "Abdul Wahidh Abudulla",
+    occupation: "Senior Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "abdul.wahid@ium.edu.mv"
+
+  },
+
+     {
+    name: "Agisa Ali",
+    occupation: " Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "agisa.ali@ium.edu.mv"
+
+  },
+
+      {
+    name: "Abdul Latheef Mohamed",
+    occupation: "Senior Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "abdul.latheef@ium.edu.mv"
+
+  },
+
+        {
+    name: "Khaulath Saeed",
+    occupation: " Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "khaulath.saeed@ium.edu.mv"
+
+  },
+
+  
 ];
 
 
