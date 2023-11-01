@@ -1,25 +1,91 @@
 // Sample staff data
 const KAL_Admin = [
   {
-    name: "Badhoora Yahya",
+    name: "Badhoora Yahuyya",
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin.png",
     contact: "+960330122",
-    email: "example@ium.edu.mv"
+    email: "badhoora.yahya@ium.edu.mv"
 
   },
-  {
-    name: "Khadeeja Abdul Rahman",
+
+    {
+    name: "Sana Ibrahim",
     occupation: "Administrative Officer",
-    photo: "./Images/Faculties/kems/admin1.png",
+    photo: "",
     contact: "+960330122",
-    email: "example@ium.edu.mv"
+    email: "sana.ibrahim@ium.edu.mv"
 
   },
+
   // Add more administrative staff here as needed
 ];
 
 const KAL_Academic = [
+    {
+    name: "Mohamed Uwais Mohamed Ameen",
+    occupation: "Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "mohamed.uwais@ium.edu.mv"
+
+  },
+
+      {
+    name: "Ishaq Mohamed Fulhu",
+    occupation: "Senior Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "ishaq.mohamed@ium.edu.mv"
+
+  },
+
+  
+      {
+    name: "Hasan M-A Alkordi",
+    occupation: " Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "hassan.kordi@ium.edu.mv"
+
+  },
+
+      {
+    name: "Mahmoud Mohamed Abdelmonem Hassan Metwal",
+    occupation: "Associate Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "mahmoud.mohamed@ium.edu.mv"
+
+  },
+
+        {
+    name: "Mohamed Gubaad Aboobakuru",
+    occupation: " Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "mohamed.qubaad@ium.edu.mv"
+
+  },
+
+  
+        {
+    name: "Elsayed Elshahhat Mesilhi Ibrahim",
+    occupation: "Senior Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "elsayad.elshahhat@ium.edu.mv"
+
+  },
+
+         {
+    name: "Abdul Mueed Hassan",
+    occupation: "Associate Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "abdul.mueed@ium.edu.mv"
+
+  },
   // Add more academic staff here as needed
 ];
 
