@@ -12,5 +12,13 @@ const CPS_Admin = [
 ];
 
 const CPS_Academic = [
+    {
+    name: "Dr. Mohamed Solih",
+    occupation: "Senior Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "mohamed.solih@ium.edu.mv"
+
+  },
   // Add academic staff here as needed
 ];
