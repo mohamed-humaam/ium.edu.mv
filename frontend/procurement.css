@@ -255,7 +255,7 @@
     flex-direction: column-reverse;
     align-items: flex-start;
     box-sizing: border-box;
-    width: 25%;
+    width: 30%;
     overflow: hidden;
 }
 
@@ -276,7 +276,7 @@
 .filter-column .label3,
 .filter-column .label4,
 .filter-column h3 {
-    width: 200px;
+    width: 400px;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -296,7 +296,7 @@
 
 /* Style for the Document table column on the right */
 .table-column {
-    flex: 6;
+    flex: 3;
     padding: 20px;
     margin-left: 50px;
 }
