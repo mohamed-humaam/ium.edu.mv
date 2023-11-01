@@ -12,13 +12,22 @@ const CRP_Admin = [
 ];
 
 const CRP_Academic = [
+   {
+    title: "Dr.",
+    name: "Mariyam Shareefa",
+    occupation: "Senior Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "mariyam.shareefa@ium.edu.mv",
+   }
+  
   {
     title: "Dr.",
     name: "Visal Moosa",
     occupation: "Senior Lecturer",
-    photo: "./Images/Faculties/kems/lecturer.png",
+    photo: " ",
     contact: "+960330122",
-    email: "example@ium.edu.mv",
+    email: "visal.moosa@ium.edu.mv",
     faculty: "Center for Research and Publications",
     academic_qualifications: [
       "Ph.D. in Bioenvironmental Engineering",
