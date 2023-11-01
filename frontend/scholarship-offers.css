@@ -233,6 +233,12 @@
 
 
 
+#container {
+    background-image: url("./Images/Banners/Site\ Pattern\ PNG\ FINAL.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
 
 #table {
     background-image: url("./Images/Banners/Site\ Pattern\ PNG\ FINAL.png");
