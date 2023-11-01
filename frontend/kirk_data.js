@@ -11,17 +11,48 @@ const KIRK_Admin = [
   },
   {
   
-    name: "Khadheeja Nausha",
+    name: "Mohamed Minvaal",
     occupation: "Administrative Officer",
-    photo: "./Images/Faculties/kems/admin1.png",
+    photo: " ",
     contact: "+960330122",
-    email: "example@ium.edu.mv"
+    email: "mohamed.minvaal@ium.edu.mv"
 
   },
   // Add more administrative staff here as needed
 ];
 
 const KIRK_Academic = [
+    {
+  
+    name: "Fareedha Mohamed",
+    occupation: "Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "fareedha.mohamed@ium.edu.mv"
+
+  },
+
+   {
+  
+    name: "Ismail Najee",
+    occupation: "Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "ismail.najee@ium.edu.mv"
+
+  },
+
+    {
+  
+    name: "Aminath Afiya Abdul Hakeem",
+    occupation: "Senior Lecturer",
+    photo: " ",
+    contact: "+960330122",
+    email: "aminath.afiya@ium.edu.mv"
+
+  },
+
+  
   // Add more academic staff here as needed
 ];
 
