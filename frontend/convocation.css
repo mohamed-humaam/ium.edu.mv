@@ -245,7 +245,7 @@
 .year-card {
     width: 100%;
     margin: 20px 0; /* Increase margin for more space */
-    background-color: #f0f0f0;
+    background-color: #e1edf0;
     padding: 20px; /* Increase padding for more space */
     cursor: pointer;
     transition: transform 0.3s ease-in-out; /* Smoother transition */
@@ -254,13 +254,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.year-card:hover {
-    transform: scale(1.05);
-}
 
 /* Initially hide the year card content */
 .year-card h2 {
     display: block;
+    color: #03b9b0;
 }
 
 /* Display the year card content when it's expanded */
@@ -290,31 +288,37 @@
 .student-card {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: transform 0.3s ease-in-out; /* Smoother transition */
     margin-bottom: 20px; /* Increase margin-bottom for more space */
 }
 
-.student-card:hover {
-    transform: scale(1.05);
+.student-card .student-name {
+    display: none;
 }
 
+.student-card i {
+    color: #03b9b0;
+}
+
+
 .student-card img {
-    width: 100%; /* Maintain proper aspect ratio */
-    height: auto; /* Maintain proper aspect ratio */
-    border-radius: 20px;
-    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .student-card h3 {
     font-size: 1.5em;
     margin: 10px 0;
+    color: #03b9b0;
 }
 
 .student-card p {
-    
+    color: #03b9b0;
     font-size: 1.2em;
     margin: 0;
 }
