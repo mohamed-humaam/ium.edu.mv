@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const staffName = urlParams.get("staff");
 
     // Function to find the staff data by name
-    function findStaffByName(name) {
-        return KEMS_Academic.find(staff => staff.name === name);
+    function findStaffByName(name, staffData) {
+        return staffData.find(staff => staff.name === name);
     }
 
     // Merge all staff data arrays into one array
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     // Find the staff data for the given name
-    const staff = findStaffByName(staffName);
+    const staff = findStaffByName(staffName, staffData);
 
     if (staff) {
         // Personal Info
