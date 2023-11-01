@@ -1,18 +1,97 @@
 // Sample staff data
 const KSL_Admin = [
   {
-    name: "Hawwa Shuhaidha",
+    name: "Afthim Mohamed",
     occupation: "Administrative Officer",
-    photo: "./Images/Faculties/kems/admin.png",
+    photo: "",
     contact: "+960330122",
-    email: "example@ium.edu.mv"
+    email: "afthim.mohamed@ium.edu.mv"
+  },
+    {
+    name: "Mariyam Noumath",
+    occupation: "Administrative Officer",
+    photo: "",
+    contact: "+960330122",
+    email: "mariyam.noumath@ium.edu.mv"
   },
   // Add more administrative staff here as needed
 ];
 
 const KSL_Academic = [
   // Add more academic staff here as needed
+      {
+    name: "Ali Ibrahim Didi",
+    occupation: "Senior Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "ali.ibrahim@ium.edu.mv"
+  },
+
+          {
+    name: "Abdul Jaleel Hussain",
+    occupation: "Senior Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "abdul.jaleel@ium.edu.mv"
+  },
+
+            {
+    name: "Shaaz Ahmed",
+    occupation: " Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "shaaz.ahmed@ium.edu.mv"
+  },
+
+            {
+    name: "Ikram Abdul Sattar",
+    occupation: " Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "ikram.abdulsattar@ium.edu.mv"
+  },
+
+            {
+    name: "Aishath Ruhusha Nasheed",
+    occupation: " Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "aishath.ruhusha@ium.edu.mv"
+  },
+
+              {
+    name: "Dr. Mohamed Affan Shafy",
+    occupation: " Senior Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "affan.shafy@ium.edu.mv"
+  },
+
+              {
+    name: "Abdul Ghany Mohamed",
+    occupation: "  Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "abdul.ghany@ium.edu.mv"
+  },
+
+               {
+    name: "Aishath Fazna Ahmed",
+    occupation: "  Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "aishath.fazna@ium.edu.mv"
+  },
+
+                 {
+    name: "Hussain Razmeez",
+    occupation: "  Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "hussain.rameez@ium.edu.mv"
+  },
 ];
+
 
 
 

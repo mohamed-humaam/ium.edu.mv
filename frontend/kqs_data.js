@@ -1,24 +1,92 @@
 // Sample staff data
 const KQS_Admin = [
   {
-    name: "Hana Jaufar",
+    name: "Aishath Rishfa",
     occupation: "Administrative Officer",
-    photo: "./Images/Faculties/kems/admin.png",
+    photo: "",
     contact: "+960330122",
-    email: "example@ium.edu.mv"
+    email: "aishath.rishfa@ium.edu.mv"
   },
-  {
-    name: "Yazdhan Ahmed",
-    occupation: "Administrative Officer",
-    photo: "./Images/Faculties/kems/admin1.png",
-    contact: "+960330122",
-    email: "example@ium.edu.mv"
-  },
+  
+  
+  
   // Add more administrative staff here as needed
 ];
 
 const KQS_Academic = [
   // Add more academic staff here as needed
+   {
+    name: "Mohamed Shinaan Muneer",
+    occupation: "Associate Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "mohamed.shinan@ium.edu.mv"
+  },
+
+   {
+    name: "Mohamed Naeem Ahmed Fikuree",
+    occupation: " Associate Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "mohamed.naeem@ium.edu.mv"
+  },
+
+    {
+    name: "Fathimath Rasheeda",
+    occupation: " Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "fathimath.rasheeda@ium.edu.mv"
+  },
+
+    {
+    name: "Ibrahim Zuhair",
+    occupation: " Associate Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "ibrahim.zuhair@ium.edu.mv"
+  },
+
+     {
+    name: "Mohamed Waheed",
+    occupation: " Senior Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "mohamed.waheed@ium.edu.mv"
+  },
+
+     {
+    name: "Samiya zakariyya",
+    occupation: " Senior Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "samiya.zakariyya@ium.edu.mv"
+  },
+
+     {
+    name: "Mohamed Thaufeeg Ali",
+    occupation: "  Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "mohamed.thaufeeg@ium.edu.mv"
+  },
+
+      {
+    name: "Abdul Azeez Hussain",
+    occupation: " Senior Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "abdul.azeez@ium.edu.mv"
+  },
+
+       {
+    name: "Ibrahim Ramzee",
+    occupation: "  Lecturer",
+    photo: "",
+    contact: "+960330122",
+    email: "ibrahim.ramzee@ium.edu.mv"
+  },
+
 ];
 
 
