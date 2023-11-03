@@ -5,6 +5,8 @@
 	--primary: #255ff4;
 	--dur: 1s;
 	font-size: calc(0.00px + (24 - 16)*(100vw - 320px)/(1280 - 320));
+	margin-top: 5px;
+	margin-left: 20px;
   }
   
   #search-form input {
