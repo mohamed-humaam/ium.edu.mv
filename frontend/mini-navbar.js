@@ -10,6 +10,7 @@ Vue.component('mini-navbar', {
           <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="right-side">
+          <a href="https://drive.google.com/drive/folders/13nZNdQxTwnGwCr0TPtQXhPPflkgdowqK">Timetable</a>
           <a href="https://moodle.ium.edu.mv/login/index.php">Moodle</a>
           <a href="https://isims.ium.edu.mv/login">ISIMS</a>
           <a href="https://students.ium.edu.mv/en/login" class="apply-button">Apply NOW</a>
