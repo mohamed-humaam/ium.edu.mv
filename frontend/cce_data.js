@@ -27,7 +27,7 @@ const CCE_Academic = [
     photo: " ",
     contact: "3022122 ",
     email: "aminath.zuhudha@ium.edu.mv ",
-   }
+   },
    {
 
     name: " Nasrulla Ahmed ",
@@ -35,7 +35,7 @@ const CCE_Academic = [
     photo: " ",
     contact: "3022122 ",
     email: "nasrulla.ahmed@ium.edu.mv ",
-   }
+   },
   {
 
     name: " Mohamed Zaahir ",

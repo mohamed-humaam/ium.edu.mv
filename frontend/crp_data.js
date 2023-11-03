@@ -19,8 +19,7 @@ const CRP_Academic = [
     photo: " ",
     contact: "+960330122",
     email: "mariyam.shareefa@ium.edu.mv",
-   }
-  
+   },
   {
     title: "Dr.",
     name: "Visal Moosa",
