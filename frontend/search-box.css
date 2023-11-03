@@ -1,10 +1,10 @@
 #search-form {
-	--bg: #e3e4e8;
-	--fg: #f5f5f5f5;
-	--input: #ffffff;
+	--bg: #000000;
+	--fg: #000000;
+	--input: #000000;
 	--primary: #255ff4;
 	--dur: 1s;
-	font-size: calc(0.2px + (24 - 16)*(100vw - 320px)/(1280 - 320));
+	font-size: calc(0.00px + (24 - 16)*(100vw - 320px)/(1280 - 320));
   }
   
   #search-form input {
@@ -94,7 +94,7 @@
   @media (prefers-color-scheme: dark) {
 	#search-form {
 	  --bg: #f5f5f5f5;
-	  --fg: #e3e4e8;
+	  --fg: #000000;
 	  --input: #f5f5f5f5;
 	  --primary: #5583f6;
 	}
