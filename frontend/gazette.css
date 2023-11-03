@@ -30,28 +30,18 @@
 
 /* Style for the filter area on the left */
 .container {
-    background-image: url("./Images/Banners/Site\ Pattern\ PNG\ FINAL.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% auto;
     display: flex;
     padding: 20px 70px 20px 70px;
     background-color: #fff;
 }
 
 .filter-column {
-    background-image: url("./Images/Banners/vertical_banner2.jpg");
-    background-size: cover;
-    background-position: center;
-    flex: 1;
+    width: 15%;
+    margin-right: 70px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-color: #acacac41;
     border-radius: 10px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    box-sizing: border-box;
-    width: 30%;
-    overflow: hidden;
 }
 
 .filter-column .label1,
@@ -64,6 +54,8 @@
     font-weight: 600;
     padding: 5px 20px;
     margin-bottom: 6px;
+    width: 220px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .filter-column .label1,
@@ -71,7 +63,13 @@
 .filter-column .label3,
 .filter-column .label4,
 .filter-column h3 {
-    width: 400px;
+    display: inline-block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 30%, rgba(245, 245, 245, 0));
+    color: #ffffff;
+    font-weight: 600;
+    padding: 5px 20px;
+    margin-bottom: 6px;
+    width: 220px;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -91,9 +89,8 @@
 
 /* Style for the Document table column on the right */
 .table-column {
-    flex: 3;
+    flex: 2;
     padding: 20px;
-    margin-left: 50px;
 }
 
 /* Style for the Document table */

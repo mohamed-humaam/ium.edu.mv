@@ -125,7 +125,7 @@ filterCategory.appendChild(categoryLabel3);
 var filterType = document.createElement('div');
 filterType.className = 'filter-for-type';
 var typeHeader = document.createElement('h2');
-typeHeader.appendChild(document.createTextNode('Filter by Program'));
+typeHeader.appendChild(document.createTextNode('Program'));
 
 var typeLabel1 = document.createElement('label');
 var typeRadio1 = document.createElement('input');
@@ -179,7 +179,7 @@ filterType.appendChild(typeLabel5);
 var filterEligibility = document.createElement('div');
 filterEligibility.className = 'filter-for-eligibility';
 var eligibilityHeader = document.createElement('h2');
-eligibilityHeader.appendChild(document.createTextNode('Filter by Provider'));
+eligibilityHeader.appendChild(document.createTextNode('Provider'));
 
 var eligibilityLabel1 = document.createElement('label');
 var eligibilityRadio1 = document.createElement('input');
