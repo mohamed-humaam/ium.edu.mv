@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Add Expert Profile section
-        const expertProfileSection = createProfileSection("Expert Profile", staff.profile, "expert-profile");
+        const expertProfileSection = createProfileSection("Profile", staff.profile, "expert-profile");
         profileSection.appendChild(expertProfileSection);
 
         // Add Areas of Specialization section
