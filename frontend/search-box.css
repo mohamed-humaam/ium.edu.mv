@@ -47,7 +47,7 @@
   #search-form input:focus,
   #search-form input:valid {
 	background: var(--input);
-	border-radius: 0.25em;
+	border-radius: 1em;
 	box-shadow: none;
 	padding: 0.75em 1em;
 	transition-duration: calc(var(--dur) * 0.25);
@@ -97,7 +97,7 @@
 	#search-form {
 	  --bg: #f5f5f5f5;
 	  --fg: #000000;
-	  --input: #f5f5f5f5;
+	  --input: #ffffff;
 	  --primary: #5583f6;
 	}
   }
