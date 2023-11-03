@@ -4,7 +4,7 @@
 	--input: #ffffff;
 	--primary: #255ff4;
 	--dur: 1s;
-	font-size: calc(2px + (24 - 16)*(100vw - 320px)/(1280 - 320));
+	font-size: calc(0.2px + (24 - 16)*(100vw - 320px)/(1280 - 320));
   }
   
   #search-form input {
