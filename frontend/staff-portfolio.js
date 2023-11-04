@@ -1,3 +1,21 @@
+// Function to create a section within the profile
+function createProfileSection(title, content, sectionClass) {
+    const section = document.createElement("div");
+    section.className = sectionClass;
+
+    const sectionTitle = document.createElement("h3");
+    sectionTitle.textContent = title;
+    section.appendChild(sectionTitle);
+
+    const sectionContent = document.createElement("p");
+    sectionContent.className = "section-content";
+    sectionContent.textContent = content; // Display the full content
+
+    section.appendChild(sectionContent);
+
+    return section;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const staffInfo = document.getElementById("staffInfo");
 
@@ -121,51 +139,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const profileSection = document.createElement("div");
         profileSection.className = "profile";
 
-        // Function to create a section within the profile
-        function createProfileSection(title, content, sectionClass) {
-            const section = document.createElement("div");
-            section.className = sectionClass;
-
-            const sectionTitle = document.createElement("h3");
-            sectionTitle.textContent = title;
-            section.appendChild(sectionTitle);
-
-            const sectionContent = document.createElement("p");
-            sectionContent.className = "section-content";
-
-            // Display the first 200 characters of the content
-            const contentPreview = content.substring(0, 200);
-            const contentFull = content.length > 200 ? content : "";
-
-            sectionContent.textContent = contentPreview;
-
-            // Create a "Read More" button
-            const readMoreButton = document.createElement("button");
-            readMoreButton.textContent = "Read More";
-            let isExpanded = false;
-
-            // Add an event listener to toggle between full content and preview
-            readMoreButton.addEventListener("click", function () {
-                if (!isExpanded) {
-                    sectionContent.textContent = contentFull;
-                    readMoreButton.textContent = "Read Less";
-                } else {
-                    sectionContent.textContent = contentPreview;
-                    readMoreButton.textContent = "Read More";
-                }
-                isExpanded = !isExpanded;
-            });
-
-            section.appendChild(sectionContent);
-
-            // Only add the "Read More" button if the content exceeds 200 characters
-            if (content.length > 200) {
-                section.appendChild(readMoreButton);
-            }
-
-            return section;
-        }
-
         // Add Expert Profile section
         const expertProfileSection = createProfileSection("Profile", staff.profile, "expert-profile");
         profileSection.appendChild(expertProfileSection);
@@ -204,10 +177,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const item = document.createElement("li");
                 item.textContent = itemText;
                 completedResearchList.appendChild(item);
-                if (i > 0) {
-                    // Initially hide all but the first item
-                    item.style.display = 'none';
-                }
             }
             section.appendChild(completedResearchList);
 
@@ -223,35 +192,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 const item = document.createElement("li");
                 item.textContent = itemText;
                 ongoingResearchList.appendChild(item);
-                item.style.display = 'none'; // Initially hide ongoing research items
             }
             section.appendChild(ongoingResearchList);
-
-            // Create a button to toggle between "Read More" and "Read Less"
-            const toggleButton = document.createElement("button");
-            toggleButton.textContent = "Read More";
-
-            // Maintain the state of the expanded content
-            let isExpanded = false;
-
-            toggleButton.addEventListener("click", function () {
-                isExpanded = !isExpanded;
-                toggleButton.textContent = isExpanded ? "Read Less" : "Read More";
-
-                // Toggle the display of completed research list items
-                for (let i = 1; i < completedResearchList.children.length; i++) {
-                    const item = completedResearchList.children[i];
-                    item.style.display = isExpanded ? 'list-item' : 'none';
-                }
-
-                // Toggle the display of ongoing research list items
-                for (let i = 0; i < ongoingResearchList.children.length; i++) {
-                    const item = ongoingResearchList.children[i];
-                    item.style.display = isExpanded ? 'list-item' : 'none';
-                }
-            });
-
-            section.appendChild(toggleButton);
 
             // Return the completed section
             return section;
@@ -280,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
         academicQualificationsLink.addEventListener("click", function () {
             // Build the content of the academic qualifications modal
             academicQualificationsModal.innerHTML = `<div class="modal-content">
-                <span class="close-modal-button">×</span>
+                <span class "close-modal-button">×</span>
                 <h3>Academic Qualifications</h3>
                 <ul>${staff.academic_qualifications.map(qualification => `<li>${qualification}</li>`).join('')}</ul>
             </div>`;
