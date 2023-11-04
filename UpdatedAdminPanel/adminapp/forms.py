@@ -1,7 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django import forms
-from .models import Section, Dean, Staff, Program
+from .models import Section, Dean, Staff, Program, TopManagement, SMT, AcademicBoard, Manhaj, AnnualReport, RulesRegulations, DeansCommittee, CurriculumCommittee, HRMD, Gazette, News, Adhaahama, Collaborators, ContactUs, Convocation, History
 
 
 class SignUpForm(UserCreationForm):
@@ -62,10 +62,16 @@ class AddDeanForm(forms.ModelForm):
 
 
 class AddStaffForm(forms.ModelForm):
+
+    TYPE_ROLES= [
+      ('admin', 'Admin'),
+      ('academic', 'Academic'),
+]
+
     name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
     position = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Position'}))
     departmant = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Departmant'}))
-    type = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Type'}))
+    type = forms.CharField(label='Choose Type', widget=forms.Select(choices=TYPE_ROLES))
     image_link = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Image Link'}))
 
     class Meta:
@@ -86,4 +92,158 @@ class AddProgramForm(forms.ModelForm):
 
     class Meta:
         model = Program
+        exclude = ("user",)
+
+
+class AddTopManagementForm(forms.ModelForm):
+    name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
+    designation = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Designation'}))
+    position = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Committee Position'}))
+    
+    class Meta:
+        model = TopManagement
+        exclude = ("user",)
+
+class AddSMTForm(forms.ModelForm):
+    name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
+    designation = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Designation'}))
+    position = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Committee Position'}))
+    
+    class Meta:
+        model = SMT
+        exclude = ("user",)
+
+class AddAcademicBoardForm(forms.ModelForm):
+    name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
+    designation = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Designation'}))
+    position = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Committee Position'}))
+    
+    class Meta:
+        model = AcademicBoard
+        exclude = ("user",)
+
+class AddDeansCommitteeForm(forms.ModelForm):
+    name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
+    designation = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Designation'}))
+    position = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Committee Position'}))
+    
+    class Meta:
+        model = DeansCommittee
+        exclude = ("user",)
+
+
+class AddCurriculumCommitteeForm(forms.ModelForm):
+    name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
+    designation = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Designation'}))
+    position = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Committee Position'}))
+    
+    class Meta:
+        model = CurriculumCommittee
+        exclude = ("user",)
+
+class AddHRMDForm(forms.ModelForm):
+    name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
+    designation = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Designation'}))
+    position = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Committee Position'}))
+    
+    class Meta:
+        model = HRMD
+        exclude = ("user",)
+
+
+
+class AddGazetteForm(forms.ModelForm):
+    name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
+    number = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Number'}))
+    category = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Category'}))
+    date = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Date'}))
+    class Meta:
+        model = Gazette
+        exclude = ("user",)
+
+class AddNewsForm(forms.ModelForm):
+    title = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Title'}))
+    description = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Description'}))
+    
+    
+    class Meta:
+        model = News
+        exclude = ("user",)
+
+class AddAdhaahamaForm(forms.ModelForm):
+    year = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Year'}))
+    name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
+    
+    class Meta:
+        model = Adhaahama
+        exclude = ("user",)
+
+class AddManhajForm(forms.ModelForm):
+    year = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Year'}))
+    name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
+    
+    class Meta:
+        model = Manhaj
+        exclude = ("user",)
+    
+class AddAnnualReportForm(forms.ModelForm):
+    year = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Year'}))
+    name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
+    
+    class Meta:
+        model = AnnualReport
+        exclude = ("user",)
+
+class AddRulesRegulationsForm(forms.ModelForm):
+    title = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Title'}))
+    category = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Category'}))
+    type = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Type'}))
+    
+    class Meta:
+        model = RulesRegulations
+        exclude = ("user",)
+
+class AddCollaboratorsForm(forms.ModelForm):
+    TYPE_ROLES= [
+      ('international', 'International Collaborators'),
+      ('local', 'Local Collaborators'),
+    ]
+
+    institution = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Institution'}))
+    signed = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Signed Date'}))
+    expires = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Expire Date'}))
+    type = forms.CharField(label='Choose Type', widget=forms.Select(choices=TYPE_ROLES))
+    
+    class Meta:
+        model = Collaborators
+        exclude = ("user",)
+
+class AddContactUsForm(forms.ModelForm):
+    
+    department = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Department'}))
+    code = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Code'}))
+    email = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Email'}))
+    
+    class Meta:
+        model = ContactUs
+        exclude = ("user",)
+
+
+class AddConvocationForm(forms.ModelForm):
+    
+    year = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Year'}))
+    name = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Name'}))
+    batch = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Batch'}))
+    
+    class Meta:
+        model = Convocation
+        exclude = ("user",)
+
+class AddHistoryForm(forms.ModelForm):
+    
+    title = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Title'}))
+    content = forms.CharField(label="", required=True, widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Content'}))
+    
+    class Meta:
+        model = History
         exclude = ("user",)

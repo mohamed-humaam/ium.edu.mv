@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>AnnualReport</h1>
+
+<div class="card">
+    <div class="card-header">
+      {{ annualreport.id }} - {{ annualreport.created_at }} 
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ annual_report_doc.name }}</h5>
+      <a href="{% url 'update_annual_report_doc' annualreport.id %}" class="btn btn-primary">Edit</a>
+      <a href="{% url 'delete_annual_report_doc' annualreport.id %}" class="btn btn-danger">Delete</a>
+    </div>
+  </div>
+  <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+
+{% endblock %}

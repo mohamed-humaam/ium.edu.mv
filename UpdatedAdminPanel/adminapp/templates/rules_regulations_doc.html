@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+        <h1>Add Rules and Regulations</h1>
+
+        {% if rules_regulations_doc %}
+            
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Created at</th>
+                    <th scope="col">Change/View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for rulesregulations in rules_regulations_doc %}
+                    <tr>
+                    <td>{{ rulesregulations.id }}</td>
+                    <td>{{ rulesregulations.title }}</td>
+                    <td>{{ rulesregulations.created_at }}</td>
+                    <td><a href="{% url 'view_rules_regulations_doc' rulesregulations.id %}">Edit</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+        {% endif %}
+        <a href="{% url 'add_rules_regulations_doc' %}" class="btn btn-primary">Add </a>
+
+</div>
+
+{% endblock %}

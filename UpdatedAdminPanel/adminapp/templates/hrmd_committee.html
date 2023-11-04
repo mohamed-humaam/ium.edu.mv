@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+        <h1>Curriculum Committee</h1>
+
+        {% if curriculum_committee %}
+            
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Created at</th>
+                    <th scope="col">Change/View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for curriculumcommittee in curriculum_committee %}
+                    <tr>
+                    <td>{{ curriculumcommittee.id }}</td>
+                    <td>{{ curriculumcommittee.name }}</td>
+                    <td>{{ curriculumcommittee.created_at }}</td>
+                    <td><a href="{% url 'view_curriculum_committee' curriculumcommittee.id %}">Edit</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+        {% endif %}
+        <a href="{% url 'add_curriculum_committee' %}" class="btn btn-primary">Add Deans Committee</a>
+
+</div>
+
+{% endblock %}

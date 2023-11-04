@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+        <h1>Add Adhaahama</h1>
+
+        {% if adhaahama_doc %}
+            
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Created at</th>
+                    <th scope="col">Change/View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for adhaahama in adhaahama_doc %}
+                    <tr>
+                    <td>{{ adhaahama.id }}</td>
+                    <td>{{ adhaahama.name }}</td>
+                    <td>{{ adhaahama.created_at }}</td>
+                    <td><a href="{% url 'view_adhaahama_doc' adhaahama.id %}">Edit</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+        {% endif %}
+        <a href="{% url 'add_adhaahama_doc' %}" class="btn btn-primary">Add </a>
+
+</div>
+
+{% endblock %}

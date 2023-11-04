@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ 
+    <form method="post" enctype="multipart/form-data">  
+        {% csrf_token %}  
+        {{ form.as_p }}  
+        <button type="submit">Add Curriculum Committee Member</button>  
+    </form>  
+  
+    {% if img_obj %}  
+        <h3> Curriculum Committee Member Added : {{img_obj.caption}}</h3>  
+        <img src="{{ img_obj.image.url}}" alt="Done" style="max-height:300px">  
+    {% endif %}  
+
+</form>
+
+</div>
+
+{% endblock %}

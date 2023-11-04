@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+        <h1>Add Collaborator</h1>
+
+        {% if collaborators_doc %}
+            
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">institution</th>
+                    <th scope="col">signed</th>
+                    <th scope="col">expires</th>
+                    <th scope="col">Created at</th>
+                    <th scope="col">Change/View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for collaborators in collaborators_doc %}
+                    <tr>
+                    <td>{{ collaborators.id }}</td>
+                    <td>{{ collaborators.institution }}</td>
+                    <td>{{ collaborators.signed }}</td>
+                    <td>{{ collaborators.expires }}</td>
+                    <td>{{ collaborators.created_at }}</td>
+                    <td><a href="{% url 'view_collaborators_doc' collaborators.id %}">Edit</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+        {% endif %}
+        <a href="{% url 'add_collaborators_doc' %}" class="btn btn-primary">Add </a>
+
+</div>
+
+{% endblock %}

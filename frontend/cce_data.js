@@ -1,3 +1,41 @@
+// Define data using JavaScript objects and arrays
+        const deanData = {
+            name: "Mohamed Shaheen",
+            title: "Dean",
+            department: "Center for Continuing Education",
+            phone: "3022148",
+            email: "mohamed.shaheen@ium.edu.mv",
+            website: "https://www.ium.edu.mv/cce/",
+            message: "A’ssalaam Alaikum. I welcome you to the Centre for Continuing Education (CCE) ...", // Your message here
+        };
+
+        const introData = "Centre for Continuing Education was established in December 2018 after merging Centre for Foundation Studies ..."; // Your overview text here
+
+        const overviewData = {
+            vision: {
+                title: "Vision",
+                text: "To be the leading centre in providing university preparation and adult education programs in the nation.",
+                image: "./Images/Banners/cce_vision.png",
+            },
+            objectives: {
+                title: "Objectives",
+                list: [
+                    "To provide high-quality learning.",
+                    "To inculcate Islamic values and ethics in students.",
+                    "To develop students’ self-confidence.",
+                    "To develop students’ communication and problem-solving skills.",
+                    "To provide basic English language communication skills for adult learners.",
+                ],
+                image: "./Images/Banners/cce_philosophy.png",
+            },
+            mission: {
+                title: "Mission",
+                text: "CCE strives for excellence in providing academic skills and build confidence to undertake university education",
+                image: "./Images/Banners/cce_mission.png",
+            },
+        };
+
+
 // Sample staff data
 const CCE_Admin = [
   {

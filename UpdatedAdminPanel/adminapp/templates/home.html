@@ -1,59 +1,79 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<style>
+    .list-group-item {
+        background-color: white;
+        color: #006400; /* Green color */
+        border: 1px solid #006400; /* Green color */
+    }
+    .list-group-item:hover {
+        background-color: #006400; /* Green color on hover */
+        color: white;
+    }
+    .btn-primary {
+        background-color: #006400; /* Green color */
+        border-color: #006400; /* Green color */
+    }
+    .btn-primary:hover {
+        background-color: #004d00; /* Darker green on hover */
+        border-color: #004d00; /* Darker green on hover */
+    }
+    .btn-primary:focus {
+        box-shadow: 0 0 0 0.2rem rgba(0, 77, 0, 0.5); /* Darker green on focus */
+    }
+</style>
 
-<div class="col-md-6 offset-md-3">
-    {% if user.is_authenticated %}
-        <h1>Links</h1>
-        <table class="table table-striped table-hover">
-            <thead class="table-dark">
-                <tr>
-                <th scope="col">Resource</th>
-                <th scope="col">Count</th>
-                <th scope="col">View</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Sections</td>
-                    <td>{{ counts.sections }}</td>
-                    <td><a href="{% url 'sections' %}">Go</a></td>
-                </tr>
-                <tr>
-                    <td>Deans List</td>
-                    <td>{{ counts.deans }}</td>
-                    <td><a href="{% url 'deans_list' %}">Go</a></td>
-                </tr>
-                <tr>
-                    <td>Staff</td>
-                    <td>{{ counts.staff }}</td>
-                    <td><a href="{% url 'staff_list' %}">Go</a></td>
-                    </tr>
-                <tr>
-                    <td>Programs</td>
-                    <td>{{ counts.programs }}</td>
-                    <td><a href="{% url 'program_list' %}">Go</a></td>
-                </tr>
-            </tbody>
-        </table>
-    {% else %}
-        <h1>Login</h1>
-        <br/>
-        <form method="POST" action="{% url 'home' %}">
-            {% csrf_token %}
-            <form>
-                <div class="mb-3">
-                <label for="inputEmail1" class="form-label">Username</label>
-                <input type="text" class="form-control" name="user_email" id="inputEmail1" aria-describedby="emailHelp" placeholder="Username" required>
-                </div>
-                <div class="mb-3">
-                <label for="inputPassword1" class="form-label">User Password</label>
-                <input type="password" class="form-control" name="password" id="inputPassword1" placeholder="Password" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Login</button>
-            </form>
-        </form>
-    {% endif %}
+<div style="background-color: #f0f0f0; min-height: 100vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                {% if user.is_authenticated %}
+                    <h1 class="text-center mt-4 mb-4" style="color: #006400;">ISLAMIC UNIVERSITY OF MALDIVES</h1>
+                    <div class="list-group">
+                        <a href="{% url 'sections' %}" class="list-group-item list-group-item-action">Sections</a>
+                        <a href="{% url 'deans_list' %}" class="list-group-item list-group-item-action">Deans List</a>
+                        <a href="{% url 'staff_list' %}" class="list-group-item list-group-item-action">Staff</a>
+                        <a href="{% url 'program_list' %}" class="list-group-item list-group-item-action">Programs</a>
+                        <div class="list-group-item">
+                            Committees:
+                            <div class="list-group">
+                                <a href="{% url 'top_management' %}" class="list-group-item list-group-item-action">TMT</a>
+                                <a href="{% url 'academic_board' %}" class="list-group-item list-group-item-action">AcademicBoard</a>
+                                <a href="{% url 'smt' %}" class="list-group-item list-group-item-action">SMT</a>
+                                <a href="{% url 'deans_committee' %}" class="list-group-item list-group-item-action">DeansCommittee</a>
+                                <a href="{% url 'curriculum_committee' %}" class="list-group-item list-group-item-action">CurriculumCommittee</a>
+                                <a href="{% url 'hrmd_committee' %}" class="list-group-item list-group-item-action">HRMD</a>
+                            </div>
+                     </div>
+                        <a href="{% url 'gazette_doc' %}" class="list-group-item list-group-item-action">Gazette </a>
+                         <a href="{% url 'news_doc' %}" class="list-group-item list-group-item-action">News</a>
+                         <a href="{% url 'adhaahama_doc' %}" class="list-group-item list-group-item-action">Adhaahama</a>
+                         <a href="{% url 'manhaj_doc' %}" class="list-group-item list-group-item-action">Manhaj</a>
+                         <a href="{% url 'annual_report_doc' %}" class="list-group-item list-group-item-action">AnnualReport</a>
+                         <a href="{% url 'rules_regulations_doc' %}" class="list-group-item list-group-item-action">Rules & Regulations</a>
+                         <a href="{% url 'collaborators_doc' %}" class="list-group-item list-group-item-action">Collaborators</a>
+                         <a href="{% url 'contact_us_doc' %}" class="list-group-item list-group-item-action">Contact Us</a>
+                         <a href="{% url 'convocation_doc' %}" class="list-group-item list-group-item-action">Convocation</a>
+                         <a href="{% url 'history_doc' %}" class="list-group-item list-group-item-action">History</a>
+                     </div>
+                {% else %}
+                    <h1 class="text-center mt-4 mb-4" style="color: #006400;">Login</h1>
+                    <form method="POST" action="{% url 'home' %}">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="inputEmail1" class="form-label" style="color: #006400;">Username</label>
+                            <input type="text" class="form-control" name="user_email" id="inputEmail1" aria-describedby="emailHelp" placeholder="Username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for "inputPassword1" class="form-label" style="color: #006400;">User Password</label>
+                            <input type="password" class="form-control" name="password" id="inputPassword1" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 </div>
-
 {% endblock %}

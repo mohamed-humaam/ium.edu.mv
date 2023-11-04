@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+        <h1>Add Manhaj</h1>
+
+        {% if manhaj_doc %}
+            
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Created at</th>
+                    <th scope="col">Change/View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for manhaj in manhaj_doc %}
+                    <tr>
+                    <td>{{ manhaj.id }}</td>
+                    <td>{{ manhaj.name }}</td>
+                    <td>{{ manhaj.created_at }}</td>
+                    <td><a href="{% url 'view_manhaj_doc' manhaj.id %}">Edit</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+        {% endif %}
+        <a href="{% url 'add_manhaj_doc' %}" class="btn btn-primary">Add </a>
+
+</div>
+
+{% endblock %}

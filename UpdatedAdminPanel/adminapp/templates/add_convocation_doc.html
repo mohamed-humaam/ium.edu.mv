@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ 
+    
+</form>
+  
+    {% if img_obj %}  
+    
+        <embed src="{{ img_obj.image.url}}" alt="Done" style="max-height:300px">  
+    {% endif %} 
+
+</form>
+
+     
+
+</form>
+<form method="post" enctype="multipart/form-data">  
+    {% csrf_token %}  
+    {{ form.as_p }}  
+    <button type="submit">Add Student</button>  
+</form> 
+
+
+</div>
+
+{% endblock %}

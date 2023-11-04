@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ 
+    
+</form>
+  
+    {% if img_obj %}  
+   
+        <embed src="{{ img_obj.image.url}}" alt="Done" style="max-height:300px">  
+    {% endif %} 
+    <h3> Collaborator Added  {{img_obj.caption}}</h3>  
+</form>
+
+    
+<form method="post" enctype="multipart/form-data">  
+    {% csrf_token %}  
+    {{ form.as_p }}  
+    <button type="submit">Add Collaborator</button>  
+</form> 
+
+
+</div>
+
+{% endblock %}

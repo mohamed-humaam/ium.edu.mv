@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Contact Us</h1>
+
+<div class="card">
+    <div class="card-header">
+      {{ contactus.id }} - {{ contactus.created_at }} 
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ contactus.name }}</h5>
+      <a href="{% url 'update_contact_us_doc' contactus.id %}" class="btn btn-primary">Edit</a>
+      <a href="{% url 'delete_contact_us_doc' contactus.id %}" class="btn btn-danger">Delete</a>
+    </div>
+  </div>
+  <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+
+{% endblock %}

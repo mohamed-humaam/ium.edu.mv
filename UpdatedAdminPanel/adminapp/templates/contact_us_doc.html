@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+        <h1>Add Contact</h1>
+
+        {% if contact_us_doc %}
+            
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">Created at</th>
+                    <th scope="col">Change/View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for contactus in contact_us_doc %}
+                    <tr>
+                    <td>{{ contactus.id }}</td>
+                    <td>{{ contactus.department }}</td>
+                    <td>{{ contactus.created_at }}</td>
+                    <td><a href="{% url 'view_contact_us_doc' contactus.id %}">Edit</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+        {% endif %}
+        <a href="{% url 'add_contact_us_doc' %}" class="btn btn-primary">Add </a>
+
+</div>
+
+{% endblock %}

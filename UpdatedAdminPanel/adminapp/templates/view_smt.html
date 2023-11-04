@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Senior Management Team</h1>
+
+<div class="card">
+    <div class="card-header">
+      {{ smt.id }} - {{ smt.created_at }} 
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ smt.name }}</h5>
+      <a href="{% url 'update_smt' smt.id %}" class="btn btn-primary">Edit</a>
+      <a href="{% url 'delete_smt' smt.id %}" class="btn btn-danger">Delete</a>
+    </div>
+  </div>
+  <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+
+{% endblock %}
