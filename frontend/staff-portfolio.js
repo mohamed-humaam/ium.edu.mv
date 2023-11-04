@@ -1,21 +1,3 @@
-// Function to create a section within the profile
-function createProfileSection(title, content, sectionClass) {
-    const section = document.createElement("div");
-    section.className = sectionClass;
-
-    const sectionTitle = document.createElement("h3");
-    sectionTitle.textContent = title;
-    section.appendChild(sectionTitle);
-
-    const sectionContent = document.createElement("p");
-    sectionContent.className = "section-content";
-    sectionContent.textContent = content; // Display the full content
-
-    section.appendChild(sectionContent);
-
-    return section;
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     const staffInfo = document.getElementById("staffInfo");
 
@@ -139,75 +121,98 @@ document.addEventListener("DOMContentLoaded", function () {
         const profileSection = document.createElement("div");
         profileSection.className = "profile";
 
+        // Function to create a pop-up message
+        function createPopupMessage(title, content) {
+            const modal = document.createElement("div");
+            modal.className = "modal";
+            modal.style.display = "none";
+
+            const modalContent = document.createElement("div");
+            modalContent.className = "modal-content";
+
+            const closeModalButton = document.createElement("span");
+            closeModalButton.className = "close-modal-button";
+            closeModalButton.innerHTML = "×";
+            closeModalButton.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+
+            const modalTitle = document.createElement("h3");
+            modalTitle.textContent = title;
+
+            const modalText = document.createElement("p");
+            modalText.textContent = content;
+
+            modalContent.appendChild(closeModalButton);
+            modalContent.appendChild(modalTitle);
+            modalContent.appendChild(modalText);
+            modal.appendChild(modalContent);
+
+            return modal;
+        }
+
         // Add Expert Profile section
-        const expertProfileSection = createProfileSection("Profile", staff.profile, "expert-profile");
+        const expertProfileSection = document.createElement("div");
+        expertProfileSection.className = "expert-profile";
+        const profileHeading = document.createElement("h3");
+        profileHeading.textContent = "Profile";
+        expertProfileSection.appendChild(profileHeading);
+        expertProfileSection.addEventListener("click", function () {
+            const popupMessage = createPopupMessage("Profile", staff.profile);
+            staffInfo.appendChild(popupMessage);
+            popupMessage.style.display = "block";
+        });
         profileSection.appendChild(expertProfileSection);
 
         // Add Areas of Specialization section
-        const specializationSection = createProfileSection("Areas of Specialization", staff.specialization.join('\n'), "area-of-specialization");
+        const specializationSection = document.createElement("div");
+        specializationSection.className = "area-of-specialization";
+        const specializationHeading = document.createElement("h3");
+        specializationHeading.textContent = "Areas of Specialization";
+        specializationSection.appendChild(specializationHeading);
+        specializationSection.addEventListener("click", function () {
+            const popupMessage = createPopupMessage("Areas of Specialization", staff.specialization.join('\n'));
+            staffInfo.appendChild(popupMessage);
+            popupMessage.style.display = "block";
+        });
         profileSection.appendChild(specializationSection);
 
         // Add Awards and Recognition section
-        const awardsSection = createProfileSection("Awards and Recognition", staff.awards.map(award => `${award.date}: ${award.award} (${award.organization})`).join('\n'), "awards-and-recognition");
+        const awardsSection = document.createElement("div");
+        awardsSection.className = "awards-and-recognition";
+        const awardsHeading = document.createElement("h3");
+        awardsHeading.textContent = "Awards and Recognition";
+        awardsSection.appendChild(awardsHeading);
+        awardsSection.addEventListener("click", function () {
+            const awardsContent = staff.awards.map(award => `${award.date}: ${award.award} (${award.organization})`).join('\n');
+            const popupMessage = createPopupMessage("Awards and Recognition", awardsContent);
+            staffInfo.appendChild(popupMessage);
+            popupMessage.style.display = "block";
+        });
         profileSection.appendChild(awardsSection);
 
         // Function to create the "Research and Publications" section
-        function createResearchSection(title, researchContent, sectionClass) {
+        function createResearchSection(title) {
             const section = document.createElement("div");
-            section.className = sectionClass;
+            section.className = "research-and-publications";
 
             // Create a title for the section (e.g., "Research and Publications")
             const sectionTitle = document.createElement("h3");
             sectionTitle.textContent = title;
             section.appendChild(sectionTitle);
 
-            // Split the research content into "Completed Research" and "Ongoing Research"
-            const completedResearch = researchContent.slice(0, researchContent.indexOf("Ongoing Research"));
-            const ongoingResearch = researchContent.slice(researchContent.indexOf("Ongoing Research") + 1);
+            section.addEventListener("click", function () {
+                const researchContent = [...staff.research.completed, ...staff.research.ongoing].map(item => `${item.year}: ${item.title}`).join('\n');
+                const popupMessage = createPopupMessage("Research and Publications", researchContent);
+                staffInfo.appendChild(popupMessage);
+                popupMessage.style.display = "block";
+            });
 
-            // Create a subheading for "Completed Research"
-            const completedResearchContent = document.createElement("h2");
-            completedResearchContent.textContent = "Completed Research";
-            section.appendChild(completedResearchContent);
-
-            // Create an unordered list for "Completed Research"
-            const completedResearchList = document.createElement("ul");
-            for (let i = 0; i < completedResearch.length; i++) {
-                const itemText = completedResearch[i];
-                const item = document.createElement("li");
-                item.textContent = itemText;
-                completedResearchList.appendChild(item);
-            }
-            section.appendChild(completedResearchList);
-
-            // Create a subheading for "Ongoing Research"
-            const ongoingResearchContent = document.createElement("h2");
-            ongoingResearchContent.textContent = "Ongoing Research";
-            section.appendChild(ongoingResearchContent);
-
-            // Create an unordered list for "Ongoing Research"
-            const ongoingResearchList = document.createElement("ul");
-            for (let i = 0; i < ongoingResearch.length; i++) {
-                const itemText = ongoingResearch[i];
-                const item = document.createElement("li");
-                item.textContent = itemText;
-                ongoingResearchList.appendChild(item);
-            }
-            section.appendChild(ongoingResearchList);
-
-            // Return the completed section
             return section;
         }
 
-        // Prepare the content for the "Research and Publications" section
-        const researchContent = staff.research.completed.map(item => `${item.year}: ${item.title}`);
-        if (staff.research.ongoing.length > 0) {
-            researchContent.push("Ongoing Research");
-            researchContent.push(...staff.research.ongoing.map(item => `${item.year}: ${item.title}`));
-        }
-
         // Create the "Research and Publications" section
-        const researchSection = createResearchSection("Research and Publications", researchContent, "research-and-publications");
+        const researchSection = createResearchSection("Research and Publications");
         profileSection.appendChild(researchSection);
 
         // Append the profileSection to the staffInfo
@@ -222,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
         academicQualificationsLink.addEventListener("click", function () {
             // Build the content of the academic qualifications modal
             academicQualificationsModal.innerHTML = `<div class="modal-content">
-                <span class "close-modal-button">×</span>
+                <span class="close-modal-button">×</span>
                 <h3>Academic Qualifications</h3>
                 <ul>${staff.academic_qualifications.map(qualification => `<li>${qualification}</li>`).join('')}</ul>
             </div>`;
@@ -233,14 +238,12 @@ document.addEventListener("DOMContentLoaded", function () {
             const closeModalButton = academicQualificationsModal.querySelector(".close-modal-button");
             closeModalButton.addEventListener("click", function () {
                 academicQualificationsModal.style.display = "none";
-                staffInfo.removeChild(academicQualificationsModal);
             });
 
             // Close the modal when clicking outside of it
             window.addEventListener("click", function (event) {
                 if (event.target === academicQualificationsModal) {
                     academicQualificationsModal.style.display = "none";
-                    staffInfo.removeChild(academicQualificationsModal);
                 }
             });
         });
