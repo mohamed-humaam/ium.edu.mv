@@ -141,7 +141,51 @@ document.addEventListener("DOMContentLoaded", function () {
             modalTitle.textContent = title;
 
             const modalText = document.createElement("p");
-            modalText.textContent = content;
+
+            if (title === "Areas of Specialization" || title === "Awards and Recognition") {
+                const contentList = document.createElement("ul");
+                const contentItems = content.split('\n').map(item => item.trim());
+                contentItems.forEach(item => {
+                    const contentItem = document.createElement("li");
+                    contentItem.textContent = item;
+                    contentList.appendChild(contentItem);
+                });
+                modalText.appendChild(contentList);
+            } else if (title === "Research and Publications") {
+                const researchContent = content.split('\n').map(item => item.trim());
+                const completedResearchIndex = researchContent.indexOf("Completed Research");
+                const ongoingResearchIndex = researchContent.indexOf("Ongoing Research");
+
+                if (completedResearchIndex !== -1) {
+                    const completedResearch = researchContent.slice(completedResearchIndex + 1, ongoingResearchIndex !== -1 ? ongoingResearchIndex : undefined);
+                    const completedResearchList = document.createElement("ul");
+                    completedResearch.forEach(item => {
+                        const researchItem = document.createElement("li");
+                        researchItem.textContent = item;
+                        completedResearchList.appendChild(researchItem);
+                    });
+                    const completedResearchHeading = document.createElement("h4");
+                    completedResearchHeading.textContent = "Completed Research";
+                    modalText.appendChild(completedResearchHeading);
+                    modalText.appendChild(completedResearchList);
+                }
+
+                if (ongoingResearchIndex !== -1) {
+                    const ongoingResearch = researchContent.slice(ongoingResearchIndex + 1);
+                    const ongoingResearchList = document.createElement("ul");
+                    ongoingResearch.forEach(item => {
+                        const researchItem = document.createElement("li");
+                        researchItem.textContent = item;
+                        ongoingResearchList.appendChild(researchItem);
+                    });
+                    const ongoingResearchHeading = document.createElement("h4");
+                    ongoingResearchHeading.textContent = "Ongoing Research";
+                    modalText.appendChild(ongoingResearchHeading);
+                    modalText.appendChild(ongoingResearchList);
+                }
+            } else {
+                modalText.textContent = content;
+            }
 
             modalContent.appendChild(closeModalButton);
             modalContent.appendChild(modalTitle);
