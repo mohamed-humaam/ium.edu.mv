@@ -12,10 +12,10 @@ new Vue({
             },
             {
                 id: 2,
-                date: '20',
-                month: 'August',
-                title: 'Career Fair',
-                description: 'Discover job opportunities and network with leading companies at our annual Career Fair. Prepare your resume and dress professionally.',
+                date: '3',
+                month: 'November',
+                title: 'IUM Law Society Inter batch moot court competition',
+                description: 'This is the FIRST ever moot competition of this University.Kindly join us.',
                 link: '#'
             },
             {
