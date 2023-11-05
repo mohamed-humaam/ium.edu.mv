@@ -12,6 +12,13 @@ const committeeMembers = [
         committeePosition: "Member",
         photo: "./Images/tmt/VC-Dr.jpg", // Add the image file path
     },
+
+     {
+        name: "Dr. Saudullah Ali",
+        universityPosition: "Deputy Vice Chancellor - Academic",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC DR Saud.jpg", // Add the image file path
+    },
     // Add more committee members here
 ];
 
