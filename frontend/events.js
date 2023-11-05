@@ -26,6 +26,14 @@ new Vue({
                 description: 'We cordially extend our invitation to the Victory Day Ceremony organized by Islamic University of Maldives.',
                 link: '#'
             }
+            {
+                id: 4,
+                date: '25',
+                month: 'May',
+                title: 'IUM Convocation 2023 ',
+                description: 'We cordially extend our invitation to IUM Convocation Ceremony 2023',
+                link: '#'
+            },
         ]
     }
 });
