@@ -1,3 +1,70 @@
+// Generate HTML content using JavaScript
+function generateHTML() {
+  const deanSection = document.getElementById("dean");
+  deanSection.innerHTML = `
+      <section class="dean-profile">
+          <div class="dean-photo">
+              <img src="${deanData.photo}" alt="">
+          </div>
+          <div class="dean-contact">
+              <div class="name">
+                  <h2>${deanData.name}</h2>
+                  <h3>${deanData.title}</h3>
+                  <h4>${deanData.department}</h4>
+              </div>
+              <div class="contact">
+                  <a class="phone" href="tel:${deanData.phone}"><i class="fa-solid fa-phone"></i> <p>${deanData.phone}</p></a>
+                  <a class="mail" href="mailto:${deanData.email}"><i class="fa-regular fa-envelope"></i> <p>${deanData.email}</p></a>
+                  <a class="website" href="${deanData.website}" target="_blank"><i class="fa-solid fa-globe"></i> <p>${deanData.website}</p></a>
+              </div>
+          </div>
+      </section>
+      <section class="dean-message">
+          <h2>Message From Dean</h2>
+          ${deanData.message}
+      </section>
+  `;
+
+  const introSection = document.getElementById("intro");
+  introSection.innerHTML = `
+      <h2>Overview</h2>
+      <p id="intro-text">${overviewData.overview}</p>
+  `;
+
+  const introText = document.getElementById("intro-text");
+  introText.textContent = overviewData.overview;
+
+  const overviewSection = document.querySelector(".overview");
+  overviewSection.innerHTML = `
+      <div class="content">
+          <div class="vision">
+              <img src="${overviewData.vision.image}" alt="">
+              <h2>${overviewData.vision.title}</h2>
+              <p>${overviewData.vision.text}</p>
+          </div>
+          <div class="mission">
+              <img src="${overviewData.mission.image}" alt="">
+              <h2>${overviewData.mission.title}</h2>
+              <ul>
+                  ${overviewData.mission.list.map(item => `<li>${item}</li>`).join('')}
+              </ul>
+          </div>
+          <div class="objectives">
+              <img src="${overviewData.objectives.image}" alt="">
+              <h2>${overviewData.objectives.title}</h2>
+              <ul>
+                  ${overviewData.objectives.list.map(item => `<li>${item}</li>`).join('')}
+              </ul>
+          </div>
+      </div>
+  `;
+}
+
+// Call the function to generate the HTML content
+generateHTML();
+
+
+
 // Function to create staff cards
 function createStaffCards(staffData, containerId) {
   const staffContainer = document.getElementById(containerId);
