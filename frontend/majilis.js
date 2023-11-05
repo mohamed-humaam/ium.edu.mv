@@ -19,6 +19,68 @@ const committeeMembers = [
         committeePosition: "Member",
         photo: "./Images/tmt/DVC DR Saud.jpg", // Add the image file path
     },
+
+         {
+        name: "Mohamed Mahid Shareef",
+        universityPosition: "Deputy Vice Chancellor - Administration and Finance",
+        committeePosition: "Member (Member appointed by majlis for a specific time period)",
+        photo: "./Images/tmt/DVC Uz Mahid.jpg", // Add the image file path
+    },
+
+            {
+        name: "Dr. Aishath Waheeda",
+        universityPosition: "Examinations Controller",
+        committeePosition: "Member (on behalf of the Deans)",
+        photo: "./Images/tmt/DVC Uz Mahid.jpg", // Add the image file path
+    },
+
+      {
+        name: "Mohamed Mansoor",
+        universityPosition: "Dean - Kulliyyah of Quran and Sunnah",
+        committeePosition: "Member (on behalf of the Deans)",
+        photo: "./Images/tmt/DVC Uz Mahid.jpg", // Add the image file path
+    },
+
+        {
+        name: "Mohamed Imran",
+        universityPosition: "Curriculum, Instruction and Assessment Specialist ",
+        committeePosition: "Member (on behalf of Academic Board)",
+        photo: "./Images/tmt/DVC Uz Mahid.jpg", // Add the image file path
+    },
+
+    
+      {
+        name: "Al-Ustaz Hussain Mohamed Haneef",
+        committeePosition: "Member (Sharia and Law)",
+        photo: "./Images/tmt/DVC Uz Mahid.jpg", // Add the image file path
+    },
+      {
+        name: "Ibrahim Ali",
+        committeePosition: "Member (on behalf of Lecturers)",
+        photo: "./Images/tmt/DVC Uz Mahid.jpg", // Add the image file path
+    },
+
+        {
+        name: "Hawwa Latheef ",
+        committeePosition: "Member  (on behalf of Alumni)",
+        photo: "./Images/tmt/DVC Uz Mahid.jpg", // Add the image file path
+    },
+
+        {
+        name: "Maryam Simana ",
+        committeePosition: "Member (on behalf of Students)",
+        photo: "./Images/tmt/DVC Uz Mahid.jpg", // Add the image file path
+    },
+
+           {
+        name: "Mohamed Yaaniu Hashim ",
+        committeePosition: "Member (on behalf of Admin Staffs)",
+        photo: "./Images/tmt/DVC Uz Mahid.jpg", // Add the image file path
+    },
+
+
+
+    
     // Add more committee members here
 ];
 
