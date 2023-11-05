@@ -20,10 +20,10 @@ new Vue({
             },
             {
                 id: 3,
-                date: '5',
-                month: 'September',
-                title: 'Open House',
-                description: 'Visit our campus during the Open House event and get a glimpse of our facilities. Meet faculty members and current students.',
+                date: '4',
+                month: 'November',
+                title: 'Victory Day Ceremony ',
+                description: 'We cordially extend our invitation to the Victory Day Ceremony organized by Islamic University of Maldives.',
                 link: '#'
             }
         ]
