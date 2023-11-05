@@ -1,17 +1,177 @@
 // script.js
 const committeeMembers = [
     {
-        name: "John Doe",
-        universityPosition: "Professor of Mathematics",
-        committeePosition: "Chairperson",
-        photo: "./Images/Faculties/kems/dean.jpg", // Add the image file path
+         name: "Dr. Ibrahim Zakariyya Moosa",
+        universityPosition: "Vice Chancellor",
+        committeePosition: "Chair",
+        photo: "./Images/tmt/VC-Dr.png", // Add the image file path
     },
     {
-        name: "Jane Smith",
-        universityPosition: "Assistant Professor of History",
-        committeePosition: "Vice Chair",
-        photo: "./Images/Faculties/kems/dean.jpg", // Add the image file path
+        name: "Mohamed Mahid Shareef",
+        universityPosition: "Deputy Vice-Chancellor ( Administration and Finance )",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20Uz%20Mahid.jpg", // Add the image file path
     },
+     {
+        name: "Dr. Saudullah Ali",
+        universityPosition: "Deputy Vice-Chancellor ( Academic Affairs)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Saud.jpg", // Add the image file path
+    },
+        {
+        name: "Dr. Dheeba Moosa",
+        universityPosition: "Deputy Vice-Chancellor (Research and Innovation)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+     {
+        name: "Ahmed Rauf Abdulla",
+        universityPosition: "Registrar",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+     {
+        name: "Ahmadhulla Mauthoof",
+        universityPosition: "Director (Human Resource)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+     {
+        name: "Dr. Abdulla Jameel",
+        universityPosition: "Dean (Center for Postgraduate Studies)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+     {
+        name: "Dr. Ismail Shafeeu",
+        universityPosition: "Dean (Center for Research and Publications)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+     {
+        name: "Dr. Aishath Reesha",
+        universityPosition: "Dean (Kulliyyah of Education)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+       {
+        name: "Ahmed Munavar",
+        universityPosition: "Dean (Kulliyyah of Economics and Management Studies)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+       {
+        name: "Mohamed Mansoor",
+        universityPosition: "Dean (Kulliyyah of Quran and Sunnah)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+       {
+        name: "Ahmed Saleem",
+        universityPosition: "Dean (Kulliyyah of Islamic Revealed Knowledge and Human Sciences)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+         {
+        name: "Mohamed Shaheen",
+        universityPosition: "Dean (Center for Continuing Education)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+         {
+        name: "Dr. Mohamed Shujau Abdul Hakeem",
+        universityPosition: "Dean (Kulliyyah of Shari'ah and Law)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+         {
+        name: "Mohamed Imran",
+        universityPosition: "Curriculum, Instruction and Assessment Specialist ",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+         {
+        name: "Dr. Aishath Waheeda",
+        universityPosition: "Examinations Controller",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+         {
+        name: "Moosa Adnan",
+        universityPosition: "System Administrator",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+         {
+        name: "Mohamed Yaniu Hashim",
+        universityPosition: "Director  (Chancellor Bureau)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+          {
+        name: "Aishath Ali",
+        universityPosition: "Director  (Procurement)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+          {
+        name: "Shafeeaa Mohamed Naseer",
+        universityPosition: "Director  (Finance)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+          {
+        name: "Fathimath Nashath",
+        universityPosition: "Chief Librarian",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+
+          {
+        name: "Dr. Aishath Shina",
+        universityPosition: "Acting Director  (Local and International Relations)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+          {
+        name: "Ali Fahumy",
+        universityPosition: "Assistant Director  (Maintenance)",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+          {
+        name: "Abdul Hafeez Khalid",
+        universityPosition: "Dean of Students",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+          {
+        name: "Aishath Shifa",
+        universityPosition: "Quality Assuarance Controller",
+        committeePosition: "Member",
+        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+    },
+        
+
+    
+    
     // Add more committee members here
 ];
 
