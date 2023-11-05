@@ -36,15 +36,20 @@
     padding: 50px 70px 50px 70px;
     justify-content: center;
     align-items: flex-start;
+    height: 170px;
 }
   
 .feature {
     color: #4a4a4a;
     font-weight: 400;
-    margin: 2.5rem;
     max-width: 15rem;
     flex: 1;
     position: relative;
+    margin-left: 120px;
+}
+
+.feature:first-child {
+    margin-left: -10px;
 }
   
 .feature a {
@@ -88,37 +93,22 @@
 
 /* Stydy Section */
 .study {
-    font-family: "Open Sans",sans-serif;
-    width: 100%;
-    height: 45vh;
-    padding-left: 380px;
-    padding-right: 380px;
-    background-color: #ffffff;
-}
-
-.study .tag-text {
-    padding-top: 35px;
-    padding-bottom: 10px;
-}
-
-.study a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 2.2rem;
-    font-weight: lighter;
-}
-
-.study-section {
     display: flex;
-    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    height: 35vh;
 }
 
 .programme-finder {
     display: flex;
     background-color: #117333;
+    border-radius: 5px;
     padding: 30px;
     margin-right: 40px;
-    width: 100%;
+    width: 50%;
 }
 
 .programme-index h2 {
