@@ -1,67 +1,41 @@
-// Generate HTML content using JavaScript
-function generateHTML() {
-  const deanSection = document.getElementById("dean");
-  deanSection.innerHTML = `
-      <section class="dean-profile">
-          <div class="dean-photo">
-              <img src="${deanData.photo}" alt="">
-          </div>
-          <div class="dean-contact">
-              <div class="name">
-                  <h2>${deanData.name}</h2>
-                  <h3>${deanData.title}</h3>
-                  <h4>${deanData.department}</h4>
-              </div>
-              <div class="contact">
-                  <a class="phone" href="tel:${deanData.phone}"><i class="fa-solid fa-phone"></i> <p>${deanData.phone}</p></a>
-                  <a class="mail" href="mailto:${deanData.email}"><i class="fa-regular fa-envelope"></i> <p>${deanData.email}</p></a>
-                  <a class="website" href="${deanData.website}" target="_blank"><i class="fa-solid fa-globe"></i> <p>${deanData.website}</p></a>
-              </div>
-          </div>
-      </section>
-      <section class="dean-message">
-          <h2>Message From Dean</h2>
-          ${deanData.message}
-      </section>
-  `;
+// Populate HTML elements with the data
+document.getElementById("dean-name").textContent = deanData.name;
+document.getElementById("dean-title").textContent = deanData.title;
+document.getElementById("dean-department").textContent = deanData.department;
+document.getElementById("dean-photo").src = deanData.photo;
+document.getElementById("dean-phone").href = "tel:" + deanData.phone;
+document.getElementById("dean-phone").lastChild.textContent = deanData.phone;
+document.getElementById("dean-email").href = "mailto:" + deanData.email;
+document.getElementById("dean-email").lastChild.textContent = deanData.email;
+document.getElementById("dean-website").href = deanData.website;
+document.getElementById("dean-website").lastChild.textContent = deanData.website;
+document.getElementById("dean-message").textContent = deanData.message;
 
-  const introSection = document.getElementById("intro");
-  introSection.innerHTML = `
-      <h2>Overview</h2>
-      <p id="intro-text">${overviewData.overview}</p>
-  `;
+const deanMessage = deanData.message.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
 
-  const introText = document.getElementById("intro-text");
-  introText.textContent = overviewData.overview;
+document.getElementById("dean-message").innerHTML = deanMessage;
 
-  const overviewSection = document.querySelector(".overview");
-  overviewSection.innerHTML = `
-      <div class="content">
-          <div class="vision">
-              <img src="${overviewData.vision.image}" alt="">
-              <h2>${overviewData.vision.title}</h2>
-              <p>${overviewData.vision.text}</p>
-          </div>
-          <div class="mission">
-              <img src="${overviewData.mission.image}" alt="">
-              <h2>${overviewData.mission.title}</h2>
-              <ul>
-                  ${overviewData.mission.list.map(item => `<li>${item}</li>`).join('')}
-              </ul>
-          </div>
-          <div class="objectives">
-              <img src="${overviewData.objectives.image}" alt="">
-              <h2>${overviewData.objectives.title}</h2>
-              <ul>
-                  ${overviewData.objectives.list.map(item => `<li>${item}</li>`).join('')}
-              </ul>
-          </div>
-      </div>
-  `;
-}
 
-// Call the function to generate the HTML content
-generateHTML();
+
+document.getElementById("intro-text").textContent = introData;
+
+document.getElementById("vision-title").textContent = overviewData.vision.title;
+document.getElementById("vision-text").textContent = overviewData.vision.text;
+document.getElementById("vision-image").src = overviewData.vision.image;
+
+document.getElementById("objectives-title").textContent = overviewData.objectives.title;
+const objectivesList = document.getElementById("objectives-list");
+overviewData.objectives.list.forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    objectivesList.appendChild(li);
+});
+document.getElementById("objectives-image").src = overviewData.objectives.image;
+
+document.getElementById("mission-title").textContent = overviewData.mission.title;
+document.getElementById("mission-text").textContent = overviewData.mission.text;
+document.getElementById("mission-image").src = overviewData.mission.image;
+
 
 
 

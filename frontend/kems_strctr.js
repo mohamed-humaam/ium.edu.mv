@@ -1,3 +1,43 @@
+// Populate HTML elements with the data
+document.getElementById("dean-name").textContent = deanData.name;
+document.getElementById("dean-title").textContent = deanData.title;
+document.getElementById("dean-department").textContent = deanData.department;
+document.getElementById("dean-photo").src = deanData.photo;
+document.getElementById("dean-phone").href = "tel:" + deanData.phone;
+document.getElementById("dean-phone").lastChild.textContent = deanData.phone;
+document.getElementById("dean-email").href = "mailto:" + deanData.email;
+document.getElementById("dean-email").lastChild.textContent = deanData.email;
+document.getElementById("dean-website").href = deanData.website;
+document.getElementById("dean-website").lastChild.textContent = deanData.website;
+document.getElementById("dean-message").textContent = deanData.message;
+
+const deanMessage = deanData.message.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
+
+document.getElementById("dean-message").innerHTML = deanMessage;
+
+
+
+document.getElementById("intro-text").textContent = introData;
+
+document.getElementById("vision-title").textContent = overviewData.vision.title;
+document.getElementById("vision-text").textContent = overviewData.vision.text;
+document.getElementById("vision-image").src = overviewData.vision.image;
+
+document.getElementById("objectives-title").textContent = overviewData.objectives.title;
+const objectivesList = document.getElementById("objectives-list");
+overviewData.objectives.list.forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    objectivesList.appendChild(li);
+});
+document.getElementById("objectives-image").src = overviewData.objectives.image;
+
+document.getElementById("mission-title").textContent = overviewData.mission.title;
+document.getElementById("mission-text").textContent = overviewData.mission.text;
+document.getElementById("mission-image").src = overviewData.mission.image;
+
+
+
 // Function to create staff cards
 function createStaffCards(staffData, containerId) {
     const staffContainer = document.getElementById(containerId);

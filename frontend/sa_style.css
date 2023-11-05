@@ -33,7 +33,7 @@
 /* Styling for the deans section */
 #dean {
     width: 100%;
-    background-image: url("./Images/Banners/kqs_banner.png");
+    background-image: url("./Images/Banners/cce_banner.png");
     height: 84vh;
     display: flex;
     padding: 30px;
@@ -95,7 +95,7 @@
 }
 
 #dean .dean-profile .contact {
-    background: linear-gradient(45deg, rgba(32, 172, 124,1) 0%, rgba(7, 78, 53, 0.9) 100%);
+    background: linear-gradient(45deg, rgba(255, 124, 4,1) 0%, rgba(255, 124, 124,0.9) 100%);
     width: 100%;
     height: 60%;
     display: flex;
@@ -152,10 +152,13 @@
 }
 
 #dean .dean-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 1280px;
     height: 100%;
     margin-left: 150px;
-    margin-top: 140px;
 }
 
 #dean .dean-message h2 {
@@ -169,13 +172,14 @@
     color: #000000;
     font-size: 1.15rem;
     font-weight: 400;
+    margin-bottom: 20px;
 }
 
 
 /*Overview */
 #intro {
     background-color: #f8f8f8;
-    height: 30vh;
+    height: 53vh;
     width: 100%;
     padding: 80px;
     display: flex;
@@ -188,7 +192,6 @@
     font-size: 2.7rem;
     font-weight: 300;
     margin-left: 45%;
-    margin-bottom: 30px;
 }
 
 #intro p {
@@ -224,8 +227,8 @@
 .overview .content .mission,
 .overview .content .objectives {
     background-color: #ffffff;
-    width: 450px;
-    height: 400px;
+    width: 400px;
+    height: 250px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 10px 10px 10px rgba(0, 0, 0, 0.2);
     border: #ccc 1px solid;
@@ -265,8 +268,13 @@
     margin-right: 50px;
 }
 
-.overview .content .objectives {
+.overview .content .mission {
     margin-left: 50px;
+}
+
+.overview .content .objectives {
+    width: 500px;
+    height: 400px;
 }
 
 .overview .content .objectives ol {
@@ -277,6 +285,9 @@
     margin-bottom: 5px;
     list-style-type: lower-roman;
 }
+
+
+
 
 
 /* Department */
