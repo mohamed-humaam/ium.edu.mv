@@ -4,10 +4,10 @@ new Vue({
         events: [
             {
                 id: 1,
-                date: '15',
-                month: 'July',
-                title: 'Conference on Technology Innovations',
-                description: 'Join us for a conference showcasing the latest technology innovations. Don\'t miss this opportunity to learn from industry experts.',
+                date: '06',
+                month: 'November',
+                title: ' Chinese Ambassador Bursary program awarding ceremony',
+                description: 'We cordially extend our invitation to the China Ambassador Bursary awarding ceremony. The ceremony will take place in the IUM Hall on November 6th,2023 at 12:30 p.m.',
                 link: '#'
             },
             {
