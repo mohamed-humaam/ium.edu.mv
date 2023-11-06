@@ -25,7 +25,7 @@ new Vue({
                 title: 'Victory Day Ceremony ',
                 description: 'We cordially extend our invitation to the Victory Day Ceremony organized by Islamic University of Maldives.',
                 link: '#'
-            }
+            },
             {
                 id: 4,
                 date: '25',

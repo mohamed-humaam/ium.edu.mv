@@ -1,5 +1,5 @@
 // Define data using JavaScript objects and arrays
-const deanData = {
+const KIRK_Dean = {
   name: "Mohamed Shaheen",
   title: "Dean",
   photo: "./Images/deans/CCE Dean Uz Shaheen.jpg",

@@ -1,17 +1,17 @@
 // Populate HTML elements with the data
-document.getElementById("dean-name").textContent = deanData.name;
-document.getElementById("dean-title").textContent = deanData.title;
-document.getElementById("dean-department").textContent = deanData.department;
-document.getElementById("dean-photo").src = deanData.photo;
-document.getElementById("dean-phone").href = "tel:" + deanData.phone;
-document.getElementById("dean-phone").lastChild.textContent = deanData.phone;
-document.getElementById("dean-email").href = "mailto:" + deanData.email;
-document.getElementById("dean-email").lastChild.textContent = deanData.email;
-document.getElementById("dean-website").href = deanData.website;
-document.getElementById("dean-website").lastChild.textContent = deanData.website;
-document.getElementById("dean-message").textContent = deanData.message;
+document.getElementById("dean-name").textContent = KED_Dean.name;
+document.getElementById("dean-title").textContent = KED_Dean.title;
+document.getElementById("dean-department").textContent = KED_Dean.department;
+document.getElementById("dean-photo").src = KED_Dean.photo;
+document.getElementById("dean-phone").href = "tel:" + KED_Dean.phone;
+document.getElementById("dean-phone").lastChild.textContent = KED_Dean.phone;
+document.getElementById("dean-email").href = "mailto:" + KED_Dean.email;
+document.getElementById("dean-email").lastChild.textContent = KED_Dean.email;
+document.getElementById("dean-website").href = KED_Dean.website;
+document.getElementById("dean-website").lastChild.textContent = KED_Dean.website;
+document.getElementById("dean-message").textContent = KED_Dean.message;
 
-const deanMessage = deanData.message.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
+const deanMessage = KED_Dean.message.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
 
 document.getElementById("dean-message").innerHTML = deanMessage;
 

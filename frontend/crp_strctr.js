@@ -1,17 +1,17 @@
 // Populate HTML elements with the data
-document.getElementById("dean-name").textContent = deanData.name;
-document.getElementById("dean-title").textContent = deanData.title;
-document.getElementById("dean-department").textContent = deanData.department;
-document.getElementById("dean-photo").src = deanData.photo;
-document.getElementById("dean-phone").href = "tel:" + deanData.phone;
-document.getElementById("dean-phone").lastChild.textContent = deanData.phone;
-document.getElementById("dean-email").href = "mailto:" + deanData.email;
-document.getElementById("dean-email").lastChild.textContent = deanData.email;
-document.getElementById("dean-website").href = deanData.website;
-document.getElementById("dean-website").lastChild.textContent = deanData.website;
-document.getElementById("dean-message").textContent = deanData.message;
+document.getElementById("dean-name").textContent = CRP_Dean.name;
+document.getElementById("dean-title").textContent = CRP_Dean.title;
+document.getElementById("dean-department").textContent = CRP_Dean.department;
+document.getElementById("dean-photo").src = CRP_Dean.photo;
+document.getElementById("dean-phone").href = "tel:" + CRP_Dean.phone;
+document.getElementById("dean-phone").lastChild.textContent = CRP_Dean.phone;
+document.getElementById("dean-email").href = "mailto:" + CRP_Dean.email;
+document.getElementById("dean-email").lastChild.textContent = CRP_Dean.email;
+document.getElementById("dean-website").href = CRP_Dean.website;
+document.getElementById("dean-website").lastChild.textContent = CRP_Dean.website;
+document.getElementById("dean-message").textContent = CRP_Dean.message;
 
-const deanMessage = deanData.message.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
+const deanMessage = CRP_Dean.message.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
 
 document.getElementById("dean-message").innerHTML = deanMessage;
 
