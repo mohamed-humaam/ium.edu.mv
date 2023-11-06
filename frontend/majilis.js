@@ -1,6 +1,6 @@
 // script.js
 const committeeMembers = [
-   {
+    {
         name: "Dr. Mohamed Zahir Hussain",
         universityPosition: "Chancellor",
         committeePosition: "Chair",
