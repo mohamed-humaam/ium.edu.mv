@@ -12,67 +12,57 @@ const committeeMembers = [
         committeePosition: "Member",
         photo: "./Images/tmt/VC-Dr.png", // Add the image file path
     },
-
-     {
+    {
         name: "Dr. Saudullah Ali",
         universityPosition: "Deputy Vice Chancellor - Academic",
         committeePosition: "Member",
         photo: "./Images/tmt/DVC DR Saud.jpg", // Add the image file path
     },
-
-         {
+    {
         name: "Mohamed Mahid Shareef",
         universityPosition: "Deputy Vice Chancellor - Administration and Finance",
         committeePosition: "Member (Member appointed by majlis for a specific time period)",
         photo: "./Images/tmt/DVC Uz Mahid.jpg", // Add the image file path
     },
-
-            {
+    {
         name: "Dr. Aishath Waheeda",
         universityPosition: "Examinations Controller",
         committeePosition: "Member (on behalf of the Deans)",
         photo: "./Images/majlis/dr aishath waheeda.JPG", // Add the image file path
     },
-
-      {
+    {
         name: "Mohamed Mansoor",
         universityPosition: "Dean - Kulliyyah of Quran and Sunnah",
         committeePosition: "Member (on behalf of the Deans)",
         photo: "./Images/majlis/KQS Dean Uz Mansoor.jpg ", // Add the image file path
     },
-
-        {
+    {
         name: "Mohamed Imran",
         universityPosition: "Curriculum, Instruction and Assessment Specialist ",
         committeePosition: "Member (on behalf of Academic Board)",
         photo: "./Images/majlis/mohamed imran.JPG", // Add the image file path
     },
-
-    
-      {
+    {
         name: "Al-Ustaz Hussain Mohamed Haneef",
         committeePosition: "Member (Sharia and Law)",
         photo: "./Images/majlis/uz h m haneeef.JPG", // Add the image file path
     },
-      {
+    {
         name: "Ibrahim Ali",
         committeePosition: "Member (on behalf of Lecturers)",
         photo: "./Images/majlis/ibrahim ali.JPG", // Add the image file path
     },
-
-        {
+    {
         name: "Hawwa Latheef ",
         committeePosition: "Member  (on behalf of Alumni)",
         photo: "./Images/majlis/hawwa latheef.JPG", // Add the image file path
     },
-
-        {
+    {
         name: "Maryam Simana ",
         committeePosition: "Member (on behalf of Students)",
         photo: "./Images/majlis/maryam simaana.JPG", // Add the image file path
     },
-
-           {
+    {
         name: "Mohamed Yaaniu Hashim ",
         committeePosition: "Member (on behalf of Admin Staffs)",
         photo: "./Images/majlis/yaaniu.JPG", // Add the image file path
