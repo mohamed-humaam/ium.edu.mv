@@ -1,6 +1,6 @@
 // script.js
 const committeeMembers = [
-   {
+    {
         name: "Mohamed Mahid Shareef",
         universityPosition: "Deputy Vice-Chancellor ( Administration and Finance )",
         committeePosition: "Member",
@@ -23,29 +23,30 @@ const committeeMembers = [
         name: "Ahmed Rauf Abdulla",
         universityPosition: "Registrar",
         committeePosition: "Member",
-        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+        photo: "./Images/hrmd/rauf uz.JPG", // Add the image file path
     },
 
      {
         name: "Ahmadhulla Mauthoof",
         universityPosition: "Director (Human Resource)",
         committeePosition: "Member",
-        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+        photo: " ", // Add the image file path
     },
 
      {
         name: "Dr. Aishath Reesha",
         universityPosition: "Dean (Kulliyyah of Education)",
         committeePosition: "Member",
-        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+        photo: "./Images/hrmd/KED Dean Dr Reesha.jpg", // Add the image file path
     },
 
           {
         name: "Shafeeaa Mohamed Naseer",
         universityPosition: "Director  (Finance)",
         committeePosition: "Member",
-        photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+        photo: "./Images/hrmd/shafy.png", // Add the image file path
     },
+   
     // Add more committee members here
 ];
 
