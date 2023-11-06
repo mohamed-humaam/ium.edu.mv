@@ -17,24 +17,24 @@ document.getElementById("dean-message").innerHTML = deanMessage;
 
 
 
-document.getElementById("intro-text").textContent = introData;
+document.getElementById("intro-text").textContent = KIRK_Intro;
 
-document.getElementById("vision-title").textContent = overviewData.vision.title;
-document.getElementById("vision-text").textContent = overviewData.vision.text;
-document.getElementById("vision-image").src = overviewData.vision.image;
+document.getElementById("vision-title").textContent = KIRK_Overview.vision.title;
+document.getElementById("vision-text").textContent = KIRK_Overview.vision.text;
+document.getElementById("vision-image").src = KIRK_Overview.vision.image;
 
-document.getElementById("objectives-title").textContent = overviewData.objectives.title;
+document.getElementById("objectives-title").textContent = KIRK_Overview.objectives.title;
 const objectivesList = document.getElementById("objectives-list");
-overviewData.objectives.list.forEach((item) => {
+KIRK_Overview.objectives.list.forEach((item) => {
     const li = document.createElement("li");
     li.textContent = item;
     objectivesList.appendChild(li);
 });
-document.getElementById("objectives-image").src = overviewData.objectives.image;
+document.getElementById("objectives-image").src = KIRK_Overview.objectives.image;
 
-document.getElementById("mission-title").textContent = overviewData.mission.title;
-document.getElementById("mission-text").textContent = overviewData.mission.text;
-document.getElementById("mission-image").src = overviewData.mission.image;
+document.getElementById("mission-title").textContent = KIRK_Overview.mission.title;
+document.getElementById("mission-text").textContent = KIRK_Overview.mission.text;
+document.getElementById("mission-image").src = KIRK_Overview.mission.image;
 
 
 

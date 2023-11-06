@@ -1,17 +1,17 @@
 // Populate HTML elements with the data
-document.getElementById("dean-name").textContent = deanData.name;
-document.getElementById("dean-title").textContent = deanData.title;
-document.getElementById("dean-department").textContent = deanData.department;
-document.getElementById("dean-photo").src = deanData.photo;
-document.getElementById("dean-phone").href = "tel:" + deanData.phone;
-document.getElementById("dean-phone").lastChild.textContent = deanData.phone;
-document.getElementById("dean-email").href = "mailto:" + deanData.email;
-document.getElementById("dean-email").lastChild.textContent = deanData.email;
-document.getElementById("dean-website").href = deanData.website;
-document.getElementById("dean-website").lastChild.textContent = deanData.website;
-document.getElementById("dean-message").textContent = deanData.message;
+document.getElementById("dean-name").textContent = SA_Dean.name;
+document.getElementById("dean-title").textContent = SA_Dean.title;
+document.getElementById("dean-department").textContent = SA_Dean.department;
+document.getElementById("dean-photo").src = SA_Dean.photo;
+document.getElementById("dean-phone").href = "tel:" + SA_Dean.phone;
+document.getElementById("dean-phone").lastChild.textContent = SA_Dean.phone;
+document.getElementById("dean-email").href = "mailto:" + SA_Dean.email;
+document.getElementById("dean-email").lastChild.textContent = SA_Dean.email;
+document.getElementById("dean-website").href = SA_Dean.website;
+document.getElementById("dean-website").lastChild.textContent = SA_Dean.website;
+document.getElementById("dean-message").textContent = SA_Dean.message;
 
-const deanMessage = deanData.message.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
+const deanMessage = SA_Dean.message.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
 
 document.getElementById("dean-message").innerHTML = deanMessage;
 
@@ -19,22 +19,22 @@ document.getElementById("dean-message").innerHTML = deanMessage;
 
 document.getElementById("intro-text").textContent = introData;
 
-document.getElementById("vision-title").textContent = overviewData.vision.title;
-document.getElementById("vision-text").textContent = overviewData.vision.text;
-document.getElementById("vision-image").src = overviewData.vision.image;
+document.getElementById("vision-title").textContent = SA_Overview.vision.title;
+document.getElementById("vision-text").textContent = SA_Overview.vision.text;
+document.getElementById("vision-image").src = SA_Overview.vision.image;
 
-document.getElementById("objectives-title").textContent = overviewData.objectives.title;
+document.getElementById("objectives-title").textContent = SA_Overview.objectives.title;
 const objectivesList = document.getElementById("objectives-list");
-overviewData.objectives.list.forEach((item) => {
+SA_Overview.objectives.list.forEach((item) => {
     const li = document.createElement("li");
     li.textContent = item;
     objectivesList.appendChild(li);
 });
-document.getElementById("objectives-image").src = overviewData.objectives.image;
+document.getElementById("objectives-image").src = SA_Overview.objectives.image;
 
-document.getElementById("mission-title").textContent = overviewData.mission.title;
-document.getElementById("mission-text").textContent = overviewData.mission.text;
-document.getElementById("mission-image").src = overviewData.mission.image;
+document.getElementById("mission-title").textContent = SA_Overview.mission.title;
+document.getElementById("mission-text").textContent = SA_Overview.mission.text;
+document.getElementById("mission-image").src = SA_Overview.mission.image;
 
 
 
