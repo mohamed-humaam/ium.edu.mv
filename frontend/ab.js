@@ -31,8 +31,7 @@ const committeeMembers = [
        committeePosition: "Member",
        photo: "./Images/ab/rauf uz.JPG", // Add the image file path
    },
-
-   
+  
 
     {
        name: "Dr. Abdulla Jameel",
@@ -45,63 +44,63 @@ const committeeMembers = [
        name: "Dr. Ismail Shafeeu",
        universityPosition: "Dean (Center for Research and Publications)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/CRP Dean Dr Ismail Shafeeu.jpg", // Add the image file path
    },
 
     {
        name: "Dr. Aishath Reesha",
        universityPosition: "Dean (Kulliyyah of Education)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/KED Dean Dr Reesha.jpg", // Add the image file path
    },
 
       {
        name: "Ahmed Munavar",
        universityPosition: "Dean (Kulliyyah of Economics and Management Studies)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/KEM Dean Uz Munawwar.jpg", // Add the image file path
    },
 
       {
        name: "Mohamed Mansoor",
        universityPosition: "Dean (Kulliyyah of Quran and Sunnah)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/KQS Dean Uz Mansoor.jpg", // Add the image file path
    },
 
       {
        name: "Ahmed Saleem",
        universityPosition: "Dean (Kulliyyah of Islamic Revealed Knowledge and Human Sciences)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/KIRK Dean Uz. Saleem.jpg", // Add the image file path
    },
 
         {
        name: "Mohamed Shaheen",
        universityPosition: "Dean (Center for Continuing Education)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/CCE Dean Uz Shaheen.jpg", // Add the image file path
    },
 
         {
        name: "Dr. Mohamed Shujau Abdul Hakeem",
        universityPosition: "Dean (Kulliyyah of Shari'ah and Law)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/KSL Dean Dr Shujau.JPG", // Add the image file path
    },
 
         {
        name: "Mohamed Imran",
        universityPosition: "Curriculum, Instruction and Assessment Specialist ",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/mohamed imran.JPG", // Add the image file path
    },
 
         {
        name: "Dr. Aishath Waheeda",
        universityPosition: "Examinations Controller",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/dr aishath waheeda.JPG", // Add the image file path
    },
 
 
@@ -109,59 +108,59 @@ const committeeMembers = [
        name: "Fathimath Nashath",
        universityPosition: "Chief Librarian",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/nashath.JPG", // Add the image file path
    },
 
          {
        name: "Aishath Sinaau",
        universityPosition: "Lecturer)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/aishath sinaau.JPG", // Add the image file path
    },
 
          {
        name: "Dr. Fathimath Muna",
        universityPosition: "Senior Lecturer)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/dr fathimath muna.JPG", // Add the image file path
    },
          {
        name: "Abdul Mueed Hassan",
        universityPosition: "Associate Lecturer)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: " ", // Add the image file path
    },
          {
        name: "Nasrulla Ahmed",
        universityPosition: "Lecturer)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: " ", // Add the image file path
    },
      {
        name: "Dr. Mohamed Solih",
        universityPosition: "Senior Lecturer (Centre for Postgraduate Studies)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/solih-1643651697DgKdo.png", // Add the image file path
    },
 
      {
        name: "Abdul Ghanee Mohamed",
        universityPosition: "Lecturer - Contract (Kulliyah of Sharia & Law)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: " ", // Add the image file path
    },
 
      {
        name: "Adam Fayaz",
        universityPosition: "Associate Lecturer (Kulliyah of Education)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: "./Images/ab/fayaz-1643653028eJAJd.png", // Add the image file path
    },
      {
        name: "Fathimath Rasheeda",
        universityPosition: "Lecturer (Kulliyah of Quran & Sunnah)",
        committeePosition: "Member",
-       photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+       photo: " ", // Add the image file path
    },
     
     // Add more committee members here
