@@ -10,7 +10,7 @@ const committeeMembers = [
         name: "Dr. Ibrahim Zakariyya Moosa",
         universityPosition: "Vice Chancellor",
         committeePosition: "Member",
-        photo: "./Images/tmt/VC-Dr.jpg", // Add the image file path
+        photo: "./Images/tmt/VC-Dr.png", // Add the image file path
     },
 
      {
