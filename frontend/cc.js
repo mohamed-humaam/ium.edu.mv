@@ -1,7 +1,7 @@
 // script.js
 const committeeMembers = [
     
-    {
+     {
        name: "Dr. Saudullah Ali",
        universityPosition: "Deputy Vice-Chancellor ( Academic Affairs)",
        committeePosition: "Member",
@@ -35,7 +35,7 @@ const committeeMembers = [
        name: "Aroosha Mahir ",
        universityPosition: "Lecturer, Kulliyyah of Quran and Sunnah",
        committeePosition: "Member",
-       photo: " ", // Add the image file path
+       photo: "./Images/CC/aroosha-16436515510LZHQ.png ", // Add the image file path
    },
 
          {
@@ -48,19 +48,19 @@ const committeeMembers = [
        name: "Saamiya Zakariyya ",
        universityPosition: "Senior Lecturer, Kulliyyah of Education",
        committeePosition: "Member",
-       photo: " ", // Add the image file path
+       photo: "./Images/CC/samiya-1643639904eVSjw.png ", // Add the image file path
    },
          {
        name: "Fareedha Mohamed",
        universityPosition: "Lecturer, Kulliyyah of Islamic Revealed Knowledge, and Human Sciences",
        committeePosition: "Member",
-       photo: " ", // Add the image file path
+       photo: "./Images/CC/fareedha-1643653757rPWBh.png ", // Add the image file path
    },
          {
        name: "Aminath Zuhudha",
        universityPosition: "Lecturer, Center for Continuing Education",
        committeePosition: "Member",
-       photo: " ", // Add the image file path
+       photo: "./Images/CC/zuhuda-16436536567cjlo.png ", // Add the image file path
    },
 
    {
@@ -73,8 +73,10 @@ const committeeMembers = [
     name: "•	Ikram Abdul Sattar   ",
     universityPosition: " Lecturer, Kulliyyah of Shari'ah and Law",
     committeePosition: "Member",
-    photo: " ", // Add the image file path
+    photo: " ./Images/CC/ikuram-1643642386kZIPg.png", // Add the image file path
 },
+       
+       
        
     // Add more committee members here
 ];
