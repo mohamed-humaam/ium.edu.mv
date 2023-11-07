@@ -65,22 +65,34 @@ document.addEventListener("DOMContentLoaded", function () {
         return card;
     }
 
+
+    function toggleFacultyCard(facultyCard) {
+        facultyCard.classList.toggle("expanded");
+    }
+
+
     function initializeFacultyCards() {
         facultyData.forEach(faculty => {
             const card = createFacultyCard(faculty);
             facultyCardsContainer.appendChild(card);
+
+            // Add click event listener to faculty card
+            card.addEventListener("click", () => {
+                toggleFacultyCard(card);
+            });
         });
     }
 
     function createFacultyCard(faculty) {
-        const card = document.createElement("div");
-        card.className = `faculty-card ${faculty.name.toLowerCase()}`;
+        const facultyCard = document.createElement("div");
+        facultyCard.className = `faculty-card ${faculty.name.toLowerCase()}`;
     
-        const facultyNameContainer = document.createElement("div");
-        facultyNameContainer.className = "faculty-name-container";
-        facultyNameContainer.textContent = faculty.name;
+        const titleContainer = document.createElement("div");
+        titleContainer.className = "title-container";
+        titleContainer.textContent = faculty.name;
     
-        card.appendChild(facultyNameContainer);
+        const staffContainer = document.createElement("div");
+        staffContainer.className = "staff-container";
     
         // Display staff information in the order defined in facultyData
         const staffTypes = [
@@ -96,12 +108,15 @@ document.addEventListener("DOMContentLoaded", function () {
             if (Array.isArray(staffArray)) {
                 staffArray.forEach(staff => {
                     const staffCard = createStaffCard(staff);
-                    card.appendChild(staffCard);
+                    staffContainer.appendChild(staffCard);
                 });
             }
         });
     
-        return card;
+        facultyCard.appendChild(titleContainer);
+        facultyCard.appendChild(staffContainer);
+    
+        return facultyCard;
     }
 
     initializeFacultyCards();

@@ -51,44 +51,35 @@
 
 .faculty-card.expanded {
     background-color: #e1edf0;
-    transform: scale(1.02);
 }
 
+.faculty-card:not(.expanded) .staff-card {
+    display: none;
+}
+
+.faculty-card.expanded .staff-container {
+    margin-top: 50px;
+}
 
 .title-container {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-/* Staff List Styles */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.staff-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* Arrange cards horizontally */
-    justify-content: space-between; /* Add space between staff cards */
-}
-
-/* Staff Card Styles */
-.staff-list {
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 10px;
+    gap: 30px;
+    justify-items: center;
 }
 
 .staff-card {
-    width: auto;
     background-color: #f2f2f2;
-    margin: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
     padding: 25px;
     border: 2px solid #03b9b0;
     color: #03b9b0;
     border-radius: 20px;
+    width: 500px;
     text-align: center;
 }
 
@@ -96,8 +87,8 @@ ul {
     border: 1.5px solid #03b9b0;
     height: 7em;
     width: 7em;
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .staff-name {
@@ -122,30 +113,4 @@ ul {
     display: flex;
     text-align: center;
     justify-content: center;
-}
-
-/* Toggle Button Styles */
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Button Hover Effect */
-button:hover {
-    background-color: #45a049;
-}
-
-/* Title Styles */
-#facultyCards h4 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-/* Hide Staff Lists by Default */
-ul ul {
-    display: none;
 }
