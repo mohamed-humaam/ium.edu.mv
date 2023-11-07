@@ -25,10 +25,20 @@ const committeeMembers = [
         photo: "./Images/tmt/DVC Uz Mahid.jpg", // Add the image file path
     },
     {
+        name: "Al-Ustaz Hussain Mohamed Haneef",
+        committeePosition: "Member (Sharia and Law)",
+        photo: "./Images/majlis/uz h m haneeef.JPG", // Add the image file path
+    },
+    {
         name: "Dr. Aishath Waheeda",
         universityPosition: "Examinations Controller",
         committeePosition: "Member (on behalf of the Deans)",
         photo: "./Images/majlis/dr aishath waheeda.JPG", // Add the image file path
+    },
+    {
+        name: "Mohamed Yaaniu Hashim ",
+        committeePosition: "Member (on behalf of Admin Staffs)",
+        photo: "./Images/majlis/yaaniu.JPG", // Add the image file path
     },
     {
         name: "Mohamed Mansoor",
@@ -41,11 +51,6 @@ const committeeMembers = [
         universityPosition: "Curriculum, Instruction and Assessment Specialist ",
         committeePosition: "Member (on behalf of Academic Board)",
         photo: "./Images/majlis/mohamed imran.JPG", // Add the image file path
-    },
-    {
-        name: "Al-Ustaz Hussain Mohamed Haneef",
-        committeePosition: "Member (Sharia and Law)",
-        photo: "./Images/majlis/uz h m haneeef.JPG", // Add the image file path
     },
     {
         name: "Ibrahim Ali",
@@ -61,11 +66,6 @@ const committeeMembers = [
         name: "Maryam Simana ",
         committeePosition: "Member (on behalf of Students)",
         photo: "./Images/majlis/maryam simaana.JPG", // Add the image file path
-    },
-    {
-        name: "Mohamed Yaaniu Hashim ",
-        committeePosition: "Member (on behalf of Admin Staffs)",
-        photo: "./Images/majlis/yaaniu.JPG", // Add the image file path
     },
 
 
