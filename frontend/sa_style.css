@@ -28,8 +28,6 @@
 }
 
 
-
-
 /* Styling for the deans section */
 #dean {
     width: 100%;
@@ -104,49 +102,25 @@
     align-items: center;
 }
 
-#dean .dean-profile .contact .phone {
-    display: flex;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-#dean .dean-profile .contact .phone:hover {
-    color: black;
-}
-
-#dean .dean-profile .contact .phone p {
-    margin-left: 20px;
-}
-
-#dean .dean-profile .contact .mail {
-    display: flex;
-    margin-top: 10px;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-#dean .dean-profile .contact .mail:hover {
-    color: black;
-}
-
-#dean .dean-profile .contact .mail p {
-    margin-left: 20px;
-}
-
+#dean .dean-profile .contact .phone,
+#dean .dean-profile .contact .mail,
 #dean .dean-profile .contact .website {
     display: flex;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
     color: white;
     text-decoration: none;
     transition: 0.3s ease;
 }
 
+#dean .dean-profile .contact .phone:hover,
+#dean .dean-profile .contact .mail:hover,
 #dean .dean-profile .contact .website:hover {
     color: black;
 }
 
+#dean .dean-profile .contact .phone p,
+#dean .dean-profile .contact .mail p,
 #dean .dean-profile .contact .website p {
     margin-left: 20px;
 }
