@@ -39,7 +39,7 @@ const DOS_Overview = {
 
 
 // Sample staff data
-const KQS_Admin = [
+const DOS_Admin = [
   {
     name: "Hana Jaufar",
     occupation: "Administrative Officer",
