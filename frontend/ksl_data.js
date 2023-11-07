@@ -1,10 +1,10 @@
 // Define data using JavaScript objects and arrays
 const KSL_Dean = {
   name: "Mohamed Shaheen",
-  title: "Dean",
+  occupation: "Dean",
   photo: "./Images/deans/CCE Dean Uz Shaheen.jpg",
   department: "Center for Continuing Education",
-  phone: "3022148",
+  contact: "3022148",
   email: "mohamed.shaheen@ium.edu.mv",
   website: "https://www.ium.edu.mv/cce/",
   message: `A’ssalaam Alaikum. I welcome you to the Centre for Continuing Education (CCE). The aim of CCE is to prepare students for the undergraduate courses in the university in various disciplines, and provide other courses that will prepare students to pursue formal university education.\n\nAt CCE, we offer a number of programs to address your needs. If you are seeking to do an undergraduate degree but do not meet the entry requirements of the degree, we can assist you to fulfill that requirement. Our Advanced Certificate level courses are designed to provide students with the fundamental understanding of relevant disciplines, and literacy and numeracy skills that are required to pursue an undergraduate degree in the university.\n\nThese courses offer study skills in both English and Dhivehi language and basic Arabic literacy skills.\n\nIn addition, these programs offer a particular core module for inculcating Islamic values and ethics in our students.\n\nFurthermore, we provide courses for adult learners and other prospective candidates in the area of Qira’ath al-Quran, English Language and Imaamship. These courses are mainly designed for people who are interested in pursuing higher studies but may not have completed formal education. We further endeavor to offer short courses on professional development in a variety of areas, foreign languages and personal enrichment.\n\nWe strive to provide a high-quality learning experience to our students so that they grow to become life-long learners.`,

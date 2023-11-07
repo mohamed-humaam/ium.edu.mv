@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Executives", executives: committeeMembers },
         { name: "Chancellor's Bureau", director: Bureau_Director, staff: Bureau_Staff },
         { name: "Reception", staff: Reception_Staff },
-        { name: "Student Affairs", dean: SA_Dean, staff: SA_Admin },
-        { name: "Dean of Students", dean: DOS_Dean, staff: DOS_Admin },
+        { name: "Student Affairs", dean: [SA_Dean], staff: SA_Admin },
+        { name: "Dean of Students", dean: [DOS_Dean], staff: DOS_Admin },
         { name: "Information Technology", director: IT_Director, staff: IT_Staff },
         { name: "Human Resources", director: HR_Director, staff: HR_Staff },
         { name: "Finance", director: Finance_Director, staff: Finance_Staff },
@@ -13,15 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Facilities & Administration", director: Facilities_Director, staff: Facilities_Staff },
         { name: "Curriculum Development", director: curriculumn_Director, staff: curriculumn_Staff },
         { name: "Local & International Relations", director: lir_Director },
-        { name: "Kulliyyah of Education", dean: KED_Dean, academic: KED_Academic, admin: KED_Admin },
-        { name: "Kulliyyah of Economics & Management Studies", dean: KEMS_Dean, academic: KEMS_Academic, admin: KEMS_Admin },
-        { name: "Kulliyyah of Islamic Revealed Knowledge & Human Sciences", dean: KIRK_Dean, academic: KIRK_Academic, admin: KIRK_Admin },
-        { name: "Kulliyyah of Shar’iah & Law", dean: KSL_Dean, academic: KSL_Academic, admin: KSL_Admin },
-        { name: "Kulliyyah of Qur’anic Studies", dean: KQS_Dean, academic: KQS_Academic, admin: KQS_Admin },
-        { name: "Kulliyyah of Arabic Language", dean: KAL_Dean, academic: KAL_Academic, admin: KAL_Admin },
-        { name: "Center for Continuing Education", dean: CCE_Dean, academic: CCE_Academic, admin: CCE_Admin },
-        { name: "Center for Postgraduate Studies", dean: CPS_Dean, academic: CPS_Academic, admin: CPS_Admin },
-        { name: "Center for Research & Publications", dean: CRP_Dean, academic: CRP_Academic, admin: CRP_Admin },
+        { name: "Kulliyyah of Education", dean: [KED_Dean], academic: KED_Academic, admin: KED_Admin },
+        { name: "Kulliyyah of Economics & Management Studies", dean: [KEMS_Dean], academic: KEMS_Academic, admin: KEMS_Admin },
+        { name: "Kulliyyah of Islamic Revealed Knowledge & Human Sciences", dean: [KIRK_Dean], academic: KIRK_Academic, admin: KIRK_Admin },
+        { name: "Kulliyyah of Shar’iah & Law", dean: [KSL_Dean], academic: KSL_Academic, admin: KSL_Admin },
+        { name: "Kulliyyah of Qur’anic Studies", dean: [KQS_Dean], academic: KQS_Academic, admin: KQS_Admin },
+        { name: "Kulliyyah of Arabic Language", dean: [KAL_Dean], academic: KAL_Academic, admin: KAL_Admin },
+        { name: "Center for Continuing Education", dean: [CCE_Dean], academic: CCE_Academic, admin: CCE_Admin },
+        { name: "Center for Postgraduate Studies", dean: [CPS_Dean], academic: CPS_Academic, admin: CPS_Admin },
+        { name: "Center for Research & Publications", dean: [CRP_Dean], academic: CRP_Academic, admin: CRP_Admin },
         // Add more departments here
     ];
 
@@ -75,13 +75,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function createFacultyCard(faculty) {
         const card = document.createElement("div");
         card.className = `faculty-card ${faculty.name.toLowerCase()}`;
-
+    
         const facultyNameContainer = document.createElement("div");
         facultyNameContainer.className = "faculty-name-container";
         facultyNameContainer.textContent = faculty.name;
-
+    
         card.appendChild(facultyNameContainer);
-
+    
         // Display staff information in the order defined in facultyData
         const staffTypes = [
             faculty.dean,
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
             faculty.director,
             faculty.staff,
         ];
-
+    
         staffTypes.forEach(staffArray => {
             if (Array.isArray(staffArray)) {
                 staffArray.forEach(staff => {
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
         });
-
+    
         return card;
     }
 
