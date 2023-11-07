@@ -12,7 +12,7 @@ const Finance_Director = [
 
 
 // Sample staff data
-const HR_Staff = [
+const Finance_Staff = [
     {
       name: "Saffa Ibrahim",
       occupation: "Senior Administrative Officer",

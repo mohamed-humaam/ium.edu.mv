@@ -5,24 +5,36 @@ const committeeMembers = [
         universityPosition: "Vice Chancellor",
         committeePosition: "Chair",
         photo: "./Images/tmt/VC-Dr.png", // Add the image file path
+        occupation: "Director - Procurement Department",
+        contact: "+960330122",
+        email: "example@ium.edu.mv"
     },
     {
         name: "Mohamed Mahid Shareef",
         universityPosition: "Deputy Vice-Chancellor ( Administration and Finance )",
         committeePosition: "Member",
         photo: "./Images/tmt/DVC%20Uz%20Mahid.jpg", // Add the image file path
+        occupation: "Director - Procurement Department",
+        contact: "+960330122",
+        email: "example@ium.edu.mv"
     },
      {
         name: "Dr. Saudullah Ali",
         universityPosition: "Deputy Vice-Chancellor ( Academic Affairs)",
         committeePosition: "Member",
         photo: "./Images/tmt/DVC%20DR%20Saud.jpg", // Add the image file path
+        occupation: "Director - Procurement Department",
+        contact: "+960330122",
+        email: "example@ium.edu.mv"
     },
         {
         name: "Dr. Dheeba Moosa",
         universityPosition: "Deputy Vice-Chancellor (Research and Innovation)",
         committeePosition: "Member",
         photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
+        occupation: "Director - Procurement Department",
+        contact: "+960330122",
+        email: "example@ium.edu.mv"
     },
     // Add more committee members here
 ];

@@ -1,5 +1,5 @@
 // Sample staff data
-const Finance_Director = [
+const Procurement_Director = [
     {
       name: "Aishath Ali",
       occupation: "Director - Procurement Department",
@@ -12,7 +12,7 @@ const Finance_Director = [
 
 
 // Sample staff data
-const Finance_Staff = [
+const Procurement_Staff = [
     {
       name: "Aminath Shajan",
       occupation: "Administrative Officer",
