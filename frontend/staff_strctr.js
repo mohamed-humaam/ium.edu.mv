@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Library", director: Library_Director, staff: Library_Staff },
         { name: "Facilities & Administration", director: Facilities_Director, staff: Facilities_Staff },
         { name: "Curriculum Development", director: curriculumn_Director, staff: curriculumn_Staff },
-        { name: "Local & International Relations", dean: lir_Director, staff: lir_Staff },
+        { name: "Local & International Relations", director: lir_Director },
         { name: "Kulliyyah of Education", dean: KED_Dean, academic: KED_Academic, admin: KED_Admin },
         { name: "Kulliyyah of Economics & Management Studies", dean: KEMS_Dean, academic: KEMS_Academic, admin: KEMS_Admin },
         { name: "Kulliyyah of Islamic Revealed Knowledge & Human Sciences", dean: KIRK_Dean, academic: KIRK_Academic, admin: KIRK_Admin },
@@ -24,14 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Center for Research & Publications", dean: CRP_Dean, academic: CRP_Academic, admin: CRP_Admin },
         // Add more departments here
     ];
-
-    const constExecutives = facultyData.find(entry => entry.name === "Executives");
-    const constLibrary = facultyData.find(entry => entry.name === "Library");
-    const constDepartmetns = facultyData.filter(entry => entry.name !== "Executives" && entry.name !== "Library");
-    const constSA = facultyData.find(entry => entry.name === "Student Affairs");
-    const constDOS = facultyData.find(entry => entry.name === "Dean of Students");
-    const constCenters = facultyData.filter(entry => entry.name.includes("Center"));
-    const constFaculties = facultyData.filter(entry => entry.name.startsWith("Kulliyyah"));
 
     const facultyCardsContainer = document.getElementById("facultyCards");
 
@@ -73,89 +65,11 @@ document.addEventListener("DOMContentLoaded", function () {
         return card;
     }
 
-    // Assuming you have an element with the ID 'committeeContainer'
-    const committeeContainer = document.getElementById("committeeContainer");
-
-    if (committeeContainer) {
-        committeeMembers.forEach((member) => {
-            const memberCard = document.createElement("div");
-            memberCard.classList.add("member-card");
-
-            const memberPhoto = document.createElement("img");
-            memberPhoto.classList.add("member-photo");
-            memberPhoto.src = member.photo;
-            memberPhoto.alt = member.name;
-
-            const memberName = document.createElement("div");
-            memberName.classList.add("member-name");
-            memberName.textContent = member.name;
-
-            const memberUniversityPosition = document.createElement("div");
-            memberUniversityPosition.classList.add("member-university-position");
-            memberUniversityPosition.textContent = member.universityPosition;
-
-            const memberCommitteePosition = document.createElement("div");
-            memberCommitteePosition.classList.add("member-committee-position");
-            memberCommitteePosition.textContent = member.committeePosition;
-
-            memberCard.appendChild(memberPhoto);
-            memberCard.appendChild(memberName);
-            memberCard.appendChild(memberUniversityPosition);
-            memberCard.appendChild(memberCommitteePosition);
-
-            committeeContainer.appendChild(memberCard);
+    function initializeFacultyCards() {
+        facultyData.forEach(faculty => {
+            const card = createFacultyCard(faculty);
+            facultyCardsContainer.appendChild(card);
         });
-    }
-
-    function createStaffList(staffArray, title) {
-        const list = document.createElement("div");
-        list.className = "staff-list";
-
-        const titleContainer = document.createElement("div");
-        titleContainer.className = "title-container";
-        const titleElement = document.createElement("h4");
-        titleElement.textContent = title;
-        titleContainer.appendChild(titleElement);
-
-        const staffContainer = document.createElement("div");
-        staffContainer.className = "staff-container";
-
-        if (staffArray) {
-            staffArray.forEach(function (staff) {
-                const staffCard = createStaffCard(staff);
-                staffContainer.appendChild(staffCard);
-            });
-        }
-
-        list.appendChild(titleContainer);
-        list.appendChild(staffContainer);
-
-        return list;
-    }
-
-    // Function to create a list for Deans
-    function createDeanList(dean, title) {
-        const list = document.createElement("div");
-        list.className = "dean-list";
-
-        const titleContainer = document.createElement("div");
-        titleContainer.className = "title-container";
-        const titleElement = document.createElement("h4");
-        titleElement.textContent = title;
-        titleContainer.appendChild(titleElement);
-
-        const deanContainer = document.createElement("div");
-        deanContainer.className = "dean-container";
-
-        if (dean) {
-            const deanCard = createStaffCard(dean);
-            deanContainer.appendChild(deanCard);
-        }
-
-        list.appendChild(titleContainer);
-        list.appendChild(deanContainer);
-
-        return list;
     }
 
     function createFacultyCard(faculty) {
@@ -168,43 +82,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
         card.appendChild(facultyNameContainer);
 
-        let adminTitle;
-        if (faculty.name === "Executives") {
-            adminTitle = "Executive Members";
-        } else if (["KEMS", "KED", "KIRK", "KSL", "KQS", "CCE", "CPS", "CRP", "IT"].includes(faculty.name)) {
-            adminTitle = "Dean, Academic Staff, and Administrative Staff";
-        } else if (faculty.name === "SA") {
-            adminTitle = "Registrar and Administrative Staff";
-        } else if (faculty.name === "DOS") {
-            adminTitle = "Dean of Students";
-        } else {
-            adminTitle = "Director and Administrative Staffs";
-        }
+        // Display staff information in the order defined in facultyData
+        const staffTypes = [
+            faculty.dean,
+            faculty.academic,
+            faculty.admin,
+            faculty.executives,
+            faculty.director,
+            faculty.staff,
+        ];
 
-        if (faculty.director || faculty.staff || faculty.admin || faculty.academic || faculty.dean || faculty.executives) {
-            const adminList = createStaffList(faculty.director || faculty.staff || faculty.admin || faculty.executives, adminTitle);
-            const staffList = createStaffList(faculty.staff || faculty.academic, "Staff");
-            const deanList = createDeanList(faculty.dean, "Dean");
-
-            adminList.style.display = "none"; // Initially hidden
-            staffList.style.display = "none"; // Initially hidden
-            deanList.style.display = "none"; // Initially hidden
-
-            card.appendChild(adminList);
-            card.appendChild(staffList);
-            card.appendChild(deanList);
-
-            facultyNameContainer.addEventListener("click", () => toggleFacultyStaff(card, adminList, staffList, deanList));
-        }
+        staffTypes.forEach(staffArray => {
+            if (Array.isArray(staffArray)) {
+                staffArray.forEach(staff => {
+                    const staffCard = createStaffCard(staff);
+                    card.appendChild(staffCard);
+                });
+            }
+        });
 
         return card;
-    }
-
-    function initializeFacultyCards() {
-        facultyData.forEach(faculty => {
-            const card = createFacultyCard(faculty);
-            facultyCardsContainer.appendChild(card);
-        });
     }
 
     initializeFacultyCards();
@@ -216,16 +113,4 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = `staff-portfolio.html?staff=${staffName}`;
         }
     });
-
-    function toggleFacultyStaff(card, adminList, staffList, deanList) {
-        if (adminList.style.display === "none") {
-            adminList.style.display = "block";
-            staffList.style.display = "block";
-            deanList.style.display = "block";
-        } else {
-            adminList.style.display = "none";
-            staffList.style.display = "none";
-            deanList.style.display = "none";
-        }
-    }
 });
