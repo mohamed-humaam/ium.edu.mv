@@ -38,7 +38,7 @@
 .faculty-card {
     border: 1px solid #e1edf0;
     text-align: center;
-    width: 88%;
+    width: 90%;
     margin: 20px 170px;
     padding: 20px 70px;
     cursor: pointer;
@@ -46,7 +46,6 @@
     background-color: #e1edf0;
     color: #03b9b0;
     border-radius: 5px;
-    font-size: 1.3rem;
     font-weight: 700;
 }
 
@@ -59,11 +58,11 @@
 }
 
 .faculty-card.expanded .staff-container {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .title-container {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
@@ -80,7 +79,7 @@
     border: 2px solid #03b9b0;
     color: #03b9b0;
     border-radius: 20px;
-    width: 500px;
+    width: 370px;
     text-align: center;
 }
 
@@ -93,14 +92,17 @@
 }
 
 .staff-name {
-    font-size: 1.1rem;
-    font-weight: 600 !important;
+    font-weight: 700 !important;
+    font-size: 1.2rem !important;
 }
 
-.staff-occupation {
+.staff-name,
+.staff-occupation,
+.staff-contact,
+.staff-email {
     margin-top: 5px;
-    font-size: 1.1rem;
-    font-weight: 500 !important;
+    font-size: 1.0rem;
+    font-weight: 500;
     color: #03b9b0 !important;
 }
 
