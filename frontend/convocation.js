@@ -2,17 +2,37 @@ const years = [2023, 2022, 2021];
         const yearContainer = document.getElementById('yearContainer');
 
         const studentData = {
-            2023: [
-                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/Faculties/kems/dean.jpg' },
-                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/Faculties/kems/dean.jpg' },
+           2023: [
+               
+
             ],
             2022: [
-                { name: 'Student 3', batch: 'BLGA12', imageUrl: './Images/Faculties/kems/dean.jpg' },
-                { name: 'Student 4', batch: 'BTIS33', imageUrl: './Images/Faculties/kems/dean.jpg' },
+                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/convocation selection/_DSC2265.JPG' },
+                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/convocation selection/_DSC2403.JPG' },
+                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/convocation selection/_DSC2483.JPG' },
+                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/convocation selection/_DSC2522.JPG' },
+                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/convocation selection/_DSC2654.JPG' },
+                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/convocation selection/_DSC4933.JPG' },
+                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/convocation selection/_DSC4983.JPG' },
+                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/convocation selection/_DSC5380.JPG' },
+                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/convocation selection/_DSC5400.JPG' },
+                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/convocation selection/_DSC5412.JPG' },
+                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/convocation selection/_DSC5420.JPG' },
+                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/convocation selection/_DSC5428.JPG' },
+                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/convocation selection/_DSC5442.JPG' },
+                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/convocation selection/_DSC5450(2).JPG' },
+                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/convocation selection/_DSC5471.JPG' },
+                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/convocation selection/_DSC5494.JPG' },
+                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/convocation selection/_DSC5499.JPG' },
+                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/convocation selection/_DSC5511.JPG' },
+                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/convocation selection/_DSC5526.JPG' },
+                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/convocation selection/_DSC5535.JPG' },
+                { name: 'Student 1', batch: 'BQS36', imageUrl: './Images/convocation selection/_DSC5562.JPG' },
+                { name: 'Student 2', batch: 'BTQ17', imageUrl: './Images/convocation selection/_DSC5581.JPG' },
             ],
             2021: [
-                { name: 'Student 5', batch: 'MTL18', imageUrl: './Images/Faculties/kems/dean.jpg' },
-                { name: 'Student 6', batch: 'BQT24', imageUrl: './Images/Faculties/kems/dean.jpg' },
+                //{ name: 'Student 5', batch: 'MTL18', imageUrl: './Images/Faculties/kems/dean.jpg' },
+               // { name: 'Student 6', batch: 'BQT24', imageUrl: './Images/Faculties/kems/dean.jpg' },
             ],
         };
 
