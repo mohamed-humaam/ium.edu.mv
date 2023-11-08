@@ -1,10 +1,10 @@
 // Define data using JavaScript objects and arrays
-         const deanData = {
+          const deanData = {
           name: "Mohamed Shaheen",
           title: "Dean",
           photo: "./Images/Profile photos of staffs/shaheen.JPG",
           department: "Center for Continuing Education",
-          phone: "3022148",
+          phone: "3022138",
           email: "mohamed.shaheen@ium.edu.mv",
           website: "https://www.ium.edu.mv/cce/",
           message: `A’ssalaam Alaikum. I welcome you to the Centre for Continuing Education (CCE). The aim of CCE is to prepare students for the undergraduate courses in the university in various disciplines, and provide other courses that will prepare students to pursue formal university education.\n\nAt CCE, we offer a number of programs to address your needs. If you are seeking to do an undergraduate degree but do not meet the entry requirements of the degree, we can assist you to fulfill that requirement. Our Advanced Certificate level courses are designed to provide students with the fundamental understanding of relevant disciplines, and literacy and numeracy skills that are required to pursue an undergraduate degree in the university.\n\nThese courses offer study skills in both English and Dhivehi language and basic Arabic literacy skills.\n\nIn addition, these programs offer a particular core module for inculcating Islamic values and ethics in our students.\n\nFurthermore, we provide courses for adult learners and other prospective candidates in the area of Qira’ath al-Quran, English Language and Imaamship. These courses are mainly designed for people who are interested in pursuing higher studies but may not have completed formal education. We further endeavor to offer short courses on professional development in a variety of areas, foreign languages and personal enrichment.\n\nWe strive to provide a high-quality learning experience to our students so that they grow to become life-long learners.`,
@@ -43,7 +43,7 @@ const CCE_Admin = [
     name: "Aminath Raaziya",
     occupation: "Administrative Officer",
     photo: " ",
-    contact: "+960330122",
+    contact: "+9603022441",
     email: "aminath.raaziya@ium.edu.mv"
 
   },
@@ -51,7 +51,7 @@ const CCE_Admin = [
     name: "Ali Ahnaf",
     occupation: "Administrative Officer",
     photo: " ",
-    contact: "+960330122",
+    contact: "+9603022442",
     email: "ali.ahnaf@ium.edu.mv"
 
   },
@@ -64,7 +64,7 @@ const CCE_Academic = [
     name: " Aminath Zuhudha ",
     occupation: "Lecturer",
     photo: " ",
-    contact: "3022122 ",
+   // contact: "3022122 ",
     email: "aminath.zuhudha@ium.edu.mv ",
    },
    {
@@ -72,7 +72,7 @@ const CCE_Academic = [
     name: " Nasrulla Ahmed ",
     occupation: "Lecturer",
     photo: " ./Images/Profile photos of staffs/nasru.JPG",
-    contact: "3022122 ",
+   // contact: "3022122 ",
     email: "nasrulla.ahmed@ium.edu.mv ",
    },
   {
@@ -80,7 +80,7 @@ const CCE_Academic = [
     name: " Mohamed Zaahir ",
     occupation: "Lecturer",
     photo: " ",
-    contact: "3022122 ",
+   // contact: "3022122 ",
     email: "mohamed.zahir@ium.edu.mv ",
   
   
