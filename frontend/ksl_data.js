@@ -1,37 +1,35 @@
 // Define data using JavaScript objects and arrays
 const KSL_Dean = {
-  name: "Mohamed Shaheen",
+  name: "Dr. Mohamed Shujau Abdul Hakeem",
   occupation: "Dean",
-  photo: "./Images/deans/CCE Dean Uz Shaheen.jpg",
-  department: "Center for Continuing Education",
-  contact: "3022148",
-  email: "mohamed.shaheen@ium.edu.mv",
-  website: "https://www.ium.edu.mv/cce/",
-  message: `A’ssalaam Alaikum. I welcome you to the Centre for Continuing Education (CCE). The aim of CCE is to prepare students for the undergraduate courses in the university in various disciplines, and provide other courses that will prepare students to pursue formal university education.\n\nAt CCE, we offer a number of programs to address your needs. If you are seeking to do an undergraduate degree but do not meet the entry requirements of the degree, we can assist you to fulfill that requirement. Our Advanced Certificate level courses are designed to provide students with the fundamental understanding of relevant disciplines, and literacy and numeracy skills that are required to pursue an undergraduate degree in the university.\n\nThese courses offer study skills in both English and Dhivehi language and basic Arabic literacy skills.\n\nIn addition, these programs offer a particular core module for inculcating Islamic values and ethics in our students.\n\nFurthermore, we provide courses for adult learners and other prospective candidates in the area of Qira’ath al-Quran, English Language and Imaamship. These courses are mainly designed for people who are interested in pursuing higher studies but may not have completed formal education. We further endeavor to offer short courses on professional development in a variety of areas, foreign languages and personal enrichment.\n\nWe strive to provide a high-quality learning experience to our students so that they grow to become life-long learners.`,
+  photo: "./Images/deans/KSL Dean Dr Shujau.JPG",
+  department: "Kulliyyah of Shariah and Law",
+  contact: "3022143",
+  email: "mohamed.shujau@ium.edu.mv",
+  website: "https://www.ium.edu.mv/ksl/",
+  message: `Bismillahirahmanirahim,\n\nAs a Dean of Kulliyyah of Shari’ah and Law (KSL), Islamic University of Maldives (IUM), I am honored to welcome you.\n\nFor more than three decades, KSL has been providing quality legal education in Maldives. We have transformed immensely from our modest beginning as part of an institute to a Kulliyyah of IUM.\n\nKSL is committed to provide excellent legal education as our curriculum is based on integration of legal education. We aim to produce balanced professionals who are competent in both Shari’ah and law.\n\nOur commitment to exceptional legal education begins with our staff who are highly dedicated to students’ academic excellence. Our lecturers consist of prominent experts whose expertise and experience would enhance the students’ learning experience at KSL.\n\nIn the past we have seen a significant improvement in the opportunities available to our graduates nationally. We have produced lawyers and judges who are well-rounded in the legal field. Our graduates are employed in private sector, governmental agencies, independent bodies, judiciary, as well as international bodies. Their commitment and contribution to the society are exemplary.\n\nKSL is the perfect institution in Maldives to study law for a satisfying and rewarding learning experience.`,
 };
 
-const KSL_Intro = "Centre for Continuing Education was established in December 2018 after merging Centre for Foundation Studies and Language Learning Centre. The objective of establishing CCE was providing university preparation programs for students pursuing undergraduate studies and managing and coordinating all academic programs of the university in the IUM Learning Centres established in the atolls. However, in January 2020, management of administrative tasks and academic coordination of academic programs have been handed over to IUM Holdings Private Limited and the respective Kulliyahs/Centres. CCE prepares the students for entry into higher education by giving them a solid foundation in the areas of their choice. CCE currently prepares students to undertake courses in the areas of Quranic Studies, Shari’ah and Law, English Language, Business Management, Imaamship and Teaching. All programs which prepare students for undergraduate studies are one-year long and comprises of two semesters that will prepare students for a smooth transition to university studies. In addition, CCE provides courses for adult or mature learners and other prospective students who may be interested in doing short courses. These courses are ranged from certificate levels 1 to 3 and include areas such as Qira’ath al-Quran, English Language and Imaamship. These courses have a duration of one semester or less in a few courses. English language courses offered at CCE are aimed for adult learners who do not have an English language background. These programs range from certificate levels 1 to 3 and beginning with the use of language for basic needs and extending to the use of language for general purposes in a range of contexts. We also offer a certificate level 4 English language program relevant to the hospitality industry. It teaches the basic communication skills needed to communicate in a variety of different work situations in the tourism industry. Further, students at this centre will experience learning in a university learning environment and develop their self-esteem through the activities conducted at the university."; // Your overview text here
+const KSL_Intro = "Kulliyyah of Shari’ah and Laws, formerly known as Faculty of Shari’ah and Law, is among the first colleges established in Maldives. It has gone through many stages of development to reach where it stands now and has a longstanding history of producing well-known leaders in the country. The Bachelor of Shari’ah and Laws offered by the our Kulliyyah is one of the best legal education in Maldives."; // Your overview text here
 
 const KSL_Overview = {
     vision: {
         title: "Vision",
-        text: "To be the leading centre in providing university preparation and adult education programs in the nation.",
+        text: "To provide integrated legal education that is of excellent quality.",
         image: "./Images/Banners/cce_vision.png",
     },
     objectives: {
         title: "Objectives",
         list: [
-            "To provide high-quality learning.",
-            "To inculcate Islamic values and ethics in students.",
-            "To develop students’ self-confidence.",
-            "To develop students’ communication and problem-solving skills.",
-            "To provide basic English language communication skills for adult learners.",
+            "To create exceptional legal research that contributes to policy and law making",
+            "To produce high quality graduates who are prepared for the legal profession at international level.",
+            "To develop and increase resources for students and faculty for a richer academic experience.",
         ],
         image: "./Images/Banners/cce_philosophy.png",
     },
     mission: {
         title: "Mission",
-        text: "CCE strives for excellence in providing academic skills and build confidence to undertake university education",
+        text: "To produce balanced professionals competent both in Shari’ah and law who will serve the public and justice system with a high commitment to the value of justice.",
         image: "./Images/Banners/cce_mission.png",
     },
 };
@@ -43,14 +41,14 @@ const KSL_Admin = [
     name: "Afthim Mohamed",
     occupation: "Administrative Officer",
     photo: "",
-    contact: "+960330122",
+    contact: "3022143",
     email: "afthim.mohamed@ium.edu.mv"
   },
     {
     name: "Mariyam Noumath",
     occupation: "Administrative Officer",
-    photo: "",
-    contact: "+960330122",
+    photo: "./Images/Profile photos of staffs/noomath.JPG",
+    contact: "3022143",
     email: "mariyam.noumath@ium.edu.mv"
   },
   // Add more administrative staff here as needed
