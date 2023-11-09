@@ -1,37 +1,38 @@
 // Define data using JavaScript objects and arrays
 const CRP_Dean = {
-  name: "Mohamed Shaheen",
+  name: "Dr. Ismail Shafeeu",
   occupation: "Dean",
-  photo: "./Images/deans/CCE Dean Uz Shaheen.jpg",
-  department: "Center for Continuing Education",
-  contact: "3022148",
-  email: "mohamed.shaheen@ium.edu.mv",
-  website: "https://www.ium.edu.mv/cce/",
-  message: `A’ssalaam Alaikum. I welcome you to the Centre for Continuing Education (CCE). The aim of CCE is to prepare students for the undergraduate courses in the university in various disciplines, and provide other courses that will prepare students to pursue formal university education.\n\nAt CCE, we offer a number of programs to address your needs. If you are seeking to do an undergraduate degree but do not meet the entry requirements of the degree, we can assist you to fulfill that requirement. Our Advanced Certificate level courses are designed to provide students with the fundamental understanding of relevant disciplines, and literacy and numeracy skills that are required to pursue an undergraduate degree in the university.\n\nThese courses offer study skills in both English and Dhivehi language and basic Arabic literacy skills.\n\nIn addition, these programs offer a particular core module for inculcating Islamic values and ethics in our students.\n\nFurthermore, we provide courses for adult learners and other prospective candidates in the area of Qira’ath al-Quran, English Language and Imaamship. These courses are mainly designed for people who are interested in pursuing higher studies but may not have completed formal education. We further endeavor to offer short courses on professional development in a variety of areas, foreign languages and personal enrichment.\n\nWe strive to provide a high-quality learning experience to our students so that they grow to become life-long learners.`,
+  photo: "./Images/deans/CRP Dean Dr Ismail Shafeeu.jpg",
+  department: "Center for Research and Innovation",
+  contact: "3022141",
+  email: "ismail.shafeeu@ium.edu.mv",
+  website: "https://www.ium.edu.mv/crp/",
+  message: `Welcome to Islamic University of Maldives, Center for Research and Publication. This Center serves as the focal point for research in IUM and therefore, plays a key role in promoting and facilitating research in the University as well as in the wider Maldivian community. In today’s global environment, research is integral for decision making at various levels especially in most developed countries.  Many reputable universities across the world places considerable importance on conducting research. However, research and evidence based decision making is fairly new to the Maldives but the government and the people of Maldives have realized the importance of making informed decisions based on top quality research. The effort many Maldivian higher education institutions are putting into promoting research is a clear indication of this.\n\nThe nature of research activity determines an institution’s priorities, their intellectual capacity as well the climate.  In Islamic University of Maldives, we understand the contribution research can make on student and staff learning, how it can promote innovation and the potential it has for supporting moderation and unification which are the three basic principles the University seeks to promote. Center for Research and Publication hopes to contribute to the society by creating a body of knowledge informed by research to address some of the most contested religious and societal issues that presently plague our community. In order to achieve this, the Center primarily focuses on encouraging a culture in which students are taught various disciplines not just for themselves but to disseminate the knowledge they gain through research. This is necessary to create a productive research environment in the University. We, at the Center for Research and Publication are enthusiastic to see our students and staff engage in discovery and exploration of knowledge through top quality research and redefine service to community. May Allah bless us to achieve our goals.`,
 };
 
-const CRP_Data = "Centre for Continuing Education was established in December 2018 after merging Centre for Foundation Studies and Language Learning Centre. The objective of establishing CCE was providing university preparation programs for students pursuing undergraduate studies and managing and coordinating all academic programs of the university in the IUM Learning Centres established in the atolls. However, in January 2020, management of administrative tasks and academic coordination of academic programs have been handed over to IUM Holdings Private Limited and the respective Kulliyahs/Centres. CCE prepares the students for entry into higher education by giving them a solid foundation in the areas of their choice. CCE currently prepares students to undertake courses in the areas of Quranic Studies, Shari’ah and Law, English Language, Business Management, Imaamship and Teaching. All programs which prepare students for undergraduate studies are one-year long and comprises of two semesters that will prepare students for a smooth transition to university studies. In addition, CCE provides courses for adult or mature learners and other prospective students who may be interested in doing short courses. These courses are ranged from certificate levels 1 to 3 and include areas such as Qira’ath al-Quran, English Language and Imaamship. These courses have a duration of one semester or less in a few courses. English language courses offered at CCE are aimed for adult learners who do not have an English language background. These programs range from certificate levels 1 to 3 and beginning with the use of language for basic needs and extending to the use of language for general purposes in a range of contexts. We also offer a certificate level 4 English language program relevant to the hospitality industry. It teaches the basic communication skills needed to communicate in a variety of different work situations in the tourism industry. Further, students at this centre will experience learning in a university learning environment and develop their self-esteem through the activities conducted at the university."; // Your overview text here
+const CRP_Data = "Research is an integral part of academia and a vehicle for disseminating knowledge. Center for Research and Publication in Islamic University of Maldives (IUM) prioritizes provision of knowledge to the Maldivian community especially based on top quality research into religious and social issues.  The University also gives utmost importance to developing a research culture, preparing a generation of future researchers within the University and in the Maldivian community at large. Therefore, the main purpose of the Center for Research and Publication (CRP) is to facilitate research through staff engagement and training and by this means, disseminate knowledge to the wider community."; // Your overview text here
 
 const CRP_Overview = {
     vision: {
         title: "Vision",
-        text: "To be the leading centre in providing university preparation and adult education programs in the nation.",
+        text: "To be a leading research unit dedicated to advancing and facilitating academic, social and religious research, planning conferences, initiating discussion forums and dissemination of knowledge through publications of research and other academic materials of high standard.",
         image: "./Images/Banners/cce_vision.png",
     },
     objectives: {
         title: "Objectives",
         list: [
-            "To provide high-quality learning.",
-            "To inculcate Islamic values and ethics in students.",
-            "To develop students’ self-confidence.",
-            "To develop students’ communication and problem-solving skills.",
-            "To provide basic English language communication skills for adult learners.",
+            "To build research capabilities of university staff through training and engagement in research activities.",
+            "To encourage staff and students to conduct academic research aimed at addressing problems in society and religion.",
+            "Promote the culture of Islamic moderation through scholarly research.",
+            "To encourage publication by staff, maintain and ensure quality of published materials by IUM.",
+            "To contribute to the nation by adoption of constructive dialogue through discussion forums, seminars and conferences.",
+            "To encourage staff to disseminate knowledge within and outside the IUM community.",
         ],
         image: "./Images/Banners/cce_philosophy.png",
     },
     mission: {
         title: "Mission",
-        text: "CCE strives for excellence in providing academic skills and build confidence to undertake university education",
+        text: "The Center for Research and Publication is committed to promoting high quality research and publications aligned with the world best practices amongst IUM staff. This is to be achieved by providing necessary support for staff, providing incentives to encourage undertaking research by staff and generating interest in research through research forums, lectures, seminars, conferences and workshops.\n\nThe Center also hopes to contribute to the Maldivian society through both religious and social research to address issues in the wider community by establishing research relationships with other academic institutions, non-academic organization, researchers from local and international universities as well as NGOs.",
         image: "./Images/Banners/cce_mission.png",
     },
 };
@@ -45,7 +46,7 @@ const CRP_Admin = [
     occupation: "Administrative Officer",
     photo: "./Images/Faculties/kems/admin.png",
     contact: "+960330122",
-    email: "example@ium.edu.mv"
+    email: "aishath.rafaahath@ium.edu.mv"
 
   },
   // Add more administrative staff here as needed

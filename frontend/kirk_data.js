@@ -1,37 +1,39 @@
 // Define data using JavaScript objects and arrays
 const KIRK_Dean = {
-  name: "Mohamed Shaheen",
+  name: "Ahmed Saleem",
   occupation: "Dean",
-  photo: "./Images/deans/CCE Dean Uz Shaheen.jpg",
-  department: "Center for Continuing Education",
-  contact: "3022148",
-  email: "mohamed.shaheen@ium.edu.mv",
-  website: "https://www.ium.edu.mv/cce/",
-  message: `A’ssalaam Alaikum. I welcome you to the Centre for Continuing Education (CCE). The aim of CCE is to prepare students for the undergraduate courses in the university in various disciplines, and provide other courses that will prepare students to pursue formal university education.\n\nAt CCE, we offer a number of programs to address your needs. If you are seeking to do an undergraduate degree but do not meet the entry requirements of the degree, we can assist you to fulfill that requirement. Our Advanced Certificate level courses are designed to provide students with the fundamental understanding of relevant disciplines, and literacy and numeracy skills that are required to pursue an undergraduate degree in the university.\n\nThese courses offer study skills in both English and Dhivehi language and basic Arabic literacy skills.\n\nIn addition, these programs offer a particular core module for inculcating Islamic values and ethics in our students.\n\nFurthermore, we provide courses for adult learners and other prospective candidates in the area of Qira’ath al-Quran, English Language and Imaamship. These courses are mainly designed for people who are interested in pursuing higher studies but may not have completed formal education. We further endeavor to offer short courses on professional development in a variety of areas, foreign languages and personal enrichment.\n\nWe strive to provide a high-quality learning experience to our students so that they grow to become life-long learners.`,
+  photo: "./Images/deans/KIRK Dean Uz. Saleem.jpg",
+  department: "Kulliyyah of Islamic Revealed Knowledge and Human Sciences",
+  contact: "3022147",
+  email: "ahmed.saleem@ium.edu.mv",
+  website: "https://www.ium.edu.mv/kirk/",
+  message: `Acquisition of Islamic knowledge is the key to success. Without Islamic knowledge, it is impossible to attain real success both in this world and Hereafter. Hence, Kulliyyah of Islamic Revealed Knowledge and Human Science of Islamic University of Maldives aims at producing professionals embedded with revealed and human knowledge capable of dealing with contemporary Islamic issues. If you are interested to become an expert in revealed and human science knowledge choose this Kulliyyah, in your higher education journey. We welcome both male and female students.`,
 };
 
-const KIRK_Intro = "Centre for Continuing Education was established in December 2018 after merging Centre for Foundation Studies and Language Learning Centre. The objective of establishing CCE was providing university preparation programs for students pursuing undergraduate studies and managing and coordinating all academic programs of the university in the IUM Learning Centres established in the atolls. However, in January 2020, management of administrative tasks and academic coordination of academic programs have been handed over to IUM Holdings Private Limited and the respective Kulliyahs/Centres. CCE prepares the students for entry into higher education by giving them a solid foundation in the areas of their choice. CCE currently prepares students to undertake courses in the areas of Quranic Studies, Shari’ah and Law, English Language, Business Management, Imaamship and Teaching. All programs which prepare students for undergraduate studies are one-year long and comprises of two semesters that will prepare students for a smooth transition to university studies. In addition, CCE provides courses for adult or mature learners and other prospective students who may be interested in doing short courses. These courses are ranged from certificate levels 1 to 3 and include areas such as Qira’ath al-Quran, English Language and Imaamship. These courses have a duration of one semester or less in a few courses. English language courses offered at CCE are aimed for adult learners who do not have an English language background. These programs range from certificate levels 1 to 3 and beginning with the use of language for basic needs and extending to the use of language for general purposes in a range of contexts. We also offer a certificate level 4 English language program relevant to the hospitality industry. It teaches the basic communication skills needed to communicate in a variety of different work situations in the tourism industry. Further, students at this centre will experience learning in a university learning environment and develop their self-esteem through the activities conducted at the university."; // Your overview text here
+const KIRK_Intro = "The Kulliyyah focuses on teaching and researching Islamic knowledge and human sciences in accordance with Islamic values. The Kulliyyah aims at producing ethically, religiously, and intellectually competent individuals who are beneficial to the society. Additionally, we aim to produce knowledgeable and culturally competent graduates who are capable in facing contemporary challenges. The cornerstone of our Kulliyyah is to disseminate Islamic knowledge and inculcate that Islamic thought is basis of individual’s success. Programs offered in this Kulliyyah are designed to promote Islamic knowledge and strengthen Islamic and national identity in the society. Further, it is aimed at providing higher education, comprised with fundamentals required for a civilized society, which is beneficial to the nation and Ummah at large."; // Your overview text here
 
 const KIRK_Overview = {
     vision: {
         title: "Vision",
-        text: "To be the leading centre in providing university preparation and adult education programs in the nation.",
+        text: "To be the excellent centre for teaching and researching of Islamic knowledge and human sciences based on Shariah and Islamic values.",
         image: "./Images/Banners/cce_vision.png",
     },
     objectives: {
         title: "Objectives",
         list: [
-            "To provide high-quality learning.",
-            "To inculcate Islamic values and ethics in students.",
-            "To develop students’ self-confidence.",
-            "To develop students’ communication and problem-solving skills.",
-            "To provide basic English language communication skills for adult learners.",
+            "To teach human sciences based on Islamic framework",
+            "To enable students to be conscious of modern Islamic jurisprudence issues",
+            "To clarify Shariah principles based on correct Islamic creed",
+            "To produce innovative professionals knowledgeable in both Shariah and human sciences",
+            "To produce experts proficient in conducting research in diverse areas of Shariah",
+            "To produce experts capable of dealing with intellectual challenges",
+            "To disseminate true Islamic knowledge within the society",
         ],
         image: "./Images/Banners/cce_philosophy.png",
     },
     mission: {
         title: "Mission",
-        text: "CCE strives for excellence in providing academic skills and build confidence to undertake university education",
+        text: "To produce professionals educated in both Islamic knowledge and human sciences who are competent in facing contemporary challenges.",
         image: "./Images/Banners/cce_mission.png",
     },
 };
@@ -43,17 +45,17 @@ const KIRK_Admin = [
   
     name: "Aishath Shuzy Ahmed",
     occupation: "Administrative Officer",
-    photo: "./Images/Faculties/kems/admin.png",
-    contact: "+960330122",
-    email: "example@ium.edu.mv"
+    photo: "",
+    contact: "",
+    email: "aishath.shuzy@ium.edu.mv"
 
   },
   {
   
     name: "Mohamed Minvaal",
     occupation: "Administrative Officer",
-    photo: " ",
-    contact: "+960330122",
+    photo: "./Images/Profile photos of staffs/minvaal.JPG",
+    contact: "",
     email: "mohamed.minvaal@ium.edu.mv"
 
   },
@@ -65,7 +67,7 @@ const KIRK_Academic = [
   
     name: "Fareedha Mohamed",
     occupation: "Lecturer",
-    photo: " ",
+    photo: "./Images/Profile photos of staffs/fareedha.JPG",
     contact: "+960330122",
     email: "fareedha.mohamed@ium.edu.mv"
 
@@ -75,7 +77,7 @@ const KIRK_Academic = [
   
     name: "Ismail Najee",
     occupation: "Lecturer",
-    photo: " ",
+    photo: "./Images/Profile photos of staffs/naajy.JPG",
     contact: "+960330122",
     email: "ismail.najee@ium.edu.mv"
 
@@ -85,7 +87,7 @@ const KIRK_Academic = [
   
     name: "Aminath Afiya Abdul Hakeem",
     occupation: "Senior Lecturer",
-    photo: " ",
+    photo: "./Images/Profile photos of staffs/aafiya.JPG",
     contact: "+960330122",
     email: "aminath.afiya@ium.edu.mv"
 

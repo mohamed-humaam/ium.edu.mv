@@ -1,37 +1,37 @@
 // Define data using JavaScript objects and arrays
 const KAL_Dean = {
-  name: "Mohamed Shaheen",
+  name: "",
   occupation: "Dean",
-  photo: "./Images/deans/CCE Dean Uz Shaheen.jpg",
-  department: "Center for Continuing Education",
-  contact: "3022148",
-  email: "mohamed.shaheen@ium.edu.mv",
-  website: "https://www.ium.edu.mv/cce/",
-  message: `A’ssalaam Alaikum. I welcome you to the Centre for Continuing Education (CCE). The aim of CCE is to prepare students for the undergraduate courses in the university in various disciplines, and provide other courses that will prepare students to pursue formal university education.\n\nAt CCE, we offer a number of programs to address your needs. If you are seeking to do an undergraduate degree but do not meet the entry requirements of the degree, we can assist you to fulfill that requirement. Our Advanced Certificate level courses are designed to provide students with the fundamental understanding of relevant disciplines, and literacy and numeracy skills that are required to pursue an undergraduate degree in the university.\n\nThese courses offer study skills in both English and Dhivehi language and basic Arabic literacy skills.\n\nIn addition, these programs offer a particular core module for inculcating Islamic values and ethics in our students.\n\nFurthermore, we provide courses for adult learners and other prospective candidates in the area of Qira’ath al-Quran, English Language and Imaamship. These courses are mainly designed for people who are interested in pursuing higher studies but may not have completed formal education. We further endeavor to offer short courses on professional development in a variety of areas, foreign languages and personal enrichment.\n\nWe strive to provide a high-quality learning experience to our students so that they grow to become life-long learners.`,
+  photo: "",
+  department: "Kulliyyah of Arabic Language",
+  contact: "3022145",
+  email: "",
+  website: "https://www.ium.edu.mv/kal/",
+  message: ``,
 };
 
-const KAL_Intro = "Centre for Continuing Education was established in December 2018 after merging Centre for Foundation Studies and Language Learning Centre. The objective of establishing CCE was providing university preparation programs for students pursuing undergraduate studies and managing and coordinating all academic programs of the university in the IUM Learning Centres established in the atolls. However, in January 2020, management of administrative tasks and academic coordination of academic programs have been handed over to IUM Holdings Private Limited and the respective Kulliyahs/Centres. CCE prepares the students for entry into higher education by giving them a solid foundation in the areas of their choice. CCE currently prepares students to undertake courses in the areas of Quranic Studies, Shari’ah and Law, English Language, Business Management, Imaamship and Teaching. All programs which prepare students for undergraduate studies are one-year long and comprises of two semesters that will prepare students for a smooth transition to university studies. In addition, CCE provides courses for adult or mature learners and other prospective students who may be interested in doing short courses. These courses are ranged from certificate levels 1 to 3 and include areas such as Qira’ath al-Quran, English Language and Imaamship. These courses have a duration of one semester or less in a few courses. English language courses offered at CCE are aimed for adult learners who do not have an English language background. These programs range from certificate levels 1 to 3 and beginning with the use of language for basic needs and extending to the use of language for general purposes in a range of contexts. We also offer a certificate level 4 English language program relevant to the hospitality industry. It teaches the basic communication skills needed to communicate in a variety of different work situations in the tourism industry. Further, students at this centre will experience learning in a university learning environment and develop their self-esteem through the activities conducted at the university."; // Your overview text here
+const KAL_Intro = "Welcome to the Kulliyyah of Arabic Language at the Islamic University of Maldives.\n\nArabic language plays a crucial role in our lives because it is the language of Allah’s book, the Qur’an, and the Sunnah of his messenger Mohamed (PBUH). For each and every Muslim it is important to learn Arabic to make our devotion and worship to Allah much more meaningful.\n\n‘Umar (may Allah be pleased with him) said: “Learn Arabic for it is part of your Religion and learn how the estate of the deceased should be divided (al-Faraa’id) for these are part of your Religion”.\n\nKulliyyah of Arabic Language has its roots in the very first institute that was created to teach Arabic Language in the Maldives, the Institute of Islamic Studies (Mauhad) that began on 9th November 1980.  Mauhad played a major role to promote Islamic Education and Arabic Language in the Maldives. Within Mauhad, the Centre for Languages played an integral role in promoting Arabic Language learning and continued its role when Mauhad was upgraded to College of Islamic Studies. The Centre for Languages was upgrade to the Kulliyyah of Arabic Language when the College was transformed to the Islamic University of Maldives.\n\nToday, at the Kulliyyah of Arabic Language we offer a Diploma in Arabic Language. A Bachelor’s degree in Arabic Language is planned for the following year. The Kulliyyah is also considering the option of offering a Diploma of Arabic Language for Travel and Tourism, in block mode, geared for staff of resort islands, starting from January of 2017.\n\nOur aim in the Kulliyyah of Arabic Language is to teach Arabic language and to create interest in Arabic Language amongst Maldivians. The faculty offers its students with knowledge of Arabic, both theoretically and practically. We also prepare students for independent learning and communication skills.\n\nWe look forward to welcoming you to our community."; // Your overview text here
 
 const KAL_Overview = {
     vision: {
         title: "Vision",
-        text: "To be the leading centre in providing university preparation and adult education programs in the nation.",
+        text: "To become a highly regarded and leading Kulliyyah in Maldives that develops students who are proficient in use of Arabic language and competent in research skills related to Arabic language.",
         image: "./Images/Banners/cce_vision.png",
     },
     objectives: {
         title: "Objectives",
         list: [
-            "To provide high-quality learning.",
-            "To inculcate Islamic values and ethics in students.",
-            "To develop students’ self-confidence.",
-            "To develop students’ communication and problem-solving skills.",
-            "To provide basic English language communication skills for adult learners.",
+            "To build a generation of Maldivians in whom our nation takes pride, who are well versed in Islamic knowledge and who have global awareness and value it.",
+            "To ensure that our students have the knowledge and skills related to Arabic language and be academically able.",
+            "Develop a system that could teach Arabic language through modern technology, and to offer language courses that would assist in national development.",
+            "Offer relevant courses in Arabic language through online learning platforms and multiple media outlets.",
+            
         ],
         image: "./Images/Banners/cce_philosophy.png",
     },
     mission: {
         title: "Mission",
-        text: "CCE strives for excellence in providing academic skills and build confidence to undertake university education",
+        text: "Teaching of Arabic language that is needed for the nation’s wellbeing and development, training of Maldivians to conduct research in Arabic language, and the development of citizens who are capable of communicating in this language both orally and in written form.",
         image: "./Images/Banners/cce_mission.png",
     },
 };
@@ -42,7 +42,7 @@ const KAL_Admin = [
   {
     name: "Badhoora Yahuyya",
     occupation: "Administrative Officer",
-    photo: "./Images/Faculties/kems/admin.png",
+    photo: "./Images/Profile photos of staffs/badhoora.JPG",
     contact: "+960330122",
     email: "badhoora.yahya@ium.edu.mv"
 
@@ -51,7 +51,7 @@ const KAL_Admin = [
     {
     name: "Sana Ibrahim",
     occupation: "Administrative Officer",
-    photo: "",
+    photo: "./Images/Profile photos of staffs/sana.JPG",
     contact: "+960330122",
     email: "sana.ibrahim@ium.edu.mv"
 

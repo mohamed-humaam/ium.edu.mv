@@ -1,37 +1,36 @@
 // Define data using JavaScript objects and arrays
 const KEMS_Dean = {
-  name: "Mohamed Shaheen",
+  name: "Ahmed Munawar",
   occupation: "Dean",
-  photo: "./Images/deans/CCE Dean Uz Shaheen.jpg",
-  department: "Center for Continuing Education",
-  contact: "3022148",
-  email: "mohamed.shaheen@ium.edu.mv",
-  website: "https://www.ium.edu.mv/cce/",
-  message: `A’ssalaam Alaikum. I welcome you to the Centre for Continuing Education (CCE). The aim of CCE is to prepare students for the undergraduate courses in the university in various disciplines, and provide other courses that will prepare students to pursue formal university education.\n\nAt CCE, we offer a number of programs to address your needs. If you are seeking to do an undergraduate degree but do not meet the entry requirements of the degree, we can assist you to fulfill that requirement. Our Advanced Certificate level courses are designed to provide students with the fundamental understanding of relevant disciplines, and literacy and numeracy skills that are required to pursue an undergraduate degree in the university.\n\nThese courses offer study skills in both English and Dhivehi language and basic Arabic literacy skills.\n\nIn addition, these programs offer a particular core module for inculcating Islamic values and ethics in our students.\n\nFurthermore, we provide courses for adult learners and other prospective candidates in the area of Qira’ath al-Quran, English Language and Imaamship. These courses are mainly designed for people who are interested in pursuing higher studies but may not have completed formal education. We further endeavor to offer short courses on professional development in a variety of areas, foreign languages and personal enrichment.\n\nWe strive to provide a high-quality learning experience to our students so that they grow to become life-long learners.`,
+  photo: "./Images/deans/KEM Dean Uz Munawwar.jpg",
+  department: "Kulliyyah of Economics and Management Studies",
+  contact: "3022146",
+  email: "ahmed.munawar@ium.edu.mv",
+  website: "https://www.ium.edu.mv/kems/",
+  message: `As-salaamu aleikum, and a very warm welcome to the Kulliyyah of Economics and Management Studies (KEM) of the Islamic University of Maldives.\n\nThe aim of our Kulliyyah is to become a premier business school in the Maldives by integrating conventional economic, business and finance including Islamic banking with values and morality based on Islamic beliefs and values.\n\nThough our Kulliyyah was recently established in 2019, we are already offering 4 Bachelor especially Bachelor of Islamic Banking and Finance which is the only of its kind available in the Maldives and which is highly demanded since students who complete it have high possibility of getting jobs in the banking industry. In addition, we are also offering Bachelor of Local Governance and Administration, highly beneficial targeted to increase the capacity of the local governance structure in Maldives. Similarly, we have also recently introduced Bachelor of Accounting and Finance and Bachelor of Human Resource Management and we have respective Diplomas in the field.\n\nKEM is committed to provide excellent education as our curriculum is reflect recent developments in business and finance discipline, as well as stakeholder expectations and we are working to introduce new programs in affiliation with international university and centres.\n\nOur commitment to exceptional student experience begins with our staff who are competent and highly experienced in the industry and is striving to enhance students’ academic excellence. We are also striving to improve the quality of teaching by integrating real life business and finance issues via practical training and sessions so that they are ready for immediate employability within Maldives and abroad.`,
 };
 
-const KEMS_Intro = "Centre for Continuing Education was established in December 2018 after merging Centre for Foundation Studies and Language Learning Centre. The objective of establishing CCE was providing university preparation programs for students pursuing undergraduate studies and managing and coordinating all academic programs of the university in the IUM Learning Centres established in the atolls. However, in January 2020, management of administrative tasks and academic coordination of academic programs have been handed over to IUM Holdings Private Limited and the respective Kulliyahs/Centres. CCE prepares the students for entry into higher education by giving them a solid foundation in the areas of their choice. CCE currently prepares students to undertake courses in the areas of Quranic Studies, Shari’ah and Law, English Language, Business Management, Imaamship and Teaching. All programs which prepare students for undergraduate studies are one-year long and comprises of two semesters that will prepare students for a smooth transition to university studies. In addition, CCE provides courses for adult or mature learners and other prospective students who may be interested in doing short courses. These courses are ranged from certificate levels 1 to 3 and include areas such as Qira’ath al-Quran, English Language and Imaamship. These courses have a duration of one semester or less in a few courses. English language courses offered at CCE are aimed for adult learners who do not have an English language background. These programs range from certificate levels 1 to 3 and beginning with the use of language for basic needs and extending to the use of language for general purposes in a range of contexts. We also offer a certificate level 4 English language program relevant to the hospitality industry. It teaches the basic communication skills needed to communicate in a variety of different work situations in the tourism industry. Further, students at this centre will experience learning in a university learning environment and develop their self-esteem through the activities conducted at the university."; // Your overview text here
+const KEMS_Intro = "."; // Your overview text here
 
 const KEMS_Overview = {
     vision: {
         title: "Vision",
-        text: "To be the leading centre in providing university preparation and adult education programs in the nation.",
+        text: "To become the leading business school in the Maldives based on Islamic beliefs and values",
         image: "./Images/Banners/cce_vision.png",
     },
     objectives: {
         title: "Objectives",
         list: [
-            "To provide high-quality learning.",
-            "To inculcate Islamic values and ethics in students.",
-            "To develop students’ self-confidence.",
-            "To develop students’ communication and problem-solving skills.",
-            "To provide basic English language communication skills for adult learners.",
+            "Produce locally valued and globally recognized business and finance professionals who can contribute to the development of the national and Ummah.",
+            "Incorporate Islamization of knowledge, and to cultivate a strong Islamic culture of learning and teaching",
+            "Create exemplary faculty in terms of student service.",
+            "Achieve excellence in teaching and learning, and faculty research",
         ],
         image: "./Images/Banners/cce_philosophy.png",
     },
     mission: {
         title: "Mission",
-        text: "CCE strives for excellence in providing academic skills and build confidence to undertake university education",
+        text: "We produce competent business professionals who are prepared for employment.",
         image: "./Images/Banners/cce_mission.png",
     },
 };
@@ -79,7 +78,7 @@ const KEMS_Academic = [
   },
   
   {
-    title: "Dr.",
+    title: "",
     name: "Aishath Sinaau",
     occupation: "Lecturer",
     photo: "./Images/person.png",

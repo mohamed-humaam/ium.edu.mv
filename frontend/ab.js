@@ -1,7 +1,7 @@
 // script.js
 const committeeMembers = [
     {
-        name: "Dr. Ibrahim Zakariyya Moosa",
+       name: "Dr. Ibrahim Zakariyya Moosa",
        universityPosition: "Vice Chancellor",
        committeePosition: "Chair",
        photo: "./Images/tmt/VC-Dr.png", // Add the image file path

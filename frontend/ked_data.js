@@ -1,37 +1,36 @@
 // Define data using JavaScript objects and arrays
 const KED_Dean = {
-  name: "Mohamed Shaheen",
+  name: "Dr. Aishath Reesha",
   occupation: "Dean",
-  photo: "./Images/deans/CCE Dean Uz Shaheen.jpg",
-  department: "Center for Continuing Education",
-  contact: "3022148",
-  email: "mohamed.shaheen@ium.edu.mv",
-  website: "https://www.ium.edu.mv/cce/",
-  message: `A’ssalaam Alaikum. I welcome you to the Centre for Continuing Education (CCE). The aim of CCE is to prepare students for the undergraduate courses in the university in various disciplines, and provide other courses that will prepare students to pursue formal university education.\n\nAt CCE, we offer a number of programs to address your needs. If you are seeking to do an undergraduate degree but do not meet the entry requirements of the degree, we can assist you to fulfill that requirement. Our Advanced Certificate level courses are designed to provide students with the fundamental understanding of relevant disciplines, and literacy and numeracy skills that are required to pursue an undergraduate degree in the university.\n\nThese courses offer study skills in both English and Dhivehi language and basic Arabic literacy skills.\n\nIn addition, these programs offer a particular core module for inculcating Islamic values and ethics in our students.\n\nFurthermore, we provide courses for adult learners and other prospective candidates in the area of Qira’ath al-Quran, English Language and Imaamship. These courses are mainly designed for people who are interested in pursuing higher studies but may not have completed formal education. We further endeavor to offer short courses on professional development in a variety of areas, foreign languages and personal enrichment.\n\nWe strive to provide a high-quality learning experience to our students so that they grow to become life-long learners.`,
+  photo: "./Images/deans/KED Dean Dr Reesha.jpg",
+  department: "Kulliyyah od Education",
+  contact: "3022142",
+  email: "aishath.reesha@ium.edu.mv",
+  website: "https://www.ium.edu.mv/ked/",
+  message: `السلام عليكم ورحمة الله وبركاته\n\nIn my 13 years of teaching career, I have learnt that among many others, teaching is one of the noblest professions. It is a profession where after each lesson, you feel content that you have done something worthwhile to change the mindset of at least one student in the class.  As teachers, we not only teach the subject matter, but also teach our students, Islamic values and ethics that lead to their good character building. \n\nIn the past 5 years, Kulliyyah of Education (KED) has spread its programmes to many corners of the Maldives, allowing a wide range of students in the country to take part in teacher training. We believe that every student is different, and every student should have the opportunity to climb the higher education ladder even if it is starting at the foundation level. We teach students to explore their hidden ability with the guidance of their teachers.  These students then spread their knowledge at their work environment and transfer this knowledge to their own students creating a network of learners.\n\nMany may ask about the uniqueness of the programmes offered at KED. All the programmes offered here are blended with Islamic and contemporary knowledge. We believe in producing graduates that are successful in this world and the hereafter. We not only educate minds, but also inculcate Islamic values so as to nurture their souls. These graduates, as meaningful beings, uplift and motivate others in doing good, and spread natural sense of altruism and care for others in the society.`,
 };
 
-const KED_Intro = "Centre for Continuing Education was established in December 2018 after merging Centre for Foundation Studies and Language Learning Centre. The objective of establishing CCE was providing university preparation programs for students pursuing undergraduate studies and managing and coordinating all academic programs of the university in the IUM Learning Centres established in the atolls. However, in January 2020, management of administrative tasks and academic coordination of academic programs have been handed over to IUM Holdings Private Limited and the respective Kulliyahs/Centres. CCE prepares the students for entry into higher education by giving them a solid foundation in the areas of their choice. CCE currently prepares students to undertake courses in the areas of Quranic Studies, Shari’ah and Law, English Language, Business Management, Imaamship and Teaching. All programs which prepare students for undergraduate studies are one-year long and comprises of two semesters that will prepare students for a smooth transition to university studies. In addition, CCE provides courses for adult or mature learners and other prospective students who may be interested in doing short courses. These courses are ranged from certificate levels 1 to 3 and include areas such as Qira’ath al-Quran, English Language and Imaamship. These courses have a duration of one semester or less in a few courses. English language courses offered at CCE are aimed for adult learners who do not have an English language background. These programs range from certificate levels 1 to 3 and beginning with the use of language for basic needs and extending to the use of language for general purposes in a range of contexts. We also offer a certificate level 4 English language program relevant to the hospitality industry. It teaches the basic communication skills needed to communicate in a variety of different work situations in the tourism industry. Further, students at this centre will experience learning in a university learning environment and develop their self-esteem through the activities conducted at the university."; // Your overview text here
+const KED_Intro = "Kulliyyah of Education is driven by the core values; integration of knowledge, promoting thinking skills, cultivating an Islamic culture, and conducting educational research. We believe that it is through education that one can nurture and instill the Islamic values, to develop a well-rounded human being.\n\nWe concentrate in providing educational opportunities to all. We strive for equity in education, through tailor made courses. Our courses focus on developing educational leaders equipped with both Islamic and contemporary knowledge, and skills.\n\nOur academic staff comprises lecturers with diverse real-world experience in the teaching profession, who inspires and motivates students to achieve excellence in their academic pursuit. We are geared towards conducting research in various fields of education. Through high-level research and publication, we believe we would be recognized in the global world in the near future. Through collaboration and exchange programmes with other universities, we look forward in making Kulliyyah of Education one of the best teacher training provider In Sha Allah."; // Your overview text here
 
 const KED_Overview = {
     vision: {
         title: "Vision",
-        text: "To be the leading centre in providing university preparation and adult education programs in the nation.",
+        text: "To internationally excel in higher education, engage in developing quality educational research, and to contribute to the Ummah as a whole.",
         image: "./Images/Banners/cce_vision.png",
     },
     objectives: {
         title: "Objectives",
         list: [
-            "To provide high-quality learning.",
-            "To inculcate Islamic values and ethics in students.",
-            "To develop students’ self-confidence.",
-            "To develop students’ communication and problem-solving skills.",
-            "To provide basic English language communication skills for adult learners.",
+            "To cultivate a strong Islamic culture of learning and teaching through integration of knowledge",
+            "To promote effective critical thinking, creative thinking and problem-solving skills in the lives of the learners",
+            "To create a research culture in the work environment through leaders who coordinate and conduct research activities",
+        
         ],
         image: "./Images/Banners/cce_philosophy.png",
     },
     mission: {
         title: "Mission",
-        text: "CCE strives for excellence in providing academic skills and build confidence to undertake university education",
+        text: "To produce leaders in education with Islamic values, equipped with contemporary knowledge and skills. To conduct research in various fields of education, and to instill critical, creative thinking, and problem-solving skills among the graduates.",
         image: "./Images/Banners/cce_mission.png",
     },
 };
@@ -43,16 +42,16 @@ const KED_Admin = [
   {
     name: "Mariyam Nashwa",
     occupation: "Administrative Officer",
-    photo: "./Images/Faculties/kems/admin.png",
-    contact: "+960330122",
+    photo: "",
+    contact: "",
     email: "example@ium.edu.mv"
 
   },
   {
     name: "Nizna Ibrahim",
     occupation: "Administrative Officer",
-    photo: "./Images/Faculties/kems/admin1.png",
-    contact: "+960330122",
+    photo: "",
+    contact: "",
     email: "example@ium.edu.mv"
 
   },
@@ -64,8 +63,8 @@ const KED_Academic = [
    {
     name: "Ahmed Nizar Sodhig",
     occupation: "Lecturer",
-    photo: " ",
-    contact: "+960330122",
+    photo: "./Images/Profile photos of staffs/nizar.JPG",
+    contact: "+960330142",
     email: "ahmed.nizar@ium.edu.mv"
 
   },
@@ -73,8 +72,8 @@ const KED_Academic = [
     {
     name: "Aroosha Maahir",
     occupation: "Associate Lecturer",
-    photo: " ",
-    contact: "+960330122",
+    photo: "./Images/Profile photos of staffs/aroosha.JPG",
+    contact: "+960330142",
     email: "aroosha.mahir@ium.edu.mv"
 
   },
@@ -82,8 +81,8 @@ const KED_Academic = [
     {
     name: "Visama Hassan",
     occupation: "Senior Lecturer",
-    photo: " ",
-    contact: "+960330122",
+    photo: "",
+    contact: "+960330142",
     email: "visama.hassan@ium.edu.mv"
 
   },
@@ -91,8 +90,8 @@ const KED_Academic = [
      {
     name: "Ibrahim Ali",
     occupation: "Senior Lecturer",
-    photo: " ",
-    contact: "+960330122",
+    photo: "",
+    contact: "+960330142",
     email: "ibrahim.ali@ium.edu.mv"
 
   },
@@ -100,8 +99,8 @@ const KED_Academic = [
    {
     name: "Adam Fayaz",
     occupation: "Associate Lecturer",
-    photo: " ",
-    contact: "+960330122",
+    photo: "./Images/Profile photos of staffs/fayaz.JPG",
+    contact: "+960330142",
     email: "adam.fayaz@ium.edu.mv"
 
   },
@@ -109,8 +108,8 @@ const KED_Academic = [
      {
     name: "Ibrahim Shifau",
     occupation: " Lecturer",
-    photo: " ",
-    contact: "+960330122",
+    photo: "",
+    contact: "+960330142",
     email: "ibrahim.shifau@ium.edu.mv"
 
   },
@@ -118,8 +117,8 @@ const KED_Academic = [
      {
     name: "Abdul Wahidh Abudulla",
     occupation: "Senior Lecturer",
-    photo: " ",
-    contact: "+960330122",
+    photo: "./Images/Profile photos of staffs/wahid.JPG",
+    contact: "+960330142",
     email: "abdul.wahid@ium.edu.mv"
 
   },
@@ -127,8 +126,8 @@ const KED_Academic = [
      {
     name: "Agisa Ali",
     occupation: " Lecturer",
-    photo: " ",
-    contact: "+960330122",
+    photo: "./Images/Profile photos of staffs/agisa.JPG",
+    contact: "+960330142",
     email: "agisa.ali@ium.edu.mv"
 
   },
@@ -137,7 +136,7 @@ const KED_Academic = [
     name: "Abdul Latheef Mohamed",
     occupation: "Senior Lecturer",
     photo: " ",
-    contact: "+960330122",
+    contact: "+960330142",
     email: "abdul.latheef@ium.edu.mv"
 
   },
@@ -145,8 +144,8 @@ const KED_Academic = [
         {
     name: "Khaulath Saeed",
     occupation: " Lecturer",
-    photo: " ",
-    contact: "+960330122",
+    photo: "./Images/Profile photos of staffs/khaulath.JPG",
+    contact: "+960330142",
     email: "khaulath.saeed@ium.edu.mv"
 
   },
