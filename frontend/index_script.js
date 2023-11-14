@@ -1,64 +1,66 @@
 
   
-   // Generate the news items
-   function generateNewsItems() {
-    const newsCarousel = document.getElementById('news-carousel');
-  
-    // Create news items dynamically
-    newsData.forEach((news) => {
-      const newsItem = document.createElement('div');
-      newsItem.classList.add('news-item');
-  
-      const card = document.createElement('div');
-      card.classList.add('card');
-  
-      const image = document.createElement('img');
-      image.src = news.image;
-  
-      const content = document.createElement('div');
-      content.classList.add('card-content');
-  
-      const title = document.createElement('h3');
-      title.textContent = news.title;
-  
-      const description = document.createElement('p');
-      description.textContent = news.description;
-  
-      content.appendChild(title);
-      content.appendChild(description);
-  
-      card.appendChild(image);
-      card.appendChild(content);
-  
-      newsItem.appendChild(card);
-  
-      newsCarousel.appendChild(newsItem);
-    });
-  }
-  
-  // Call the function to generate news items
-  generateNewsItems();
-  // Generate the news items on page load
-  window.addEventListener('load', generateNewsItems);
-  
-  // Carousel functionality
-  const carousel = document.getElementById('news-carousel');
-  const prevBtn = document.getElementById('prev-btn');
-  const nextBtn = document.getElementById('next-btn');
-  
-  prevBtn.addEventListener('click', () => {
-    carousel.scrollBy({
-      left: -300,
-      behavior: 'smooth',
-    });
+// Generate the news items
+function generateNewsItems() {
+  const newsCarousel = document.getElementById('news-carousel');
+
+  // Create news items dynamically
+  newsData.forEach((news) => {
+    const newsItem = document.createElement('div');
+    newsItem.classList.add('news-item');
+
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const image = document.createElement('img');
+    image.src = news.image;
+
+    const content = document.createElement('div');
+    content.classList.add('card-content');
+
+    const title = document.createElement('h3');
+    title.textContent = news.title;
+
+    // Remove the following lines to exclude the description
+    // const description = document.createElement('p');
+    // description.textContent = news.description;
+
+    content.appendChild(title);
+    // content.appendChild(description); // Remove this line
+
+    card.appendChild(image);
+    card.appendChild(content);
+
+    newsItem.appendChild(card);
+
+    newsCarousel.appendChild(newsItem);
   });
-  
-  nextBtn.addEventListener('click', () => {
-    carousel.scrollBy({
-      left: 300,
-      behavior: 'smooth',
-    });
+}
+
+// Call the function to generate news items
+generateNewsItems();
+// Generate the news items on page load
+window.addEventListener('load', generateNewsItems);
+
+// Carousel functionality
+const carousel = document.getElementById('news-carousel');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+
+prevBtn.addEventListener('click', () => {
+  carousel.scrollBy({
+    left: -300,
+    behavior: 'smooth',
   });
+});
+
+nextBtn.addEventListener('click', () => {
+  carousel.scrollBy({
+    left: 300,
+    behavior: 'smooth',
+  });
+});
+
 
 
 
