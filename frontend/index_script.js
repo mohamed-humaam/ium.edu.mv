@@ -1,5 +1,3 @@
-
-  
 // Generate the news items
 function generateNewsItems() {
   const newsCarousel = document.getElementById('news-carousel');
@@ -19,14 +17,16 @@ function generateNewsItems() {
     content.classList.add('card-content');
 
     const title = document.createElement('h3');
-    title.textContent = news.title;
 
-    // Remove the following lines to exclude the description
-    // const description = document.createElement('p');
-    // description.textContent = news.description;
+    // Limit the title length to 20 words
+    const words = news.title.split(' ');
+    if (words.length > 10) {
+      title.textContent = words.slice(0, 10).join(' ') + '...';
+    } else {
+      title.textContent = news.title;
+    }
 
     content.appendChild(title);
-    // content.appendChild(description); // Remove this line
 
     card.appendChild(image);
     card.appendChild(content);
@@ -60,6 +60,7 @@ nextBtn.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+
 
 
 
