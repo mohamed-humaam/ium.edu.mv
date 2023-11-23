@@ -153,9 +153,8 @@
 /*Overview */
 #intro {
     background-color: #f8f8f8;
-    height: 53vh;
     width: 100%;
-    padding: 80px;
+    padding: 30px 150px 30px 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,7 +201,7 @@
 .overview .content .objectives {
     background-color: #ffffff;
     width: 400px;
-    height: 250px;
+    height: 350px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 10px 10px 10px rgba(0, 0, 0, 0.2);
     border: #ccc 1px solid;
@@ -285,8 +284,7 @@
 /* Team */
 .team {
     background-color: #ffffff;
-    width: 100%;
-    padding: 20px;
+    padding: 30px;
 }
 
 .team .row {
@@ -307,12 +305,14 @@
 
 .team .staff-cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .team .staff-card {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
     width: 220px;
     justify-content: center;
     align-items: center;
