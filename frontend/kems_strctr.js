@@ -17,7 +17,7 @@ document.getElementById("dean-message").innerHTML = deanMessage;
 
 
 
-document.getElementById("intro-text").textContent = KEMS_Intro;
+//document.getElementById("intro-text").textContent = KEMS_Intro;
 
 document.getElementById("vision-title").textContent = KEMS_Overview.vision.title;
 document.getElementById("vision-text").textContent = KEMS_Overview.vision.text;
