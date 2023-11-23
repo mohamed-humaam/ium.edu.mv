@@ -152,9 +152,8 @@
 /*Overview */
 #intro {
     background-color: #f8f8f8;
-    height: 53vh;
     width: 100%;
-    padding: 80px;
+    padding: 30px 150px 30px 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,7 +200,7 @@
 .overview .content .objectives {
     background-color: #ffffff;
     width: 400px;
-    height: 250px;
+    height: 350px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 10px 10px 10px rgba(0, 0, 0, 0.2);
     border: #ccc 1px solid;
@@ -247,7 +246,7 @@
 
 .overview .content .objectives {
     width: 500px;
-    height: 400px;
+    height: 450px;
 }
 
 .overview .content .objectives ol {
@@ -259,12 +258,48 @@
     list-style-type: lower-roman;
 }
 
+/* Career */
+.career {
+    background-color: #f8f8f8;
+    padding: 30px 150px 30px 150px;
+}
+
+.career h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 2.2em;
+}
+
+.career ul li {
+    list-style: none;
+}
+
+.career ul li i {
+    margin-right: 20px;
+}
+
+/* Events */
+#events {
+    background-color: #ffffff;
+    padding: 30px 150px 30px 150px;
+}
+
+#events h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 2.2em;
+}
+
+#events ul li {
+    list-style: none;
+}
+
 
 /* Team */
 .team {
     width: 100%;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
 }
 
 .team .row {
@@ -324,7 +359,7 @@
 
 /* Courses */
 #courses {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     padding: 30px;
     display: flex;
     flex-direction: column;

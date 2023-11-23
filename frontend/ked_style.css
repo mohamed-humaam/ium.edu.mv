@@ -164,7 +164,7 @@
 #intro h2 {
     color: #000000;
     font-size: 2.7rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 45%;
 }
 
@@ -260,6 +260,27 @@
     list-style-type: lower-roman;
 }
 
+#events {
+    background-color: #f8f8f8;
+    padding: 30px 150px 30px 150px;
+}
+
+#events h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 2.2em;
+}
+
+#events ul li {
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+#events ul li i {
+    margin-right: 20px;
+}
+
 
 /* Team */
 .team {
@@ -280,7 +301,7 @@
     text-decoration: none;
     color: #000000;
     font-size: 2.2rem;
-    font-weight: lighter;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
@@ -341,7 +362,7 @@
     text-decoration: none;
     color: #000000;
     font-size: 2.2rem;
-    font-weight: lighter;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
