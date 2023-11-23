@@ -33,8 +33,9 @@ CPS_Overview.objectives.list.forEach((item) => {
 document.getElementById("objectives-image").src = CPS_Overview.objectives.image;
 
 document.getElementById("mission-title").textContent = CPS_Overview.mission.title;
-document.getElementById("mission-text").textContent = CPS_Overview.mission.text;
+document.getElementById("mission-text").textContent = CPS_Overview.mission.list.join('\n'); // Use join to concatenate the array elements into a string
 document.getElementById("mission-image").src = CPS_Overview.mission.image;
+
 
 
 

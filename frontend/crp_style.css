@@ -179,7 +179,7 @@
 .overview {
     background-color: #ffffff;
     position: relative;
-    height: 55vh;
+    height: 60vh;
     padding-top: 50px;
     padding-bottom: 50px;
     background-size: cover;
@@ -201,8 +201,8 @@
 .overview .content .mission,
 .overview .content .objectives {
     background-color: #ffffff;
-    width: 400px;
-    height: 250px;
+    width: 500px;
+    height: 500px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 10px 10px 10px rgba(0, 0, 0, 0.2);
     border: #ccc 1px solid;
@@ -238,7 +238,7 @@
 }
 
 /* Optional: Adjust spacing between the boxes */
-.overview .content .vision {
+.overview .content .objectives {
     margin-right: 50px;
 }
 
@@ -246,9 +246,8 @@
     margin-left: 50px;
 }
 
-.overview .content .objectives {
-    width: 500px;
-    height: 400px;
+.overview .content .vision {
+    height: 350px;
 }
 
 .overview .content .objectives ol {
@@ -263,6 +262,7 @@
 
 /* Team */
 .team {
+    background-color: #f8f8f8;
     width: 100%;
     padding: 20px;
 }
