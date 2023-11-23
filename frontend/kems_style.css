@@ -153,9 +153,8 @@
 /*Overview */
 #intro {
     background-color: #f8f8f8;
-    height: 53vh;
     width: 100%;
-    padding: 80px;
+    padding: 30px 150px 30px 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
