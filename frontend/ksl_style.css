@@ -132,7 +132,7 @@
     align-items: center;
     width: 1280px;
     height: 100%;
-    margin-left: 150px;
+    margin-left: 220px;
 }
 
 #dean .dean-message h2 {
@@ -153,9 +153,8 @@
 /*Overview */
 #intro {
     background-color: #f8f8f8;
-    height: 53vh;
     width: 100%;
-    padding: 80px;
+    padding: 30px 150px 30px 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -359,6 +358,9 @@
 
 .team .staff-cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .team .staff-card {
