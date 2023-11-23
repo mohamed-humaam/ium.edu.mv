@@ -153,9 +153,8 @@
 /*Overview */
 #intro {
     background-color: #f8f8f8;
-    height: 53vh;
     width: 100%;
-    padding: 80px;
+    padding: 30px 150px 30px 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -179,7 +178,6 @@
 .overview {
     background-color: #ffffff;
     position: relative;
-    height: 55vh;
     padding-top: 50px;
     padding-bottom: 50px;
     background-size: cover;
@@ -201,8 +199,8 @@
 .overview .content .mission,
 .overview .content .objectives {
     background-color: #ffffff;
-    width: 400px;
-    height: 250px;
+    width: 500px;
+    height: 550px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 10px 10px 10px rgba(0, 0, 0, 0.2);
     border: #ccc 1px solid;
@@ -242,12 +240,12 @@
     margin-right: 50px;
 }
 
-.overview .content .mission {
+.overview .content .objectives {
     margin-left: 50px;
 }
 
-.overview .content .objectives {
-    width: 500px;
+
+.overview .content .mission {
     height: 400px;
 }
 
@@ -335,7 +333,6 @@
 
 /* Team */
 .team {
-    background-color: #ffffff;
     width: 100%;
     padding: 20px;
 }
@@ -358,6 +355,9 @@
 
 .team .staff-cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .team .staff-card {
