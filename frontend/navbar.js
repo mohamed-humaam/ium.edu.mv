@@ -30,12 +30,7 @@ Vue.component('custom-navbar', {
                   <li><a href="crp.html">Centre For Research and Publications</a></li>
                 </ul>
               </li>
-              <li><a href="#">Executives <i class="fa-solid fa-chevron-right"></i></a>
-                <ul class="sidebar-menu">
-                  <li><a href="management.html">Management</a></li>
-                  <li><a href="majilis.html">IUM Majilis</a></li>
-                </ul>
-              </li>
+              <li><a href="majilis.html">IUM Majilis</i></a></li>
               <li><a href="#">Committees <i class="fa-solid fa-chevron-right"></i></a>
                 <ul class="sidebar-menu">
                   <li><a href="tmt.html">Top Management</a></li>

@@ -34,46 +34,59 @@
 
 
 /* Styling for the philosophy section */
+
+.contents {
+    padding: 10px 70px;
+}
 #philosophy-content {
-    padding: 30px 60px; /* Increased padding for better spacing */
-    margin: 30px;
     text-align: justify;
     border-radius: 10px;
 }
 
 .quran-verse {
-    margin: 30px 0; /* Increased margin for better spacing */
+    background-color: #9c9c9c09;
+    border-radius: 25px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .verse {
+    display: flex;
     font-family: 'Noto Naskh Arabic', serif;
-    font-size: 34px; /* Larger font size for verses */
+    font-size: 1.6em !important; /* Larger font size for verses */
+    line-height: 2; /* Adjusted line height for better readability */
+}
+
+.arabic-verse,
+.meaning {
+    display: flex;
+    padding: 0px 200px;
+    justify-content: center;
+    text-align: center;
 }
 
 .ayah {
     display: flex;
     align-items: center;
-    margin-bottom: 35px; /* Increased margin for better spacing */
+    margin-bottom: 20px;
 }
 
 .ayah img {
-    width: 50px; /* Larger image size for ayah icons */
-    height: 50px;
-    margin-right: 20px; /* Increased margin for better spacing */
-    margin-left: 20px;
+    width: 40px; /* Larger image size for ayah icons */
+    height: 48px;
+    margin-right: 8px; /* Increased margin for better spacing */
+    margin-left: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00954d;
     border-radius: 50%;
     color: #fff;
 }
 
 .ayah .verse-number {
-    font-size: 32px; /* Larger font size for verse numbers */
+    font-size: 1.5em; /* Larger font size for verse numbers */
     width: 40px;
     height: 40px;
     display: flex;
@@ -82,17 +95,6 @@
     background-color: #00954d;
     border-radius: 50%;
     color: #fff;
-}
-
-.verse {
-    font-size: 38px; /* Even larger font size for verses */
-    line-height: 2; /* Adjusted line height for better readability */
-}
-
-#philosophy-content h2 {
-    font-size: 34px; /* Larger font size for section heading */
-    color: #00954d;
-    margin-top: 30px; /* Increased margin for better spacing */
 }
 
 #philosophy-content h3 {
@@ -105,7 +107,6 @@
     font-size: 24px; /* Larger font size for links */
     color: #00954d;
     text-decoration: none;
-    font-weight: bold;
     transition: color 0.3s;
 }
 
@@ -115,14 +116,10 @@
 
 /* Improved styling for paragraphs in the philosophy section */
 #philosophy-content p {
-    font-size: 26px; /* Even larger font size for paragraphs */
+    font-size: 1.2em; /* Even larger font size for paragraphs */
     line-height: 2; /* Adjusted line height for better readability */
     margin-bottom: 30px; /* Increased margin for better spacing */
     color: #333;
-}
-
-#philosophy-content p:first-of-type {
-    font-weight: 600;
 }
 
 #philosophy-content p:first-child {
