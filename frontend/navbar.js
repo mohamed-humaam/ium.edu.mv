@@ -67,7 +67,6 @@ Vue.component('custom-navbar', {
           <li><a href="#">Publications</a>
             <ul class="dropdown-menu">
               <li><a href="gazette.html">Gazette</a></li>
-              <li><a href="procurement.html">Public Procurement</a></li>
               <li><a href="Al-Manhaj.html">Al-Manhaj</a></li>
               <li><a href="Adhaahama.html">Adhaahama</a></li>
               <li><a href="research.html">Research</a></li>

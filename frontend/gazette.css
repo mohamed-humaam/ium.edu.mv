@@ -47,7 +47,8 @@
 .filter-column .label1,
 .filter-column .label2,
 .filter-column .label3,
-.filter-column .label4 {
+.filter-column .label4,
+.filter-column .label5 {
     display: inline-block;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 30%, rgba(245, 245, 245, 0));
     color: #ffffff;
@@ -62,6 +63,7 @@
 .filter-column .label2,
 .filter-column .label3,
 .filter-column .label4,
+.filter-column .label5
 .filter-column h3 {
     display: inline-block;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 30%, rgba(245, 245, 245, 0));
