@@ -29,48 +29,8 @@
 
 
 
-.author-card-container {
-    width: 87%; /* Increase the width for more space */
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.author-card {
-    width: 100%;
-    margin: 20px 0; /* Increase margin for more space */
-    background-color: #e1edf0;
-    padding: 20px; /* Increase padding for more space */
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out; /* Smoother transition */
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Initially hide the author card content */
-.author-card h2 {
-    display: block;
-    color: #03b9b0;
-}
-
-/* Display the author card content when it's expanded */
-.author-card.expanded h2 {
-    display: block;
-    color: #03b9b0;
-}
-
-.author-card.expanded .book-card-container {
-    display: block;
-}
-
 .book-card-grid {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 100px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     grid-gap: 20px;
