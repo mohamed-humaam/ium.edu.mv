@@ -44,6 +44,7 @@
     border-radius: 10px;
 }
 
+
 .filter-column .label1,
 .filter-column .label2,
 .filter-column .label3,
@@ -79,6 +80,7 @@
     font-size: 18px;
     padding: 5px 20px;
     margin-top: 20px;
+    margin-bottom: 6px;
     color: #ffffff;
     background: linear-gradient(to right, #117333 30%, #f5f5f500);
 }
@@ -103,13 +105,12 @@
 
 #document-table th,
 #document-table td {
-    border: 1px solid #ccc;
     text-align: left;
     padding: 10px;
 }
 
 #document-table tr:nth-child(even) {
-    background-color: rgba(175, 175, 175, 0.466); /* Set the background color to grey */
+    background-color: #acacac41; /* Set the background color to grey */
   }
 
 #document-table th {
