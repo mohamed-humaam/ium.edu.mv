@@ -119,7 +119,6 @@ table {
 table th, table td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #e0e0e0;
 }
 
 table th {
@@ -132,7 +131,7 @@ table tr {
 }
 
 table tr:nth-child(even) {
-    background-color: rgba(175, 175, 175, 0.466); /* Set the background color to grey */
+    background-color: #acacac41; /* Set the background color to grey */
   }
 
 table th:first-child, table td:first-child {

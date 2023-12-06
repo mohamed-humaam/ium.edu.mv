@@ -94,7 +94,7 @@ table a {
 }
 
 table th {
-    background-color: #cccccc75 !important;
+    background-color: #acacac41 !important;
     color: #00954d;
     font-weight: 700;
     font-size: 1.2em;
@@ -107,7 +107,7 @@ table td {
 }
 
 table tr:nth-child(even) {
-    background-color: rgba(175, 175, 175, 0.466); /* Set the background color to grey */
+    background-color: #acacac41; /* Set the background color to grey */
   }
 
 table th {
@@ -123,16 +123,7 @@ table td:nth-child(1) {
 table th:nth-child(2), 
 table td:nth-child(2),
 table th:nth-child(3), 
-table td:nth-child(3),
-table th:nth-child(4), 
-table td:nth-child(4) {
-    width: 15%; /* Adjust the percentage as needed */
-}
-
-table th:nth-child(5), 
-table td:nth-child(5),
-table th:nth-child(6), 
-table td:nth-child(6) {
+table td:nth-child(3){
     width: 15%; /* Adjust the percentage as needed */
 }
 
@@ -140,3 +131,14 @@ table tr:hover {
     background-color: #e0e0e0;
     cursor: pointer;
 }
+
+table tr:nth-child(1):hover {
+    background-color: #acacac00 !important;
+    cursor: default;
+}
+
+table tr:nth-child(1) {
+    border-bottom: 1px solid #00000021;
+    background-color: #acacac5d;
+}
+
