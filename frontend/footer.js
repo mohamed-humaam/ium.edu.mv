@@ -27,7 +27,7 @@ Vue.component('custom-footer', {
           </div>
           <div class="links">
             <h3>Media</h3>
-            <a href="#">News</a>
+            <a href="staff.html">Staff</a>
             <a href="#">Gallery</a>
             <a href="#">Publications</a>
             <a href="#">Gazette</a>
