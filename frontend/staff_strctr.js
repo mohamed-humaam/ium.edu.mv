@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Function to set the staff photo as an img tag
+    function createStaffPhoto(photoUrl) {
+        const staffPhoto = document.createElement("img");
+        staffPhoto.className = "staff-photo";
+        staffPhoto.src = photoUrl;
+        staffPhoto.alt = "Staff Photo";
+        return staffPhoto;
+    }
+
     const facultyData = [
         { name: "Executives", executives: committeeMembers },
         { name: "Chancellor's Bureau", director: Bureau_Director, staff: Bureau_Staff },
@@ -30,46 +39,43 @@ document.addEventListener("DOMContentLoaded", function () {
     function createStaffCard(staff) {
         const card = document.createElement("div");
         card.className = "staff-card";
-
-        const staffPhoto = document.createElement("div");
-        staffPhoto.className = "staff-photo";
-        staffPhoto.style.backgroundImage = `url(${staff.photo})`;
-
+    
+        // Use createStaffPhoto function to create img tag
+        const staffPhoto = createStaffPhoto(staff.photo);
+    
         const staffInfo = document.createElement("div");
         staffInfo.className = "staff-info";
-
+    
         const staffName = document.createElement("h3");
         staffName.className = "staff-name";
         staffName.textContent = staff.name;
-
+    
         const staffOccupation = document.createElement("p");
         staffOccupation.className = "staff-occupation";
         staffOccupation.textContent = staff.occupation;
-
+    
         const staffContact = document.createElement("p");
         staffContact.className = "staff-contact";
         staffContact.textContent = "Contact: " + staff.contact;
-
+    
         const staffEmail = document.createElement("p");
         staffEmail.className = "staff-email";
         staffEmail.textContent = "Email: " + staff.email;
-
+    
         staffInfo.appendChild(staffName);
         staffInfo.appendChild(staffOccupation);
         staffInfo.appendChild(staffContact);
         staffInfo.appendChild(staffEmail);
-
+    
         card.appendChild(staffPhoto);
         card.appendChild(staffInfo);
-
+    
         return card;
     }
-
 
     function toggleFacultyCard(facultyCard) {
         facultyCard.classList.toggle("expanded");
     }
-
 
     function initializeFacultyCards() {
         facultyData.forEach(faculty => {
@@ -86,14 +92,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function createFacultyCard(faculty) {
         const facultyCard = document.createElement("div");
         facultyCard.className = `faculty-card ${faculty.name.toLowerCase()}`;
-    
+
         const titleContainer = document.createElement("div");
         titleContainer.className = "title-container";
         titleContainer.textContent = faculty.name;
-    
+
         const staffContainer = document.createElement("div");
         staffContainer.className = "staff-container";
-    
+
         // Display staff information in the order defined in facultyData
         const staffTypes = [
             faculty.dean,
@@ -103,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
             faculty.director,
             faculty.staff,
         ];
-    
+
         staffTypes.forEach(staffArray => {
             if (Array.isArray(staffArray)) {
                 staffArray.forEach(staff => {
@@ -112,10 +118,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
         });
-    
+
         facultyCard.appendChild(titleContainer);
         facultyCard.appendChild(staffContainer);
-    
+
         return facultyCard;
     }
 
@@ -128,4 +134,3 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = `staff-portfolio.html?staff=${staffName}`;
         }
     });
-});
