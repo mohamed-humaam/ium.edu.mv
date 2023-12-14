@@ -64,15 +64,15 @@ const CCE_Academic = [
     name: " Aminath Zuhudha ",
     occupation: "Lecturer",
     photo: " ",
-   // contact: "3022122 ",
+    contact: "3022122 ",
     email: "aminath.zuhudha@ium.edu.mv ",
    },
    {
 
     name: " Nasrulla Ahmed ",
     occupation: "Lecturer",
-    photo: " ./Images/Profile photos of staffs/nasru.JPG",
-   // contact: "3022122 ",
+    photo: "./Images/Profile photos of staffs/nasru.JPG",
+    contact: "3022122 ",
     email: "nasrulla.ahmed@ium.edu.mv ",
    },
   {
@@ -80,10 +80,8 @@ const CCE_Academic = [
     name: " Mohamed Zaahir ",
     occupation: "Lecturer",
     photo: " ",
-   // contact: "3022122 ",
+    contact: "3022122 ",
     email: "mohamed.zahir@ium.edu.mv ",
-  
-  
     faculty: "Center for Continuing Education",
     academic_qualifications: [
       

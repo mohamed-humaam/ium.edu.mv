@@ -33,14 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const staffPhoto = document.createElement("div");
         staffPhoto.className = "staff-photo";
-
-        // Check if staff has a photo and set the background image
-        if (staff.photo) {
-            staffPhoto.style.backgroundImage = `url(${staff.photo})`;
-        } else {
-            // Set a default background image or handle missing photo
-            staffPhoto.style.backgroundImage = `url('./path/to/default/photo.jpg')`;
-        }
+        staffPhoto.style.backgroundImage = `url(${staff.photo})`;
 
         const staffInfo = document.createElement("div");
         staffInfo.className = "staff-info";
@@ -72,9 +65,11 @@ document.addEventListener("DOMContentLoaded", function () {
         return card;
     }
 
+
     function toggleFacultyCard(facultyCard) {
         facultyCard.classList.toggle("expanded");
     }
+
 
     function initializeFacultyCards() {
         facultyData.forEach(faculty => {
@@ -91,14 +86,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function createFacultyCard(faculty) {
         const facultyCard = document.createElement("div");
         facultyCard.className = `faculty-card ${faculty.name.toLowerCase()}`;
-
+    
         const titleContainer = document.createElement("div");
         titleContainer.className = "title-container";
         titleContainer.textContent = faculty.name;
-
+    
         const staffContainer = document.createElement("div");
         staffContainer.className = "staff-container";
-
+    
         // Display staff information in the order defined in facultyData
         const staffTypes = [
             faculty.dean,
@@ -108,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
             faculty.director,
             faculty.staff,
         ];
-
+    
         staffTypes.forEach(staffArray => {
             if (Array.isArray(staffArray)) {
                 staffArray.forEach(staff => {
@@ -117,10 +112,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
         });
-
+    
         facultyCard.appendChild(titleContainer);
         facultyCard.appendChild(staffContainer);
-
+    
         return facultyCard;
     }
 
