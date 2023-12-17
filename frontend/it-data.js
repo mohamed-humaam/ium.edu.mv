@@ -16,7 +16,7 @@ const IT_Staff = [
     {
       name: "Saam Mohmaed",
       occupation: "Assistant System Administrator",
-      photo: "./Images/Faculties/kems/admin.png",
+      photo: "./Images/Profile photos of staffs/Saam1.jpg",
       contact: "+960330122",
       email: "example@ium.edu.mv"
     },

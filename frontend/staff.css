@@ -85,10 +85,11 @@
 
 .staff-card img {
     border: 1.5px solid #03b9b0;
-    height: 7em;
-    width: 7em;
+    height: 13em;
+    width: 13em;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top;
 }
 
 .staff-name {

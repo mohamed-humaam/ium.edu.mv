@@ -5,7 +5,7 @@ const committeeMembers = [
         universityPosition: "Vice Chancellor",
         committeePosition: "Chair",
         photo: "./Images/tmt/VC-Dr.png", // Add the image file path
-        occupation: "Director - Procurement Department",
+        occupation: "Vice Chancellor",
         contact: "+960330122",
         email: "example@ium.edu.mv"
     },
@@ -14,7 +14,7 @@ const committeeMembers = [
         universityPosition: "Deputy Vice-Chancellor ( Administration and Finance )",
         committeePosition: "Member",
         photo: "./Images/tmt/DVC%20Uz%20Mahid.jpg", // Add the image file path
-        occupation: "Director - Procurement Department",
+        occupation: "DVC - Administration and Finance",
         contact: "+960330122",
         email: "example@ium.edu.mv"
     },
@@ -23,7 +23,7 @@ const committeeMembers = [
         universityPosition: "Deputy Vice-Chancellor ( Academic Affairs)",
         committeePosition: "Member",
         photo: "./Images/tmt/DVC%20DR%20Saud.jpg", // Add the image file path
-        occupation: "Director - Procurement Department",
+        occupation: "DVC - Academic Affairs",
         contact: "+960330122",
         email: "example@ium.edu.mv"
     },
@@ -32,7 +32,7 @@ const committeeMembers = [
         universityPosition: "Deputy Vice-Chancellor (Research and Innovation)",
         committeePosition: "Member",
         photo: "./Images/tmt/DVC%20DR%20Dheeba.jpg", // Add the image file path
-        occupation: "Director - Procurement Department",
+        occupation: "DVC - Reserch and Innovations",
         contact: "+960330122",
         email: "example@ium.edu.mv"
     },

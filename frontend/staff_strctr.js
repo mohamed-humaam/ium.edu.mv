@@ -24,16 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Center for Research & Publications", dean: [CRP_Dean], academic: CRP_Academic, admin: CRP_Admin },
         // Add more departments here
     ];
-
+    console.log();
     const facultyCardsContainer = document.getElementById("facultyCards");
 
     function createStaffCard(staff) {
         const card = document.createElement("div");
         card.className = "staff-card";
 
-        const staffPhoto = document.createElement("div");
+        const staffPhoto = document.createElement("img");
         staffPhoto.className = "staff-photo";
-        staffPhoto.style.backgroundImage = `url(${staff.photo})`;
+        staffPhoto.src = staff.photo;
 
         const staffInfo = document.createElement("div");
         staffInfo.className = "staff-info";
