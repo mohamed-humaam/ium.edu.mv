@@ -124,8 +124,16 @@ document.addEventListener("DOMContentLoaded", function () {
     facultyCardsContainer.addEventListener("click", (event) => {
         const clickedStaffCard = event.target.closest(".staff-card");
         if (clickedStaffCard) {
-            const staffName = clickedStaffCard.querySelector(".staff-name").textContent;
-            window.location.href = `staff-portfolio.html?staff=${staffName}`;
+            const staffOccupation = clickedStaffCard.querySelector(".staff-occupation").textContent;
+    
+            // Check if staff occupation contains one of the specified terms
+            const validOccupations = ["Dean", "Lecturer", "Assistant Professor", "Professor"];
+            const isValidOccupation = validOccupations.some(term => staffOccupation.includes(term));
+    
+            if (isValidOccupation) {
+                const staffName = clickedStaffCard.querySelector(".staff-name").textContent;
+                window.location.href = `staff-portfolio.html?staff=${staffName}`;
+            }
         }
     });
 });
