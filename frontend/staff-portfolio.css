@@ -40,10 +40,12 @@
   background-image: url("./Images/Banners/Site\ Pattern\ PNG\ FINAL.png");
   background-repeat: no-repeat;
   background-position: center;
+  height: 40vh;
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .personal-info .details-column {
@@ -121,6 +123,11 @@
     cursor: pointer;
 }
 
+.personal-info .pfp-column img {
+    object-fit: cover;
+    height: 40vh;
+}
+
 
 /* Style for the modal overlay */
 .modal {
@@ -182,7 +189,8 @@
 .profile .area-of-specialization h3,
 .profile .research-and-publications h3,
 .profile .awards-and-recognition h3 {
-    background-color: #00954d;
+    height: 7vh;
+    width: 80vh;
     border-radius: 10px;
     text-align: center;
     font-size: 2.1em;
@@ -195,8 +203,11 @@
 .profile .area-of-specialization,
 .profile .research-and-publications,
 .profile .awards-and-recognition {
+    height: 7vh;
+    width: 90vh;
+    border-radius: 10px;
     text-align: center;
-    border: none;
+    background-color: #00954d;
 }
 
 .profile .expert-profile p,
