@@ -55,24 +55,6 @@
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
     .mini-navbar {
-        flex-direction: row;
-        align-items: stretch;
-        height: auto;
-    }
-
-    .mini-navbar .left-side,
-    .mini-navbar .right-side {
-        flex-direction: row;
-        align-items: stretch;
-    }
-
-    .left-side a,
-    .right-side a {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .right-side .apply-button {
-        padding: 15px;
+        display: none;
     }
 }
