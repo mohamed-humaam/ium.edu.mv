@@ -50,43 +50,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // Add Position in green and Faculty Name in white
         const positionFacultyDiv = document.createElement("div");
         positionFacultyDiv.className = "position-faculty";
-
-        // Get the faculty from the corresponding academic array
-        const facultyName = getFacultyName(staff);
-        
         positionFacultyDiv.innerHTML = `
             <p class="position-green">${staff.occupation}</p>
-            <p class="faculty-white">${facultyName}</p>
+            <p class="faculty-white">${staff.faculty || "Unknown Faculty"}</p>
         `;
-
         positionFacultyInfo.appendChild(positionFacultyDiv);
         detailsColumn.appendChild(positionFacultyInfo);
-        // Function to get faculty name from academic array
-        function getFacultyName(staff) {
-            const academicArray = staff.academic;
-        
-            // Check if academicArray is defined and has a name property
-            if (academicArray && academicArray[0] && academicArray[0].name) {
-                // Find the faculty name based on the name property of the academic array
-                const facultyMap = {
-                    "KQS_Academic": "Kulliyyah of Qur’anic Studies",
-                    "CCE_Academic": "Center for Continuing Education",
-                    "KAL_Academic": "Kulliyyah of Arabic Language",
-                    "KED_Academic": "Kulliyyah of Education",
-                    "KSL_Academic": "Kulliyyah of Shar’iah & Law",
-                    "KEMS_Academic": "Kulliyyah of Economics & Management Studies",
-                    "KIRK_Academic": "Kulliyyah of Islamic Revealed Knowledge & Human Sciences",
-                    "CRP_Academic": "Center for Research & Publications",
-                    "CPS_Academic": "Center for Postgraduate Studies"
-                };
-        
-                const facultyName = facultyMap[academicArray[0].name] || "Unknown Faculty";
-                return facultyName;
-            } else {
-                return "Unknown Faculty";
-            }
-        }
-        
         // Create the div for academic qualifications, contact number, and email (academic-contact-cell)
         const academicContactCell = document.createElement("div");
         academicContactCell.className = "academic-contact-cell"; // Add a class for styling
