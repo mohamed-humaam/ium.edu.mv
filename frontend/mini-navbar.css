@@ -1,27 +1,28 @@
+/* Default styles for all screen sizes */
 .mini-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #00954d;
-    padding-left: 340px;
-    padding-right: 340px;
-    height: 5vh
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 5vh;
 }
-  
+
 .left-side,
 .right-side {
     display: flex;
     margin-top: 0;
     align-items: center;
 }
-  
+
 .left-side a,
 .right-side a {
     color: #ffffff;
     font-weight: 500;
     text-decoration: none;
     margin-right: 20px;
-    transition: 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .left-side i {
@@ -34,19 +35,44 @@
 }
 
 .right-side .apply-button {
-    background-color: #BB0306;
     display: flex;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 23px 15px;
-    text-decoration: none;
     align-items: center;
     justify-content: center;
+    background-color: #BB0306;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
     height: 5vh;
-    transition: color 0.3s;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .right-side .apply-button:hover {
     text-decoration: underline;
     color: #000000;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    .mini-navbar {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+    }
+
+    .mini-navbar .left-side,
+    .mini-navbar .right-side {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .left-side a,
+    .right-side a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .right-side .apply-button {
+        padding: 15px;
+    }
 }
