@@ -60,7 +60,7 @@ const CCE_Admin = [
 
 const CCE_Academic = [
    {
-    name: " Aminath Zuhudha ",
+    name: "Aminath Zuhudha",
     occupation: "Lecturer",
     photo: " ",
     contact: "3022122 ",
@@ -68,7 +68,7 @@ const CCE_Academic = [
     faculty: "Center for Continuing Education",
    },
    {
-    name: " Nasrulla Ahmed ",
+    name: "Nasrulla Ahmed",
     occupation: "Lecturer",
     photo: "./Images/Profile photos of staffs/nasru.JPG",
     contact: "3022122 ",
@@ -76,7 +76,7 @@ const CCE_Academic = [
     faculty: "Center for Continuing Education",
    },
   {
-    name: " Mohamed Zaahir ",
+    name: "Mohamed Zaahir",
     occupation: "Lecturer",
     photo: " ",
     contact: "3022122 ",
