@@ -37,10 +37,10 @@
 
 /* Style the personal information section */
 .personal-info {
-  background-image: url("./Images/Banners/Site\ Pattern\ PNG\ FINAL.png");
+  /* background-image: url("./Images/Banners/Site\ Pattern\ PNG\ FINAL.png"); */
   background-repeat: no-repeat;
   background-position: center;
-  height: 40vh;
+  height: 42vh;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -49,14 +49,12 @@
 }
 
 .personal-info .details-column {
-    background-color: transparent;
-    height: 30rem;
+    height: 40vh;
     padding: 30px;
     width: 70%;
 }
 
 .personal-info .details-column .title {
-    font-size: 7em;
     line-height: 100px;
     color: #00954d;
     text-shadow: 5px 5px #000000;
@@ -65,7 +63,7 @@
 .personal-info .details-column h2 {
     display: flex;
     text-transform: uppercase;
-    font-size: 9em;
+    font-size: 6.3em;
     color: #00954d;
     line-height: 150px;
     text-align: right;
@@ -73,7 +71,6 @@
 }
 
 .personal-info .details-column .position-faculty-info {
-    margin-top: 50px;
     display: flex;
 }
 
@@ -86,7 +83,7 @@
 .personal-info .details-column .position-faculty-info p:nth-child(1) {
     color: #00954d;
     font-weight: 600;
-    font-size: 3.8em;
+    font-size: 3em;
 }
 
 .personal-info .details-column .position-faculty-info p:nth-child(2) {
@@ -125,7 +122,7 @@
 
 .personal-info .pfp-column img {
     object-fit: cover;
-    height: 40vh;
+    height: 42vh;
 }
 
 
@@ -182,7 +179,7 @@
     padding: 0px 70px 10px 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 70px;
+    grid-gap: 30px;
 }
 
 .profile .expert-profile h3,

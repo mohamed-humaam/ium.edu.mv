@@ -62,7 +62,7 @@ const CPS_Academic = [
     name: "Dr. Mohamed Solih",
     occupation: "Senior Lecturer",
     photo: "./Images/Profile photos of staffs/dr solih.JPG",
-    contact: "",
+    contact: "+960330123",
     email: "mohamed.solih@ium.edu.mv"
 
   },
@@ -70,7 +70,7 @@ const CPS_Academic = [
     name: "Dr. Hasan M.A Alkordi",
     occupation: "Lecturer",
     photo: "./Images/Profile photos of staffs/kurdi.JPG",
-    contact: "",
+    contact: "+960330123",
     email: "hasan.alkordi@ium.edu.mv"
 
   },
