@@ -62,7 +62,7 @@
 
     .mini-navbar .left-side,
     .mini-navbar .right-side {
-        flex-direction: column;
+        flex-direction: row;
         align-items: stretch;
     }
 
