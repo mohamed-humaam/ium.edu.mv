@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Merge all staff data arrays into one array
     const staffData = [
         ...KQS_Academic,
-        ...CCE_Academic,
         ...KAL_Academic,
         ...KED_Academic,
         ...KSL_Academic,
         ...KEMS_Academic,
         ...KIRK_Academic,
         ...CRP_Academic,
-        ...CPS_Academic
+        ...CPS_Academic,
+        ...CCE_Academic,
     ];
     // Find the staff data for the given name
     const staff = findStaffByName(staffName, staffData);

@@ -54,8 +54,7 @@ const CRP_Admin = [
 
 const CRP_Academic = [
    {
-    title: "Dr.",
-    name: "Mariyam Shareefa",
+    name: "Dr. Mariyam Shareefa",
     occupation: "Senior Lecturer",
     photo: " ",
     contact: "+960330122",
@@ -63,8 +62,7 @@ const CRP_Academic = [
     faculty: "Center for Research and Publications",
    },
   {
-    title: "Dr.",
-    name: "Visal Moosa",
+    name: "Dr. Visal Moosa",
     occupation: "Senior Lecturer",
     photo: " ",
     contact: "+960330122",
@@ -105,8 +103,7 @@ const CRP_Academic = [
     ],
   },
   {
-    title: "Dr.",
-    name: "Mariyam Shareefa",
+    name: "Dr. Mariyam Shareefa",
     occupation: "Senior Lecturer",
     photo: "./Images/Faculties/kems/lecturer.png",
     contact: "+960330122",
