@@ -60,6 +60,7 @@ const CRP_Academic = [
     photo: " ",
     contact: "+960330122",
     email: "mariyam.shareefa@ium.edu.mv",
+    faculty: "Center for Research and Publications",
    },
   {
     title: "Dr.",

@@ -66,7 +66,8 @@ const KAL_Academic = [
     occupation: "Lecturer",
     photo: " ",
     contact: "+960330122",
-    email: "mohamed.uwais@ium.edu.mv"
+    email: "mohamed.uwais@ium.edu.mv",
+    faculty: "Kulliyyah of Arabic Language",
 
   },
 
@@ -75,7 +76,8 @@ const KAL_Academic = [
     occupation: "Senior Lecturer",
     photo: " ",
     contact: "+960330122",
-    email: "ishaq.mohamed@ium.edu.mv"
+    email: "ishaq.mohamed@ium.edu.mv",
+    faculty: "Kulliyyah of Arabic Language",
 
   },
 
@@ -85,7 +87,8 @@ const KAL_Academic = [
     occupation: " Lecturer",
     photo: " ",
     contact: "+960330122",
-    email: "hassan.kordi@ium.edu.mv"
+    email: "hassan.kordi@ium.edu.mv",
+    faculty: "Kulliyyah of Arabic Language",
 
   },
 
@@ -94,7 +97,8 @@ const KAL_Academic = [
     occupation: "Associate Lecturer",
     photo: " ",
     contact: "+960330122",
-    email: "mahmoud.mohamed@ium.edu.mv"
+    email: "mahmoud.mohamed@ium.edu.mv",
+    faculty: "Kulliyyah of Arabic Language",
 
   },
 
@@ -103,7 +107,8 @@ const KAL_Academic = [
     occupation: " Lecturer",
     photo: " ",
     contact: "+960330122",
-    email: "mohamed.qubaad@ium.edu.mv"
+    email: "mohamed.qubaad@ium.edu.mv",
+    faculty: "Kulliyyah of Arabic Language",
 
   },
 
@@ -113,7 +118,8 @@ const KAL_Academic = [
     occupation: "Senior Lecturer",
     photo: " ",
     contact: "+960330122",
-    email: "elsayad.elshahhat@ium.edu.mv"
+    email: "elsayad.elshahhat@ium.edu.mv",
+    faculty: "Kulliyyah of Arabic Language",
 
   },
 
@@ -122,7 +128,8 @@ const KAL_Academic = [
     occupation: "Associate Lecturer",
     photo: " ",
     contact: "+960330122",
-    email: "abdul.mueed@ium.edu.mv"
+    email: "abdul.mueed@ium.edu.mv",
+    faculty: "Kulliyyah of Arabic Language",
 
   },
   // Add more academic staff here as needed

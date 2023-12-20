@@ -44,7 +44,8 @@ const KED_Admin = [
     occupation: "Administrative Officer",
     photo: "",
     contact: "",
-    email: "example@ium.edu.mv"
+    email: "example@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
   {
@@ -52,7 +53,8 @@ const KED_Admin = [
     occupation: "Administrative Officer",
     photo: "",
     contact: "",
-    email: "example@ium.edu.mv"
+    email: "example@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
   // Add more administrative staff here as needed
@@ -65,7 +67,8 @@ const KED_Academic = [
     occupation: "Lecturer",
     photo: "./Images/Profile photos of staffs/nizar.JPG",
     contact: "+960330142",
-    email: "ahmed.nizar@ium.edu.mv"
+    email: "ahmed.nizar@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
 
@@ -74,7 +77,8 @@ const KED_Academic = [
     occupation: "Associate Lecturer",
     photo: "./Images/Profile photos of staffs/aroosha.JPG",
     contact: "+960330142",
-    email: "aroosha.mahir@ium.edu.mv"
+    email: "aroosha.mahir@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
 
@@ -83,7 +87,8 @@ const KED_Academic = [
     occupation: "Senior Lecturer",
     photo: "",
     contact: "+960330142",
-    email: "visama.hassan@ium.edu.mv"
+    email: "visama.hassan@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
 
@@ -92,7 +97,8 @@ const KED_Academic = [
     occupation: "Senior Lecturer",
     photo: "",
     contact: "+960330142",
-    email: "ibrahim.ali@ium.edu.mv"
+    email: "ibrahim.ali@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
 
@@ -101,7 +107,8 @@ const KED_Academic = [
     occupation: "Associate Lecturer",
     photo: "./Images/Profile photos of staffs/fayaz.JPG",
     contact: "+960330142",
-    email: "adam.fayaz@ium.edu.mv"
+    email: "adam.fayaz@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
 
@@ -110,7 +117,8 @@ const KED_Academic = [
     occupation: " Lecturer",
     photo: "",
     contact: "+960330142",
-    email: "ibrahim.shifau@ium.edu.mv"
+    email: "ibrahim.shifau@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
 
@@ -119,7 +127,8 @@ const KED_Academic = [
     occupation: "Senior Lecturer",
     photo: "./Images/Profile photos of staffs/wahid.JPG",
     contact: "+960330142",
-    email: "abdul.wahid@ium.edu.mv"
+    email: "abdul.wahid@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
 
@@ -128,7 +137,8 @@ const KED_Academic = [
     occupation: " Lecturer",
     photo: "./Images/Profile photos of staffs/agisa.JPG",
     contact: "+960330142",
-    email: "agisa.ali@ium.edu.mv"
+    email: "agisa.ali@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
 
@@ -137,7 +147,8 @@ const KED_Academic = [
     occupation: "Senior Lecturer",
     photo: " ",
     contact: "+960330142",
-    email: "abdul.latheef@ium.edu.mv"
+    email: "abdul.latheef@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
 
@@ -146,7 +157,8 @@ const KED_Academic = [
     occupation: " Lecturer",
     photo: "./Images/Profile photos of staffs/khaulath.JPG",
     contact: "+960330142",
-    email: "khaulath.saeed@ium.edu.mv"
+    email: "khaulath.saeed@ium.edu.mv",
+    faculty: "Kulliyyah of Education",
 
   },
 

@@ -70,7 +70,8 @@ const KQS_Academic = [
     occupation: "Associate Lecturer",
     photo: "",
     contact: "+9603022144",
-    email: "mohamed.shinan@ium.edu.mv"
+    email: "mohamed.shinan@ium.edu.mv",
+    faculty: "Kulliyyah of Quranic Studies",
   },
 
    {
@@ -78,7 +79,8 @@ const KQS_Academic = [
     occupation: " Associate Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "mohamed.naeem@ium.edu.mv"
+    email: "mohamed.naeem@ium.edu.mv",
+    faculty: "Kulliyyah of Quranic Studies",
   },
 
     {
@@ -86,7 +88,8 @@ const KQS_Academic = [
     occupation: " Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "fathimath.rasheeda@ium.edu.mv"
+    email: "fathimath.rasheeda@ium.edu.mv",
+    faculty: "Kulliyyah of Quranic Studies",
   },
 
     {
@@ -94,7 +97,8 @@ const KQS_Academic = [
     occupation: " Associate Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "ibrahim.zuhair@ium.edu.mv"
+    email: "ibrahim.zuhair@ium.edu.mv",
+    faculty: "Kulliyyah of Quranic Studies",
   },
 
      {
@@ -102,7 +106,8 @@ const KQS_Academic = [
     occupation: " Senior Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "mohamed.waheed@ium.edu.mv"
+    email: "mohamed.waheed@ium.edu.mv",
+    faculty: "Kulliyyah of Quranic Studies",
   },
 
      {
@@ -110,7 +115,8 @@ const KQS_Academic = [
     occupation: " Senior Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "samiya.zakariyya@ium.edu.mv"
+    email: "samiya.zakariyya@ium.edu.mv",
+    faculty: "Kulliyyah of Quranic Studies",
   },
 
      {
@@ -118,7 +124,8 @@ const KQS_Academic = [
     occupation: "  Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "mohamed.thaufeeg@ium.edu.mv"
+    email: "mohamed.thaufeeg@ium.edu.mv",
+    faculty: "Kulliyyah of Quranic Studies",
   },
 
       {
@@ -126,7 +133,8 @@ const KQS_Academic = [
     occupation: " Senior Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "abdul.azeez@ium.edu.mv"
+    email: "abdul.azeez@ium.edu.mv",
+    faculty: "Kulliyyah of Quranic Studies",
   },
 
        {
@@ -134,7 +142,8 @@ const KQS_Academic = [
     occupation: "  Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "ibrahim.ramzee@ium.edu.mv"
+    email: "ibrahim.ramzee@ium.edu.mv",
+    faculty: "Kulliyyah of Quranic Studies",
   },
 
 ];

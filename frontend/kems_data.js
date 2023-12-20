@@ -67,6 +67,7 @@ const KEMS_Academic = [
     photo: " ",
     contact: "+960330122",
     email: "aminath.shaznie@ium.edu.mv",
+    faculty: "Kulliyyah of Economics and Management Studies",
   },
   {
   
@@ -75,6 +76,7 @@ const KEMS_Academic = [
     photo: " ",
     contact: "+960330122",
     email: "mariyam.shihama@ium.edu.mv",
+    faculty: "Kulliyyah of Economics and Management Studies",
   },
   
   {

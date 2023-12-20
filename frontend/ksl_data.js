@@ -61,7 +61,8 @@ const KSL_Academic = [
     occupation: "Senior Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "ali.ibrahim@ium.edu.mv"
+    email: "ali.ibrahim@ium.edu.mv",
+    faculty: "Kulliyyah of Shari’ah and Law",
   },
 
           {
@@ -69,7 +70,8 @@ const KSL_Academic = [
     occupation: "Senior Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "abdul.jaleel@ium.edu.mv"
+    email: "abdul.jaleel@ium.edu.mv",
+    faculty: "Kulliyyah of Shari’ah and Law",
   },
 
             {
@@ -77,7 +79,8 @@ const KSL_Academic = [
     occupation: " Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "shaaz.ahmed@ium.edu.mv"
+    email: "shaaz.ahmed@ium.edu.mv",
+    faculty: "Kulliyyah of Shari’ah and Law",
   },
 
             {
@@ -85,7 +88,8 @@ const KSL_Academic = [
     occupation: " Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "ikram.abdulsattar@ium.edu.mv"
+    email: "ikram.abdulsattar@ium.edu.mv",
+    faculty: "Kulliyyah of Shari’ah and Law",
   },
 
             {
@@ -93,7 +97,8 @@ const KSL_Academic = [
     occupation: " Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "aishath.ruhusha@ium.edu.mv"
+    email: "aishath.ruhusha@ium.edu.mv",
+    faculty: "Kulliyyah of Shari’ah and Law",
   },
 
               {
@@ -101,7 +106,8 @@ const KSL_Academic = [
     occupation: " Senior Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "affan.shafy@ium.edu.mv"
+    email: "affan.shafy@ium.edu.mv",
+    faculty: "Kulliyyah of Shari’ah and Law",
   },
 
               {
@@ -109,7 +115,8 @@ const KSL_Academic = [
     occupation: "  Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "abdul.ghany@ium.edu.mv"
+    email: "abdul.ghany@ium.edu.mv",
+    faculty: "Kulliyyah of Shari’ah and Law",
   },
 
                {
@@ -117,7 +124,8 @@ const KSL_Academic = [
     occupation: "  Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "aishath.fazna@ium.edu.mv"
+    email: "aishath.fazna@ium.edu.mv",
+    faculty: "Kulliyyah of Shari’ah and Law",
   },
 
                  {
@@ -125,7 +133,8 @@ const KSL_Academic = [
     occupation: "  Lecturer",
     photo: "",
     contact: "+960330122",
-    email: "hussain.rameez@ium.edu.mv"
+    email: "hussain.rameez@ium.edu.mv",
+    faculty: "Kulliyyah of Shari’ah and Law",
   },
 ];
 
@@ -167,7 +176,7 @@ const KSL_Courses = [
       {
         semester: 'Semester 2',
         modules: [
-          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'ARB0002', name: 'Shari’ah and Law Level 2'},
           { code: 'COR0704', name: 'Maldivian History and Civilization'},
           { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
           { code: 'HSS0709', name: 'Rural and Urban Development'},
@@ -202,7 +211,7 @@ const KSL_Courses = [
       {
         semester: 'Semester 2',
         modules: [
-          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'ARB0002', name: 'Shari’ah and Law Level 2'},
           { code: 'COR0704', name: 'Maldivian History and Civilization'},
           { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
           { code: 'HSS0709', name: 'Rural and Urban Development'},
@@ -237,7 +246,7 @@ const KSL_Courses = [
       {
         semester: 'Semester 2',
         modules: [
-          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'ARB0002', name: 'Shari’ah and Law Level 2'},
           { code: 'COR0704', name: 'Maldivian History and Civilization'},
           { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
           { code: 'HSS0709', name: 'Rural and Urban Development'},
@@ -272,7 +281,7 @@ const KSL_Courses = [
       {
         semester: 'Semester 2',
         modules: [
-          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'ARB0002', name: 'Shari’ah and Law Level 2'},
           { code: 'COR0704', name: 'Maldivian History and Civilization'},
           { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
           { code: 'HSS0709', name: 'Rural and Urban Development'},
@@ -307,7 +316,7 @@ const KSL_Courses = [
       {
         semester: 'Semester 2',
         modules: [
-          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'ARB0002', name: 'Shari’ah and Law Level 2'},
           { code: 'COR0704', name: 'Maldivian History and Civilization'},
           { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
           { code: 'HSS0709', name: 'Rural and Urban Development'},
@@ -342,7 +351,7 @@ const KSL_Courses = [
       {
         semester: 'Semester 2',
         modules: [
-          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'ARB0002', name: 'Shari’ah and Law Level 2'},
           { code: 'COR0704', name: 'Maldivian History and Civilization'},
           { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
           { code: 'HSS0709', name: 'Rural and Urban Development'},
@@ -377,7 +386,7 @@ const KSL_Courses = [
       {
         semester: 'Semester 2',
         modules: [
-          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'ARB0002', name: 'Shari’ah and Law Level 2'},
           { code: 'COR0704', name: 'Maldivian History and Civilization'},
           { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
           { code: 'HSS0709', name: 'Rural and Urban Development'},
@@ -412,7 +421,7 @@ const KSL_Courses = [
       {
         semester: 'Semester 2',
         modules: [
-          { code: 'ARB0002', name: 'Arabic Language Level 2'},
+          { code: 'ARB0002', name: 'Shari’ah and Law Level 2'},
           { code: 'COR0704', name: 'Maldivian History and Civilization'},
           { code: 'SHA0607', name: 'Fundamentals of Islamic Finance'},
           { code: 'HSS0709', name: 'Rural and Urban Development'},

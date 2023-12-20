@@ -63,7 +63,8 @@ const CPS_Academic = [
     occupation: "Senior Lecturer",
     photo: "./Images/Profile photos of staffs/dr solih.JPG",
     contact: "+960330123",
-    email: "mohamed.solih@ium.edu.mv"
+    email: "mohamed.solih@ium.edu.mv",
+    faculty: "Center for Postgraduate Studies",
 
   },
   {
@@ -71,8 +72,8 @@ const CPS_Academic = [
     occupation: "Lecturer",
     photo: "./Images/Profile photos of staffs/kurdi.JPG",
     contact: "+960330123",
-    email: "hasan.alkordi@ium.edu.mv"
-
+    email: "hasan.alkordi@ium.edu.mv",
+    faculty: "Center for Postgraduate Studies",
   },
   // Add academic staff here as needed
 ];

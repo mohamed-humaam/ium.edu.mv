@@ -69,7 +69,8 @@ const KIRK_Academic = [
     occupation: "Lecturer",
     photo: "./Images/Profile photos of staffs/fareedha.JPG",
     contact: "+960330122",
-    email: "fareedha.mohamed@ium.edu.mv"
+    email: "fareedha.mohamed@ium.edu.mv",
+    faculty: "Kulliyyah of Islamic Revealed Knowledge and Human Sciences",
 
   },
 
@@ -79,7 +80,8 @@ const KIRK_Academic = [
     occupation: "Lecturer",
     photo: "./Images/Profile photos of staffs/naajy.JPG",
     contact: "+960330122",
-    email: "ismail.najee@ium.edu.mv"
+    email: "ismail.najee@ium.edu.mv",
+    faculty: "Kulliyyah of Islamic Revealed Knowledge and Human Sciences",
 
   },
 
@@ -89,7 +91,8 @@ const KIRK_Academic = [
     occupation: "Senior Lecturer",
     photo: "./Images/Profile photos of staffs/aafiya.JPG",
     contact: "+960330122",
-    email: "aminath.afiya@ium.edu.mv"
+    email: "aminath.afiya@ium.edu.mv",
+    faculty: "Kulliyyah of Islamic Revealed Knowledge and Human Sciences",
 
   },
 
